@@ -12,10 +12,12 @@ parts:
     - file: rri/chapter5/index
     - file: rri/conclusion/index
     # - file: rri/further-resources
-    - file: rri/bibliography
   - caption: Public Communication of Science
     chapters:
     - file: pcs/intro/intro
   - caption: AI Ethics and Governance
     chapters:
     - file: aeg/intro/intro
+  - caption: References
+      chapters:
+      - file: bibliography.md
