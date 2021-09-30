@@ -1,9 +1,5 @@
----
-title: 'Introduction'
-guide: 'Responsible Research and Innovation'
-creation date: 2021-09-28 09:25
-tags: 'anticipation, reflexivity, inclusiveness, responsiveness'
----
+# Introduction
+
 Anticipating the consequences of scientific research and technological innovation can be an intricate and formidable task—one that is made all the more challenging when the target domain is a complex system such as the human brain or society.
 
 Prozac is a technology in the broad sense of the term, but it is not the sort of technology that this course guide will typically focus on. However, in spite of this, the discovery and development of Prozac is an interesting case to begin this guide with.

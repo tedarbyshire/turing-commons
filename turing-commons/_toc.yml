@@ -1,9 +1,6 @@
 format: jb-book
 root: index
 parts:
-  - caption: AI Ethics and Governance
-    chapters:
-    - file: aeg/intro/intro
   - caption: Responsible Research and Innovation
     chapters:
     - file: rri/index
@@ -14,8 +11,11 @@ parts:
     - file: rri/chapter4/index
     - file: rri/chapter5/index
     - file: rri/conclusion/index
-    - file: rri/further-resources
-    - file: rri/bibliography
+    # - file: rri/further-resources
+    # - file: rri/bibliography
   - caption: Public Communication of Science
     chapters:
     - file: pcs/intro/intro
+  - caption: AI Ethics and Governance
+    chapters:
+    - file: aeg/intro/intro
