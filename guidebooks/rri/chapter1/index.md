@@ -1,5 +1,10 @@
 # What is Responsible Research and Innovation?
 
+```{image} ../images/illustrations/data-science.png
+:alt: Illustration of data scientists
+:align: center
+```
+
 ```{admonition} Learning Objectives
 1. To understand what is meant by the term ‘responsibility’.
 2. To familiarise yourself with several principles that characterise RRI.
