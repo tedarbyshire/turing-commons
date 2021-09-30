@@ -33,7 +33,10 @@ sphinx:
     language: en
     html_show_copyright: false
 
-# In _config.yml
+#Bibliography
+bibtex_bibfiles:
+    - bibliography.bib
+
 sphinx:
   config:
     bibtex_reference_style: author_year
