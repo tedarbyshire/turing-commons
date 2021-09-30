@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Responsible Project Design &#8212; Turing Commons</title>
+    <title>Responsible Model Development &#8212; Turing Commons</title>
     
   <link href="../../_static/css/theme.css" rel="stylesheet" />
   <link href="../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -52,6 +52,8 @@
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Responsible System Deployment" href="../chapter5/index.html" />
+    <link rel="prev" title="Responsible Project Design" href="../chapter3/index.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -99,26 +101,51 @@
    Introduction
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../../aeg/chapter1/intro.html">
-   Chapter 1
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../../aeg/chapter2/intro.html">
-   Chapter 2
-  </a>
- </li>
 </ul>
 <p class="caption">
  <span class="caption-text">
   Responsible Research and Innovation
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../chapter2/intro.html">
-   Chapter 2
+  <a class="reference internal" href="../index.html">
+   Welcome 👋
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro/index.html">
+   Unanticipated and Unintended Consequences
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../chapter1/index.html">
+   What is Responsible Research and Innovation?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../chapter2/index.html">
+   Responsible Data Science and AI
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../chapter3/index.html">
+   Responsible Project Design
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Responsible Model Development
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../chapter5/index.html">
+   Responsible System Deployment
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../conclusion/index.html">
+   Conclusion: Looking Forward
   </a>
  </li>
 </ul>
@@ -131,16 +158,6 @@
  <li class="toctree-l1">
   <a class="reference internal" href="../../pcs/intro/intro.html">
    Introduction
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../../pcs/chapter1/intro.html">
-   Chapter 1
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../../pcs/chapter2/intro.html">
-   Chapter 2
   </a>
  </li>
 </ul>
@@ -231,40 +248,19 @@
             <nav id="bd-toc-nav">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#project-planning-and-problem-formulation">
-   Project Planning and Problem Formulation
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#activity-1-breakout-discussions">
-     Activity 1: Breakout Discussions
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#data-extraction-and-procurement">
-   Data Extraction and Procurement
+  <a class="reference internal nav-link" href="#preprocessing-and-feature-engineering">
+   Preprocessing and Feature Engineering
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#data-analysis">
-   Data Analysis
+  <a class="reference internal nav-link" href="#model-selection-training-and-testing">
+   Model Selection, Training, and Testing
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#exploring-data">
-     Exploring Data
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#importing-data">
-       Importing Data
-      </a>
-     </li>
-    </ul>
-   </li>
-  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#model-documentation-and-deployment">
+   Model Documentation and Deployment
+  </a>
  </li>
 </ul>
 
@@ -277,62 +273,47 @@
         
               <div>
                 
-  <div class="section" id="responsible-project-design">
-<h1>Responsible Project Design<a class="headerlink" href="#responsible-project-design" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="project-planning-and-problem-formulation">
-<h2>Project Planning and Problem Formulation<a class="headerlink" href="#project-planning-and-problem-formulation" title="Permalink to this headline">¶</a></h2>
+  <div class="section" id="responsible-model-development">
+<h1>Responsible Model Development<a class="headerlink" href="#responsible-model-development" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="preprocessing-and-feature-engineering">
+<h2>Preprocessing and Feature Engineering<a class="headerlink" href="#preprocessing-and-feature-engineering" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p>Stakeholder identification and engagement plan%%</p></li>
-</ul>
-<p>In terms of the social understanding of problem formulation, consider the following:</p>
-<blockquote>
-<div><p>An AI system that is designed to diagnose diseases based on relevant symptoms or indicators (e.g., biomarkers) would likely develop a problem formulation that assumes that any “disease” ought to be identified, regardless of whether the individual could afford the treatment, whether such a treatment is even available, or whether the individual would self-identify as “ill” or as a patient. Such assumptions are to be expected from the perspective of societies with highly-developed technical medical systems, but are more exclusionary of standpoints that emphasis preventative lifestyle approaches over reactive medical interventions (von Schomberg, 2011)</p>
-</div></blockquote>
-<div class="section" id="activity-1-breakout-discussions">
-<h3>Activity 1: Breakout Discussions<a class="headerlink" href="#activity-1-breakout-discussions" title="Permalink to this headline">¶</a></h3>
-<ul class="simple">
-<li><p>How much information should be shared with research subjects to ensure “informed consent”?</p></li>
-<li><p>When is it okay to use/scrape publicly available data?</p></li>
+<li><p>Feature selection and representation</p></li>
+<li><p>Handling missing data</p></li>
 </ul>
 </div>
-</div>
-<div class="section" id="data-extraction-and-procurement">
-<h2>Data Extraction and Procurement<a class="headerlink" href="#data-extraction-and-procurement" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="model-selection-training-and-testing">
+<h2>Model Selection, Training, and Testing<a class="headerlink" href="#model-selection-training-and-testing" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p>Reusing data—what do you need to know about the provenance of a dataset?%%</p></li>
+<li><p>Selecting models for interpretability</p></li>
+<li><p>The limitations of technical tools for fairness</p></li>
+<li><p>Model generalisability</p></li>
 </ul>
 </div>
-<div class="section" id="data-analysis">
-<h2>Data Analysis<a class="headerlink" href="#data-analysis" title="Permalink to this headline">¶</a></h2>
-<p>The objective of this module is to understand how bias affects exploratory data analysis, and what ought to be done to minimise the effect of these biases on downstream stages. %%</p>
-<div class="section" id="exploring-data">
-<h3>Exploring Data<a class="headerlink" href="#exploring-data" title="Permalink to this headline">¶</a></h3>
-<p>This section will look at the following stages of exploratory data analysis:</p>
-<ol class="simple">
-<li><p>Importing Data</p></li>
-<li><p>Describing the Data</p></li>
-<li><p>Analysing the Data</p></li>
-<li><p>Querying the Data</p></li>
-<li><p>Visualising the Data</p></li>
-</ol>
-<div class="section" id="importing-data">
-<h4>Importing Data<a class="headerlink" href="#importing-data" title="Permalink to this headline">¶</a></h4>
-<p>We will be using the Pandas library in Python for this module.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Import the `pandas` library as `pd`</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-
-<span class="c1"># Load the data into a dataframe with `read_csv()`, treating the first row as data rather than as headersimport </span>
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;...&quot;</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
-
-<span class="c1"># Print out `digits`</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
-</pre></div>
-</div>
+<div class="section" id="model-documentation-and-deployment">
+<h2>Model Documentation and Deployment<a class="headerlink" href="#model-documentation-and-deployment" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>The limits of transparency</p>
+<ul>
+<li><p>Handling sensitive information</p></li>
+<li><p>Protecting against model inversion</p></li>
+<li><p>Transparency is not accountability</p></li>
+</ul>
+</li>
+<li><p>What needs to be documented?</p>
+<ul>
+<li><p>Evaluating current tools (e.g., datasheets, factsheets, model cards, and TRIPOD)</p>
+<ul>
+<li><p>Who is your audience?</p></li>
+<li><p>What are you developing?</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 <hr class="docutils" />
 <p>category: #🎓
 tags:</p>
-</div>
-</div>
 </div>
 </div>
 
@@ -361,6 +342,8 @@ tags:</p>
         
         <div class='prev-next-bottom'>
             
+    <a class='left-prev' id="prev-link" href="../chapter3/index.html" title="previous page">Responsible Project Design</a>
+    <a class='right-next' id="next-link" href="../chapter5/index.html" title="next page">Responsible System Deployment</a>
 
         </div>
         

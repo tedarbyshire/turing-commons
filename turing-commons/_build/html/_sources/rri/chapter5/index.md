@@ -1,29 +1,18 @@
 ---
-title: 'Responsible Model Development'
-section: 5
+title: 'Responsible System Deployment'
 guide: 'Responsible Research and Innovation'
-creation date: 2021-09-28 09:44
+creation date: 2021-09-28 09:47
 ---
-# Responsible Model Development
-### Preprocessing and Feature Engineering
-- Feature selection and representation
-- Handling missing data
+# Responsible System Deployment
 
-### Model Selection, Training, and Testing
-- Selecting models for interpretability
-- The limitations of technical tools for fairness 
-- Model generalisability
+## User Training
+- Reproducible and replicable science
+- Explainable systems
+- Returning to bias: algorithmic aversion
 
-### Model Documentation and Deployment
-- The limits of transparency
-	- Handling sensitive information 
-	- Protecting against model inversion
-	- Transparency is not accountability
-- What needs to be documented?
-	- Evaluating current tools (e.g., datasheets, factsheets, model cards, and TRIPOD)
-		- Who is your audience?
-		- What are you developing?
-
+## System Use, Monitoring, and Updating
+- Model drift and concept creep
+- Responsibility though sustainability: monitoring and updating
 * * *
 category: #🎓
 tags: 

@@ -1,36 +1,54 @@
 ---
-title: 'Responsible Data Science and AI'
-section: 3
+title: 'Responsible Project Design'
 guide: 'Responsible Research and Innovation'
-creation date: 2021-09-28 09:35
+creation date: 2021-09-28 09:30
 ---
-# Responsible Data Science and AI
-## The Data Science and AI Project Project Lifecycle
-%%- Introduce the project lifecycle
-- Give short descriptions of each stage (use an illustrative example)%%
+# Responsible Project Design
+## Project Planning and Problem Formulation
+%%- Setting up a process for responsible data management
+- Stakeholder identification and engagement plan%%
 
-Designing, developing, and deploying an AI system is not a one-person task. The activities and processes which comprise a typical AI project lifecycle involve a wide-ranging and far-reaching set of skills and capacities. Such skills are usually encapsulated within myriad roles and responsibilities: project commissioner, product manager, data protection officer, data scientist, system engineer, etc. However, the way such roles and responsibilities are often defined at an organisational or institutional level (e.g. in job specfications) tend to reflect the practical demands of organisational efficiency or HR management, rather than the normative demands of ethical and responsible governance.
+In terms of the social understanding of problem formulation, consider the following:
 
-In reality, the individual roles and responsibilities, which are implicated in the design, development, and deployment of complex AI projects, are interwoven to such an extent that they form an inextricable Gordian Knot of collective responsibility. While there will always remain a pragmatic need to have individual roles and responsibilities for complex projects, which may be undertaken by a single person or a team, due to the inescapable burden of time constraints and finite cognitive resources, such a pragmatic consideration does not provide the individual project member with a morally defensible reason for excusing themselves from the shared and collective responsibility. 
+> An AI system that is designed to diagnose diseases based on relevant symptoms or indicators (e.g., biomarkers) would likely develop a problem formulation that assumes that any "disease" ought to be identified, regardless of whether the individual could afford the treatment, whether such a treatment is even available, or whether the individual would self-identify as "ill" or as a patient. Such assumptions are to be expected from the perspective of societies with highly-developed technical medical systems, but are more exclusionary of standpoints that emphasis preventative lifestyle approaches over reactive medical interventions (von Schomberg, 2011)
 
-What is needed, however, is a clear illustration of how this collective responsibility is instantiated throughout the lifecycle of an AI project—or a project involving the development of a data-driven technology. Figure 1 seeks to address this need, initially, at a high-level of abstraction, before being expanded upon through a more detailed discussion and exploration of the constitutive stages.[^caveat]
+#### Activity 1: Breakout Discussions
+- How much information should be shared with research subjects to ensure "informed consent"?
+- When is it okay to use/scrape publicly available data?
 
-[^caveat]: It is important to note that this schematic simplifies many details that characterise an actual AI project lifecyle. Such an abstraction is intentional and necessary for the current purpose, which is to establish a framework for thinking about how the interacting roles and responsibilities implicated in a real-world project form an inextricable collective responsibility for reflective and responsive deliberation.  
+## Data Extraction and Procurement
+%%- Respecting rights of data subjects
+- Reusing data—what do you need to know about the provenance of a dataset?%%
 
-### Activity 1: 
+## Data Analysis
+%%- Identifying the effects of social, statistical, and cognitive biases%%
 
-## Roles and Responsibilities
-- No one person is involved in all the stages of the project lifecycle, and in some cases multiple teams may be required 
-- This necessitates a collective responsibility and a recognition of interconnected roles.
-	- What is collective responsibility?
-	- How should roles be defined and agreed?
+%%This module will explore the stage of data analysis using the lens of a bias-aware methodology. We will make use of Jupyter notebooks to aid our exploratory data analysis, in order to understand how social, cognitive, and statistical biases interact and affect downstream stages in the research and innovation lifecycle.%%
 
-## Reflect, Act, Justify—A Participatory Procedure for RRI
-- What is the reflect, act, and justify process?
-	- Explain each of the three stages.
-- How is it different to the AREA framework?
+%%## Learning Objective
+The objective of this module is to understand how bias affects exploratory data analysis, and what ought to be done to minimise the effect of these biases on downstream stages. %%
 
-### Activity 2: 
+### Exploring Data
+This section will look at the following stages of exploratory data analysis:
+1. Importing Data
+2. Describing the Data
+3. Analysing the Data
+4. Querying the Data
+5. Visualising the Data
+
+#### Importing Data
+We will be using the Pandas library in Python for this module.
+
+```
+# Import the `pandas` library as `pd`
+import pandas as pd
+
+# Load the data into a dataframe with `read_csv()`, treating the first row as data rather than as headersimport 
+df = pd.read_csv("...", header=None)
+
+# Print out `digits`
+print(df)
+```
 
 * * *
 category: #🎓

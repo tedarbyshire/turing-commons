@@ -1,6 +1,5 @@
 ---
 title: 'Conclusion—Looking Forward'
-section: 7
 guide: 'Responsible Research and Innovation'
 creation date: 2021-09-28 09:48
 ---

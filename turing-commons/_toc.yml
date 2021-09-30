@@ -4,15 +4,18 @@ parts:
   - caption: AI Ethics and Governance
     chapters:
     - file: aeg/intro/intro
-    - file: aeg/chapter1/intro
-    - file: aeg/chapter2/intro
   - caption: Responsible Research and Innovation
     chapters:
-    - file: rri/intro/intro
-    - file: rri/chapter1/intro
-    - file: rri/chapter2/intro
+    - file: rri/index
+    - file: rri/intro/index
+    - file: rri/chapter1/index
+    - file: rri/chapter2/index
+    - file: rri/chapter3/index
+    - file: rri/chapter4/index
+    - file: rri/chapter5/index
+    - file: rri/conclusion/index
+    - file: rri/further-resources
+    - file: rri/bibliography
   - caption: Public Communication of Science
     chapters:
     - file: pcs/intro/intro
-    - file: pcs/chapter1/intro
-    - file: pcs/chapter2/intro

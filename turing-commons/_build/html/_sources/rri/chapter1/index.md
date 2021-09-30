@@ -1,6 +1,5 @@
 ---
 title: 'What is Responsible Research and Innovation'
-section: 2
 guide: 'Responsible Research and Innovation'
 ---
 
