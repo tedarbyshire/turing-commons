@@ -1,4 +1,4 @@
-# Welcome
+# About this Guidebook
 
 Welcome to the guidebook on Responsible Research and Innovation (RRI) 👋
 

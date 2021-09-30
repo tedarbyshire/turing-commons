@@ -1,7 +1,7 @@
-Welcome to your Jupyter Book
-============================
+# Welcome to the Turing Commons
 
-This is a small sample book to give you a feel for how book content is
-structured.
+This site is a work-in-progress that will eventually include guidebooks for the following three courses:
 
-Check out the content pages bundled with this sample book to get started.
+- [AI Ethics & Governance (AEG)](aeg/index.md)
+- [Responsible Research and Innovation (RRI)](rri/index.md)
+- [Public Communication of Science (PCS)](pcs/index.md)

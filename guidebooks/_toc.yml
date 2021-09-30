@@ -6,6 +6,12 @@ parts:
     - file: rri/index
     - file: rri/intro/index
     - file: rri/chapter1/index
+      sections:
+      - file: rri/chapter1/responsibility
+      - file: rri/chapter1/history
+      - file: rri/chapter1/activity1
+      - file: rri/chapter1/sts
+      - file: rri/chapter1/activity2
     - file: rri/chapter2/index
     - file: rri/chapter3/index
     - file: rri/chapter4/index
@@ -13,10 +19,10 @@ parts:
     - file: rri/conclusion/index
   - caption: Public Communication of Science
     chapters:
-    - file: pcs/intro/intro
+    - file: pcs/index
   - caption: AI Ethics and Governance
     chapters:
-    - file: aeg/intro/intro
+    - file: aeg/index
   - caption: References
     chapters:
       - file: bibliography.md
