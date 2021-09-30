@@ -2,7 +2,7 @@
 
 Anticipating the consequences of scientific research and technological innovation can be an intricate and formidable task—one that is made all the more challenging when the target domain is a complex system such as the human brain or society.
 
-In the early 1970s, a group of scientists working at Eli Lilly—a pharmaceutical company—were engaged in research that would go on to have profound effects on both of these complex systems. Primarily, the group were exploring the role of serotonin in depression, and their research led to the discovery of a drug known as *fluoxetine hydrochloride*, which affects the reuptake of serotonin in *the brain* {cite}`wong2005`. But the introduction of the drug also had a profound effect on *society* as it rapidly grew in popularity under its more common name, Prozac.
+In the early 1970s, a group of scientists working at Eli Lilly—a pharmaceutical company—were engaged in research that would go on to have profound effects on both of these complex systems. Primarily, the group were exploring the role of serotonin in depression, and their research led to the discovery of a drug known as *fluoxetine hydrochloride*, which affects the reuptake of serotonin in *the brain* {cite:p}`wong2005`. But the introduction of the drug also had a profound effect on *society* as it rapidly grew in popularity under its more common name, Prozac.
 
 Prozac is a technology in the broad sense of the term, but it is not the sort of technology that this course guide will typically focus on. However, in spite of this, the discovery and development of Prozac is an interesting case to begin this guide with.
 

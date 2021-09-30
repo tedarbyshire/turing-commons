@@ -32,3 +32,8 @@ sphinx:
   config:
     language: en
     html_show_copyright: false
+
+# In _config.yml
+sphinx:
+  config:
+    bibtex_reference_style: author_year
