@@ -11,7 +11,6 @@ parts:
     - file: rri/chapter4/index
     - file: rri/chapter5/index
     - file: rri/conclusion/index
-    # - file: rri/further-resources
   - caption: Public Communication of Science
     chapters:
     - file: pcs/intro/intro
@@ -19,5 +18,5 @@ parts:
     chapters:
     - file: aeg/intro/intro
   - caption: References
-      chapters:
+    chapters:
       - file: bibliography.md
