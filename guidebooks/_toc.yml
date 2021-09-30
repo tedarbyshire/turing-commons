@@ -12,7 +12,7 @@ parts:
     - file: rri/chapter5/index
     - file: rri/conclusion/index
     # - file: rri/further-resources
-    # - file: rri/bibliography
+    - file: rri/bibliography
   - caption: Public Communication of Science
     chapters:
     - file: pcs/intro/intro

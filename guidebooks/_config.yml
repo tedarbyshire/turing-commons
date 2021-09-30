@@ -2,8 +2,8 @@
 # Learn more at https://jupyterbook.org/customize/config.html
 
 title: Turing Commons
-author: Ethics Team, Alan Turing Institute
-logo: logo.png
+author: Dr Christopher Burr
+# logo: 
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
@@ -26,3 +26,9 @@ repository:
 html:
   use_issues_button: true
   use_repository_button: true
+
+#accessibility
+sphinx:
+  config:
+    language: en
+    html_show_copyright: false
