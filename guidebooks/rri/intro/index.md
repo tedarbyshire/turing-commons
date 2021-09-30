@@ -2,7 +2,7 @@
 
 ```{admonition} Summary
 :class: tip
-This section defines the term 'responsible', as it occurs in 'responsible research and innovation', and also explores a short history of RRI with reference to notable events and case studies that help illustrate central themes and issues. This helps to set the foundation for the remainder of the course, which will rely on many of the core concepts that are introduced. However, the section also plays a motivating role by emphasising the interconnected nature of science, technology, and society.
+This introduction serves to motivate the significance of some of the topics that will be explored throughout this guidebook. Although some topics and concepts are introduced, they are not explored fully in this introduction. 
 ```
 
 Anticipating the consequences of scientific research and technological innovation can be an intricate and formidable task—one that is made all the more challenging when the target domain is a complex system such as the human brain or society.

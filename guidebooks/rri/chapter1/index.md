@@ -1,6 +1,6 @@
 # What is Responsible Research and Innovation?
 
-```{image} ../images/illustrations/data-science.png
+```{image} /images/illustrations/data-science.png
 :alt: Illustration of data scientists
 :align: center
 ```

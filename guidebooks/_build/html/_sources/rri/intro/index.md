@@ -1,5 +1,10 @@
 # Introduction
 
+```{admonition} Summary
+:class: tip
+This introduction serves to motivate the significance of some of the topics that will be explored throughout this guidebook. Although some topics and concepts are introduced, they are not explored fully in this introduction. 
+```
+
 Anticipating the consequences of scientific research and technological innovation can be an intricate and formidable task—one that is made all the more challenging when the target domain is a complex system such as the human brain or society.
 
 In the early 1970s, a group of scientists working at Eli Lilly—a pharmaceutical company—were engaged in research that would go on to have profound effects on both of these complex systems. Primarily, the group were exploring the role of serotonin in depression, and their research led to the discovery of a drug known as *fluoxetine hydrochloride*, which affects the reuptake of serotonin in *the brain* {cite:p}`wong2005`. But the introduction of the drug also had a profound effect on *society* as it rapidly grew in popularity under its more common name, Prozac.
