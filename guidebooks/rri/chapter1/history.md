@@ -8,7 +8,7 @@ In almost all cases, two significant and motivating drivers behind these policie
 
 ## Case Study 1: Tuskegee Syphilis Experiment
 
-```{image} /images/photos/tuskegee.jpeg
+```{image} /images/photos/tuskegee.jpg
 :alt: Doctor drawing blood from a patient as part of the Tuskegee Syphilis Study. (Reprinted from Wikimedia Commons: https://commons.wikimedia.org/wiki/File:Tuskegee-syphilis-study_doctor-injecting-subject.jpg)
 :align: center
 ```
