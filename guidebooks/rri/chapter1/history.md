@@ -4,13 +4,17 @@ The term 'responsible research and innovation' is most strongly associated with 
 
 Since then, other national funding bodies have also shown a commitment to RRI. For example, UKRI's Engineering and Physical Sciences Research Council have developed the AREA framework, which sets out four principles for RRI: Anticipate, Reflect, Engage, and Act (AREA).
 
-In almost all cases, two significant and motivating drivers behind these policies are (a) an awareness of the impact that science and technology can have on society, and (b) an appreciation of the need to include the public in a dialogue about how science and technology should shape society. The following three case studies also help to provide illustrations of these points.
+In almost all cases, two significant and motivating drivers behind these policies are (a) an awareness of the impact that science and technology can have on society, and (b) an appreciation of the need to include the public in a dialogue about how science and technology should shape society. The following three case studies help to provide illustrations of these points, while also serving as useful examples that will be returned to in subsequent discussions.
 
 ## Case Study 1: Tuskegee Syphilis Experiment
 
-```{image} /images/photos/tuskegee.jpg
-:alt: Doctor drawing blood from a patient as part of the Tuskegee Syphilis Study. (Reprinted from Wikimedia Commons: https://commons.wikimedia.org/wiki/File:Tuskegee-syphilis-study_doctor-injecting-subject.jpg)
-:align: center
+```{figure} /images/photos/tuskegee.jpg
+---
+align: center
+name: tuskegee-study
+alt: Doctor drawing blood from a patient as part of the Tuskegee Syphilis Study
+---
+Doctor drawing blood from a patient as part of the Tuskegee Syphilis Study (Reprinted from Wikimedia Commons—https://commons.wikimedia.org/wiki/File:Tuskegee-syphilis-study_doctor-injecting-subject.jpg).
 ```
 
 Starting in 1932, the U.S. Public Health Service ran a study of “untreated syphilis in the male Negro”, which affected almost 400 African-American men with the disease {cite:p}`reverby2001`. As we know today, Syphilis can cause many symptoms including sores, blindness, hair loss, stroke, heart failure, and even death if left untreated. However, aside from the risk that these men were exposed to, a particularly abusive aspect of the study was that it was carried out on impoverished individuals, affected by the Great Depression, all while telling them they were being “treated” for their “bad blood” {cite:p}`reverby2001`.
@@ -37,9 +41,46 @@ Aside from the historical importance of this study, its inclusion here is also t
 
 ## Case Study 2: Human Genome Project
 
-To draft
+```{figure} /images/photos/genome.jpeg
+---
+align: center
+name: genome
+alt: DNA Double Helix
+---
+DNA Double Helix
+```
+
+The Human Genome Project was proposed in 1986 following a project feasibility workshop in Santa Fe, New Mexico. At the time, the US Department of Energy's Health and Environmental Research Advisory Committee urged the department
+
+> to commit to a large, long-term, multidisciplinary, technological undertaking to order and sequence the human genome {cite:p}`barnhart1989`
+
+Nearly 20 years and 2.7 billion dollars later, on April 14, 2003, the project was formally announced as complete. The project had been an international effort to identify all of our ~20,500 genes and determine the sequences of nearly 3 billion chemical base pairs make up our DNA. The scale of the project and the magnitude of the technological accomplishments should be praised in their own rights. But even more impressive is the continuing impact that this project has had on research projects, collaborative practices, and technological advancements {cite:p}`mcguire2020`.
+
+Even from the very beginning of the project, it was clear that expanding our knowledge of genetics and genomics would have profound impacts on society—not all of which would be positive. For example, converns were voiced about whether the knowledge could be used to further discriminate against certain individuals or sub-groups of the human population, raising the spectre of past injustices caused by the practice of eugenics [^gattaca].Therefore, in 1990, the National Human Genome Research Institute founded a program to specifically oversee and study the project's ethical, legal, and social implications, known as the ELSI program {cite:p}`nhgri2021`. 
+
+[^gattaca]: This concern became the centrepiece for the 1997 dystopian sci-fi, Gattaca, which takes its title from the four letters of the nucleobases of DNA.
+
+Writing several years after the completion of the project, the manager of the ELSI program, Michael S. Yesley, offered some remarks that are worth quoting in full:
+
+> The qualifications to do bioethics analysis are straightforward: familiarity with, and ability to analyze, the relevant *facts and values*. No discipline or profession has a monopoly on these skills or should dominate the process. Of the major disciplines engaged in bioethics, philosophy is useful in raising questions and providing rationale, but the actual resolution of bioethics issues – deciding which course of action to take or recommend – generally relies most heavily on factual analysis and seldom on philosophical insight alone. Law sometimes resolves bioethics issues but in most cases establishes only what is *socially permissible*, not what is most desirable, or merely imposes procedural requirements rather than a substantive result. The ethics traditions of medicine and science pervade bioethics and provide much guidance, but these professional perspectives have built-in conflicts that practitioners may not recognize when *balancing the rights and interests of others*. Social science is an obvious source of empirical information about both facts and values, but just as other fields play limited roles in bioethics, social science must be integrated in the broad policymaking process. To be useful in this process, social science must view bioethics policymaking as the goal, not the object, of its study. ({cite:t}`yesley2008`, emphasis mine)
+
+Three things stand out about this quotation. First, Yesley is acutely aware of the complex relationship between both facts and values, but also between competing value perspectives, when analysing and determining what is desirable from scientific research or technological innovation. Second, as a lawyer, he also has an appreciation of the normative limitations that can be derived from legal precedents, acknowledging that the law tends to establish that which is socially permissible but not what is "most desirable". To paraphrase, the law can help create guardrails, but is often unable on its own to set the direction of travel. And, finally, Yesley recognises that reflection on ethical, legal, and social implications counts for little without an ability to influence and shape policy.
+
+This final point is important, as Yesley continues by acknowledging how the model employed by ELSI reflected little consideration of whether it ''would be useful or appropriate to develop public policy that could potentially question the direction of the [Human Genome Project's] scientific research'', and also hat the project's scientist-administrators, ''established ELSI simply by earmarking funds from their science budget, and they controlled the content of ELSI by determining the boundaries of the funded research. No one would represent the public interest in the administration of ELSI, which would lack at its core an independent, representative entity to analyze the issues, determine research needs, analyze research results and develop well-supported policy recommendations''.
+
+At first glance, therefore, the 5% of the annual budget of the Human Genome Project that was earmarked for ELSI research seems impressive, and certainly unprecedented in terms of ethical funding. But Yesley's comments should give us pause to ask how the language of ethics—and indeed, responsible research and innovation—can be co-opted by commercial, scientific, and political interests, rather than being used to cast a critical perspective on the most pressing questions that face society. This is all the more important when one recognises how many of the questions raised by the Human Genome Project are also brought up in the context of data ethics and AI ethics (e.g., possibility of discriminatory outcomes), and how the same concern raised by Yesley has also returned in the form of concerns about "ethics-washing" by those with vested interests in the advancement of science and technology. As we will see in the next section, it is important to ask what social goal is being served by research and innovation, and whether such a goal is desirable as well as permissible.
 
 ## Case Study 3: Cambridge Analytica
+
+
+```{figure} /images/photos/cambridge-analytica.png
+---
+align: center
+name: cambridge-analytica
+alt: Cambridge Analytica Logo
+---
+Cambridge Analytica Logo
+```
 
 In 2013, three researchers at the University of Cambridge and Microsoft Research published a paper in the Proceedings of the National Academy of Sciences. The paper was titled, 'Private traits and attributes are predictable from digital records of human behavior', and it provided details of an application (MyPersonality) that allowed Facebook users to participate in a range of psychometric tests, including a personality test, an intelligence test, and a Satisfaction with Life survey.
 
