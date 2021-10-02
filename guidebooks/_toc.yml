@@ -14,6 +14,8 @@ parts:
       - file: rri/chapter1/activity2
     - file: rri/chapter2/index
     - file: rri/chapter3/index
+      sections:
+      - file: rri/chapter3/data-analysis
     - file: rri/chapter4/index
     - file: rri/chapter5/index
     - file: rri/conclusion/index
