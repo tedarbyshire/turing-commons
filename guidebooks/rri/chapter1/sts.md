@@ -46,9 +46,13 @@ The necessity of such assessments will be familiar to those who work in commerci
 
 It is not necessary to present an overview of all the different impact assessments that could be useful within the context of responsible research and innovation. However, the following resources are available for those who wish to explore some of them in more detail.
 
-Instead, we will focus on two interwoven concepts that are central to almost all risk or impact assessments: an estimation of the project's knowledge gaps, and identification of impact stakeholders.
+Instead, we will focus on two interwoven concepts that are central to almost all risk or impact assessments: identification of impacted stakeholders or users, and evaluation of the project's knowledge gaps (or, epistemic limitations).
 
 ## Inclusive and Deliberative Participation
+
+:::{seealso} Why should stakeholders be included in a research or innovation project? :::
+
+
 
 <!-- - The value of stakeholder engagement
   - Social value of ensuring that research and innovation are responsive to and supportive of social goals
@@ -58,7 +62,6 @@ Instead, we will focus on two interwoven concepts that are central to almost all
 - The demands of responsibility require us to reflect on the systemic influences on the research and innovation lifecycle, and the wider impacts on society.
 - RRI is about more than the avoidance of gross misconduct (e.g., plagiarism, fabrication/falsification of results, developing obviously dangerous technologies). Irresponsible research can often occur in the absence of any individual's malicious attitudes, but rather from a failure to consider how institutional practices influence the scientific process.
 - Ulrich Beck, a German sociologist, calls this phenomenon “**organized irresponsibility**". -->
-
 
 ## Transparent and Accessible Project Documentation
 
