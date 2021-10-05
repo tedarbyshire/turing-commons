@@ -6,7 +6,7 @@ Since then, other national funding bodies have also shown a commitment to RRI. F
 
 In almost all cases, two significant and motivating drivers behind these policies are (a) an awareness of the impact that science and technology can have on society, and (b) an appreciation of the need to include the public in a dialogue about how science and technology should shape society. The following three case studies help to provide illustrations of these points, while also serving as useful examples that will be returned to in subsequent discussions.
 
-## Case Study 1: Tuskegee Syphilis Experiment
+## Case Study 1: Tuskegee Syphilis Study
 
 ```{figure} /images/photos/tuskegee.jpg
 ---
