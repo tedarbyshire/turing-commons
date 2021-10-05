@@ -46,24 +46,38 @@ The necessity of such assessments will be familiar to those who work in commerci
 
 It is not necessary to present an overview of all the different impact assessments that could be useful within the context of responsible research and innovation. However, the following resources are available for those who wish to explore some of them in more detail.
 
-Instead, we will focus on two interwoven concepts that are central to almost all risk or impact assessments: identification of impacted stakeholders or users, and evaluation of the project's knowledge gaps (or, epistemic limitations).
+Instead, we will focus on a process that is central to almost all forms of risk or impact assessments: stakeholder participation.
 
-## Inclusive and Deliberative Participation
+## Inclusive and Deliberative Stakeholder Participation
 
 :::{seealso} Why should stakeholders be included in a research or innovation project? :::
 
+There are *at least* two answers that can be given to this question?
 
+1. To identify and meet stakeholder or user needs
+2. To ensure that possible harms that could arise are identified and addressed
 
-<!-- - The value of stakeholder engagement
-  - Social value of ensuring that research and innovation are responsive to and supportive of social goals
-  - Ethical value of mitigating bias or risk of harm that arises from limited perspectives
-  - Instrumental value for effective research and innovation
-- RRI relies on both the organic and creative nature of the human mind as much as it does the meticulous standards of the scientific method.
-- The demands of responsibility require us to reflect on the systemic influences on the research and innovation lifecycle, and the wider impacts on society.
-- RRI is about more than the avoidance of gross misconduct (e.g., plagiarism, fabrication/falsification of results, developing obviously dangerous technologies). Irresponsible research can often occur in the absence of any individual's malicious attitudes, but rather from a failure to consider how institutional practices influence the scientific process.
-- Ulrich Beck, a German sociologist, calls this phenomenon “**organized irresponsibility**". -->
+The first of these answers is reminiscent of a typical stage in product design. For example, a design committee for a new product may reach out to possible consumers/users, to identify what they think about a range of prototypes or to gather feedback about a possible feature. Such processes have what we can refer to as 'instrumental value'. That is, the purpose of including stakeholders or users is directed towards the benefit it brings to the project. Their participation serves an instrumental role in obtaining a goal, such as developing a product that is more likely to sell.
 
-## Transparent and Accessible Project Documentation
+A similar claim could also be made for the second answer. However, in this instance, the focus is on mitigating risks or harms, as opposed to realising benefits. Here, the stakeholders or users still play an instrumental role in securing a goal of the project team (e.g., to ensure no harm is caused by their research or project).
 
-One important component of the CEO's failure was her priority of a specific goal (i.e., profit) over potential competing goals (e.g., environmental sustainability).
+However, stakeholder engagement has a further *intrinsic* value, which is more clearly exposed when science and technology are properly situated in a social context. Framed as a third answer that appropriates the language of the above two definitions:
 
+3. Stakeholder participation is a necessary component of responsible design, development, and deployment. It recognises the need for stakeholders and innovators to become mutually responsive to each other in an inclusive and deliberative process that aims at realising sustainable research and innovation practices that promote the social good.
+
+This answer helps to expose a limitation of the instrumental perspective. That is, stakeholder engagement is about more than the identification of potential risks and benefits; just as RRI is about more than the avoidance of gross misconduct (e.g., plagiarism, fabrication/falsification of results, developing obviously dangerous technologies). We will, of course, look at many of the practical mechanisms by which harms can be minimised (e.g., bias mitigation). And, many of these will require the involvement of myriad stakeholders. However, it is important at the outset to recognise the right that all members of society have to participate in science and innovation, especially insofar as it relates to how science pursues goals that shape and alter social norms and expectations. And, to be clear, it is a *right*—one which is captured in Article 27 of the Universal Declaration of Human Rights:
+
+> Everyone has the right freely to participate in the cultural life of the community, to enjoy the arts and to share in scientific advancement and its benefits.
+
+RRI relies on both the organic and creative nature of the human mind as much as it does the meticulous standards of the scientific method. Involving diverse stakeholders can prevent a sort of *cognitive staleness* or group-think arising within teams when it comes to problem solving. But more importantly, participation in research and innovation can improve trust, buy-in, and promote scientific understanding and literacy. This goes beyond a narrow instrumental value to a broader social and ethical value. It is, arguably, part of the motivation behind famous ladder of public engagement {cite:p}`arnstein1969`.
+
+```{figure} images/graphics/ladder.jpeg
+---
+align: center
+name: ladder-of-engagement
+alt: Sherry Arnstein's Ladder of Engagement
+---
+Sherry Arnstein's Ladder of Engagement (Reprinted from Wikimedia Commons—https://commons.wikimedia.org/wiki/File:Ladder_of_citizen_participation,_Sherry_Arnstein.tiff).
+```
+
+Responsible participation goes beyond informing or consultation (i.e., monological forms of engagement). It aims at dialogical engagement that is representative of meaningful partnerships and, hopefully, sustainable forms of devolution of power where members of society are equipped with the capabilities necessary to have legitimate control over the outcomes of scientific research or technological innovation.
