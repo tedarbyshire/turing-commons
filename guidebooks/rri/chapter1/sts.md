@@ -28,19 +28,29 @@ Polanyi may be right to suggest that the societal impacts or consequences of som
 
 There is no question about whether scientists, researchers, and developers have *some* responsibility for the applications of their research. This must be true for them to be *praised* for the positive outcomes, which they often are, and also to be held accountable and *blamed* for the negative consequences when they occur. The question is, rather, when they should receive praise and blame. While we will not try to answer this question, we will look at some of the practical ways that scientists, researchers, and developers can take responsibility for the social impacts of their research, in order to maximise the potential opportunities and minimise the possible harms associated with their work.
 
-## Transparent and Accessible Project Documentation
-
-One important component of the CEO's failure was her priority of a specific goal (i.e., profit) over potential competing goals (e.g., environmental sustainability).
-
 ## Risk and Impact Assessments
-
-## Inclusive and Deliberative Stakeholder Participation
 
 At the [start of this chapter](responsibility.md) we looked at a definition of RRI from {cite:p}`vonschomberg2011`. Let's look at another one, this time from the European Commission:
 
-> Responsible research and innovation is an approach that anticipates and assesses potential implications and societal expectations with regard to research and innovation, with the aim to foster the design of inclusive and sustainable research and innovation. {cite:p}`europeancommission2014`
+```{tabbed} {cite:p}`europeancommission2014`
+> Responsible research and innovation is an approach that anticipates and assesses potential implications and societal expectations with regard to research and innovation, with the aim to foster the design of inclusive and sustainable research and innovation. 
+```
 
-There are many similarities between the two definitions.
+```{tabbed} {cite:p}`vonschomberg2011`
+> “Responsible Research and Innovation is a transparent, interactive process by which societal actors and innovators become mutually responsive to each other with a view on the (ethical) acceptability, sustainability and societal desirability of the innovation process and its marketable products (in order to allow a proper embedding of scientific and technological advances in our society).” 
+```
+
+There are many similarities between the two definitions, but they also emphasise different aspects through their choice of terminology. For instance, the definition from the European Commission refers to anticipation and assessment, Likely to emphasise the need for formal risk or impact assessment. There are many types of risk and impact assessments that can be carried out, such as safety and risk assessments, equality impact assessments, human rights impact assessments, and, of course, data protection impact assessments.
+
+The necessity of such assessments will be familiar to those who work in commercial or public sector organisations, but less so to those in academic institutions. Typically they are carried out for compliance reasons. However the structured nature of such assessments can also support more ethical forms of reflection and anticipation.
+
+It is not necessary to present an overview of all the different impact assessments that could be useful within the context of responsible research and innovation. However, the following resources are available for those who wish to explore some of them in more detail.
+
+Instead, we will focus on two interwoven concepts that are central to almost all risk or impact assessments: an estimation of the project's knowledge gaps, and identification of impact stakeholders. 
+
+## Inclusive and Deliberative Participation
+
+
 
 <!-- - The value of stakeholder engagement
   - Social value of ensuring that research and innovation are responsive to and supportive of social goals
@@ -50,3 +60,9 @@ There are many similarities between the two definitions.
 - The demands of responsibility require us to reflect on the systemic influences on the research and innovation lifecycle, and the wider impacts on society.
 - RRI is about more than the avoidance of gross misconduct (e.g., plagiarism, fabrication/falsification of results, developing obviously dangerous technologies). Irresponsible research can often occur in the absence of any individual's malicious attitudes, but rather from a failure to consider how institutional practices influence the scientific process.
 - Ulrich Beck, a German sociologist, calls this phenomenon “**organized irresponsibility**". -->
+
+
+## Transparent and Accessible Project Documentation
+
+One important component of the CEO's failure was her priority of a specific goal (i.e., profit) over potential competing goals (e.g., environmental sustainability).
+
