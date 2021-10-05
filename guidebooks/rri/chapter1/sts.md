@@ -32,12 +32,12 @@ There is no question about whether scientists, researchers, and developers have 
 
 At the [start of this chapter](responsibility.md) we looked at a definition of RRI from {cite:p}`vonschomberg2011`. Let's look at another one, this time from the European Commission:
 
-```{tabbed} {cite:p}`europeancommission2014`
-> Responsible research and innovation is an approach that anticipates and assesses potential implications and societal expectations with regard to research and innovation, with the aim to foster the design of inclusive and sustainable research and innovation. 
+```{tabbed} European Commission
+> Responsible research and innovation is an approach that anticipates and assesses potential implications and societal expectations with regard to research and innovation, with the aim to foster the design of inclusive and sustainable research and innovation. {cite:p}`europeancommission2014`
 ```
 
-```{tabbed} {cite:p}`vonschomberg2011`
-> “Responsible Research and Innovation is a transparent, interactive process by which societal actors and innovators become mutually responsive to each other with a view on the (ethical) acceptability, sustainability and societal desirability of the innovation process and its marketable products (in order to allow a proper embedding of scientific and technological advances in our society).” 
+```{tabbed} René von Schomberg
+> “Responsible Research and Innovation is a transparent, interactive process by which societal actors and innovators become mutually responsive to each other with a view on the (ethical) acceptability, sustainability and societal desirability of the innovation process and its marketable products (in order to allow a proper embedding of scientific and technological advances in our society).” {cite:p}`vonschomberg2011`
 ```
 
 There are many similarities between the two definitions, but they also emphasise different aspects through their choice of terminology. For instance, the definition from the European Commission refers to anticipation and assessment, Likely to emphasise the need for formal risk or impact assessment. There are many types of risk and impact assessments that can be carried out, such as safety and risk assessments, equality impact assessments, human rights impact assessments, and, of course, data protection impact assessments.
@@ -46,11 +46,9 @@ The necessity of such assessments will be familiar to those who work in commerci
 
 It is not necessary to present an overview of all the different impact assessments that could be useful within the context of responsible research and innovation. However, the following resources are available for those who wish to explore some of them in more detail.
 
-Instead, we will focus on two interwoven concepts that are central to almost all risk or impact assessments: an estimation of the project's knowledge gaps, and identification of impact stakeholders. 
+Instead, we will focus on two interwoven concepts that are central to almost all risk or impact assessments: an estimation of the project's knowledge gaps, and identification of impact stakeholders.
 
 ## Inclusive and Deliberative Participation
-
-
 
 <!-- - The value of stakeholder engagement
   - Social value of ensuring that research and innovation are responsive to and supportive of social goals
