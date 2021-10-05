@@ -2,9 +2,7 @@
 
 In April 1945, Michael Polanyi—a chemist and sociologist of science—and Bertrand Russell—a philosopher and logician—were speaking on a radio programme about the practical implications of the famous formula, $E = mc^2$.
 
-They were asked whether the formula had any practical applications for society, but neither could provide an answer.
-
-Three months later the Manhattan project dropped the first of their three atomic bombs!
+They were asked whether the formula had any practical applications for society, but neither could provide an answer. Three months later the Manhattan project dropped the first of their three atomic bombs!
 
 ```{image} /images/graphics/bomb.jpeg
 :alt: A 3d rendering of an atomic bomb
@@ -17,7 +15,10 @@ However, the definitions we have already encountered suggest that science, techn
 
 Fortunately, the implications of Polanyi's example are narrow in scope. The following thought experiment will help us illustrate how.
 
+```{admonition} The Careless CEO
+:class: tip
 Imagine a CEO of a large manufacturing company is approached by one of her scientific advisors and informed that a project that she has proposed will require an environmental impact assessment before it can proceed. The CEO dismisses this and orders that the project continue without the assessment. Furthermore, she callously proclaims that she does not care what the environmental consequences of the project may be. All she is interested in is making as much profit as possible. As it turns out, the project ends up causing vast amounts of pollution that cause irreparable harm to the nearby flora and fauna, and also affects the health of a community living downstream of the manufacturing plant. The CEO is, rightfully, held accountable, both morally and legally, and is prosecuted when her dismissal of the impact assessment is uncovered.
+```
 
 Few would take issue with the consequences for the CEO. She had a responsibility to ensure her company's processes operated in a safe and ethical manner, but chose to wilfully neglect this responsibility in spite of receiving advice from her staff.
 
@@ -55,7 +56,10 @@ Instead, we will focus on a process that is central to almost all forms of risk 
 
 ## Inclusive and Deliberative Stakeholder Participation
 
-:::{seealso} Why should stakeholders be included in a research or innovation project? :::
+```{admonition} Question
+:class: important
+Why should stakeholders be included in a research or innovation project?
+```
 
 There are *at least* two answers that can be given to this question?
 
