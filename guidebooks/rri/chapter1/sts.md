@@ -1,6 +1,6 @@
 # Science , Technology, and Society
 
-In April 1945, Michael Polanyi—a chemist and sociologist of science—and Bertrand Russell—a philosopher and logician—were speaking on a radio programme about the practical implications of the famous formula, E = mc^2.
+In April 1945, Michael Polanyi—a chemist and sociologist of science—and Bertrand Russell—a philosopher and logician—were speaking on a radio programme about the practical implications of the famous formula, $E = mc^2$.
 
 They were asked whether the formula had any practical applications for society, but neither could provide an answer.
 
