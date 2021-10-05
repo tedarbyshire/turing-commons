@@ -30,7 +30,7 @@ There is no question about whether scientists, researchers, and developers have 
 
 ## Transparent and Accessible Project Documentation
 
-One important component of the CEO's failure, was her priority of a specific goal (i.e., profit) over potential competing goals (e.g., environmental sustainability).
+One important component of the CEO's failure was her priority of a specific goal (i.e., profit) over potential competing goals (e.g., environmental sustainability).
 
 ## Risk and Impact Assessments
 
