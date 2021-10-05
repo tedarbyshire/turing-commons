@@ -11,7 +11,7 @@ Three months later the Manhattan project dropped the first of their three atomic
 :align: center
 ```
 
-{cite:p}`bridgstock1998` draws attention to this story, because it was used originally by Polanyi, in his essay, 'The Republic of Science', to suggest that the practical and societal outcomes of pure scientific research were often unforeseen and unintended. The problem with this suggestion is that it implies that scientists cannot be held accountable or exercise any real responsibility for the consequences of their research—a troubling implication if true.
+{cite:p}`bridgstock1998` draws attention to this story, because it was used originally by Polanyi, in his essay, 'The Republic of Science' {cite:p}`polanyi1962`, to suggest that the practical and societal outcomes of pure scientific research were often unforeseen and unintended. The problem with this suggestion is that it implies that scientists cannot be held accountable or exercise any real responsibility for the consequences of their research—a troubling implication if true.
 
 However, the definitions we have already encountered suggest that science, technology, and society are closely interconnected, and that RRI requires reflection upon the myriad ways that science and technology can impact and shape social norms and practices. Responsibility arises from this relationship, but if the impacts or consequences are unforeseeable and often unanticipated, then the principles of RRI may be too demanding.
 
