@@ -39,11 +39,11 @@ There is no question about whether scientists, researchers, and developers have 
 At the [start of this chapter](responsibility.md) we looked at a definition of RRI from {cite:p}`vonschomberg2011`. Let's look at another one, this time from the European Commission:
 
 ```{tabbed} European Commission
-> Responsible research and innovation is an approach that anticipates and assesses potential implications and societal expectations with regard to research and innovation, with the aim to foster the design of inclusive and sustainable research and innovation. {cite:p}`europeancommission2014`
+Responsible research and innovation is an approach that anticipates and assesses potential implications and societal expectations with regard to research and innovation, with the aim to foster the design of inclusive and sustainable research and innovation. {cite:p}`europeancommission2014`
 ```
 
 ```{tabbed} René von Schomberg
-> “Responsible Research and Innovation is a transparent, interactive process by which societal actors and innovators become mutually responsive to each other with a view on the (ethical) acceptability, sustainability and societal desirability of the innovation process and its marketable products (in order to allow a proper embedding of scientific and technological advances in our society).” {cite:p}`vonschomberg2011`
+Responsible Research and Innovation is a transparent, interactive process by which societal actors and innovators become mutually responsive to each other with a view on the (ethical) acceptability, sustainability and societal desirability of the innovation process and its marketable products (in order to allow a proper embedding of scientific and technological advances in our society). {cite:p}`vonschomberg2011`
 ```
 
 There are many similarities between the two definitions, but they also emphasise different aspects through their choice of terminology. For instance, the definition from the European Commission refers to anticipation and assessment, Likely to emphasise the need for formal risk or impact assessment. There are many types of risk and impact assessments that can be carried out, such as safety and risk assessments, equality impact assessments, human rights impact assessments, and, of course, data protection impact assessments.
@@ -72,7 +72,7 @@ A similar claim could also be made for the second answer. However, in this insta
 
 However, stakeholder engagement has a further *intrinsic* value, which is more clearly exposed when science and technology are properly situated in a social context. Framed as a third answer that appropriates the language of the above two definitions:
 
-3. Stakeholder participation is a necessary component of responsible design, development, and deployment. It recognises the need for stakeholders and innovators to become mutually responsive to each other in an inclusive and deliberative process that aims at realising sustainable research and innovation practices that promote the social good.
+> Stakeholder participation is a necessary component of responsible design, development, and deployment. It recognises the need for stakeholders and innovators to become mutually responsive to each other in an inclusive and deliberative process that aims at realising sustainable research and innovation practices that promote the social good.
 
 This answer helps to expose a limitation of the instrumental perspective. That is, stakeholder engagement is about more than the identification of potential risks and benefits; just as RRI is about more than the avoidance of gross misconduct (e.g., plagiarism, fabrication/falsification of results, developing obviously dangerous technologies). We will, of course, look at many of the practical mechanisms by which harms can be minimised (e.g., bias mitigation). And, many of these will require the involvement of myriad stakeholders. However, it is important at the outset to recognise the right that all members of society have to participate in science and innovation, especially insofar as it relates to how science pursues goals that shape and alter social norms and expectations. And, to be clear, it is a *right*—one which is captured in Article 27 of the Universal Declaration of Human Rights:
 
@@ -80,7 +80,7 @@ This answer helps to expose a limitation of the instrumental perspective. That i
 
 RRI relies on both the organic and creative nature of the human mind as much as it does the meticulous standards of the scientific method. Involving diverse stakeholders can prevent a sort of *cognitive staleness* or group-think arising within teams when it comes to problem solving. But more importantly, participation in research and innovation can improve trust, buy-in, and promote scientific understanding and literacy. This goes beyond a narrow instrumental value to a broader social and ethical value. It is, arguably, part of the motivation behind famous ladder of public engagement {cite:p}`arnstein1969`.
 
-```{figure} images/graphics/ladder.jpeg
+```{figure} /images/graphics/ladder.jpeg
 ---
 align: center
 name: ladder-of-engagement
