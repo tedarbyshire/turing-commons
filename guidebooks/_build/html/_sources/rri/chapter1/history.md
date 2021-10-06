@@ -6,7 +6,7 @@ Since then, other national funding bodies have also shown a commitment to RRI. F
 
 In almost all cases, two significant and motivating drivers behind these policies are (a) an awareness of the impact that science and technology can have on society, and (b) an appreciation of the need to include the public in a dialogue about how science and technology should shape society. The following three case studies help to provide illustrations of these points, while also serving as useful examples that will be returned to in subsequent discussions.
 
-## Case Study 1: Tuskegee Syphilis Experiment
+## Case Study 1: Tuskegee Syphilis Study
 
 ```{figure} /images/photos/tuskegee.jpg
 ---
@@ -56,7 +56,7 @@ The Human Genome Project was proposed in 1986 following a project feasibility wo
 
 Nearly 20 years and 2.7 billion dollars later, on April 14, 2003, the project was formally announced as complete. The project had been an international effort to identify all of our ~20,500 genes and determine the sequences of nearly 3 billion chemical base pairs make up our DNA. The scale of the project and the magnitude of the technological accomplishments should be praised in their own rights. But even more impressive is the continuing impact that this project has had on research projects, collaborative practices, and technological advancements {cite:p}`mcguire2020`.
 
-Even from the very beginning of the project, it was clear that expanding our knowledge of genetics and genomics would have profound impacts on society—not all of which would be positive. For example, converns were voiced about whether the knowledge could be used to further discriminate against certain individuals or sub-groups of the human population, raising the spectre of past injustices caused by the practice of eugenics [^gattaca].Therefore, in 1990, the National Human Genome Research Institute founded a program to specifically oversee and study the project's ethical, legal, and social implications, known as the ELSI program {cite:p}`nhgri2021`. 
+Even from the very beginning of the project, it was clear that expanding our knowledge of genetics and genomics would have profound impacts on society—not all of which would be positive. For example, converns were voiced about whether the knowledge could be used to further discriminate against certain individuals or sub-groups of the human population, raising the spectre of past injustices caused by the practice of eugenics [^gattaca].Therefore, in 1990, the National Human Genome Research Institute founded a program to specifically oversee and study the project's ethical, legal, and social implications, known as the ELSI program {cite:p}`nhgri2021`.
 
 [^gattaca]: This concern became the centrepiece for the 1997 dystopian sci-fi, Gattaca, which takes its title from the four letters of the nucleobases of DNA.
 
@@ -71,7 +71,6 @@ This final point is important, as Yesley continues by acknowledging how the mode
 At first glance, therefore, the 5% of the annual budget of the Human Genome Project that was earmarked for ELSI research seems impressive, and certainly unprecedented in terms of ethical funding. But Yesley's comments should give us pause to ask how the language of ethics—and indeed, responsible research and innovation—can be co-opted by commercial, scientific, and political interests, rather than being used to cast a critical perspective on the most pressing questions that face society. This is all the more important when one recognises how many of the questions raised by the Human Genome Project are also brought up in the context of data ethics and AI ethics (e.g., possibility of discriminatory outcomes), and how the same concern raised by Yesley has also returned in the form of concerns about "ethics-washing" by those with vested interests in the advancement of science and technology. As we will see in the next section, it is important to ask what social goal is being served by research and innovation, and whether such a goal is desirable as well as permissible.
 
 ## Case Study 3: Cambridge Analytica
-
 
 ```{figure} /images/photos/cambridge-analytica.png
 ---
