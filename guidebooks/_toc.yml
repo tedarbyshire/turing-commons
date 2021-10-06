@@ -43,6 +43,7 @@ parts:
       - file: rri/chapter5/model-updating
       - file: rri/chapter5/activity2
     - file: rri/conclusion/index
+    - file: rri/further-resources/index
   - caption: Public Communication of Science
     chapters:
     - file: pcs/index
