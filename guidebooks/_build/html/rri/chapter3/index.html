@@ -164,13 +164,18 @@
     </a>
    </li>
    <li class="toctree-l2">
+    <a class="reference internal" href="../chapter2/roles_responsibility.html">
+     Roles and Responsibilities
+    </a>
+   </li>
+   <li class="toctree-l2">
     <a class="reference internal" href="../chapter2/activity1.html">
      Activty 1
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../chapter2/reflect_act_justify.html">
-     Reflect, Act, and Justify
+     Reflect, Act, and Justify (A Participatory Procedure for RRI)
     </a>
    </li>
    <li class="toctree-l2">
@@ -207,7 +212,7 @@
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="data_analysis.html">
-     Hello
+     Data Analysis
     </a>
    </li>
    <li class="toctree-l2">
@@ -244,12 +249,12 @@
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../chapter4/model_training.html">
-     Model Training, and Testing
+     Model Training and Testing
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../chapter4/model_documentation.html">
-     Model Documentation and Deployment
+     Model Documentation and Productionalization
     </a>
    </li>
    <li class="toctree-l2">
@@ -425,23 +430,9 @@
             <nav id="bd-toc-nav">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#project-planning-and-problem-formulation">
-   Project Planning and Problem Formulation
+  <a class="reference internal nav-link" href="#chapter-outline">
+   Chapter Outline
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#exploring-data">
-     Exploring Data
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#importing-data">
-       Importing Data
-      </a>
-     </li>
-    </ul>
-   </li>
-  </ul>
  </li>
 </ul>
 
@@ -456,52 +447,29 @@
                 
   <div class="section" id="responsible-project-design">
 <h1>Responsible Project Design<a class="headerlink" href="#responsible-project-design" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="project-planning-and-problem-formulation">
-<h2>Project Planning and Problem Formulation<a class="headerlink" href="#project-planning-and-problem-formulation" title="Permalink to this headline">¶</a></h2>
-<!-- - Setting up a process for responsible data management
-- Stakeholder identification and engagement plan -->
-<p>In terms of the social understanding of problem formulation, consider the following:</p>
-<blockquote>
-<div><p>An AI system that is designed to diagnose diseases based on relevant symptoms or indicators (e.g., biomarkers) would likely develop a problem formulation that assumes that any “disease” ought to be identified, regardless of whether the individual could afford the treatment, whether such a treatment is even available, or whether the individual would self-identify as “ill” or as a patient. Such assumptions are to be expected from the perspective of societies with highly-developed technical medical systems, but are more exclusionary of standpoints that emphasis preventative lifestyle approaches over reactive medical interventions (von Schomberg, 2011)</p>
-</div></blockquote>
-<!-- #### Activity 1: Breakout Discussions
-- How much information should be shared with research subjects to ensure "informed consent"?
-- When is it okay to use/scrape publicly available data?
-
-## Data Extraction and Procurement
-%%- Respecting rights of data subjects
-- Reusing data—what do you need to know about the provenance of a dataset?%%
-
-## Data Analysis
-%%- Identifying the effects of social, statistical, and cognitive biases%%
-
-%%This module will explore the stage of data analysis using the lens of a bias-aware methodology. We will make use of Jupyter notebooks to aid our exploratory data analysis, in order to understand how social, cognitive, and statistical biases interact and affect downstream stages in the research and innovation lifecycle.%% -->
-<p>The objective of this module is to understand how bias affects exploratory data analysis, and what ought to be done to minimise the effect of these biases on downstream stages. %%</p>
-<div class="section" id="exploring-data">
-<h3>Exploring Data<a class="headerlink" href="#exploring-data" title="Permalink to this headline">¶</a></h3>
-<p>This section will look at the following stages of exploratory data analysis:</p>
-<ol class="simple">
-<li><p>Importing Data</p></li>
-<li><p>Describing the Data</p></li>
-<li><p>Analysing the Data</p></li>
-<li><p>Querying the Data</p></li>
-<li><p>Visualising the Data</p></li>
-</ol>
-<div class="section" id="importing-data">
-<h4>Importing Data<a class="headerlink" href="#importing-data" title="Permalink to this headline">¶</a></h4>
-<p>We will be using the Pandas library in Python for this module.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Import the `pandas` library as `pd`</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-
-<span class="c1"># Load the data into a dataframe with `read_csv()`, treating the first row as data rather than as headersimport </span>
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;...&quot;</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
-
-<span class="c1"># Print out `digits`</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
-</pre></div>
+<img alt="Illustration of data scientists" class="align-center" src="../../_images/data-science.png" />
+<div class="tip admonition">
+<p class="admonition-title">Summary</p>
+<p>In this chapter we will start working through the key stages of the project lifecycle, beginning with (project) design. The first part of this stage will look at activities associated with project planning and problem formulation. The second part will cover activities and topics related to responsible data extraction, procurement, analysis and management.</p>
 </div>
+<div class="admonition-learning-objectives admonition">
+<p class="admonition-title">Learning Objectives</p>
+<p>In this chapter, you will:</p>
+<ul class="simple">
+<li><p>look at how you can set your project up to succeed at the earliest stages of project planning and problem formulation, and ensure that issues do not cascade downstream to later stages of the project lifecycle</p></li>
+<li><p>gain an understanding of what it means to act responsibly with respect to the data protection and privacy rights and expectations of data subjects</p></li>
+<li><p>explore how social, statistical, and cognitive biases affects data analysis, and what ought to be done to minimise the effect of these biases</p></li>
+</ul>
 </div>
-</div>
+<div class="section" id="chapter-outline">
+<h2>Chapter Outline<a class="headerlink" href="#chapter-outline" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="planning.html"><span class="doc std std-doc">Project Planning and Problem Formulation</span></a></p></li>
+<li><p><a class="reference internal" href="activity1.html"><span class="doc std std-doc">Activity 1</span></a></p></li>
+<li><p><a class="reference internal" href="data_extraction.html"><span class="doc std std-doc">Data Extraction and Procurement</span></a></p></li>
+<li><p><a class="reference internal" href="data_analysis.html"><span class="doc std std-doc">Data Analysis</span></a></p></li>
+<li><p><a class="reference internal" href="activity2.html"><span class="doc std std-doc">Activity 2</span></a></p></li>
+</ul>
 </div>
 <div class="toctree-wrapper compound">
 </div>

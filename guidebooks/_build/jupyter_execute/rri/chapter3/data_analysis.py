@@ -1,8 +1,18 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# # Hello
-# This is a test.
+# # Data Analysis
+# This module will explore the stage of data analysis using the lens of a bias-aware methodology. We will make use of Jupyter notebooks to aid our exploratory data analysis, in order to understand how social, cognitive, and statistical biases interact and affect downstream stages in the research and innovation lifecycle. However, you do not need to have any experience with Python or Jupyter Notebooks to follow along. 
+# 
+# Exploratory data analysis is an important stage for hypothesis generation or uncovering possible limitations of the dataset that can arise from missing data, in turn identifying the need for any subsequent augmentation of the dataset to deal with possible class imbalances. However, there are also risks that stem from cognitive biases (e.g. confirmation bias) that can create cascading effects that effect downstream tasks (e.g. model reporting).
+# 
+# We will look at the following stages of data analysis:
+# 
+# 1. Importing Data
+# 2. Describing the Data
+# 3. Analysing the Data
+# 4. Querying the Data
+# 5. Visualising the Data
 
 # In[1]:
 

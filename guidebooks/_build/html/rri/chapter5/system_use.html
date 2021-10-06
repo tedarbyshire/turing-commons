@@ -164,13 +164,18 @@
     </a>
    </li>
    <li class="toctree-l2">
+    <a class="reference internal" href="../chapter2/roles_responsibility.html">
+     Roles and Responsibilities
+    </a>
+   </li>
+   <li class="toctree-l2">
     <a class="reference internal" href="../chapter2/activity1.html">
      Activty 1
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../chapter2/reflect_act_justify.html">
-     Reflect, Act, and Justify
+     Reflect, Act, and Justify (A Participatory Procedure for RRI)
     </a>
    </li>
    <li class="toctree-l2">
@@ -207,7 +212,7 @@
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../chapter3/data_analysis.html">
-     Hello
+     Data Analysis
     </a>
    </li>
    <li class="toctree-l2">
@@ -244,12 +249,12 @@
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../chapter4/model_training.html">
-     Model Training, and Testing
+     Model Training and Testing
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../chapter4/model_documentation.html">
-     Model Documentation and Deployment
+     Model Documentation and Productionalization
     </a>
    </li>
    <li class="toctree-l2">
@@ -419,6 +424,19 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#model-updating-or-de-provisioning">
+   Model Updating or De-provisioning
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -433,6 +451,15 @@
 <li><p>Model drift and concept creep</p></li>
 <li><p>Responsibility though sustainability: monitoring and updating</p></li>
 </ul>
+<p>Depending on the context of deployment, it is likely that the performance of the model could degrade over time. This process of <em>model drift</em> is typically caused by increasing variation between how representative the training dataset was at the time of development and how representative it is at later stages, perhaps due to changing social norms (e.g. changing patterns of consumer spending, evolving linguistic norms that affect word embeddings). As such, mechanisms for monitoring the model’s performance should be instantiated within the system’s runtime protocols to track model drift, and key thresholds should be determined at early stages of a project (e.g. during project planning or in initial impact assessment) and revised as necessary based on monitoring of the system’s use.</p>
+<div class="section" id="model-updating-or-de-provisioning">
+<h2>Model Updating or De-provisioning<a class="headerlink" href="#model-updating-or-de-provisioning" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>De-provisioning is not really an option in research</p></li>
+</ul>
+<p>As noted previously, model updating can occur continuously if the architecture of the system and context of its use allows for it. Otherwise, updating the model may require either revisiting previous stages to make planned adjustments (e.g. model selection and training), or if more significant alterations are required the extant model may need to be entirely de-provisioned, necessitating a return to a new round of project planning.</p>
+<p>This overview and summary of the project lifecycle is by necessity an abstraction. However, it provides a useful anchor for subsequent discussion, and serves to motivate the following question: how do you provide assurance for the diversity of tasks included throughout the process? For instance, there may be a plurality of ethical goals relevant to the assurance of <span style="font-variant:small-caps;">(model) development</span> or <span style="font-variant:small-caps;">system use and monitoring</span>, including demonstrating that the system being deployed is safe, secure, fair, trustworthy, explainable, sustainable, or respectful of human agency and autonomy. How do you provide assurance that the interconnected project processes and activities individually and collectively support the relevant goal? This is why we need a unifying framework and methodology that makes space for the operationalisation of end-to-end, normative considerations and complements existing regulatory culture, as opposed to merely a miscellany of practical mechanisms.</p>
+</div>
 </div>
 
     <script type="text/x-thebe-config">

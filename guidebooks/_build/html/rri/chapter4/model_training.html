@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Model Training, and Testing &#8212; Turing Commons</title>
+    <title>Model Training and Testing &#8212; Turing Commons</title>
     
   <link href="../../_static/css/theme.css" rel="stylesheet" />
   <link href="../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -54,7 +54,7 @@
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Model Documentation and Deployment" href="model_documentation.html" />
+    <link rel="next" title="Model Documentation and Productionalization" href="model_documentation.html" />
     <link rel="prev" title="Model Selection" href="model_selection.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -164,13 +164,18 @@
     </a>
    </li>
    <li class="toctree-l2">
+    <a class="reference internal" href="../chapter2/roles_responsibility.html">
+     Roles and Responsibilities
+    </a>
+   </li>
+   <li class="toctree-l2">
     <a class="reference internal" href="../chapter2/activity1.html">
      Activty 1
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../chapter2/reflect_act_justify.html">
-     Reflect, Act, and Justify
+     Reflect, Act, and Justify (A Participatory Procedure for RRI)
     </a>
    </li>
    <li class="toctree-l2">
@@ -207,7 +212,7 @@
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../chapter3/data_analysis.html">
-     Hello
+     Data Analysis
     </a>
    </li>
    <li class="toctree-l2">
@@ -244,12 +249,12 @@
    </li>
    <li class="toctree-l2 current active">
     <a class="current reference internal" href="#">
-     Model Training, and Testing
+     Model Training and Testing
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="model_documentation.html">
-     Model Documentation and Deployment
+     Model Documentation and Productionalization
     </a>
    </li>
    <li class="toctree-l2">
@@ -428,7 +433,9 @@
               <div>
                 
   <div class="section" id="model-training-and-testing">
-<h1>Model Training, and Testing<a class="headerlink" href="#model-training-and-testing" title="Permalink to this headline">¶</a></h1>
+<h1>Model Training and Testing<a class="headerlink" href="#model-training-and-testing" title="Permalink to this headline">¶</a></h1>
+<p>Prior to training the model, the dataset will need to be split into training and testing sets to avoid model overfitting. The <em>training set</em> is used to fit the ML model, whereas the <em>testing set</em> is a hold-out sample that is used to evaluate the fit of the ML model to the underlying data distribution. There are various methods for splitting a dataset into these components, which are widely available in popular package libraries (e.g. the scikit-learn library for the Python programming language). Again, human decision-making at this stage about the training-testing split and about how this shapes desiderata for external validation—a subsequent process where the model is validated in wholly new environments—can be very consequential for the trustworthiness and reasonableness of the development phase of an ML/AI system.</p>
+<p>The testing set is typically kept separate from the training set, in order to provide an unbiased evaluation of the final model fit on the training dataset. However, the training set can be further split to create a validation set, which can then be used to evaluate the model while also <em>tuning model hyperparameters</em>. This process can be performed repeatedly, in a technique known as (k-fold) cross-validation, where the training data are resampled (<em>k</em>-times) to compare models and estimate their performance in general when used to make predictions on unseen data. This type of validation is also known as ‘internal validation’, to distinguish it from external validation, and, in a similar way to choices made about the training-testing split, the manner in which it is approached can have critical consequences for how the performance of a system is measured against the real-world conditions that it will face when operating “in the wild.”</p>
 </div>
 
     <script type="text/x-thebe-config">
@@ -457,7 +464,7 @@
         <div class='prev-next-bottom'>
             
     <a class='left-prev' id="prev-link" href="model_selection.html" title="previous page">Model Selection</a>
-    <a class='right-next' id="next-link" href="model_documentation.html" title="next page">Model Documentation and Deployment</a>
+    <a class='right-next' id="next-link" href="model_documentation.html" title="next page">Model Documentation and Productionalization</a>
 
         </div>
         

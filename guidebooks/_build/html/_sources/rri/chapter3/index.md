@@ -1,51 +1,27 @@
 # Responsible Project Design
 
-## Project Planning and Problem Formulation
-
-<!-- - Setting up a process for responsible data management
-- Stakeholder identification and engagement plan -->
-
-In terms of the social understanding of problem formulation, consider the following:
-
-> An AI system that is designed to diagnose diseases based on relevant symptoms or indicators (e.g., biomarkers) would likely develop a problem formulation that assumes that any "disease" ought to be identified, regardless of whether the individual could afford the treatment, whether such a treatment is even available, or whether the individual would self-identify as "ill" or as a patient. Such assumptions are to be expected from the perspective of societies with highly-developed technical medical systems, but are more exclusionary of standpoints that emphasis preventative lifestyle approaches over reactive medical interventions (von Schomberg, 2011)
-
-<!-- #### Activity 1: Breakout Discussions
-- How much information should be shared with research subjects to ensure "informed consent"?
-- When is it okay to use/scrape publicly available data?
-
-## Data Extraction and Procurement
-%%- Respecting rights of data subjects
-- Reusing data—what do you need to know about the provenance of a dataset?%%
-
-## Data Analysis
-%%- Identifying the effects of social, statistical, and cognitive biases%%
-
-%%This module will explore the stage of data analysis using the lens of a bias-aware methodology. We will make use of Jupyter notebooks to aid our exploratory data analysis, in order to understand how social, cognitive, and statistical biases interact and affect downstream stages in the research and innovation lifecycle.%% -->
-
-%%## Learning Objective
-The objective of this module is to understand how bias affects exploratory data analysis, and what ought to be done to minimise the effect of these biases on downstream stages. %%
-
-### Exploring Data
-
-This section will look at the following stages of exploratory data analysis:
-
-1. Importing Data
-2. Describing the Data
-3. Analysing the Data
-4. Querying the Data
-5. Visualising the Data
-
-#### Importing Data
-
-We will be using the Pandas library in Python for this module.
-
-```python
-# Import the `pandas` library as `pd`
-import pandas as pd
-
-# Load the data into a dataframe with `read_csv()`, treating the first row as data rather than as headersimport 
-df = pd.read_csv("...", header=None)
-
-# Print out `digits`
-print(df)
+```{image} /images/illustrations/data-science.png
+:alt: Illustration of data scientists
+:align: center
 ```
+
+```{admonition} Summary
+:class: tip
+In this chapter we will start working through the key stages of the project lifecycle, beginning with (project) design. The first part of this stage will look at activities associated with project planning and problem formulation. The second part will cover activities and topics related to responsible data extraction, procurement, analysis and management.
+```
+
+```{admonition} Learning Objectives
+In this chapter, you will:
+
+- look at how you can set your project up to succeed at the earliest stages of project planning and problem formulation, and ensure that issues do not cascade downstream to later stages of the project lifecycle 
+- gain an understanding of what it means to act responsibly with respect to the data protection and privacy rights and expectations of data subjects
+- explore how social, statistical, and cognitive biases affects data analysis, and what ought to be done to minimise the effect of these biases
+```
+
+## Chapter Outline
+
+- [Project Planning and Problem Formulation](planning.md)
+- [Activity 1](activity1.md)
+- [Data Extraction and Procurement](data_extraction.md)
+- [Data Analysis](data_analysis.ipynb)
+- [Activity 2](activity2.md)

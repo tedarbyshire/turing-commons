@@ -1,1 +1,1 @@
-# Reflect, Act, and Justify
+# Reflect, Act, and Justify (A Participatory Procedure for RRI)

@@ -7,7 +7,7 @@
 
 ```{admonition} Summary
 :class: tip
-This section...
+In this chapter on (model) development we will get hands on with pre-processing and feature engineering, looking at issues related to missing data and representation. We will also explore what it means to act responsibly throughout model selection, training and testing, and documentation and productionalisation.
 ```
 
 ```{admonition} Learning Objectives
