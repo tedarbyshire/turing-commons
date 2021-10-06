@@ -1,1 +1,1 @@
-# Model Training, and Testing
+# Model Training and Testing
