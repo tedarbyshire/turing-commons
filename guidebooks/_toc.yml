@@ -13,11 +13,35 @@ parts:
       - file: rri/chapter1/sts
       - file: rri/chapter1/activity2
     - file: rri/chapter2/index
+      sections:
+      - file: rri/chapter2/responsible-ds-ai
+      - file: rri/chapter2/project-lifecycle
+      - file: rri/chapter2/roles-and-responsibility
+      - file: rri/chapter2/activity1
+      - file: rri/chapter2/reflect-act-justify
+      - file: rri/chapter2/activity2
     - file: rri/chapter3/index
       sections:
+      - file: rri/chapter3/planning-and-problem
+      - file: rri/chapter3/activity1
+      - file: rri/chapter3/data-extraction
       - file: rri/chapter3/data-analysis
+      - file: rri/chapter3/activity2
     - file: rri/chapter4/index
+    sections:
+      - file: rri/chapter4/preprocessing
+      - file: rri/chapter4/activity1
+      - file: rri/chapter4/model-selection
+      - file: rri/chapter4/model-training-and-testing
+      - file: rri/chapter4/model-documentation
+      - file: rri/chapter4/activity2
     - file: rri/chapter5/index
+    sections:
+      - file: rri/chapter5/user-training
+      - file: rri/chapter5/activity1
+      - file: rri/chapter5/system-use
+      - file: rri/chapter5/model-updating
+      - file: rri/chapter5/activity2
     - file: rri/conclusion/index
   - caption: Public Communication of Science
     chapters:
