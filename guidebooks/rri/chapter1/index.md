@@ -1,10 +1,5 @@
 # 2 What is Responsible Research and Innovation?
 
-```{image} /images/illustrations/data-science.png
-:alt: Illustration of data scientists
-:align: center
-```
-
 ```{admonition} Summary
 :class: tip
 This section defines the term 'responsible', as it occurs in 'responsible research and innovation', and also explores a short history of RRI with reference to notable events and case studies that help illustrate central themes and issues. This helps to set the foundation for the remainder of the course, which will rely on many of the core concepts that are introduced. However, the section also plays a motivating role by emphasising the interconnected nature of science, technology, and society.

@@ -1,10 +1,5 @@
 # 4 Responsible Project Design
 
-```{image} /images/illustrations/data-science.png
-:alt: Illustration of data scientists
-:align: center
-```
-
 ```{admonition} Summary
 :class: tip
 In this chapter we will start working through the key stages of the project lifecycle, beginning with (project) design. The first part of this stage will look at activities associated with project planning and problem formulation. The second part will cover activities and topics related to responsible data extraction, procurement, analysis and management.
