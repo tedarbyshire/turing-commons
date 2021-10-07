@@ -10,3 +10,7 @@ At present, the repository is used to host a collection of Jupyter Books on the 
 - [AI Ethics & Governance (AEG)](#)
 - [Responsible Research and Innovation (RRI)](#)
 - [Public Communication of Science (PCS)](#)
+
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
