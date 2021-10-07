@@ -1,5 +1,7 @@
 # Activity 1: Exploring Case Studies
 
+<!-- Add a short paragraph, link, icon, and title for Nerea (for each activity) -->
+
 In one respect, our first activity is a simple one.
 
 In groups you will discuss your thoughts and answers to the following questions. In doing so, however, you will probably encounter some difficulties in forming a consensus on your answers. This is to be expected, and you should also pay careful attention to the reasons why you differ in your opinions or beliefs.

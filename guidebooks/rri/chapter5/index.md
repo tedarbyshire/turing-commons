@@ -1,4 +1,4 @@
-# Responsible System Deployment
+# 6 Responsible System Deployment
 
 ```{image} /images/illustrations/data-science.png
 :alt: Illustration of data scientists

@@ -1,4 +1,4 @@
-# Responsible Project Design
+# 4 Responsible Project Design
 
 ```{image} /images/illustrations/data-science.png
 :alt: Illustration of data scientists

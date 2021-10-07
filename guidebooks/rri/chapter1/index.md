@@ -1,4 +1,4 @@
-# What is Responsible Research and Innovation?
+# 2 What is Responsible Research and Innovation?
 
 ```{image} /images/illustrations/data-science.png
 :alt: Illustration of data scientists

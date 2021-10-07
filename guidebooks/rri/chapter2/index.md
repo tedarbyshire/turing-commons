@@ -1,4 +1,4 @@
-# Responsible Data Science and AI
+# 3 Responsible Data Science and AI
 
 ```{image} /images/illustrations/data-science.png
 :alt: Illustration of data scientists
