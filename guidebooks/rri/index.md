@@ -1,4 +1,6 @@
-# Responsible Research and Innovation
+# RRI Guidebook
+
+<!-- Johnny's illustration to go here -->
 
 ## Table of Contents
 

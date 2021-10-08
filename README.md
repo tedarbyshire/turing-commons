@@ -15,9 +15,9 @@
 Welcome to the GitHub repository for the Ethics Team's (Alan Turing Institute) online training resources, known as Turing Commons.
 At present, the repository is used to host a collection of guidebooks on the following topics:
 
-- [AI Ethics & Governance (AEG)](#)
-- [Responsible Research and Innovation (RRI)](#)
-- [Public Communication of Science (PCS)](#)
+- [Responsible Research and Innovation (RRI)](https://turing-commons.netlify.app/rri/index.html)
+- [Public Communication of Science (PCS)](https://turing-commons.netlify.app/pvs/index.html)
+- [AI Ethics & Governance (AEG)](ttps://turing-commons.netlify.app/aeg/index.html)
 
 ## Contributors ✨
 
