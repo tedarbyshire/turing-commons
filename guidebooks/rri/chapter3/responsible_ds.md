@@ -10,7 +10,7 @@ Responsible data science and AI shares this emphasis, but can be refined by cons
 
 ## SAFE-D Principles
 
-According to {cite:t}`mittelstadt2019', in 2019 there were at least 84 statements that provided ''high-level principles, values and other tenets to guide the ethical development, deployment and governance of AI''.
+According to {cite:t}`mittelstadt2019`, in 2019 there were at least 84 statements that provided ''high-level principles, values and other tenets to guide the ethical development, deployment and governance of AI''.
 By now there are surely many, many more!
 
 In response to this proliferation of principles, some have attempted to distil and condense the myriad documents, in order to identify commonalities and extract a unified list of shared principles {cite:p}`jobin2019,floridi2019`.
@@ -28,17 +28,52 @@ To that end, we will make reference to the following set of principles that we c
 
 These principles are grounded in comprehensive research and understanding of human rights and data protection law, as well as applied ethics of data and AI.
 Each principles is either motivated by a specific set of harms that have been uncovered and exposed, responsive to a set or well-documented risks that arise in the context of data science and AI, or oriented towards the sustainable, ethical, and responsible use of data-driven technologies.
-Let's look at each one in turn.
+You can click through the following illustrative examples to get an idea of some of the social harms associated with data-driven technologies:
+
+```{tabbed} Facebook Discriminatory Job Adverts
+The algorithmic system used by Facebook to automatically show job adverts to users it believes are most likely to engage with them was reported to perpetuate discriminatory gender norms. Thee BBC reported that
+
+>almost all Facebook users shown adverts for mechanics were men, while ads for nursery nurses were seen almost exclusively by women.
+
+[BBC News, 'Facebook accused of allowing sexist job advertising'](https://www.bbc.co.uk/news/technology-58487026)
+```
+
+```{tabbed} Predicting Risk
+Avon and Somerset Police and Bristol City Council developed a sophisticated predictive risk tool that was used, among other things, to predict the risk of children suffering sexual abuse. But, the Bristol Cable reported that many children were falsely flagged as being at risk, and that the tool was developed using dozens of public sector databases, including schools, housing, NHS records, and even credit scores from Experian.
+
+[The Bristol Cable, 'How a police and council database is predicting if your child is at risk of harm'](https://thebristolcable.org/2021/07/how-a-police-and-council-database-is-predicting-if-your-child-is-at-risk-of-harm/)
+```
+
+```{tabbed} Racist Photo Cropping Tool
+Twitter was forced to apologise after many users reported that the automated tool for cropping images on the social media platform showed a racial bias towards faces of white people over faces of black people. According to [Twitter](https://blog.twitter.com/engineering/en_us/topics/insights/2021/sharing-learnings-about-our-image-cropping-algorithm), one source of the issue was the use of a ''saliency algorithm'' that was trained on human eye-tracking data.
+
+[The Guardian, 'Twitter apologises for 'racist' image-cropping algorithm'](https://www.theguardian.com/technology/2020/sep/21/twitter-apologises-for-racist-image-cropping-algorithm)
+```
+
+```{tabbed} Lethal Autonomous Weapons
+Turkish company STM manufactures the [Kargu-2](https://www.stm.com.tr/uploads/docs/1628858259_tacticalminiuavsystems.pdf?)—an attack drone that can operate autonomously by using machine learning and real-time image processing to identify targets. According to a UN security council report this drone was reported to have been used to "remotely engage" and "hunt down" logistics convoys and retreating forces in the Libyan civil war during 2019.
+
+[NPR, 'A Military Drone With A Mind Of Its Own Was Used In Combat, U.N. Says'](https://www.npr.org/2021/06/01/1002196245/a-u-n-report-suggests-libya-saw-the-first-battlefield-killing-by-an-autonomous-d)
+```
+
+```{tabbed} Any Others?
+Do you know any other examples of social harms associated with data-driven technologies?
+```
+
+Let's look at each principle in turn.
 
 ### Safety
 
-Safety is of paramount importance for ensuring the sustainable development, deployment, and use of an AI system.
-From a technical perspective, this requires the system to be secure, robust, and reliable.
-And from a social sustainability perspective, this requires the practices behind the system’s production and use to be informed by ongoing consideration of the risk of exposing affected rights-holders to harms, continuous reflection on project context and impacts, ongoing stakeholder engagement and involvement, and change monitoring of the system from its deployment through to its retirement or deprovisioning.
+Safety can mean a couple of things.
+From a technical perspective, safety requires the outputs of a project to be secure, robust, and reliable.
+For example, if an organisation is developing an autonomous vehicle, it should operate safely in the intended context of use.
+However, in the context of responsible data science and AI, safety also has a social sustainability component.
+This aspect of safety requires a project's practices to be informed by ongoing consideration of the risk of exposing individuals to harms even after the system has been deployed and the project completed—a long-term (or sustainable) safety.
 
 ### Accountability
 
-Accountability can include specific forms of process transparency (e.g., as enacted through process logs or external auditing) that may be necessary for mechanisms of redress, or broader processes of responsible governance that seek to establish clear roles of responsibility where transparency may be inappropriate (e.g., confidential projects).
+Accountability can refer to transparency of processes (e.g., as enacted through process logs or external auditing) that enable people to understand how a project was conducted, and may be required for auditing or processes of redress.
+But it can also refer to broader processes of responsible project governance that seek to establish clear roles of responsibility where full transparency may be inappropriate (e.g., confidential projects).
 
 ### Fairness
 
@@ -46,8 +81,8 @@ Fairness is inseparably connected with sociolegal conceptions of equity and just
 
 ### Explainability
 
-Explainability is a key condition for autonomous and informed decision-making in situations where AI systems interact with or influence human judgement and decision-making.
-Explainability goes beyond the ability to merely interpret the outcomes of an AI system; it also depends on the ability to provide an accessible and relevant information base about the processes behind the outcome.
+Explainability is a key condition for autonomous and informed decision-making in situations where data-driven systems interact with or influence human judgement and choice behaviour.
+Explainability goes beyond the ability to merely interpret specific aspects of a project (e.g., interpreting the parameters of a model); it also depends on the ability to provide an accessible and relevant information base about the processes behind the outcome.
 
 ### Data Quality, Integrity, Protection and Privacy
 
@@ -58,3 +93,22 @@ Data quality, integrity, protection and privacy must all be established to be co
 - ‘Data protection and privacy' reflect ongoing developments and priorities as set out in relevant legislation and regulation of data practices as they pertain to fundamental rights and freedoms, democracy, and the rule of law. For example, the right for data subjects to have inaccurate personal data rectified or erased.{cite:p}`ico2021`
 
 [^FAIR]: These are known as the FAIR principles ([read more here](https://www.go-fair.org/fair-principles/)).
+
+Each of these principles can be treated as a goal to which responsible data science and AI ought to be directed.[^pcs]
+But, on their own they are insufficient for establishing what specific actions or decisions should be taken in any given project.
+For instance, what does it mean to develop a fair diagnostic model in healthcare?
+Does it mean ensuring that all patients are exposed to the same level of risk with respect to the distribution of possible false negatives?
+What about false positives instead?
+What about the use of the decision support system in which thee model is implemented?
+Will it be used in all hospitals on all patients?
+Or, will only those wealthy enough to afford private healthcare receive this service?
+Should it instead be used for the most vulnerable and worse off in society?
+
+[^pcs]: In our guidebook on [public communication of science](https://turing-commons.netlify.app/pvs/index.html) we formalise this notion of an ethical goal in relation to a method known as argument-based assurance. Here, the goals are supported by specific properties that must be established in a project, in order to provide justifiable assurance to stakeholders that the respective goal has been realised.
+
+Questions such as these have no straightforward answer and are heavily context-dependant.
+Even if consensus were to be reached for a specific model used, say, in the diagnosis of lung cancer {cite}`svoboda2020`, this would be no guarantee of a similar answer in a different area of healthcare (e.g., paediatrics, mental healthcare), or even for another diagnostic model in radiology (e.g., MRI instead of CT scans).
+Therefore, starting in the next section we will look at how the earliest stages of project planning should incorporate some form of stakeholder engagement, including domain experts and affected individuals, in a manner that is proportional to the expected risks associated with the project.
+In doing so, you will be introduced to a variety of procedures and practical mechanisms that can support processes of reflection and deliberation that are required for responsible research or innovation projects.
+
+However, first we need to get a clearer idea of what a data science or AI project typically looks like.
