@@ -2,7 +2,6 @@
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
-
 [![Read the book](https://img.shields.io/badge/read-the%20book-blue.svg)](https://turing-commons.netlify.app)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/01447c9a-9d12-4b68-b5fa-8f17a5663667/deploy-status)](https://app.netlify.com/sites/turing-commons/deploys)
 
