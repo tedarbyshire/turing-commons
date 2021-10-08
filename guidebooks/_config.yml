@@ -27,22 +27,14 @@ html:
   use_issues_button: true
   use_repository_button: true
 
-#accessibility
+#settings
 sphinx:
   config:
     language: en
     html_show_copyright: false
+    bibtex_reference_style: author_year
+    mathjax_path: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 #Bibliography
 bibtex_bibfiles:
     - references.bib
-
-sphinx:
-  config:
-    bibtex_reference_style: author_year
-
-#MathJax
-
-sphinx:
-  config:
-    mathjax_path: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
