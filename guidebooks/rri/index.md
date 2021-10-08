@@ -1,5 +1,13 @@
-# About this Guidebook
+# Responsible Research and Innovation
 
-Welcome to the guidebook on Responsible Research and Innovation (RRI) 👋
+## Table of Contents
 
-This guide has been produced to accompany the online training programme at the Alan Turing Institute. It is currently a work-in-progress, so if you are reading this please feel free to have a look around—I like to work with the "garage door open".
+1. [Introduction](intro/index.md)
+2. [What is Responsible Research and Innovation?](chapter2/index.md)
+3. [Responsible Data Science and AI](chapter3/index.md)
+4. [Responsible Project Design](chapter4/index.md)
+5. [Responsible Model Development](chapter5/index.md)
+6. [Responsible System Deployment](chapter6/index.md)
+7. [Conclusion](conclusion/index.md)
+8. [Further Resources](further_resources/index.md)
+9. [Bibliography](../bibliography.md)

@@ -5,42 +5,42 @@ parts:
     chapters:
     - file: rri/index
     - file: rri/intro/index
-    - file: rri/chapter1/index
-      sections:
-      - file: rri/chapter1/responsibility
-      - file: rri/chapter1/history
-      - file: rri/chapter1/activity1
-      - file: rri/chapter1/sts
-      - file: rri/chapter1/activity2
     - file: rri/chapter2/index
       sections:
-      - file: rri/chapter2/responsible_ds
-      - file: rri/chapter2/project_lifecycle
-      - file: rri/chapter2/roles_responsibility
+      - file: rri/chapter2/responsibility
+      - file: rri/chapter2/history
       - file: rri/chapter2/activity1
-      - file: rri/chapter2/reflect_act_justify
+      - file: rri/chapter2/sts
       - file: rri/chapter2/activity2
     - file: rri/chapter3/index
       sections:
-      - file: rri/chapter3/planning
+      - file: rri/chapter3/responsible_ds
+      - file: rri/chapter3/project_lifecycle
+      - file: rri/chapter3/roles_responsibility
       - file: rri/chapter3/activity1
-      - file: rri/chapter3/data_extraction
-      - file: rri/chapter3/data_analysis
+      - file: rri/chapter3/reflect_act_justify
       - file: rri/chapter3/activity2
     - file: rri/chapter4/index
       sections:
-      - file: rri/chapter4/preprocessing
+      - file: rri/chapter4/planning
       - file: rri/chapter4/activity1
-      - file: rri/chapter4/model_selection
-      - file: rri/chapter4/model_training
-      - file: rri/chapter4/model_documentation
+      - file: rri/chapter4/data_extraction
+      - file: rri/chapter4/data_analysis
       - file: rri/chapter4/activity2
     - file: rri/chapter5/index
       sections:
-      - file: rri/chapter5/user_training
+      - file: rri/chapter5/preprocessing
       - file: rri/chapter5/activity1
-      - file: rri/chapter5/system_use
+      - file: rri/chapter5/model_selection
+      - file: rri/chapter5/model_training
+      - file: rri/chapter5/model_documentation
       - file: rri/chapter5/activity2
+    - file: rri/chapter6/index
+      sections:
+      - file: rri/chapter6/user_training
+      - file: rri/chapter6/activity1
+      - file: rri/chapter6/system_use
+      - file: rri/chapter6/activity2
     - file: rri/conclusion/index
     - file: rri/further_resources/index
   - caption: Public Communication of Science

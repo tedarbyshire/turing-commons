@@ -1,8 +1,8 @@
-# 6 Responsible System Deployment
+# 5 Responsible Model Development
 
 ```{admonition} Summary
 :class: tip
-In this final chapter covering the key stages of the project lifecycle we will look at the need to continue to take responsibility for the outcomes and consequences of model development, even after your model has been implemented within a broader sociotechnical system. In the first part we will look at user training as a key requirement of responsible deployment. The second part will wrap up the project lifecycle, by looking at ongoing system use and monitoring. 
+In this chapter on (model) development we will get hands on with pre-processing and feature engineering, looking at issues related to missing data and representation. We will also explore what it means to act responsibly throughout model selection, training and testing, and documentation and productionalisation.
 ```
 
 ```{admonition} Learning Objectives
@@ -13,7 +13,9 @@ In this chapter, you will:
 
 ## Chapter Outline
 
-- [User Training](user_training.md)
+- [Preprocessing and Feature Engineering](preprocessing.md)
 - [Activity 1](activity1.md)
-- [System Use, Monitoring, and Updating](system_use.md)
+- [Model Selection)](model_selection.md)
+- [Model Training and Testing](model_training.md)
+- [Model Documentation and Productionalization](model_documentation.md)
 - [Activity 2](activity2.md)
