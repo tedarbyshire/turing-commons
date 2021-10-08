@@ -17,7 +17,7 @@ At present, the repository is used to host a collection of guidebooks on the fol
 
 - [Responsible Research and Innovation (RRI)](https://turing-commons.netlify.app/rri/index.html)
 - [Public Communication of Science (PCS)](https://turing-commons.netlify.app/pvs/index.html)
-- [AI Ethics & Governance (AEG)](ttps://turing-commons.netlify.app/aeg/index.html)
+- [AI Ethics & Governance (AEG)](https://turing-commons.netlify.app/aeg/index.html)
 
 ## Contributors ✨
 

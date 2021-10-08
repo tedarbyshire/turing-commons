@@ -2,7 +2,7 @@
 
 > What separates responsible data science and AI from responsible research and innovation more generally?
 
-This is the question that this section seeks to answer. 
+This is the question that this section seeks to answer.
 
 We saw in the [previous chapter](../chapter2/index.md) how RRI can be defined or operationalised through reference to principles or concepts that emphasise the need for ethical reflection on possible social harms and benefits, supported by inclusive participation of affected stakeholders.
 
@@ -16,7 +16,7 @@ By now there are surely many, many more!
 In response to this proliferation of principles, some have attempted to distil and condense the myriad documents, in order to identify commonalities and extract a unified list of shared principles {cite:p}`jobin2019,floridi2019`.
 However, regardless of which set of principles we start with, one thing remains the same: good principles should support ongoing reflection and deliberation; they are not decision procedures in their own right.
 This point is sometimes lost in the ensuing debate about which set of principles should be used or adhered to.
-But, what matters is that the set of principles should (a) be responsive to the actual harms and benefits that matter to the communities of affected inividuals, (b) be underwritten by a set of shared values, which support and motivate dialogue between stakeholders, and (c) serve as *starting points* in a wider process of reflection and deliberation.
+But, what matters is that the set of principles should (a) be responsive to the actual harms and benefits that matter to the communities of affected individuals, (b) be underwritten by a set of shared values, which support and motivate dialogue between stakeholders, and (c) serve as *starting points* in a wider process of reflection and deliberation.
 
 To that end, we will make reference to the following set of principles that we call the 'SAFE-D principles':
 
