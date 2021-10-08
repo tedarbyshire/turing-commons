@@ -10,7 +10,7 @@ Responsible data science and AI shares this emphasis, but can be refined by cons
 
 ## SAFE-D Principles
 
-According to {cite:p}`mittelstadt2019', in 2019 there were at least 84 statements that provided ''high-level principles, values and other tenets to guide the ethical development, deployment and governance of AI''.
+According to {cite:t}`mittelstadt2019', in 2019 there were at least 84 statements that provided ''high-level principles, values and other tenets to guide the ethical development, deployment and governance of AI''.
 By now there are surely many, many more!
 
 In response to this proliferation of principles, some have attempted to distil and condense the myriad documents, in order to identify commonalities and extract a unified list of shared principles {cite:p}`jobin2019,floridi2019`.
