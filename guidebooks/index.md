@@ -21,7 +21,7 @@ These guidebooks are themselves being updated and added to, so may be in differe
 If you'd like to get involved and help contribute to these resources, you can either:
 
 - Contribute on GitHub:
-  - Comment on [issues](turing-commons-issues), join a discussion, collaborate on an ongoing task and exchange your thoughts with others.
+  - Comment on [issues](https://github.com/chrisdburr/turing-commons/issues), join a discussion, collaborate on an ongoing task and exchange your thoughts with others.
   - Can't find your idea being discussed anywhere?
     [Open a new issue](https://github.com/chrisdburr/turing-commons/issues/new)! (See our [Where to start: issues](#where-to-start-issues) section below.)
 - Just want to get in touch?
