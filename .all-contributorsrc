@@ -18,6 +18,16 @@
         "tool",
         "tutorial"
       ]
+    },
+    {
+      "login": "RoaPowell",
+      "name": "RoaPowell",
+      "avatar_url": "https://avatars.githubusercontent.com/u/92020648?v=4",
+      "profile": "https://github.com/RoaPowell",
+      "contributions": [
+        "userTesting",
+        "review"
+      ]
     }
   ],
   "contributorsPerLine": 7,
