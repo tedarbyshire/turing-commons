@@ -13,7 +13,7 @@ This section...
 ```{admonition} Learning Objectives
 In this chapter, you will:
 
-- learn...
+- Explore what differentiates responsible data science and AI from responsible research and innovation more generally.
 ```
 
 ## Chapter Outline
