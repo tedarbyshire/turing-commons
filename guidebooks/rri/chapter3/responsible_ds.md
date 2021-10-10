@@ -56,6 +56,9 @@ Turkish company STM manufactures the [Kargu-2](https://www.stm.com.tr/uploads/do
 [NPR, 'A Military Drone With A Mind Of Its Own Was Used In Combat, U.N. Says'](https://www.npr.org/2021/06/01/1002196245/a-u-n-report-suggests-libya-saw-the-first-battlefield-killing-by-an-autonomous-d)
 ```
 
+<!-- ```{tabbed} #TravelingWhileTrans
+Sasha Costanza-Chock—author of Design Justice— -->
+
 ```{tabbed} Any Others?
 Do you know any other examples of social harms associated with data-driven technologies?
 ```
