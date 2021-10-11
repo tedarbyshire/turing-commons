@@ -30,7 +30,7 @@ A research team are exploring whether risk of deterioration from COVID-19 can be
   - Male
   - Female
   - null
-- Ethicity (official distributions: https://www.ethnicity-facts-figures.service.gov.uk/uk-population-by-ethnicity/national-and-regional-populations/population-of-england-and-wales/latest / COVID deaths by ethnicity: https://www.gov.uk/government/publications/covid-19-reported-sars-cov-2-deaths-in-england/covid-19-confirmed-deaths-in-england-report)
+- Ethnicity (official distributions: https://www.ethnicity-facts-figures.service.gov.uk/uk-population-by-ethnicity/national-and-regional-populations/population-of-england-and-wales/latest / COVID deaths by ethnicity: https://www.gov.uk/government/publications/covid-19-reported-sars-cov-2-deaths-in-england/covid-19-confirmed-deaths-in-england-report)
   - White 
     - English, Welsh, Scottish, Northern Irish or British
     - Irish
