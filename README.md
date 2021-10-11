@@ -2,7 +2,7 @@
 
 *Total Contributors:*
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 | Information | Links |
@@ -29,6 +29,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tr>
     <td align="center"><a href="https://github.com/chrisdburr"><img src="https://avatars.githubusercontent.com/u/63010234?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Christopher Burr</b></sub></a><br /><a href="https://github.com/chrisdburr/turing-commons/commits?author=chrisdburr" title="Code">💻</a> <a href="#content-chrisdburr" title="Content">🖋</a> <a href="https://github.com/chrisdburr/turing-commons/commits?author=chrisdburr" title="Documentation">📖</a> <a href="#projectManagement-chrisdburr" title="Project Management">📆</a> <a href="#tool-chrisdburr" title="Tools">🔧</a> <a href="#tutorial-chrisdburr" title="Tutorials">✅</a></td>
     <td align="center"><a href="https://github.com/RoaPowell"><img src="https://avatars.githubusercontent.com/u/92020648?v=4?s=100" width="100px;" alt=""/><br /><sub><b>RoaPowell</b></sub></a><br /><a href="#userTesting-RoaPowell" title="User Testing">📓</a> <a href="https://github.com/chrisdburr/turing-commons/pulls?q=is%3Apr+reviewed-by%3ARoaPowell" title="Reviewed Pull Requests">👀</a></td>
+    <td align="center"><a href="https://github.com/nbarlowATI"><img src="https://avatars.githubusercontent.com/u/33832774?v=4?s=100" width="100px;" alt=""/><br /><sub><b>nbarlowATI</b></sub></a><br /><a href="https://github.com/chrisdburr/turing-commons/commits?author=nbarlowATI" title="Code">💻</a> <a href="#content-nbarlowATI" title="Content">🖋</a> <a href="#data-nbarlowATI" title="Data">🔣</a></td>
   </tr>
 </table>
 
