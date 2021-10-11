@@ -1,5 +1,7 @@
 # Notes on Data Analysis Activity
 
+<!-- I've added a set of slides from a DECOVID project presentation with some information on NEWS2, which is a real-world early warning system used to triage patients and predict risk of deterioration. The goal is not to mimic this model, but just to take some inspiration. Slides are here: https://github.com/chrisdburr/turing-commons/blob/master/guidebooks/rri/chapter4/ews_presentation.pdf -->
+
 ## Goals/Objectives
 
 - To introduce participants, many of whom will not be data scientists, to some of the issues that arise during the exploratory data analysis (EDA) stage
@@ -12,6 +14,8 @@ A research team are exploring whether risk of deterioration from COVID-19 can be
 
 ### Features
 
+<!-- See slides for information about permissible ranges for physiological parameters: https://github.com/chrisdburr/turing-commons/blob/master/guidebooks/rri/chapter4/ews_presentation.pdf -->
+
 - (Pseudonymous) NHS number
   - This can just be a random string of digits (e.g. #186357)
 - Age (range, not lower than 80)
@@ -22,7 +26,10 @@ A research team are exploring whether risk of deterioration from COVID-19 can be
   - 61–70
   - 71-80
   - 80+
-- Sex
+- Gender
+  - Male
+  - Female
+  - null
 - Ethicity (official distributions: https://www.ethnicity-facts-figures.service.gov.uk/uk-population-by-ethnicity/national-and-regional-populations/population-of-england-and-wales/latest / COVID deaths by ethnicity: https://www.gov.uk/government/publications/covid-19-reported-sars-cov-2-deaths-in-england/covid-19-confirmed-deaths-in-england-report)
   - White 
     - English, Welsh, Scottish, Northern Irish or British
@@ -51,12 +58,22 @@ A research team are exploring whether risk of deterioration from COVID-19 can be
 - Temperature
 - Heart Rate
 - Received Respiratory Support (e.g. CPAP)*
+- Date of admission (spanning 3 months)
 - Outcomes
-  - Received invasive ventilation (yes/no)
+  - Received invasive ventilation (yes/no) (w/ date of treatment)
   - Clinical Outcome (survived/died)
 
 ### Biases to show
 
+These are the biases that we will probably explore in the guidebook and activity
+
+- Label bias
+  - The use of binary gender options may complicate data collection, as some individuals may have refused to disclose (i.e. 'null')
 - Missing data bias
   - One group should be missing from the data (probably elderly people who would not have made it to hospital and, therefore, not been triaged or seen healthcare professional)
-- 
+- Chronological bias
+  - There could be a marked difference between patients who were admitted in first few weeks, versus those who were admitted towards end of dataset due to improved practices in the hospital
+- Confounding
+  - Dataset may not be sufficient to rule out confounders
+- Cognitive bias
+  - Did the participant have a prior belief about what to expect that influenced the judgement of the analysis?
