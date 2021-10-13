@@ -55,12 +55,11 @@ A research team are exploring whether risk of deterioration from COVID-19 can be
     - Arab
     - Any other ethnic group
 - BMI*
-- Temperature
-- Heart Rate
 - Received Respiratory Support (e.g. CPAP)*
 - Date of admission (spanning 3 months)
 - Outcomes
   - Received invasive ventilation (yes/no) (w/ date of treatment)
+    - Have rate of invasive ventilation drop from 50% to 10% after two months, to signify changing clinical practices, but don't have effect on clinical outcome
   - Clinical Outcome (survived/died)
 
 ### Biases to show
