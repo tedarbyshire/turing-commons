@@ -18,7 +18,7 @@ parts:
       - file: rri/chapter3/project_lifecycle
       - file: rri/chapter3/roles_responsibility
       - file: rri/chapter3/activity1
-      - file: rri/chapter3/reflect_act_justify
+      - file: rri/chapter3/understanding_bias
       - file: rri/chapter3/activity2
     - file: rri/chapter4/index
       sections:
