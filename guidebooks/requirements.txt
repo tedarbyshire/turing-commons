@@ -8,3 +8,4 @@ folium
 sphinx-click
 sphinx_inline_tabs
 sphinxext-rediraffe~=0.2.3
+seaborn~=0.11.2
