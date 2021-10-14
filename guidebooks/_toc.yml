@@ -22,25 +22,24 @@ parts:
       - file: rri/chapter3/activity2
     - file: rri/chapter4/index
       sections:
+      - file: rri/chapter4/case_studies
       - file: rri/chapter4/planning
-      - file: rri/chapter4/activity1
+      - file: rri/chapter4/problem
       - file: rri/chapter4/data_extraction
       - file: rri/chapter4/data_analysis
-      - file: rri/chapter4/activity2
+      - file: rri/chapter4/preprocessing
+      - file: rri/chapter4/model_selection
+      - file: rri/chapter4/model_testing
+      - file: rri/chapter4/model_reporting
+      - file: rri/chapter4/model_productionalisation
+      - file: rri/chapter4/user_training
+      - file: rri/chapter4/system_use
+      - file: rri/chapter4/model_updating
     - file: rri/chapter5/index
       sections:
-      - file: rri/chapter5/preprocessing
-      - file: rri/chapter5/activity1
-      - file: rri/chapter5/model_selection
-      - file: rri/chapter5/model_training
-      - file: rri/chapter5/model_documentation
-      - file: rri/chapter5/activity2
-    - file: rri/chapter6/index
-      sections:
-      - file: rri/chapter6/user_training
-      - file: rri/chapter6/activity1
-      - file: rri/chapter6/system_use
-      - file: rri/chapter6/activity2
+      - file: rri/chapter5/assurance
+      - file: rri/chapter5/communication
+      - file: rri/chapter5/gpe
     - file: rri/conclusion/index
     - file: rri/further_resources/index
   - caption: Public Communication of Science
