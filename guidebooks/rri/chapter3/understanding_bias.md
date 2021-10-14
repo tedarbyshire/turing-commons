@@ -1,8 +1,6 @@
 # Understanding Bias
 
-Before we start exploring the project lifecycle stages there is a final topic that we need to explore: bias.
-
-You will undoubtedly have some prior understanding of the term 'bias', but depending on your research background your understanding of the concept may emphasise specific properties. This section will present three common ways that 'bias' can be understood as it applies to and affects the research and innovation lifecycle. The three perspectives that we will look at are: social, statistical, and cognitive bias.
+Before we start exploring the project lifecycle stages there is a final topic that we need to explore. You will undoubtedly have some prior understanding of the term 'bias', but depending on your research background your understanding of the concept may emphasise specific properties. This section will present three common ways that 'bias' can be understood as it applies to and affects the research and innovation lifecycle. The three perspectives that we will look at are: social, statistical, and cognitive bias.
 
 ## Social Bias
 
