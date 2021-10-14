@@ -1,4 +1,4 @@
-# Defining 'Responsibility'
+# What is 'Responsibility'?
 
 If we want a systematic and reliable method for evaluating research and innovation projects, whether past, present, or future instances, we need to have an operationalisable definition of 'responsibility'. Fortunately, we don't have to start from scratch.
 

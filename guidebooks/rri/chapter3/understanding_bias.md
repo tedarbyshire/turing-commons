@@ -42,6 +42,4 @@ On the basis of his historical review, Aronson identifies six features of defini
 * Affected elements: the study elements that may be affected by the bias include the conception, design, and conduct of the study, as well as the collection, analysis, interpretation, and representation of the data
 * Direction: the deviation is directional, as it can be caused by both an under- or over-estimation
 
-
-
 ## Cognitive Bias

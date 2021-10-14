@@ -18,6 +18,5 @@ In this chapter, you will:
 
 - [What is Responsibility?](responsibility.md)
 - [A Short History of RRI](history.md)
-- [Activity 1](activity1.md)
 - [Science, Technology, and Society](sts.md)
-- [Activity 2: Ethical Reflection](activity2.md)
+- [Science and Technology Studies (A Timeline)](timeline.md)

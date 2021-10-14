@@ -14,8 +14,3 @@ In this chapter, you will:
 ## Chapter Outline
 
 - [Preprocessing and Feature Engineering](preprocessing.md)
-- [Activity 1](activity1.md)
-- [Model Selection)](model_selection.md)
-- [Model Training and Testing](model_training.md)
-- [Model Documentation and Productionalization](model_documentation.md)
-- [Activity 2](activity2.md)
