@@ -12,7 +12,7 @@ This site is, however, a living resource, which means the content is constantly 
 These guidebooks are themselves being updated and added to, so may be in different states of completeness and readiness:
 
 - [Responsible Research and Innovation (RRI)](rri/index.md)
-- [Public Communication of Science (PCS)](pcs/index.md)
+- [Public Engagement and Communication of Science (PCS)](pcs/index.md)
 - [AI Ethics & Governance (AEG)](aeg/index.md)
 
 ## Contributing

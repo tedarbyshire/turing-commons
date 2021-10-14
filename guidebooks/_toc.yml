@@ -11,6 +11,7 @@ parts:
       - file: rri/chapter2/history
       - file: rri/chapter2/activity1
       - file: rri/chapter2/sts
+      - file: rri/chapter2/timeline
       - file: rri/chapter2/activity2
     - file: rri/chapter3/index
       sections:
