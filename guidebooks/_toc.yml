@@ -42,7 +42,7 @@ parts:
       - file: rri/chapter5/gpe
     - file: rri/conclusion/index
     - file: rri/further_resources/index
-  - caption: Public Communication of Science
+  - caption: Public Engagement and Communication of Science
     chapters:
     - file: pcs/index
   - caption: AI Ethics and Governance
