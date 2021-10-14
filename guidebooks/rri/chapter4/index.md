@@ -19,20 +19,20 @@ In this chapter, you will:
 
 ### (Project) Design
 
-- [Project Planning](project_design/planning.md)
+- [Project Planning](project_design/planning.md) <!-- Inequality walk -->
 - [Problem Formulation](project_design/problem.md)
 - [Data Extraction or Procurement](project_design/data_extraction.md)
-- [Data Analysis](project_design/data_analysis.ipynb)
+- [Data Analysis](project_design/data_analysis.ipynb) <!-- Missing Data -->
 
 ### (Model) Development
 - [Preprocessing and Feature Engineering](model_development/preprocessing.md)
-- [Model Selection and Training](model_development/model_selection.md)
+- [Model Selection and Training](model_development/model_selection.md) <!-- Exploring trade-offs -->
 - [Model Testing and Validation](model_development/model_testing.md)
-- [Model Reporting](model_development/model_reporting.md)
+- [Model Reporting](model_development/model_reporting.md) <!-- Model Cards -->
 
 ### (System) Deployment
 
 - [Model Productionalisation](system_deployment/model_productionalisation.md)
-- [User Training](system_deployment/user_training.md)
+- [User Training](system_deployment/user_training.md) <!-- Explaining decisions -->
 - [System Use and Monitoring](system_deployment/system_use.md)
-- [Model Updating or Deprovisioning](system_deployment/model_updating.md)
+- [Model Updating or Deprovisioning](system_deployment/model_updating.md) <!-- Evaluating performance -->
