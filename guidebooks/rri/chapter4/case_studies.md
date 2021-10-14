@@ -1,8 +1,8 @@
 # Case Studies
 
-The following case studies have been designed to work alongside the project lifecycle. They offer basic information to use in reflective and deliberative activities, but may also require you to fill in some gaps.
+The following case studies have been designed to work alongside a series of practical activities that cover the various stages of the project lifecycle. They offer only *basic* information to guide reflective and deliberative activities. If you find that you do not have sufficient information to address an issue that arises during deliberation, you should try to come up with something reasonable that fits the context of your chosen case study and then reflect on what this would mean for the project.
 
-For instance, if you find that you do not have sufficient information to complete one of the subsequent activities feel free to come up with something reasonable that fits the context of the case study, and then to reflect on what this would mean in practice.
+For example, when you reach the model selection section, you will have to consider what the benefits and risks could be for choosing a particular model over another, given the type of technology being developed. Because the focus of this course is on normative issues associated with data science and AI, we will not be training any models, so the actual outcome of choosing one model over another will require some informed speculation and reflection.
 
 ## Predicting Risk of Reoffending
 
