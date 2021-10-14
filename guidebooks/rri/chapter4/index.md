@@ -19,20 +19,20 @@ In this chapter, you will:
 
 ### (Project) Design
 
-- [Project Planning](planning.md)
-- [Problem Formulation](problem.md)
-- [Data Extraction or Procurement](data_extraction.md)
-- [Data Analysis](data_analysis.ipynb)
+- [Project Planning](project_design/planning.md)
+- [Problem Formulation](project_design/problem.md)
+- [Data Extraction or Procurement](project_design/data_extraction.md)
+- [Data Analysis](project_design/data_analysis.ipynb)
 
 ### (Model) Development
-- [Preprocessing and Feature Engineering](preprocessing.md)
-- [Model Selection and Training](model_selection.md)
-- [Model Testing and Validation](model_testing.md)
-- [Model Reporting](model_reporting.md)
+- [Preprocessing and Feature Engineering](model_development/preprocessing.md)
+- [Model Selection and Training](model_development/model_selection.md)
+- [Model Testing and Validation](model_development/model_testing.md)
+- [Model Reporting](model_development/model_reporting.md)
 
 ### (System) Deployment
 
-- [Model Productionalisation](model_productionalisation.md)
-- [User Training](user_training.md)
-- [System Use and Monitoring](system_use.md)
-- [Model Updating or Deprovisioning](model_updating.md)
+- [Model Productionalisation](system_deployment/model_productionalisation.md)
+- [User Training](system_deployment/user_training.md)
+- [System Use and Monitoring](system_deployment/system_use.md)
+- [Model Updating or Deprovisioning](system_deployment/model_updating.md)
