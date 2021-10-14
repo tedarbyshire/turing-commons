@@ -1,4 +1,4 @@
-# The Project Lifecycle (A Sociotechnical Approach)
+# Introducing the Project Lifecycle (A Sociotechnical Approach)
 
 There are many ways of carving up the lifecycle for a data science or AI project (hereafter ‘project lifecycle’). For instance, {cite:p}`sweenor2020` break it into four stages: Build, Manage, Deploy & Integrate, Monitor.[^mlops] {cite:p}`ashmore2019` also identify four stages, which have a more specific focus on data science: data management, model learning, model verification, and model deployment.
 

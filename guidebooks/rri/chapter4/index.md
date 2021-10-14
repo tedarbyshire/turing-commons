@@ -1,22 +1,38 @@
-# 4 Responsible Project Design
+# 4 The Project Lifecycle
 
 ```{admonition} Summary
 :class: tip
-In this chapter we will start working through the key stages of the project lifecycle, beginning with (project) design. The first part of this stage will look at activities associated with project planning and problem formulation. The second part will cover activities and topics related to responsible data extraction, procurement, analysis and management.
+In this chapter we will work our way through the key stages of the project lifecycle: (project) design, (model) development, and (system) deployment. For each stage, we will describe the accompanying activities, and highlight some of the salient ethical, social, and legal issues. However, this is presented at a relatively high-level of abstraction in the guide, because the material relies heavily on the use of [case studies](case_studies.md) and accompanying activities to flesh out some of the context-specific issues. Therefore, if you are reading this chapter as part of an individual, self-directed study, you may have to adapt the activities a little. 
 ```
 
 ```{admonition} Learning Objectives
 In this chapter, you will:
 
-- look at how you can set your project up to succeed at the earliest stages of project planning and problem formulation, and ensure that issues do not cascade downstream to later stages of the project lifecycle 
-- gain an understanding of what it means to act responsibly with respect to the data protection and privacy rights and expectations of data subjects
-- explore how social, statistical, and cognitive biases affects data analysis, and what ought to be done to minimise the effect of these biases
+- Gain a high-level understanding of the central stages of the project lifecycle: (project) design, (model) development, and (system) deployment.
+- Explore the activities that are associated with each of the three stages, focusing on salient ethical, social, and legal issues.
+- If you are following this material as part of a live course, you will also engage in practical discussions and activities, using several illustrative case studies to help you better understand how to conduct responsible data science and AI.
 ```
 
 ## Chapter Outline
 
-- [Project Planning and Problem Formulation](planning.md)
-- [Activity 1](activity1.md)
-- [Data Extraction and Procurement](data_extraction.md)
+- [Case Studies](case_studies.md)
+
+### (Project) Design
+
+- [Project Planning](planning.md)
+- [Problem Formulation](problem.md)
+- [Data Extraction or Procurement](data_extraction.md)
 - [Data Analysis](data_analysis.ipynb)
-- [Activity 2](activity2.md)
+
+### (Model) Development
+- [Preprocessing and Feature Engineering](preprocessing.md)
+- [Model Selection and Training](model_selection.md)
+- [Model Testing and Validation](model_testing.md)
+- [Model Reporting](model_reporting.md)
+
+### (System) Deployment
+
+- [Model Productionalisation](model_productionalisation.md)
+- [User Training](user_training.md)
+- [System Use and Monitoring](system_use.md)
+- [Model Updating or Deprovisioning](model_updating.md)
