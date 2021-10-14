@@ -20,16 +20,18 @@ A team of data scientists are developing a predictive risk assessment tool to be
   - Gender
   - Crime Committed
   - Postcode
+  - Housing Status
+  - Level of education
   - Occupation
   - Past offences
 - Source of data:
-  - HMCTS
+  - courts
 
 ## Recommending Courses
 
 ```{admonition} Summary
 :class: tip
-Case study summary...
+Case study summary... tool not being used by students who have clear goals
 ```
 
 - Type of technology: recommendation system
@@ -37,11 +39,12 @@ Case study summary...
 - Outcome: a ranking of possible degrees and career paths
 - Project team: private edTech organisation
 - Data types:
-  - Courses being studied
+  - Courses currently being studied at school
   - Current grades
   - Gender
   - Age
   - Postcode
+  - Extracurricular activities
   - Interests/Hobbies (from list of pre-selected options)
 - Source of data:
   - Input by student
@@ -58,9 +61,13 @@ Case study summary...
 - Outcome: binary outcome (hate speech or not) with confidence rating
 - Project team: social media researchers
 - Data types:
-  - Content of post
-  - Social network of user
+  - Text content of post
+  - Links or URLs
+  - Network or connections of user
   - Tags
+  - Images
+  - Use of emojis
   - Liked communities
+  - Stored cookies
 - Source of data:
   - Social media platform
