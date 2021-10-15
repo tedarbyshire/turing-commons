@@ -1,7 +1,7 @@
 # 3 Responsible Data Science and AI
 
 ```{image} /images/illustrations/ai.png
-:alt: Illustration of data scientists
+:alt: Illustration of data science and AI applications
 :align: center
 ```
 
