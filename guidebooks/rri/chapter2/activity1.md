@@ -1,10 +1,10 @@
 # Activity 1: Exploring Case Studies
 
-<!-- Add a short paragraph, link, icon, and title for Nerea (for each activity) -->
-
 In one respect, our first activity is a simple one.
 
-In groups you will discuss your thoughts and answers to the following questions. In doing so, however, you will probably encounter some difficulties in forming a consensus on your answers. This is to be expected, and you should also pay careful attention to the reasons why you differ in your opinions or beliefs.
+In groups you will discuss your thoughts and answers to the following questions. 
+In doing so, however, you will probably encounter some difficulties in forming a consensus on your answers. 
+This is to be expected, and you should also pay careful attention to the reasons why you differ in your opinions or beliefs.
 
 ```{admonition} Questions for Reflection
 :class: tip
@@ -14,3 +14,12 @@ In groups you will discuss your thoughts and answers to the following questions.
 4. What about cases of responsible research and innovation?
 5. What properties differentiate the (ir)responsible cases from the responsible cases of research or innovation?
 ```
+
+<!---
+
+Activity 1: Exploring Case Studies
+
+In this activity you will answer several questions related to the three case studies and either discuss in a group or reflect on them on your own.
+
+Please visit https://bit.ly/3mUERrE to view the associated activity for this section.
+--->
