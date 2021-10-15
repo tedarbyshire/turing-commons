@@ -32,7 +32,7 @@ A study conducted in the US found that an algorithm that used health costs as a 
 ---
 ````
 
-A commonly heard response to such examples is the claim that the underlying problem is that the training data used to develop the algorithms or models were insufficiently representative. That is, the *data were biased*. The assumption here is that better data collection would solve the problem. Unfortunately, *at best* this response is only partially true, but *at worst* it belies a commitment to a form of 'technological solutionism'[^solutionism] that often ignores how technology affects social practices and norms.
+A commonly heard response to such examples is the claim that the underlying problem is that the training data used to develop the algorithms or models were insufficiently representative. In other words,''*it was the data that were biased*''. The assumption here is that better data collection would solve the problem. Unfortunately, *at best* this response is only partially true, but *at worst* it belies a commitment to a form of 'technological solutionism'[^solutionism] that often ignores how technology affects social practices and norms.
 
 It is important to remember that most decisions that drive the project lifecycle are made by the project team. A choice to design a study in a particular way, or to deploy a system in a context that is characterised by patterns of historical discrimination, cannot be blamed on poor data.
 
