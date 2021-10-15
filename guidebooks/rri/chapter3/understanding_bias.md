@@ -95,6 +95,10 @@ Formally, for two events $A$ and $B$:
 
 $Pr(A \wedge B) ≤ Pr(A)$ and $Pr(A \wedge B) ≤ Pr(B)$
 
+Or, to put it more simply, someone cannot be a feminist bank teller without also being a bank teller.
+
+![venn diagram for linda problem](/images/illustrations/data-science.png)
+
 They attributed this to failure to what is known as the *representativeness heuristic*. 
 In short, people don't think about the conjunction of events or consider probability theory.
 Instead, they give an answer that is based on which of the two options is most *representative* of the description of Linda. 
