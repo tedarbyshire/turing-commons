@@ -26,7 +26,7 @@ Good principles can help us make sense of a maze of competing values, interests,
 This point is sometimes lost in the ensuing debate about *which set* of principles should be used or adhered to, or which set is best.
 However, what matters is that the set of principles should (a) be responsive to the actual harms and benefits that matter to the communities of affected individuals, (b) be underwritten by a set of shared values, which support and motivate dialogue between stakeholders[^values], and (c) serve as *starting points* in a wider process of reflection and deliberation.
 
-[^values]: We won't say much about ethical values in this course. However, the course on [AI Ethics & Governance](/guidebooks/aeg/index.md) focuses on them directlu.
+[^values]: We won't say much about ethical values in this course. However, the course on [AI Ethics & Governance](.../guidebooks/aeg/index.md) focuses on them directlu.
 
 With these points in mind, we will make use of the following set of principles known as the 'SAFE-D principles':
 
