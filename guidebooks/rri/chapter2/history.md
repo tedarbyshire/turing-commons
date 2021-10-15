@@ -80,9 +80,9 @@ Therefore, in 1990, the National Human Genome Research Institute founded a progr
 
 Writing several years after the completion of the project, the manager of the ELSI program, Michael S. Yesley, offered some remarks that are worth quoting in full.
 
-::::important
+```{note}
 The qualifications to do bioethics analysis are straightforward: familiarity with, and ability to analyze, the relevant _facts and values_. No discipline or profession has a monopoly on these skills or should dominate the process. Of the major disciplines engaged in bioethics, philosophy is useful in raising questions and providing rationale, but the actual resolution of bioethics issues – deciding which course of action to take or recommend – generally relies most heavily on factual analysis and seldom on philosophical insight alone. Law sometimes resolves bioethics issues but in most cases establishes only what is _socially permissible_, not what is most desirable, or merely imposes procedural requirements rather than a substantive result. The ethics traditions of medicine and science pervade bioethics and provide much guidance, but these professional perspectives have built-in conflicts that practitioners may not recognize when _balancing the rights and interests of others_. Social science is an obvious source of empirical information about both facts and values, but just as other fields play limited roles in bioethics, social science must be integrated in the broad policymaking process. To be useful in this process, social science must view bioethics policymaking as the goal, not the object, of its study. ({cite:t}`yesley2008`, emphasis mine)
-::::
+```
 
 Three things stand out about this quotation.
 First, Yesley is acutely aware of the complex relationship between both facts and values, but also between competing value perspectives when analysing and determining what is desirable from scientific research or technological innovation.

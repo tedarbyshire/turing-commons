@@ -19,18 +19,16 @@ Be sure to pay attention to the discussion of branches, issues, and pull request
 
 ## Saying "Hello" and Opening a Pull Request
 
-::::warning
+```{warning}
 Unfortunately, this activity can only be done when using this guide as part of an instructor-led training course.
 However, there are other ways to use GitHub to contribute to this project ([click here](https://github.com/chrisdburr/turing-commons/blob/master/CONTRIBUTING.md)).
-::::
+```
 
 This activity is a relatively easy one, but it's also very important for some of the later activities. By the end of the activity you will have:
 
 - Created a GitHub account (if you don't have one already)
 - Introduced yourself by using an issue and a branch, relevant to the course
 - Submitted a pull request that will allow you to be added as a contributor to this course's repository
-
-
 
 <!---
 Activity 1: Contributing to Collaborative Projects
