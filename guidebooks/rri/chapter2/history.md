@@ -1,10 +1,13 @@
 # A Short History of RRI
 
-The term 'responsible research and innovation' is most strongly associated with the European Commission's Framework Programmes for Research and Technological Development—a set of funding programmes that support research in the European Union. Beginning with the seventh framework programme in 2010, and continuing on through Horizon 2020 (FP8), the term 'responsible research and innovation' became increasingly important for the European Commission's policy.
+The term 'responsible research and innovation' is most strongly associated with the European Commission's Framework Programmes for Research and Technological Development—a set of funding programmes that support research in the European Union.
+Beginning with the seventh framework programme in 2010, and continuing on through Horizon 2020 (FP8), the term 'responsible research and innovation' became increasingly important for the European Commission's policy.
 
-Since then, other national funding bodies have also shown a commitment to RRI. For example, UKRI's Engineering and Physical Sciences Research Council have developed the AREA framework, which sets out four principles for RRI: Anticipate, Reflect, Engage, and Act (AREA).
+Since then, other national funding bodies have also shown a commitment to RRI.
+For example, UKRI's Engineering and Physical Sciences Research Council have developed the AREA framework, which sets out four principles for RRI: Anticipate, Reflect, Engage, and Act (AREA).
 
-In almost all cases, two significant and motivating drivers behind these policies are (a) an awareness of the impact that science and technology can have on society, and (b) an appreciation of the need to include the public in a dialogue about how science and technology should shape society. The following three case studies help to provide illustrations of these points, while also serving as useful examples that will be returned to in subsequent discussions.
+In almost all cases, two significant and motivating drivers behind these policies and principles are (a) an awareness of the impact that science and technology can have on society, and (b) an appreciation of the need to include the public in a dialogue about how science and technology should shape society.
+The following three case studies help to provide illustrations of these points, while also serving as useful examples that will be returned to in subsequent discussions.
 
 ## Case Study 1: Tuskegee Syphilis Study
 
@@ -17,13 +20,21 @@ alt: Doctor drawing blood from a patient as part of the Tuskegee Syphilis Study
 Doctor drawing blood from a patient as part of the Tuskegee Syphilis Study (Reprinted from Wikimedia Commons—https://commons.wikimedia.org/wiki/File:Tuskegee-syphilis-study_doctor-injecting-subject.jpg).
 ```
 
-Starting in 1932, the U.S. Public Health Service ran a study of “untreated syphilis in the male Negro”, which affected almost 400 African-American men with the disease {cite:p}`reverby2001`. As we know today, Syphilis can cause many symptoms including sores, blindness, hair loss, stroke, heart failure, and even death if left untreated. However, aside from the risk that these men were exposed to, a particularly abusive aspect of the study was that it was carried out on impoverished individuals, affected by the Great Depression, all while telling them they were being “treated” for their “bad blood” {cite:p}`reverby2001`.
+Starting in 1932, the U.S. Public Health Service ran a study of “untreated syphilis in the male Negro”, which affected almost 400 African-American men with the disease {cite:p}`reverby2001`.
+As we know today, Syphilis can cause many symptoms including sores, blindness, hair loss, stroke, heart failure, and even death if left untreated.
+However, aside from the risk that these men were exposed to, a particularly abusive aspect of the study was that it was carried out on _impoverished individuals_, affected by the Great Depression, all while telling them they were being “treated” for their “bad blood” {cite:p}`reverby2001`.
 
-The study created a massive outcry but, nevertheless, continued for 40 years until 1972. In this time, syphilis became treatable as a result of the increased availability of penicillin, and funding for the study was withdrawn. However, as one of the participants states,
+The study created a massive outcry but, nevertheless, continued for 40 years until 1972.
+In this time, syphilis became treatable as a result of the increased availability of penicillin, and funding for the study was withdrawn.
+However, as one of the participants states,
 
 > ''The thing that disturbs me now is that they found a cure,'' Shaw told the Baltimore Sun. ''They found penicillin. And they never gave it to us. It vexed me awfully sadly.'' {cite:p}`duff-brown2017`
 
-By the time the study did end, 128 participants had died from syphilis or related complications. Moreover, 40 of the participants’ spouses had been infected, and 19 children were born with congenital syphilis. It should be obvious why this case study is infamous and also well rehearsed in courses on research ethics or biomedical ethics {cite:p}`beauchamp2013`. However, there are many reasons for the studies continued infamy that have direct relevance to RRI, including the need to continually reflect on the structural biases that exist in society and create forms of racial discrimination that researchers should not ignore. One specific consideration is the fact that the study directly influenced a landmark event in the ethical importance of informed consent: the 1979 Belmont Report {cite:p}`nationalcommission1979`.
+By the time the study ended, 128 participants had died from syphilis or related complications.
+Moreover, 40 of the participants’ spouses had been infected, and 19 children were born with congenital syphilis.
+It should be obvious why this case study is infamous and well-rehearsed in courses on research ethics or biomedical ethics {cite:p}`beauchamp2013`.
+However, there are many reasons for the study's continued infamy that have direct relevance to RRI, including the need to continually reflect on the structural biases that exist in society and create forms of racial discrimination that researchers should not ignore.
+One specific consideration is the fact that the study directly influenced a landmark event in the ethical importance of informed consent: the 1979 Belmont Report {cite:p}`nationalcommission1979`.
 
 This report, produced by the US National Commission for the Protection of Human Subjects of Biomedical and Behavioral Research, set out a variety of guidelines for clinical research, including the requirement for participants to have an understanding of the research being conducted, in order to provide informed consent.
 
@@ -31,13 +42,14 @@ This report, produced by the US National Commission for the Protection of Human 
 
 The conditions that need to be satisfied are,
 
-1) Disclosure of sufficient information
-2) Ensuring participant's comprehension
-3) Voluntarily providing consent
+1. Disclosure of sufficient information
+2. Ensuring participant's comprehension
+3. Voluntarily providing consent
 
 Neither (1) nor (2) were satisfied in the Tuskegee study, and it would be difficult to argue that (3) was satisfied given the socioeconomic deprivation which affected the participants.
 
-Aside from the historical importance of this study, its inclusion here is also to help highlight why so much significance is placed on the responsible participation of stakeholder and affected users or individuals in present day research and activity. We will say more about this in the next section.
+Aside from the historical importance of this study, its inclusion here is also to help highlight why so much significance is placed on the responsible participation of stakeholder and affected users or individuals in present day research and activity.
+We will say more about this in the [next section](sts.md).
 
 ## Case Study 2: Human Genome Project
 
@@ -50,21 +62,35 @@ alt: DNA Double Helix
 DNA Double Helix
 ```
 
-The Human Genome Project was proposed in 1986 following a project feasibility workshop in Santa Fe, New Mexico. At the time, the US Department of Energy's Health and Environmental Research Advisory Committee urged the department
+The Human Genome Project was proposed in 1986 following a project feasibility workshop in Santa Fe, New Mexico.
+At the time, the US Department of Energy's Health and Environmental Research Advisory Committee urged the department
 
 > to commit to a large, long-term, multidisciplinary, technological undertaking to order and sequence the human genome {cite:p}`barnhart1989`
 
-Nearly 20 years and 2.7 billion dollars later, on April 14, 2003, the project was formally announced as complete. The project had been an international effort to identify all of our ~20,500 genes and determine the sequences of nearly 3 billion chemical base pairs make up our DNA. The scale of the project and the magnitude of the technological accomplishments should be praised in their own rights. But even more impressive is the continuing impact that this project has had on research projects, collaborative practices, and technological advancements {cite:p}`mcguire2020`.
+Nearly 20 years and 2.7 billion dollars later, on April 14, 2003, the project was formally announced as complete.
+The project had been an international effort to identify all of our ~20,500 genes and determine the sequences of nearly 3 billion chemical base pairs make up our DNA.
+The scale of the project and the magnitude of the technological accomplishments should be praised in their own rights.
+But even more impressive is the continuing impact that this project has had on research projects, collaborative practices, and technological advancements {cite:p}`mcguire2020`.
 
-Even from the very beginning of the project, it was clear that expanding our knowledge of genetics and genomics would have profound impacts on society—not all of which would be positive. For example, converns were voiced about whether the knowledge could be used to further discriminate against certain individuals or sub-groups of the human population, raising the spectre of past injustices caused by the practice of eugenics [^gattaca].Therefore, in 1990, the National Human Genome Research Institute founded a program to specifically oversee and study the project's ethical, legal, and social implications, known as the ELSI program {cite:p}`nhgri2021`.
+Even from the very beginning of the project, it was clear that expanding our knowledge of genetics and genomics would have profound impacts on society—not all of which would be positive.
+For example, concerns were voiced about whether the knowledge could be used to further discriminate against certain individuals or sub-groups of the human population, raising the spectre of past injustices caused by the practice of eugenics [^gattaca].
+Therefore, in 1990, the National Human Genome Research Institute founded a program to specifically oversee and study the project's ethical, legal, and social implications, known as the ELSI program {cite:p}`nhgri2021`.
 
 [^gattaca]: This concern became the centrepiece for the 1997 dystopian sci-fi, Gattaca, which takes its title from the four letters of the nucleobases of DNA.
 
-Writing several years after the completion of the project, the manager of the ELSI program, Michael S. Yesley, offered some remarks that are worth quoting in full:
+Writing several years after the completion of the project, the manager of the ELSI program, Michael S. Yesley, offered some remarks that are worth quoting in full.
 
-> The qualifications to do bioethics analysis are straightforward: familiarity with, and ability to analyze, the relevant *facts and values*. No discipline or profession has a monopoly on these skills or should dominate the process. Of the major disciplines engaged in bioethics, philosophy is useful in raising questions and providing rationale, but the actual resolution of bioethics issues – deciding which course of action to take or recommend – generally relies most heavily on factual analysis and seldom on philosophical insight alone. Law sometimes resolves bioethics issues but in most cases establishes only what is *socially permissible*, not what is most desirable, or merely imposes procedural requirements rather than a substantive result. The ethics traditions of medicine and science pervade bioethics and provide much guidance, but these professional perspectives have built-in conflicts that practitioners may not recognize when *balancing the rights and interests of others*. Social science is an obvious source of empirical information about both facts and values, but just as other fields play limited roles in bioethics, social science must be integrated in the broad policymaking process. To be useful in this process, social science must view bioethics policymaking as the goal, not the object, of its study. ({cite:t}`yesley2008`, emphasis mine)
+```{panels}
+The qualifications to do bioethics analysis are straightforward: familiarity with, and ability to analyze, the relevant _facts and values_. No discipline or profession has a monopoly on these skills or should dominate the process. Of the major disciplines engaged in bioethics, philosophy is useful in raising questions and providing rationale, but the actual resolution of bioethics issues – deciding which course of action to take or recommend – generally relies most heavily on factual analysis and seldom on philosophical insight alone. Law sometimes resolves bioethics issues but in most cases establishes only what is _socially permissible_, not what is most desirable, or merely imposes procedural requirements rather than a substantive result. The ethics traditions of medicine and science pervade bioethics and provide much guidance, but these professional perspectives have built-in conflicts that practitioners may not recognize when _balancing the rights and interests of others_. Social science is an obvious source of empirical information about both facts and values, but just as other fields play limited roles in bioethics, social science must be integrated in the broad policymaking process. To be useful in this process, social science must view bioethics policymaking as the goal, not the object, of its study.
+{badge}`({cite:t}`yesley2008`, emphasis mine)`
+```
 
-Three things stand out about this quotation. First, Yesley is acutely aware of the complex relationship between both facts and values, but also between competing value perspectives, when analysing and determining what is desirable from scientific research or technological innovation. Second, as a lawyer, he also has an appreciation of the normative limitations that can be derived from legal precedents, acknowledging that the law tends to establish that which is socially permissible but not what is "most desirable". To paraphrase, the law can help create guardrails, but is often unable on its own to set the direction of travel. And, finally, Yesley recognises that reflection on ethical, legal, and social implications counts for little without an ability to influence and shape policy.
+Three things stand out about this quotation.
+First, Yesley is acutely aware of the complex relationship between both facts and values, but also between competing value perspectives when analysing and determining what is desirable from scientific research or technological innovation.
+
+Second, as a lawyer, he also has an appreciation of the normative limitations that can be derived from legal precedents, acknowledging that the law tends to establish that which is _socially permissible_ but not what is _most desirable_.
+To paraphrase, the law can help create guardrails but is often unable on its own to set the direction of travel.
+And, finally, Yesley recognises that reflection on ethical, legal, and social implications counts for little without an ability to influence and shape policy.
 
 This final point is important, as Yesley continues by acknowledging how the model employed by ELSI reflected little consideration of whether it ''would be useful or appropriate to develop public policy that could potentially question the direction of the [Human Genome Project's] scientific research'', and also hat the project's scientist-administrators, ''established ELSI simply by earmarking funds from their science budget, and they controlled the content of ELSI by determining the boundaries of the funded research. No one would represent the public interest in the administration of ELSI, which would lack at its core an independent, representative entity to analyze the issues, determine research needs, analyze research results and develop well-supported policy recommendations''.
 
