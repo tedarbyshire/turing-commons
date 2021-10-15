@@ -95,7 +95,9 @@ Formally, for two events $A$ and $B$:
 
 $Pr(A \wedge B) ≤ Pr(A)$ and $Pr(A \wedge B) ≤ Pr(B)$
 
-They attributed this to failure to what is known as the *representativeness heuristic*.
+They attributed this to failure to what is known as the *representativeness heuristic*. 
+In short, people don't think about the conjunction of events or consider probability theory.
+Instead, they give an answer that is based on which of the two options is most *representative* of the description of Linda. 
 ```
 ````
 
