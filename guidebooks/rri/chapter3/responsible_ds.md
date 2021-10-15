@@ -43,6 +43,14 @@ These principles are grounded in comprehensive research and understanding of hum
 You can click through the following illustrative examples to get an idea of some of the social harms associated with data-driven technologies:
 
 ````{panels}
+
+Predicting Risk
+^^^
+Avon and Somerset Police and Bristol City Council developed a sophisticated predictive risk tool that was used, among other things, to predict the risk of children suffering sexual abuse. But, the Bristol Cable reported that many children were falsely flagged as being at risk, and that the tool was developed using dozens of public sector databases, including schools, housing, NHS records, and even credit scores from Experian.
++++
+[The Bristol Cable, 'How a police and council database is predicting if your child is at risk of harm'](https://thebristolcable.org/2021/07/how-a-police-and-council-database-is-predicting-if-your-child-is-at-risk-of-harm/)
+---
+
 Facebook Discriminatory Job Adverts
 ^^^
 The algorithmic system used by Facebook to automatically show job adverts to users it believes are most likely to engage with them was reported to perpetuate discriminatory gender norms. Thee BBC reported that
@@ -51,12 +59,6 @@ The algorithmic system used by Facebook to automatically show job adverts to use
 +++
 [BBC News, 'Facebook accused of allowing sexist job advertising'](https://www.bbc.co.uk/news/technology-58487026)
 ---
-
-Predicting Risk
-^^^
-Avon and Somerset Police and Bristol City Council developed a sophisticated predictive risk tool that was used, among other things, to predict the risk of children suffering sexual abuse. But, the Bristol Cable reported that many children were falsely flagged as being at risk, and that the tool was developed using dozens of public sector databases, including schools, housing, NHS records, and even credit scores from Experian.
-+++
-[The Bristol Cable, 'How a police and council database is predicting if your child is at risk of harm'](https://thebristolcable.org/2021/07/how-a-police-and-council-database-is-predicting-if-your-child-is-at-risk-of-harm/)
 
 Racist Photo Cropping Tool
 ^^^
@@ -70,6 +72,7 @@ Lethal Autonomous Weapons
 Turkish company STM manufactures the [Kargu-2](https://www.stm.com.tr/uploads/docs/1628858259_tacticalminiuavsystems.pdf?)—an attack drone that can operate autonomously by using machine learning and real-time image processing to identify targets. According to a UN security council report this drone was reported to have been used to "remotely engage" and "hunt down" logistics convoys and retreating forces in the Libyan civil war during 2019.
 +++
 [NPR, 'A Military Drone With A Mind Of Its Own Was Used In Combat, U.N. Says'](https://www.npr.org/2021/06/01/1002196245/a-u-n-report-suggests-libya-saw-the-first-battlefield-killing-by-an-autonomous-d)
+---
 
 #TravelingWhileTrans
 ^^^
