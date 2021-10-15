@@ -33,44 +33,54 @@ With these points in mind, we will make use of the following set of principles k
 - Data Quality, Integrity, Protection and Privacy
 
 These principles are grounded in comprehensive research and understanding of human rights and data protection law, as well as applied ethics of data and AI. {cite}`leslie2021`
-Each principle is either motivated by and captures a specific set of harms that have been uncovered and exposed, responds to a set or well-documented risks that arise in the context of data science and AI, or is oriented towards the sustainable, ethical, and responsible use of data-driven technologies.
+
+### Examples
+
 You can click through the following illustrative examples to get an idea of some of the social harms associated with data-driven technologies:
 
-```{tabbed} Facebook Discriminatory Job Adverts
+````{panels}
+Facebook Discriminatory Job Adverts
+^^^
 The algorithmic system used by Facebook to automatically show job adverts to users it believes are most likely to engage with them was reported to perpetuate discriminatory gender norms. Thee BBC reported that
 
 >almost all Facebook users shown adverts for mechanics were men, while ads for nursery nurses were seen almost exclusively by women.
-
++++
 [BBC News, 'Facebook accused of allowing sexist job advertising'](https://www.bbc.co.uk/news/technology-58487026)
-```
+---
 
-```{tabbed} Predicting Risk
+Predicting Risk
+^^^
 Avon and Somerset Police and Bristol City Council developed a sophisticated predictive risk tool that was used, among other things, to predict the risk of children suffering sexual abuse. But, the Bristol Cable reported that many children were falsely flagged as being at risk, and that the tool was developed using dozens of public sector databases, including schools, housing, NHS records, and even credit scores from Experian.
-
++++
 [The Bristol Cable, 'How a police and council database is predicting if your child is at risk of harm'](https://thebristolcable.org/2021/07/how-a-police-and-council-database-is-predicting-if-your-child-is-at-risk-of-harm/)
-```
 
-```{tabbed} Racist Photo Cropping Tool
+Racist Photo Cropping Tool
+^^^
 Twitter was forced to apologise after many users reported that the automated tool for cropping images on the social media platform showed a racial bias towards faces of white people over faces of black people. According to [Twitter](https://blog.twitter.com/engineering/en_us/topics/insights/2021/sharing-learnings-about-our-image-cropping-algorithm), one source of the issue was the use of a ''saliency algorithm'' that was trained on human eye-tracking data.
-
++++
 [The Guardian, 'Twitter apologises for 'racist' image-cropping algorithm'](https://www.theguardian.com/technology/2020/sep/21/twitter-apologises-for-racist-image-cropping-algorithm)
-```
+---
 
-```{tabbed} Lethal Autonomous Weapons
+Lethal Autonomous Weapons
+^^^
 Turkish company STM manufactures the [Kargu-2](https://www.stm.com.tr/uploads/docs/1628858259_tacticalminiuavsystems.pdf?)—an attack drone that can operate autonomously by using machine learning and real-time image processing to identify targets. According to a UN security council report this drone was reported to have been used to "remotely engage" and "hunt down" logistics convoys and retreating forces in the Libyan civil war during 2019.
-
++++
 [NPR, 'A Military Drone With A Mind Of Its Own Was Used In Combat, U.N. Says'](https://www.npr.org/2021/06/01/1002196245/a-u-n-report-suggests-libya-saw-the-first-battlefield-killing-by-an-autonomous-d)
-```
 
-```{tabbed} #TravelingWhileTrans
+#TravelingWhileTrans
+^^^
 In their book, Design Justice, Sasha Costanza-Chock highlights how the design of sociotechnical systems reinforce and embed a variety of social norms and expectations that can be harmful to vulnerable or marginalised communities. For example, the impact of full-body scanners at airport security that require operators to select either 'male' or 'female', even when presented with non-binary or trans individuals whose bodies may not conform to the models embedded within the machine.
++++
 [Design Justice, 'Introduction: #TravelingWhileTrans, Design Justice, and Escape from the Matrix of Domination'](https://design-justice.pubpub.org/pub/ap8rgw5e/release/1)
-```
+---
 
-```{tabbed} Any Others?
+Any Others?
+^^^
 Do you know any other examples of social harms associated with data-driven technologies?
-```
++++
+````
 
+Each of the SAFE-D principles is either motivated by and captures a specific set of harms that have been uncovered and exposed, responds to a set or well-documented risks that arise in the context of data science and AI, or is oriented towards the sustainable, ethical, and responsible use of data-driven technologies.
 Let's look at each principle in turn.
 
 ### Safety
