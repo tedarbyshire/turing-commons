@@ -88,13 +88,19 @@ The correct answer is (1). Did you get it right?
 
 If you got it wrong, you have just committed what is known as the 'conjunction fallacy'. But don't worry you're in very good company!
 
+When Tvserky and Kahneman posed this question to a group of 88 undergraduate students, only $15%$ got the correct answer {cite}`tversky1983`. 
 The probability of two events occurring in conjunction, such as Linda being both a 'bank teller' and 'active in the feminist movement' must be less than or equal to the probability of either event occuring on its own. 
 
-Formally, for two events A and B, $Pr(A \wedge B) ≤ Pr(A) and Pr(A \wedge B) ≤ Pr(B)$.
+Formally, for two events $A$ and $B$:
+
+$Pr(A \wedge B) ≤ Pr(A)$ and $Pr(A \wedge B) ≤ Pr(B)$
+
+They attributed this to failure to what is known as the *representativeness heuristic*.
 ```
 ````
 
-When Kahneman and Tvserky posed this question to a group of 88 undergraduate students, only $15%$ got the correct answer. They attributed this to failure to what is known as the *representativeness heuristic*.
+
+[...]
 
 A critical perspective on this view would see it as an attempt to catalogue a variety of *cognitive failures* or *irrationalitiees*, which stem from an individual’s inability to perform rational calculations. However, such a perspective fails to take into consideration the plurality of permissible outcomes that may be rational in certain decision tasks when additional constraints are recognised (e.g. environmental factors that place temporal constraints on choice behaviour).
 
