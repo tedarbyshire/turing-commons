@@ -2,7 +2,9 @@
 
 Our second activity is another group discussion, but this time there is a bit more structure that is intended to help you think about the societal impact of decision-making and actions.
 
-A page has been set up on Mural—a collaborative whiteboard tool—to guide you in a process of ethical reflection and deliberation.
+A page has been set up on Mural—a collaborative whiteboard tool—to guide you in a process of ethical reflection and deliberation:
+
+[Link to Mural Board]()
 
 The activity proceeds as follows:
 
@@ -11,6 +13,17 @@ The activity proceeds as follows:
 3. When you have an initial list, you will then need to consider what the priorities and values are for the different actors and subjects? This could be a high-level principle such as welfare, in the context of animal agriculture. Or, it could be something more concrete such as a commitment to sustainability that prohibits any travel that contributes excessively to greenhouse gas emissions, in the context of deciding whether to fly.
 4. Finally, you will then need to reflect on what tensions, if any, arise between the values or priorities of the respective actors and subjects. For instance, does your commitment to transparency in publishing data impact the privacy expectations of the data subjects involved.
 
-At this stage, don't worry about trying to resolve these tensions. The goal is simply to become familiar with the process of identifying and considering a plurality of ethical values or priorities. We will consider evaluation in a later section.
+At this stage, don't worry about trying to resolve these tensions.
+The goal is simply to become familiar with the process of identifying and considering a plurality of ethical values or priorities.
+We will consider evaluation in a later section.
 
-[^agent]: In moral philosophy, a *moral agent* is someone who has the capacity to make moral judgments, based on a concept of rightness or wrongness, and then act upon these judgements. As such, moral agency is a requirement for moral accountability (i.e., the attribution of praise or blame in response to the consequences of practical decision-making). This concept is used to draw a distinction between rational agents and those who lack the capacity for rational deliberation, (e.g., non-human animals, children, people with severe mental disabilities). In contrast, *moral patients* or subjects, are those to whom moral agents have responsibility when deciding upon a course of action. Other humans can be moral subjects, but the list can also include non-human animals, ecological systems, and even inanimate objects (e.g., national artefacts).
+[^agent]: In moral philosophy, a _moral agent_ is someone who has the capacity to make moral judgments, based on a concept of rightness or wrongness, and then act upon these judgements. As such, moral agency is a requirement for moral accountability (i.e., the attribution of praise or blame in response to the consequences of practical decision-making). This concept is used to draw a distinction between rational agents and those who lack the capacity for rational deliberation, (e.g., non-human animals, children, people with severe mental disabilities). In contrast, _moral patients_ or subjects, are those to whom moral agents have responsibility when deciding upon a course of action. Other humans can be moral subjects, but the list can also include non-human animals, ecological systems, and even inanimate objects (e.g., national artefacts).
+
+<!---
+
+Activity 2: Ethical Reflection and Deliberation
+
+In this activity you will engage in a structured form of reflection and deliberation to identify the respective agents and subjects for a variety of moral decisions.
+
+Please visit https://bit.ly/3p4SXJv to view the associated activity for this section.
+--->
