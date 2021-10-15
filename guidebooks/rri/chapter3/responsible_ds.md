@@ -2,11 +2,9 @@
 
 > What separates responsible data science and AI from responsible research and innovation more generally?
 
-This is the question that this section seeks to answer.
-
-We saw in the [previous chapter](../chapter2/index.md) how RRI can be defined or operationalised through reference to principles or concepts that emphasise the need for ethical reflection on possible social harms and benefits, supported by inclusive participation of affected stakeholders.
-
-Responsible data science and AI shares this emphasis, but can be refined by considering more specific principles that are geared towards the particular harms and benefits associated with data science and AI.
+We saw in the [previous chapter](../chapter2/index.md) how RRI can be defined with reference to concepts that emphasise the need for ethical reflection on possible social harms and benefits, supported by inclusive participation of affected stakeholders.
+Responsible data science and AI shares this emphasis, but can be further refined by considering more specific principles that are geared towards the particular harms and benefits associated with data science and AI.
+These principles can help us identify what is unique to responsible data science and AI. 
 
 ## SAFE-D Principles
 
@@ -15,10 +13,18 @@ By now there are surely many, many more!
 
 In response to this proliferation of principles, some have attempted to distil and condense the myriad documents, in order to identify commonalities and extract a unified list of shared principles {cite:p}`jobin2019,floridi2019`.
 However, regardless of which set of principles we start with, one thing remains the same: good principles should support ongoing reflection and deliberation; they are not decision procedures in their own right.
-This point is sometimes lost in the ensuing debate about which set of principles should be used or adhered to.
-But, what matters is that the set of principles should (a) be responsive to the actual harms and benefits that matter to the communities of affected individuals, (b) be underwritten by a set of shared values, which support and motivate dialogue between stakeholders, and (c) serve as *starting points* in a wider process of reflection and deliberation.
 
-To that end, we will make reference to the following set of principles that we call the 'SAFE-D principles':
+```{image} /images/illustrations/deliberation.png
+:alt: Illustration of moral deliberation
+:align: center
+```
+
+This point is sometimes lost in the ensuing debate about *which set* of principles should be used or adhered to, or which set is best.
+However, what matters is that the set of principles should (a) be responsive to the actual harms and benefits that matter to the communities of affected individuals, (b) be underwritten by a set of shared values, which support and motivate dialogue between stakeholders[^values], and (c) serve as *starting points* in a wider process of reflection and deliberation.
+
+[^values]: We won't say much about ethical values in this course. However, the course on [AI Ethics & Governance](/guidebooks/aeg/index.md) focuses on them directlu.
+
+With these points in mind, we will make use of the following set of principles known as the 'SAFE-D principles':
 
 - Safety
 - Accountability
@@ -26,8 +32,8 @@ To that end, we will make reference to the following set of principles that we c
 - Explainability
 - Data Quality, Integrity, Protection and Privacy
 
-These principles are grounded in comprehensive research and understanding of human rights and data protection law, as well as applied ethics of data and AI.
-Each principles is either motivated by a specific set of harms that have been uncovered and exposed, responsive to a set or well-documented risks that arise in the context of data science and AI, or oriented towards the sustainable, ethical, and responsible use of data-driven technologies.
+These principles are grounded in comprehensive research and understanding of human rights and data protection law, as well as applied ethics of data and AI. {cite}`leslie2021`
+Each principle is either motivated by and captures a specific set of harms that have been uncovered and exposed, responds to a set or well-documented risks that arise in the context of data science and AI, or is oriented towards the sustainable, ethical, and responsible use of data-driven technologies.
 You can click through the following illustrative examples to get an idea of some of the social harms associated with data-driven technologies:
 
 ```{tabbed} Facebook Discriminatory Job Adverts
@@ -56,8 +62,10 @@ Turkish company STM manufactures the [Kargu-2](https://www.stm.com.tr/uploads/do
 [NPR, 'A Military Drone With A Mind Of Its Own Was Used In Combat, U.N. Says'](https://www.npr.org/2021/06/01/1002196245/a-u-n-report-suggests-libya-saw-the-first-battlefield-killing-by-an-autonomous-d)
 ```
 
-<!-- ```{tabbed} #TravelingWhileTrans
-Sasha Costanza-Chock—author of Design Justice— -->
+```{tabbed} #TravelingWhileTrans
+In their book, Design Justice, Sasha Costanza-Chock highlights how the design of sociotechnical systems reinforce and embed a variety of social norms and expectations that can be harmful to vulnerable or marginalised communities. For example, the impact of full-body scanners at airport security that require operators to select either 'male' or 'female', even when presented with non-binary or trans individuals whose bodies may not conform to the models embedded within the machine.
+[Design Justice, 'Introduction: #TravelingWhileTrans, Design Justice, and Escape from the Matrix of Domination'](https://design-justice.pubpub.org/pub/ap8rgw5e/release/1)
+```
 
 ```{tabbed} Any Others?
 Do you know any other examples of social harms associated with data-driven technologies?
@@ -75,12 +83,14 @@ This aspect of safety requires a project's practices to be informed by ongoing c
 
 ### Accountability
 
-Accountability can refer to transparency of processes (e.g., as enacted through process logs or external auditing) that enable people to understand how a project was conducted, and may be required for auditing or processes of redress.
+Accountability can refer to transparency of processes and associated outcomes that enable people to understand how a project was conducted (e.g., project documentation), or why a specific decision was reached.
 But it can also refer to broader processes of responsible project governance that seek to establish clear roles of responsibility where full transparency may be inappropriate (e.g., confidential projects).
 
 ### Fairness
 
-Fairness is inseparably connected with sociolegal conceptions of equity and justice, which may emphasize a variety of features such as non-discrimination, equitable outcomes, or procedural fairness through bias mitigation, but also social and economic equality, diversity, and inclusiveness.
+Fairness is inseparably connected with legal conceptions of equality and justice, which may emphasize a variety of features such as non-discrimination, equitable outcomes, or procedural fairness through bias mitigation.
+However, these notions serve as a subset of broader normative considerations pertaining to social justice, socioeconomic capabilities, diversity and inclusivity.
+For this reason, the term 'fairness' can be confusing due to the wide variety of ways it is employed, and the large number of more specific concepts that fall within its scope.
 
 ### Explainability
 
@@ -99,19 +109,22 @@ Data quality, integrity, protection and privacy must all be established to be co
 
 Each of these principles can be treated as a goal to which responsible data science and AI ought to be directed.[^pcs]
 But, on their own they are insufficient for establishing what specific actions or decisions should be taken in any given project.
-For instance, what does it mean to develop a fair diagnostic model in healthcare?
+For instance, what does it mean to develop a *fair* diagnostic model in healthcare?
+
 Does it mean ensuring that all patients are exposed to the same level of risk with respect to the distribution of possible false negatives?
+
 What about false positives instead?
+
 What about the use of the decision support system in which thee model is implemented?
+
 Will it be used in all hospitals on all patients?
+
 Or, will only those wealthy enough to afford private healthcare receive this service?
+
 Should it instead be used for the most vulnerable and worse off in society?
 
 [^pcs]: In our guidebook on [public communication of science](https://turing-commons.netlify.app/pvs/index.html) we formalise this notion of an ethical goal in relation to a method known as argument-based assurance. Here, the goals are supported by specific properties that must be established in a project, in order to provide justifiable assurance to stakeholders that the respective goal has been realised.
 
 Questions such as these have no straightforward answer and are heavily context-dependant.
 Even if consensus were to be reached for a specific model used, say, in the diagnosis of lung cancer {cite}`svoboda2020`, this would be no guarantee of a similar answer in a different area of healthcare (e.g., paediatrics, mental healthcare), or even for another diagnostic model in radiology (e.g., MRI instead of CT scans).
-Therefore, starting in the next section we will look at how the earliest stages of project planning should incorporate some form of stakeholder engagement, including domain experts and affected individuals, in a manner that is proportional to the expected risks associated with the project.
-In doing so, you will be introduced to a variety of procedures and practical mechanisms that can support processes of reflection and deliberation that are required for responsible research or innovation projects.
-
-However, first we need to get a clearer idea of what a data science or AI project typically looks like.
+Therefore, starting in the next section we will look at a model for helping us get a clear grasp of the situated and sociotechnical context under consideration in research and innovation projects.
