@@ -17,16 +17,19 @@ There are numerous examples that illustrate this point.
 ^^^
 This algorithmic system learned to perpetuate a bias to prefer male candidates to female candidates because this reflected past hiring decisions.
 +++
+---
 
 [Predictive policing](https://www.technologyreview.com/2020/07/17/1005396/predictive-policing-algorithms-racist-dismantled-machine-learning-bias-criminal-justice/) that use geospatial data to try to learn associations between places, events, and historical crime rates.
 ^^^
 The attempt to predict where and when crimes are more likely to happen can create a positive feedback loop, which results in over-policing that may exacerbate tensions between communities and police.
 +++
+---
 
 [Clinical decision support systems](https://www.nature.com/articles/d41586-019-03228-6) can contribute to existing forms of racial bias in access to healthcare.
 ^^^
 A study conducted in the US found that an algorithm that used health costs as a proxy for health needs was ''less likely to refer black people than white people who were equally sick to programmes that aim to improve care for patients with complex medical needs''. {cite:p}`obermeyer2019`
 +++
+---
 ````
 
 A commonly heard response to such examples is the claim that the underlying problem is that the training data used to develop the algorithms or models were insufficiently representative. That is, the *data were biased*. The assumption here is that better data collection would solve the problem. Unfortunately, *at best* this response is only partially true, but *at worst* it belies a commitment to a form of 'technological solutionism'[^solutionism] that often ignores how technology affects social practices and norms.
