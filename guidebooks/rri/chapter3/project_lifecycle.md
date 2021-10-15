@@ -1,22 +1,28 @@
 # Introducing the Project Lifecycle (A Sociotechnical Approach)
 
-There are many ways of carving up the lifecycle for a data science or AI project (hereafter, ‘project lifecycle’).
+There are many ways of carving up the lifecycle for a data science or AI project (hereafter, ‘project lifecycle’).[^assurance]
 For instance, {cite:p}`sweenor2020` break it into four stages: Build, Manage, Deploy & Integrate, Monitor.[^mlops]
 {cite:t}`ashmore2019` also identify four stages, which have a more specific focus on data science: data management, model learning, model verification, and model deployment.
 
-[^mlops]: These four stages are influenced by an ‘ML OPs’ perspective. The term ‘MLOps’ refers to the application of DevOps practices to ML pipelines. The term is often used in an inclusive manner to incorporate traditional statistical or data science practices that support the ML lifecycle, but are not themselves constitutive of machine learning (e.g. exploratory data analysis), as well as deployment practices that are important within business and operational contexts (e.g. monitoring key performance indicators).
+[^assurance]: The following text is adapted from a publication titled, 'Ethical Assurance: A practical approach to the responsible design, development, and deployment of data-driven technologies' {cite:p}`burr2021a`.
 
-The multiplicity of approaches is likely a product of the evolution of diverse methods in data mining/analytics, the significant impact of ML on research and innovation, and the specific practices and considerations inherent to each of the various domains where ML techniques are applied. While there are many benefits of existing frameworks, they do not tend to focus on the wider social or ethical aspects that interweave throughout the various stages of a ML lifecycle.
+[^mlops]: These four stages are influenced by an ‘ML OPs’ perspective.
+The term ‘MLOps’ refers to the application of DevOps practices to ML pipelines.
+The term is often used in an inclusive manner to incorporate traditional statistical or data science practices that support the ML lifecycle, but are not themselves constitutive of machine learning (e.g. exploratory data analysis), as well as deployment practices that are important within business and operational contexts (e.g. monitoring key performance indicators).
 
-{numref}`project-lifecycle`, therefore, presents a model of a *typical* project lifecycle, for a project involving data science or the production of an ML/AI system. We have designed this model to support the ethical reflection and deliberation that is characteristic of responsible data science and AI, while remaining faithful to the technical details. However, it is important to note that the model is a heuristic for reflection and deliberation, and is, therefore, not intended to be *descriptively adequate* for all data science or AI projects.[^assurance]
+The multiplicity of approaches is likely a product of the evolution of diverse methods in data mining/analytics, the significant impact of ML on research and innovation, and the specific practices and considerations inherent to each of the various domains where ML techniques are applied.
+While there are many benefits of existing frameworks, they do not tend to focus on the wider social or ethical aspects that interweave throughout the various stages of a ML lifecycle.
 
-[^assurance]: The following text is adapted from a publication titled, 'Ethical Assurance: A practical approach to the responsible design, development, and deployment of data-driven technologies' {cite:p}`burr2021`.
+{numref}`project-lifecycle`, therefore, presents a model of a *typical* lifecycle for a project involving data science or the production of an ML/AI system. 
+We have designed this model to support the ethical reflection and deliberation that is characteristic of responsible data science and AI, while remaining faithful to the technical details.
+However, it is important to note that the model is a heuristic for reflection and deliberation.
+Therefore, it is not intended to be perfectly capture of describe the processes for all data science or AI projects.
 
 ```{figure} /images/graphics/lifecycle.png
 ---
 align: center
 name: project-lifecycle
-alt: Doctor drawing blood from a patient as part of the Tuskegee Syphilis Study
+alt: A model of a typical data science and AI project
 ---
 The Project Lifecycle. The overarching stages of design, development, and deployment (for a typical data-driven project) can be split into indicative tasks and activities. In practice, both the stages and the tasks will overlap with their neighbours, and may be revisited where a particular task requires an iterative approach. The spiral indicates that this is a diachronic, macroscopic process that evolves and develops over time, and as the deployment stage finishes, a new iteration is likely to begin.
 ```
