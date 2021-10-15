@@ -14,9 +14,13 @@ By now there are surely many, many more!
 In response to this proliferation of principles, some have attempted to distil and condense the myriad documents, in order to identify commonalities and extract a unified list of shared principles {cite:p}`jobin2019,floridi2019`.
 However, regardless of which set of principles we start with, one thing remains the same: good principles should support ongoing reflection and deliberation; they are not decision procedures in their own right.
 
-```{image} /images/illustrations/deliberation.png
-:alt: Illustration of moral deliberation
-:align: center
+```{figure} /images/illustrations/deliberation.png
+---
+align: center
+name: moral-deliberation
+alt: An illustration of a man standing in front of a branching pathway of moral decisions and considerations
+---
+Good principles can help us make sense of a maze of competing values, interests, and features that affect moral decision-making.
 ```
 
 This point is sometimes lost in the ensuing debate about *which set* of principles should be used or adhered to, or which set is best.
