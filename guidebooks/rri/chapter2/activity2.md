@@ -25,5 +25,5 @@ Activity 2: Ethical Reflection and Deliberation
 
 In this activity you will engage in a structured form of reflection and deliberation to identify the respective agents and subjects for a variety of moral decisions.
 
-Please visit https://bit.ly/3p4SXJv to view the associated activity for this section.
+Please visit https://bit.ly/3p4SXJv to view the associated to view the associated instructions.
 --->

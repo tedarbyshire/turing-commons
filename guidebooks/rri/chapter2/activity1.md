@@ -21,5 +21,5 @@ Activity 1: Exploring Case Studies
 
 In this activity you will answer several questions related to the three case studies and either discuss in a group or reflect on them on your own.
 
-Please visit https://bit.ly/3mUERrE to view the associated activity for this section.
+Please visit https://bit.ly/3mUERrE to view the associated instructions.
 --->
