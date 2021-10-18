@@ -14,5 +14,18 @@ Similarly, those with darker skin may be disadvantaged by the deployment of a te
 It can be very difficult to identify all the ways in which individuals or stakeholders may be privileged, but it is important to reflect on these considerations to be sure that the benefits or harms of your research or innovation project are fairly distributed or targeted in the way you intend.
 
 To this end, the following activity is designed to help you think about a variety of privileges using some personas and an activity known as a 'privilege walk'.
+If you have ever participated in a privilege walk before, you may know that it can be a daunting experience for people who may have to share details of their personal and lived experience.
+However, we will be using hypothetical personas to avoid placing anyone in such a position.
+This is the first activity, therefore, where you will use one of the [case studies](../case_studies.md) designed for this chapter.
 
-The following page has all the necessary instructions: 
+## Instructions
+
+1. First of all, go and read over the three [case studies](../case_studies.md). Make sure to read them carefully because you will then have to decide with your group which one to select. It will then be used for all of the remaining activities in this chapter.
+2. Once you have selected your case study, head on over to the corresponding page for the one you have selected. There you will see a table that represents the path that your personas will ''walk along''.
+3. Like with a board game, the personas move forwards and backwards along the path, but they do so based on the answers they would be likely to give to a series of questions. You will try to step into their shows and answer these questions in your groups, and the end result should be a comparative ranking of social privilege between the personas.
+
+Because you are working with hypothetical personas and case studies, you may find that you don't have access to all the necessary facts.
+Don't worry; the results of this activity are not what matter.
+Rather, it is intended as an aid for reflection.
+It's fine if you need to speculate a bit to fill in the gaps.
+Just make sure to discuss it with your team to ensure the details are plausible and largely agreed upon.
