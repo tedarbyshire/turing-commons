@@ -1,6 +1,6 @@
 # Case Studies
 
-The following case studies have been designed to work alongside a series of practical activities that cover the various stages of the project lifecycle. 
+The following case studies have been designed to work alongside a series of practical activities that cover the various stages of the project lifecycle.
 They offer only *basic* information to guide reflective and deliberative activities.
 If you find that you do not have sufficient information to address an issue that arises during deliberation, you should try to come up with something reasonable that fits the context of your chosen case study and then reflect on what this would mean for the project.
 
