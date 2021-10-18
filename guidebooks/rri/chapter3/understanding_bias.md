@@ -87,27 +87,40 @@ Try to answer this question yourself, before you reveal the answer.
 The correct answer is (1). Did you get it right?
 
 If you got it wrong, you have just committed what is known as the 'conjunction fallacy'. But don't worry you're in very good company!
-
 When Tvserky and Kahneman posed this question to a group of 88 undergraduate students, only $15%$ got the correct answer {cite}`tversky1983`. 
-The probability of two events occurring in conjunction, such as Linda being both a 'bank teller' and 'active in the feminist movement' must be less than or equal to the probability of either event occuring on its own. 
 
+The reason it is (1) is because the probability of two events occurring *in conjunction*, such as Linda being both a 'bank teller' and 'active in the feminist movement' must be less than or equal to the probability of either event occurring on its own. 
 Formally, for two events $A$ and $B$:
 
 $Pr(A \wedge B) ≤ Pr(A)$ and $Pr(A \wedge B) ≤ Pr(B)$
 
-Or, to put it more simply, someone cannot be a feminist bank teller without also being a bank teller 👇
+Or, to put it more simply, someone cannot belong to the set of $feminist bank tellers$ without also belonging to the set of $bank tellers$ 👇
 
 ![venn diagram for linda problem](/images/graphics/venn.png)
 
 Tversky and Kahneman attributed this systematic error to what is known as the *representativeness heuristic*. 
-In short, people don't think about the conjunction of events or consider probability theory.
-Instead, they give an answer that is based on which of the two options is most *representative* of the description of Linda. 
-That is, they employ a mental shortcut—a heuristic—that in some instances can lead to the right answer, but in other instances leads to mistakes.
+In short, people don't think about the conjunction of events or consider probability theory when formulating an answer.
+Instead, their choice is based on which of the two options is *most representative* of the description of Linda. 
+That is, they employ a mental shortcut (or, a heuristic) that in some instances lead to the right answer—hence, their efficiency. However, in in other cases their use lead to mistakes or errors in judgement.
 ```
 ````
 
-[...]
+A critical perspective on the view of judgement and decision-making put forward by Kahneman and Tversky would view it as an attempt to catalogue a variety of *cognitive failures* or *irrationalities* that stem from an individual’s inability to perform rational calculations.
+However, those who adopt a view known as 'ecological rationality' argue that such a perspective judges human agents against a normative standard of rationality that is unsuitable for situated agents whose choice behaviour is constrained by myriad cognitive and environmental factors (e.g. temporal constraints that force decisions, limited information).
+This alternative account, made famous by Herbert Simon, and later developed by Gerd Gigerenzer reframes a lot of human judgement and decision-making as underpinned by “fast and frugal” heuristics, which are highly adaptive and support decision-making in complex and uncertain environments.
+It's not necessary to delve into this debate for the present purposes, but it is an interesting tangent for those interested in exploring how the choice to present statistical information in different ways (e.g., as probabilities versus frequencies) can affect comprehension and understanding.[^debate]
 
-A critical perspective on this view would see it as an attempt to catalogue a variety of *cognitive failures* or *irrationalitiees*, which stem from an individual’s inability to perform rational calculations. However, such a perspective fails to take into consideration the plurality of permissible outcomes that may be rational in certain decision tasks when additional constraints are recognised (e.g. environmental factors that place temporal constraints on choice behaviour).
+[^debate]: For those who want to reconstruct the debate between Kahneman, Tversky, and Gigerenzer, the following papers can be read in order:
 
-An alternative to the heuristics-and-biases program is a view known as ecological rationality, made famous by Herbert Simon, and later developed by Gerd Gigerenzer. In a variety of studies, advocates of ecological rationality have shown that some observed choice behaviour, which violates traditional normative standards of rationality, should nevertheless be treated as rational when additional details about environmental structure are considered.  This alternative approach reframes a lot of human judgement and decision-making as underpinned by “fast and frugal” heuristics, which are highly adaptive and support decision-making in complex and uncertain environments.
+   1. {cite}`tversky1974`
+   2. {cite}`gigerenzer1991`
+   3. {cite}`kahneman1996`
+   4. {cite}`gigerenzer1996`
+
+When carrying out research and innovation in data science and AI, cognitive biases can impact the processes and outcome of the project lifecycle in myriad ways.
+There is, after all, a [large list](https://en.wikipedia.org/wiki/List_of_cognitive_biases) of cognitive biases to consider.
+No one is expected to memorise this list as a prerequisite for responsible action.
+However, there are some key cognitive biases that it can be helpful to consider.
+
+The next activity will explore a small handful of these biases, but we will look at others in more detail when we starting exploring the different stages of the project lifecycle in the next chapter.
+This way, we can anchor our understanding of biases—social, statistical, and cognitive—in the parts of the project lifecycle where we can hopefully mitigate their (potentially) negative impact.
