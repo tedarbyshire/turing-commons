@@ -1,7 +1,7 @@
 # 2 What is Responsible Research and Innovation?
 
 ```{image} /images/illustrations/data-science.png
-:alt: Illustration of data scientists
+:alt: Illustration of data scientists (by [Johnny Lighthands](https://www.johnnylighthands.co.uk))
 :align: center
 ```
 
