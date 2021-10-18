@@ -1,4 +1,4 @@
-# Activity 2: Bias Cards
+# Activity 4: Bias Cards
 
 This activity will introduce you to 9 key biases that can affect the processes and outcomes of a project lifecycle.
 

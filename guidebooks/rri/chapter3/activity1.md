@@ -1,4 +1,4 @@
-# Activty 1: Contributing to Collaborative Projects
+# Activty 3: Contributing to Collaborative Projects
 
 In a [later section](../chapter4/model_development/model_reporting.md), we will look at why active contribution to clear and accessible documentation is an important means for ensuring responsibility in collaborative projects.
 However, the need to support asynchronous collaboration poses challenges when working in large teams.
