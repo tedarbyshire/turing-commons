@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <title>Bias Cards</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.red-indigo.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Always shows a header, even in smaller screens. -->
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header header-white">
+        <div class="mdl-layout__header-row">
+          <!-- Title -->
+          <span class="mdl-layout-title">
+            Bias Cards
+            <small>A Tool for Responsible Research and Innovation</small>
+          </span>
+          <!-- Add spacer, to align navigation to the right -->
+          <div class="mdl-layout-spacer"></div>
+        </div>
+      </header>
+
+      <main class="mdl-layout__content">
+        <div class="page-content container">
+          <h3>Bias Cards</h3>
+          <p>
+            The following cards provide simple descriptions for the respective
+            bias that they represent. They are categorised according to whether
+            they represent social, statistical or cognitive biases. This tool is
+            intended to be used alongside the responsible research and
+            innovation workshop activites. A more complete guide for biases in
+            data science and AI can be
+            <a
+              href="https://alan-turing-institute.github.io/rrp-selfassessment/introduction.html"
+              >found here</a
+            >.
+          </p>
+          <div class="mdl-grid container">
+            <!-- Social Biases -->
+
+            <div id="flipRotate" class="mdl-cell mdl-cell--12-col">
+              <h3>
+                Social Biases
+                <small>click any of the cards to reveal information</small>
+              </h3>
+            </div>
+
+            <div class="mdl-cell mdl-cell-custom mdl-cell--4-col">
+              <div id="card-1" class="card animated">
+                <div class="back demo-card-square mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title mdl-card--expand">
+                    <img
+                      class="avatar"
+                      src="http://api.adorable.io/avatars/136/FlipInX.png"
+                      alt=""
+                    />
+                    <h2 class="mdl-card__title-text">Historical Bias</h2>
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    Structural biases arise within the context of a data science
+                    or AI project when there is a gap or misalignment between
+                    the state of the world and the goals or objectives that are
+                    encoded and propagated in the model or system being
+                    developed. For instance, even with perfect sampling and
+                    feature selection, a model that perpetuates (or exacerbates)
+                    socioeconomic inequalities through the outcomes it promotes
+                    is contributing to historical or structural bias.
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border">
+                    <div class="mdl-button mdl-button--colored">
+                      toggle card
+                    </div>
+                  </div>
+                </div>
+
+                <div class="front demo-card-square mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title mdl-card--expand">
+                    <img
+                      class="avatar"
+                      src="http://api.adorable.io/avatars/136/FlipOutX.png"
+                      alt=""
+                    />
+                    <h2 class="mdl-card__title-text">Historical Bias</h2>
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    Historical (or structural) biases exist prior to the
+                    inception of any data science project.
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border">
+                    <div class="mdl-button mdl-button--colored">
+                      toggle card
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mdl-cell mdl-cell-custom mdl-cell--4-col">
+              <div id="card-2" class="card animated">
+                <div class="back demo-card-square mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title mdl-card--expand">
+                    <img
+                      class="avatar"
+                      src="http://api.adorable.io/avatars/136/FlipInY.png"
+                      alt=""
+                    />
+                    <h2 class="mdl-card__title-text">Label Bias</h2>
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    This is a particular risk where a proxy has been used that
+                    occludes inequalities between groups of subjects, as it can
+                    create disparities in the validity of the model outcomes.
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border">
+                    <div class="mdl-button mdl-button--colored">
+                      toggle card
+                    </div>
+                  </div>
+                </div>
+
+                <div class="front demo-card-square mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title mdl-card--expand">
+                    <img
+                      class="avatar"
+                      src="http://api.adorable.io/avatars/136/FlipOutY.png"
+                      alt=""
+                    />
+                    <h2 class="mdl-card__title-text">Label Bias</h2>
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    A label (or feature) within your dataset may not mean the
+                    same thing for all data subjects.
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border">
+                    <div class="mdl-button mdl-button--colored">
+                      toggle card
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mdl-cell mdl-cell-custom mdl-cell--4-col">
+              <div id="card-3" class="card animated">
+                <div class="back demo-card-square mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title mdl-card--expand">
+                    <img
+                      class="avatar"
+                      src="http://api.adorable.io/avatars/136/rotateIn.png"
+                      alt=""
+                    />
+                    <h2 class="mdl-card__title-text">Missing Data</h2>
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    Missing data can make accurate predictions or
+                    classifications challenging to produce. Although this is
+                    also a statistical concern, the social cause of the missing
+                    data may be the result of non-random but statistically
+                    informative events (e.g.m socioeconomic barriers that make
+                    it difficult for certain groups to participate).
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border">
+                    <div class="mdl-button mdl-button--colored">
+                      toggle card
+                    </div>
+                  </div>
+                </div>
+
+                <div class="front demo-card-square mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title mdl-card--expand">
+                    <img
+                      class="avatar"
+                      src="http://api.adorable.io/avatars/136/rotateOut.png"
+                      alt=""
+                    />
+                    <h2 class="mdl-card__title-text">Missing Data</h2>
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    Data may be missing for a variety of reasons and it can be
+                    difficult to uncover the reasons.
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border">
+                    <div class="mdl-button mdl-button--colored">
+                      toggle card
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Statistical Biases -->
+
+            <div id="fade" class="mdl-cell mdl-cell--12-col">
+              <h3>
+                Statistical Biases
+                <small>click any of the cards to reveal information</small>
+              </h3>
+            </div>
+
+            <div class="mdl-cell mdl-cell-custom mdl-cell--4-col">
+              <div id="card-4" class="card animated">
+                <div class="back demo-card-square mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title mdl-card--expand">
+                    <img
+                      class="avatar"
+                      src="http://api.adorable.io/avatars/136/FadeIn.png"
+                      alt=""
+                    />
+                    <h2 class="mdl-card__title-text">Chronological Bias</h2>
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    This is an issue when the chronological difference results in individuals being subjected to different exposures or interventions based on the time their data were recorded. For instance, in observational studies related to the effects of COVID-19, individual patients or cohorts received different treatment due to changing healthcare practices. 
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border">
+                    <div class="mdl-button mdl-button--colored">
+                      toggle card
+                    </div>
+                  </div>
+                </div>
+
+                <div class="front demo-card-square mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title mdl-card--expand">
+                    <img
+                      class="avatar"
+                      src="http://api.adorable.io/avatars/136/FadeOut.png"
+                      alt=""
+                    />
+                    <h2 class="mdl-card__title-text">Chronological Bias</h2>
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    Arises when individuals in the dataset are added at different times. 
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border">
+                    <div class="mdl-button mdl-button--colored">
+                      toggle card
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mdl-cell mdl-cell-custom mdl-cell--4-col">
+              <div id="card-5" class="card animated">
+                <div class="back demo-card-square mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title mdl-card--expand">
+                    <img
+                      class="avatar"
+                      src="http://api.adorable.io/avatars/136/FadeInDown.png"
+                      alt=""
+                    />
+                    <h2 class="mdl-card__title-text">Training-Serving Skew</h2>
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    <p>This skew can be caused by:
+                      <ul>
+                        <li>A discrepancy between how you handle data in the training and serving pipelines.</li>
+                        <li>A change in the data between when you train and when you serve.</li>
+                        <li>A feedback loop between your model and your algorithm.</li>
+                      </ul>
+                    </p>
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border">
+                    <div class="mdl-button mdl-button--colored">
+                      toggle card
+                    </div>
+                  </div>
+                </div>
+
+                <div class="front demo-card-square mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title mdl-card--expand">
+                    <img
+                      class="avatar"
+                      src="http://api.adorable.io/avatars/136/FadeOutDown.png"
+                      alt=""
+                    />
+                    <h2 class="mdl-card__title-text">Training-Serving Skew</h2>
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    A difference between performance during training and performance during serving
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border">
+                    <div class="mdl-button mdl-button--colored">
+                      toggle card
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mdl-cell mdl-cell-custom mdl-cell--4-col">
+              <div id="card-11" class="card animated">
+                <div class="back demo-card-square mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title mdl-card--expand">
+                    <img
+                      class="avatar"
+                      src="http://api.adorable.io/avatars/136/FadeInUp.png"
+                      alt=""
+                    />
+                    <h2 class="mdl-card__title-text">Aggregation Bias</h2>
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    Can arise when distinct sub-groups (of a heterogeneous population) are inappropriately combined, or differences between them ignored, resulting in a loss of information and the development of a model that is more effective for one sub-group over another.
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border">
+                    <div class="mdl-button mdl-button--colored">
+                      toggle card
+                    </div>
+                  </div>
+                </div>
+
+                <div class="front demo-card-square mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title mdl-card--expand">
+                    <img
+                      class="avatar"
+                      src="http://api.adorable.io/avatars/136/FadeOutUp.png"
+                      alt=""
+                    />
+                    <h2 class="mdl-card__title-text">Aggregation Bias</h2>
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    Confusing the units of analysis so that one concludes that what is true for the group must be true for the sub-group or individual.
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border">
+                    <div class="mdl-button mdl-button--colored">
+                      toggle card
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Cognitive Biases -->
+
+            <div id="zoom" class="mdl-cell mdl-cell--12-col">
+              <h3>
+                Cognitive Biases
+                <small>click any of the cards to reveal information</small>
+              </h3>
+            </div>
+
+            <div class="mdl-cell mdl-cell-custom mdl-cell--4-col">
+              <div id="card-13" class="card animated">
+                <div class="back demo-card-square mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title mdl-card--expand">
+                    <img
+                      class="avatar"
+                      src="http://api.adorable.io/avatars/136/ZoomIn.png"
+                      alt=""
+                    />
+                    <h2 class="mdl-card__title-text">Confirmation Bias</h2>
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    This bias can cause people to dismiss or downplay the
+                    significance of information that disconfirms their favoured
+                    hypothesis. This can be the result of motivated reasoning or
+                    sub-conscious attitudes, which in turn may lead to
+                    prejudicial judgements that are not based on reasoned
+                    evidence.
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border">
+                    <div class="mdl-button mdl-button--colored">
+                      toggle card
+                    </div>
+                  </div>
+                </div>
+
+                <div class="front demo-card-square mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title mdl-card--expand">
+                    <img
+                      class="avatar"
+                      src="http://api.adorable.io/avatars/136/ZoomOut.png"
+                      alt=""
+                    />
+                    <h2 class="mdl-card__title-text">Confirmation Bias</h2>
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    A tendency to search for, gather, or use information that
+                    confirms pre-existing ideas and beliefs.
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border">
+                    <div class="mdl-button mdl-button--colored">
+                      toggle card
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mdl-cell mdl-cell-custom mdl-cell--4-col">
+              <div id="card-14" class="card animated">
+                <div class="back demo-card-square mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title mdl-card--expand">
+                    <img
+                      class="avatar"
+                      src="http://api.adorable.io/avatars/136/ZoomInLeft.png"
+                      alt=""
+                    />
+                    <h2 class="mdl-card__title-text">Biases of Rhetoric</h2>
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    Such biases systematically mislead readers into viewing the results of a study in a more favourable (or unfavourable) light. These biases may be more prevalent in “popular” or “fashionable” topics, where there may be additional incentives to oversell the impact of the study
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border">
+                    <div class="mdl-button mdl-button--colored">
+                      toggle card
+                    </div>
+                  </div>
+                </div>
+
+                <div class="front demo-card-square mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title mdl-card--expand">
+                    <img
+                      class="avatar"
+                      src="http://api.adorable.io/avatars/136/ZoomOutLeft.png"
+                      alt=""
+                    />
+                    <h2 class="mdl-card__title-text">Biases of Rhetoric</h2>
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    A group of related biases that refer to the use of persuasive techniques, opinions, or modes of argumentation that steer the reader to adopt a particular belief, attitude, or policy, which is not sufficiently justifiable on the basis of the evidence.
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border">
+                    <div class="mdl-button mdl-button--colored">
+                      toggle card
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mdl-cell mdl-cell-custom mdl-cell--4-col">
+              <div id="card-15" class="card animated">
+                <div class="back demo-card-square mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title mdl-card--expand">
+                    <img
+                      class="avatar"
+                      src="http://api.adorable.io/avatars/136/ZoomInRight.png"
+                      alt=""
+                    />
+                    <h2 class="mdl-card__title-text">Availability Heuristic</h2>
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                     This bias can occur as a result of some information being more readily retrievable or recalled more quickly than other (less available) information. For example, someone may believe that an explanation for a social or political event is more likely than others due to its prevalence in the media. 
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border">
+                    <div class="mdl-button mdl-button--colored">
+                      toggle card
+                    </div>
+                  </div>
+                </div>
+
+                <div class="front demo-card-square mdl-card mdl-shadow--2dp">
+                  <div class="mdl-card__title mdl-card--expand">
+                    <img
+                      class="avatar"
+                      src="http://api.adorable.io/avatars/136/ZoomOutRight.png"
+                      alt=""
+                    />
+                    <h2 class="mdl-card__title-text">Availability Heuristic</h2>
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    People tend to overestimate the importance of information that is <em>available to them</em>.
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border">
+                    <div class="mdl-button mdl-button--colored">
+                      toggle card
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="jquery.de-animate.js"></script>
+
+    <script>
+      // loading cards
+
+      $(".mdl-cell-custom").each(function () {
+        var self = $(this);
+        self.append('<div class="loading"></div>');
+        var load = $(".loading", self);
+        $("img", self).each(function () {
+          $(this).load(function () {
+            $(this).show().addClass("animated flipInY");
+            $(".card", self).fadeIn();
+            load.remove();
+          });
+        });
+      });
+
+      //deAnimate
+
+      $("#card-1").deAnimate({
+        trigger: "click",
+        classIn: "flipInX",
+        parallel: false,
+      });
+
+      $("#card-2").deAnimate({
+        trigger: "click",
+        classIn: "flipInY",
+        parallel: false,
+      });
+
+      $("#card-3").deAnimate({
+        trigger: "click",
+        classIn: "rotateIn",
+        parallel: false,
+      });
+      $("#card-4").deAnimate({
+        trigger: "click",
+        classIn: "fadeIn",
+        parallel: false,
+      });
+
+      $("#card-5").deAnimate({
+        trigger: "click",
+        classIn: "fadeInDown",
+        parallel: false,
+      });
+
+      $("#card-6").deAnimate({
+        trigger: "click",
+        classIn: "fadeInDownBig",
+        parallel: false,
+      });
+
+      $("#card-7").deAnimate({
+        trigger: "click",
+        classIn: "fadeInLeft",
+        parallel: false,
+      });
+
+      $("#card-8").deAnimate({
+        trigger: "click",
+        classIn: "fadeInLeftBig",
+        parallel: false,
+      });
+
+      $("#card-9").deAnimate({
+        trigger: "click",
+        classIn: "fadeInRight",
+        parallel: false,
+      });
+
+      $("#card-10").deAnimate({
+        trigger: "click",
+        classIn: "fadeInRightBig",
+        parallel: false,
+      });
+
+      $("#card-11").deAnimate({
+        trigger: "click",
+        classIn: "fadeInUp",
+        parallel: false,
+      });
+
+      $("#card-12").deAnimate({
+        trigger: "click",
+        classIn: "fadeInUpBig",
+        parallel: false,
+      });
+
+      $("#card-13").deAnimate({
+        trigger: "click",
+        classIn: "zoomIn",
+        parallel: false,
+      });
+
+      $("#card-14").deAnimate({
+        trigger: "click",
+        classIn: "zoomInLeft",
+        parallel: false,
+      });
+
+      $("#card-15").deAnimate({
+        trigger: "click",
+        classIn: "zoomInRight",
+        parallel: false,
+      });
+
+      $("#card-16").deAnimate({
+        trigger: "click",
+        classIn: "zoomInDown",
+        parallel: false,
+      });
+
+      $("#card-17").deAnimate({
+        trigger: "click",
+        classIn: "zoomInUp",
+        parallel: false,
+      });
+
+      $("#card-18").deAnimate({
+        trigger: "click",
+        classIn: "bounceIn",
+        parallel: false,
+      });
+
+      $("#card-19").deAnimate({
+        trigger: "click",
+        classIn: "bounceInLeft",
+        parallel: false,
+      });
+
+      $("#card-20").deAnimate({
+        trigger: "click",
+        classIn: "bounceInRight",
+        parallel: false,
+      });
+
+      $("#card-21").deAnimate({
+        trigger: "click",
+        classIn: "bounceInDown",
+        parallel: false,
+      });
+
+      $("#card-22").deAnimate({
+        trigger: "click",
+        classIn: "bounceInUp",
+        parallel: false,
+      });
+
+      $("#card-23").deAnimate({
+        trigger: "click",
+        classIn: "lightSpeedIn",
+        parallel: false,
+      });
+
+      $("#card-24").deAnimate({
+        trigger: "click",
+        classIn: "rollIn",
+        parallel: false,
+      });
+    </script>
+  </body>
+</html>
