@@ -1,0 +1,688 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Analysis &#8212; Turing Commons</title>
+    
+  <link href="../../../_static/css/theme.css" rel="stylesheet" />
+  <link href="../../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/togglebutton.js"></script>
+    <script src="../../../_static/clipboard.min.js"></script>
+    <script src="../../../_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../../../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Preprocessing and Feature Engineering" href="../model_development/preprocessing.html" />
+    <link rel="prev" title="Data Extraction and Procurement" href="data_extraction.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../../index.html">
+      
+      
+      
+      <h1 class="site-logo" id="site-title">Turing Commons</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../index.html">
+   Welcome
+  </a>
+ </li>
+</ul>
+<p class="caption" role="heading">
+ <span class="caption-text">
+  Responsible Research and Innovation
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../index.html">
+   About
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../intro/index.html">
+   1 Introduction
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../chapter2/index.html">
+   2 What is Responsible Research and Innovation?
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../chapter2/responsibility.html">
+     What is ‘Responsibility’?
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../chapter2/history.html">
+     A Short History of RRI
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../chapter2/activity1.html">
+     Activity 1: Exploring Case Studies
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../chapter2/sts.html">
+     Science , Technology, and Society
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../chapter2/timeline.html">
+     Science and Technology Studies (A Timeline)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../chapter2/activity2.html">
+     Activity 2: Ethical Reflection and Deliberation
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../chapter3/index.html">
+   3 Responsible Data Science and AI
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../chapter3/responsible_ds.html">
+     Responsible Data Science and AI
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../chapter3/project_lifecycle.html">
+     Introducing the Project Lifecycle (A Sociotechnical Approach)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../chapter3/roles_responsibility.html">
+     Roles and Responsibilities
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../chapter3/activity1.html">
+     Activty 3: Contributing to Collaborative Projects
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../chapter3/understanding_bias.html">
+     Understanding Bias
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../chapter3/activity2.html">
+     Activity 4: Bias Cards
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="../index.html">
+   4 The Project Lifecycle
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../case_studies.html">
+     Case Studies
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="planning.html">
+     Project Planning
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="problem.html">
+     Problem Formulation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="data_extraction.html">
+     Data Extraction and Procurement
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Data Analysis
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../model_development/preprocessing.html">
+     Preprocessing and Feature Engineering
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../model_development/model_selection.html">
+     Model Selection and Training
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../model_development/model_testing.html">
+     Model Testing and Validation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../model_development/model_reporting.html">
+     Model Reporting
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../system_deployment/model_productionalisation.html">
+     Model Productionalisation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../system_deployment/user_training.html">
+     User Training
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../system_deployment/system_use.html">
+     System Use, Monitoring, and Updating
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../system_deployment/model_updating.html">
+     Model Updating or Deprovisioning
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../chapter5/index.html">
+   5 Responsible Communication
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../chapter5/assurance.html">
+     What is Argument-Based Assurance?
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../chapter5/communication.html">
+     Assurance and Responsible Communication
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../chapter5/gpe.html">
+     Goals, Properties, and Evidence
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../conclusion/index.html">
+   6 Conclusion (Looking Forward)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../further_resources/index.html">
+   Further Resources
+  </a>
+ </li>
+</ul>
+<p class="caption" role="heading">
+ <span class="caption-text">
+  Public Engagement and Communication of Science
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../pcs/index.html">
+   About this Guidebook
+  </a>
+ </li>
+</ul>
+<p class="caption" role="heading">
+ <span class="caption-text">
+  AI Ethics and Governance
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../aeg/index.html">
+   About this Guidebook
+  </a>
+ </li>
+</ul>
+<p class="caption" role="heading">
+ <span class="caption-text">
+  References
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../bibliography.html">
+   Bibliography
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../../_sources/rri/chapter4/project_design/data_analysis.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/chrisdburr/turing-commons"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/chrisdburr/turing-commons/issues/new?title=Issue%20on%20page%20%2Frri/chapter4/project_design/data_analysis.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/chrisdburr/turing-commons/master?urlpath=tree/guidebooks/rri/chapter4/project_design/data_analysis.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../../../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#what-is-exploratory-data-analysis">
+   What is Exploratory Data Analysis?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#covid-19-hopsital-data">
+   COVID-19 Hopsital Data
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#importing-data">
+     Importing Data
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#describing-the-data">
+     Describing the Data
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#cleaning-and-querying-the-data">
+     Cleaning and Querying the Data
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#analysing-the-data">
+     Analysing the Data
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#visualising-the-data">
+     Visualising the Data
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="data-analysis">
+<h1>Data Analysis<a class="headerlink" href="#data-analysis" title="Permalink to this headline">¶</a></h1>
+<p>This module will introduce and examine the stage of ‘exploratory data analysis’.</p>
+<p>Rather than focusing on the statistical or technical techniques employed in modern data science though, we will approach this stage with a bias-aware perspective. However, we will make use of Jupyter notebooks—a popular tool in data science—to aid our exploratory data analysis[^jupyter] by visualising some data. You do not need to be familiar with either Python or Jupyter Notebooks if you just want to gain an understanding of how social, cognitive, and statistical biases interact and affect downstream stages in the research and innovation lifecycle. But the code is presented for those who wish to get more “hands-on”.</p>
+<div class="section" id="what-is-exploratory-data-analysis">
+<h2>What is Exploratory Data Analysis?<a class="headerlink" href="#what-is-exploratory-data-analysis" title="Permalink to this headline">¶</a></h2>
+<p>Exploratory data analysis is a crucial stage in the project lifecycle. It is where a number of techniques are employed for the purpose of gaining a better understanding of the dataset and any relationships that exist between the relevant variables. Among other things, this could mean,</p>
+<ul class="simple">
+<li><p>Describing the dataset and important variables</p></li>
+<li><p>Identifying missing data and outliers, and deciding how to handle them</p></li>
+<li><p>Cleaning the dataset</p></li>
+<li><p>Provisional analysis of any relationships between variables</p></li>
+<li><p>Uncovering possible limitations of the dataset (e.g. class imbalances) that could affect the project</p></li>
+</ul>
+<p>We will cover each of these sub-stages of EDA briefly, but to reiterate, our primary focus in this section is on the risks and challenges that stem from a variety of biases that can cause cascading issues that affect downstream tasks (e.g. model training).</p>
+</div>
+<div class="section" id="covid-19-hopsital-data">
+<h2>COVID-19 Hopsital Data<a class="headerlink" href="#covid-19-hopsital-data" title="Permalink to this headline">¶</a></h2>
+<p>For the purpose of this section we have created a synthetic dataset that contains X records for fictional patients who were triaged (and possibly admitted) to a single hospital for treatment of COVID-19.</p>
+<p>The dataset has been designed with this pedagogical task in mind. Therefore, although we relied upon plausible assumptions when developing our generative model, the data are not intended to be fully representative of actual patients. Our methodology for generating this dataset can be found here.</p>
+<div class="section" id="importing-data">
+<h3>Importing Data<a class="headerlink" href="#importing-data" title="Permalink to this headline">¶</a></h3>
+<p>First of all, we need to import our data and the software packages that we will use to describe, analyse, and visualise the data. The following lines of code achieve this, and also loads our data into a DataFrame using the Pandas package:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># The following lines import necessary packages</span>
+
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pylab</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+
+<span class="c1"># This line imports data from a csv file into a DataFrame (df)</span>
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;train.csv&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
+<span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">folders</span><span class="o">/</span><span class="n">_l</span><span class="o">/</span><span class="n">l9rdg7gs4kx5gglxn_1y0wn00000gq</span><span class="o">/</span><span class="n">T</span><span class="o">/</span><span class="n">ipykernel_35236</span><span class="o">/</span><span class="mf">544658898.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># The following lines import necessary packages</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> 
+<span class="ne">----&gt; </span><span class="mi">3</span> <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="kn">import</span> <span class="nn">matplotlib.pylab</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="ne">ModuleNotFoundError</span>: No module named &#39;numpy&#39;
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="describing-the-data">
+<h3>Describing the Data<a class="headerlink" href="#describing-the-data" title="Permalink to this headline">¶</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># This line returns information about the number of rows and the number of columns for a dataset.</span>
+
+<span class="n">df</span><span class="o">.</span><span class="n">shape</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># This line returns the first 5 rows of a dataset, which can be useful if you want to see a small sample of values for each variable.</span>
+
+<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span> 
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># This line returns the name of all of the columns in your dataset. This is helpful if you want to quickly see which variables you will have access to during your analysis.</span>
+
+<span class="n">df</span><span class="o">.</span><span class="n">columns</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># This line returns the number of unique values for each of the variables. For example, in the ethnicity column there are X different values.</span>
+
+<span class="n">df</span><span class="o">.</span><span class="n">nunique</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># This line uses the pandas &#39;describe()&#39; method to provide a summary of the dataset (formatted for readability). This includes the count, mean, standard deviation, min, and max for numeric variables.</span>
+
+<span class="n">df</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">s</span><span class="p">:</span> <span class="n">s</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">format</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="s1">&#39;f&#39;</span><span class="p">)))</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="cleaning-and-querying-the-data">
+<h3>Cleaning and Querying the Data<a class="headerlink" href="#cleaning-and-querying-the-data" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="analysing-the-data">
+<h3>Analysing the Data<a class="headerlink" href="#analysing-the-data" title="Permalink to this headline">¶</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># The following lines return a correlation matrix, for the cleaned dataframe, using the seaborn package</span>
+<span class="n">corr</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">corr</span><span class="p">()</span><span class="c1"># plot the heatmap</span>
+
+<span class="n">sns</span><span class="o">.</span><span class="n">heatmap</span><span class="p">(</span><span class="n">corr</span><span class="p">,</span> <span class="n">xticklabels</span><span class="o">=</span><span class="n">corr</span><span class="o">.</span><span class="n">columns</span><span class="p">,</span> <span class="n">yticklabels</span><span class="o">=</span><span class="n">corr</span><span class="o">.</span><span class="n">columns</span><span class="p">,</span> <span class="n">annot</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="n">sns</span><span class="o">.</span><span class="n">diverging_palette</span><span class="p">(</span><span class="mi">220</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="n">as_cmap</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="visualising-the-data">
+<h3>Visualising the Data<a class="headerlink" href="#visualising-the-data" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./rri/chapter4/project_design"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            
+
+
+
+<div class='prev-next-bottom'>
+    
+    <div id="prev">
+        <a class="left-prev" href="data_extraction.html" title="previous page">
+            <i class="prevnext-label fas fa-angle-left"></i>
+            <div class="prevnext-info">
+                <p class="prevnext-label">previous</p>
+                <p class="prevnext-title">Data Extraction and Procurement</p>
+            </div>
+        </a>
+    </div>
+     <div id="next">
+        <a class="right-next" href="../model_development/preprocessing.html" title="next page">
+            <div class="prevnext-info">
+                <p class="prevnext-label">next</p>
+                <p class="prevnext-title">Preprocessing and Feature Engineering</p>
+            </div>
+            <i class="prevnext-label fas fa-angle-right"></i>
+        </a>
+     </div>
+
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By Dr Christopher Burr<br/>
+        
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../../../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>

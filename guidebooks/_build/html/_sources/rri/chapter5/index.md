@@ -1,24 +1,20 @@
-# Responsible System Deployment
-
-```{image} /images/illustrations/data-science.png
-:alt: Illustration of data scientists
-:align: center
-```
+# 5 Responsible Communication
 
 ```{admonition} Summary
 :class: tip
-In this final chapter covering the key stages of the project lifecycle we will look at the need to continue to take responsibility for the outcomes and consequences of model development, even after your model has been implemented within a broader sociotechnical system. In the first part we will look at user training as a key requirement of responsible deployment. The second part will wrap up the project lifecycle, by looking at ongoing system use and monitoring. 
+In this chapter we will look at what happens when a project reaches the stage where it is necessary to communicate research findings or present the output of the innovation lifecycle to a broader audience. We will consider a method known as argument-based assurance, which has been designed to help developers and project members engage their audience in a trustworthy and transparent manner. 
 ```
 
 ```{admonition} Learning Objectives
 In this chapter, you will:
 
-- learn...
+- Consider the basics of the argument-based assurance methodology
+- Understand when and how it can be used to facilitate responsible communication
+- Use the method to identify broader normative goals that may not have been covered in this course, and determine which properties need to be assured to help demonstrate that the respective goal has been obtained
 ```
 
 ## Chapter Outline
 
-- [User Training](user_training.md)
-- [Activity 1](activity1.md)
-- [System Use, Monitoring, and Updating](system_use.md)
-- [Activity 2](activity2.md)
+- [What is Argument-Based Assurance?](assurance.md)
+- [Assurance and Responsible Communication](communication.md)
+- [Goals, Properties, and Evidence](gpe.md)

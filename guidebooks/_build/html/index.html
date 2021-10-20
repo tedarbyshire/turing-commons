@@ -1,11 +1,11 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome to the Turing Commons &#8212; Turing Commons</title>
+    <title>Welcome &#8212; Turing Commons</title>
     
   <link href="_static/css/theme.css" rel="stylesheet" />
   <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -22,8 +22,8 @@
       
 
     
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="_static/sphinx-book-theme.e8e5499552300ddf5d7adccae7cc3b70.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
@@ -33,20 +33,17 @@
     
   <link rel="preload" as="script" href="_static/js/index.1c5a1a01449ed65a7b51.js">
 
-    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
-    <script src="_static/language_data.js"></script>
     <script src="_static/togglebutton.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
-    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
-    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
-    <script >
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
         const thebe_selector_output = ".output"
@@ -54,7 +51,7 @@
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="About this Guidebook" href="rri/index.html" />
+    <link rel="next" title="About" href="rri/index.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -74,22 +71,23 @@
     <a class="navbar-brand text-wrap" href="#">
       
       
+      
       <h1 class="site-logo" id="site-title">Turing Commons</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
         <ul class="nav bd-sidenav">
  <li class="toctree-l1 current">
   <a class="reference internal" href="#">
-   Welcome to the Turing Commons
+   Welcome
   </a>
  </li>
 </ul>
-<p class="caption">
+<p class="caption" role="heading">
  <span class="caption-text">
   Responsible Research and Innovation
  </span>
@@ -97,17 +95,17 @@
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="rri/index.html">
-   About this Guidebook
+   About
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="rri/intro/index.html">
-   Introduction
+   1 Introduction
   </a>
  </li>
  <li class="toctree-l1 has-children">
-  <a class="reference internal" href="rri/chapter1/index.html">
-   What is Responsible Research and Innovation?
+  <a class="reference internal" href="rri/chapter2/index.html">
+   2 What is Responsible Research and Innovation?
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
@@ -116,35 +114,40 @@
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="rri/chapter1/responsibility.html">
-     Defining ‘Responsibility’
+    <a class="reference internal" href="rri/chapter2/responsibility.html">
+     What is ‘Responsibility’?
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="rri/chapter1/history.html">
+    <a class="reference internal" href="rri/chapter2/history.html">
      A Short History of RRI
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="rri/chapter1/activity1.html">
+    <a class="reference internal" href="rri/chapter2/activity1.html">
      Activity 1: Exploring Case Studies
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="rri/chapter1/sts.html">
+    <a class="reference internal" href="rri/chapter2/sts.html">
      Science , Technology, and Society
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="rri/chapter1/activity2.html">
+    <a class="reference internal" href="rri/chapter2/timeline.html">
+     Science and Technology Studies (A Timeline)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="rri/chapter2/activity2.html">
      Activity 2: Ethical Reflection and Deliberation
     </a>
    </li>
   </ul>
  </li>
  <li class="toctree-l1 has-children">
-  <a class="reference internal" href="rri/chapter2/index.html">
-   Responsible Data Science and AI
+  <a class="reference internal" href="rri/chapter3/index.html">
+   3 Responsible Data Science and AI
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
   <label for="toctree-checkbox-2">
@@ -153,40 +156,40 @@
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="rri/chapter2/responsible_ds.html">
+    <a class="reference internal" href="rri/chapter3/responsible_ds.html">
      Responsible Data Science and AI
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="rri/chapter2/project_lifecycle.html">
-     The Project Lifecycle (A Sociotechnical Approach)
+    <a class="reference internal" href="rri/chapter3/project_lifecycle.html">
+     Introducing the Project Lifecycle (A Sociotechnical Approach)
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="rri/chapter2/roles_responsibility.html">
+    <a class="reference internal" href="rri/chapter3/roles_responsibility.html">
      Roles and Responsibilities
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="rri/chapter2/activity1.html">
-     Activty 1
+    <a class="reference internal" href="rri/chapter3/activity1.html">
+     Activty 3: Contributing to Collaborative Projects
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="rri/chapter2/reflect_act_justify.html">
-     Reflect, Act, and Justify (A Participatory Procedure for RRI)
+    <a class="reference internal" href="rri/chapter3/understanding_bias.html">
+     Understanding Bias
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="rri/chapter2/activity2.html">
-     Activity 2
+    <a class="reference internal" href="rri/chapter3/activity2.html">
+     Activity 4: Bias Cards
     </a>
    </li>
   </ul>
  </li>
  <li class="toctree-l1 has-children">
-  <a class="reference internal" href="rri/chapter3/index.html">
-   Responsible Project Design
+  <a class="reference internal" href="rri/chapter4/index.html">
+   4 The Project Lifecycle
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
   <label for="toctree-checkbox-3">
@@ -195,35 +198,75 @@
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="rri/chapter3/planning.html">
-     Project Planning and Problem Formulation
+    <a class="reference internal" href="rri/chapter4/case_studies.html">
+     Case Studies
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="rri/chapter3/activity1.html">
-     Activity 1
+    <a class="reference internal" href="rri/chapter4/project_design/planning.html">
+     Project Planning
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="rri/chapter3/data_extraction.html">
+    <a class="reference internal" href="rri/chapter4/project_design/problem.html">
+     Problem Formulation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="rri/chapter4/project_design/data_extraction.html">
      Data Extraction and Procurement
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="rri/chapter3/data_analysis.html">
+    <a class="reference internal" href="rri/chapter4/project_design/data_analysis.html">
      Data Analysis
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="rri/chapter3/activity2.html">
-     Activity 2
+    <a class="reference internal" href="rri/chapter4/model_development/preprocessing.html">
+     Preprocessing and Feature Engineering
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="rri/chapter4/model_development/model_selection.html">
+     Model Selection and Training
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="rri/chapter4/model_development/model_testing.html">
+     Model Testing and Validation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="rri/chapter4/model_development/model_reporting.html">
+     Model Reporting
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="rri/chapter4/system_deployment/model_productionalisation.html">
+     Model Productionalisation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="rri/chapter4/system_deployment/user_training.html">
+     User Training
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="rri/chapter4/system_deployment/system_use.html">
+     System Use, Monitoring, and Updating
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="rri/chapter4/system_deployment/model_updating.html">
+     Model Updating or Deprovisioning
     </a>
    </li>
   </ul>
  </li>
  <li class="toctree-l1 has-children">
-  <a class="reference internal" href="rri/chapter4/index.html">
-   Responsible Model Development
+  <a class="reference internal" href="rri/chapter5/index.html">
+   5 Responsible Communication
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
   <label for="toctree-checkbox-4">
@@ -232,72 +275,25 @@
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="rri/chapter4/preprocessing.html">
-     Preprocessing and Feature Engineering
+    <a class="reference internal" href="rri/chapter5/assurance.html">
+     What is Argument-Based Assurance?
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="rri/chapter4/activity1.html">
-     Activity 1
+    <a class="reference internal" href="rri/chapter5/communication.html">
+     Assurance and Responsible Communication
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="rri/chapter4/model_selection.html">
-     Model Selection
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="rri/chapter4/model_training.html">
-     Model Training and Testing
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="rri/chapter4/model_documentation.html">
-     Model Documentation and Productionalization
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="rri/chapter4/activity2.html">
-     Activity 2
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="rri/chapter5/index.html">
-   Responsible System Deployment
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
-  <label for="toctree-checkbox-5">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="rri/chapter5/user_training.html">
-     User Training
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="rri/chapter5/activity1.html">
-     Activity 1
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="rri/chapter5/system_use.html">
-     System Use, Monitoring, and Updating
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="rri/chapter5/activity2.html">
-     Activity 2
+    <a class="reference internal" href="rri/chapter5/gpe.html">
+     Goals, Properties, and Evidence
     </a>
    </li>
   </ul>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="rri/conclusion/index.html">
-   Conclusion (Looking Forward)
+   6 Conclusion (Looking Forward)
   </a>
  </li>
  <li class="toctree-l1">
@@ -306,9 +302,9 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p class="caption" role="heading">
  <span class="caption-text">
-  Public Communication of Science
+  Public Engagement and Communication of Science
  </span>
 </p>
 <ul class="nav bd-sidenav">
@@ -318,7 +314,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p class="caption" role="heading">
  <span class="caption-text">
   AI Ethics and Governance
  </span>
@@ -330,7 +326,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p class="caption" role="heading">
  <span class="caption-text">
   References
  </span>
@@ -423,6 +419,19 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#contributing">
+   Contributing
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -431,14 +440,38 @@
         
               <div>
                 
-  <div class="section" id="welcome-to-the-turing-commons">
-<h1>Welcome to the Turing Commons<a class="headerlink" href="#welcome-to-the-turing-commons" title="Permalink to this headline">¶</a></h1>
-<p>This site is a work-in-progress that will eventually include guidebooks for the following three courses:</p>
+  <div class="tex2jax_ignore mathjax_ignore section" id="welcome">
+<h1>Welcome<a class="headerlink" href="#welcome" title="Permalink to this headline">¶</a></h1>
+<p>Hello 👋
+This is the Turing Commons—a home for resources and tools to help you reflect, discuss, and take responsibility for the design, development, and use of data-driven technologies.</p>
+<p>Confused by that last sentence?
+Don’t worry you’re still in the right place.
+We have a range of resources for those curious about the ethical and responsible use of data, regardless of whether you’re a curious citizen looking to have greater control over local matters, or a data scientist looking to take more responsibility over the consequences of your research.</p>
+<p>This site is, however, a living resource, which means the content is constantly being updated, revised, and refined. At present, the site is a home for several guidebooks, which have been designed for specific training courses we are in the process of delivering.</p>
+<p>These guidebooks are themselves being updated and added to, so may be in different states of completeness and readiness:</p>
 <ul class="simple">
-<li><p><a class="reference internal" href="aeg/index.html"><span class="doc std std-doc">AI Ethics &amp; Governance (AEG)</span></a></p></li>
 <li><p><a class="reference internal" href="rri/index.html"><span class="doc std std-doc">Responsible Research and Innovation (RRI)</span></a></p></li>
-<li><p><a class="reference internal" href="pcs/index.html"><span class="doc std std-doc">Public Communication of Science (PCS)</span></a></p></li>
+<li><p><a class="reference internal" href="pcs/index.html"><span class="doc std std-doc">Public Engagement and Communication of Science (PCS)</span></a></p></li>
+<li><p><a class="reference internal" href="aeg/index.html"><span class="doc std std-doc">AI Ethics &amp; Governance (AEG)</span></a></p></li>
 </ul>
+<div class="section" id="contributing">
+<h2>Contributing<a class="headerlink" href="#contributing" title="Permalink to this headline">¶</a></h2>
+<p>If you’d like to get involved and help contribute to these resources, you can either:</p>
+<ul class="simple">
+<li><p>Contribute on GitHub:</p>
+<ul>
+<li><p>Comment on <a class="reference external" href="https://github.com/chrisdburr/turing-commons/issues">issues</a>, join a discussion, collaborate on an ongoing task and exchange your thoughts with others.</p></li>
+<li><p>Can’t find your idea being discussed anywhere?
+<a class="reference external" href="https://github.com/chrisdburr/turing-commons/issues/new">Open a new issue</a>! (See our <a class="reference external" href="#where-to-start-issues">Where to start: issues</a> section below.)</p></li>
+</ul>
+</li>
+<li><p>Just want to get in touch?</p>
+<ul>
+<li><p>Contact the Project Lead of <em>The Turing Commons</em> by email at <a class="reference external" href="mailto:cburr&#37;&#52;&#48;turing&#46;ac&#46;uk">cburr<span>&#64;</span>turing<span>&#46;</span>ac<span>&#46;</span>uk</a>.</p></li>
+</ul>
+</li>
+</ul>
+</div>
 <div class="toctree-wrapper compound">
 </div>
 <div class="toctree-wrapper compound">
@@ -472,21 +505,32 @@
               </div>
               
         
-        <div class='prev-next-bottom'>
             
-    <a class='right-next' id="next-link" href="rri/index.html" title="next page">About this Guidebook</a>
 
-        </div>
+
+
+<div class='prev-next-bottom'>
+    
+     <div id="next">
+        <a class="right-next" href="rri/index.html" title="next page">
+            <div class="prevnext-info">
+                <p class="prevnext-label">next</p>
+                <p class="prevnext-title">About</p>
+            </div>
+            <i class="prevnext-label fas fa-angle-right"></i>
+        </a>
+     </div>
+
+</div>
         
         </div>
     </div>
-    <footer class="footer mt-5 mt-md-0">
+    <footer class="footer">
     <div class="container">
       <p>
         
           By Dr Christopher Burr<br/>
         
-            &copy; Copyright 2021.<br/>
       </p>
     </div>
   </footer>

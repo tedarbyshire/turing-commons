@@ -1,11 +1,11 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Responsible Project Design &#8212; Turing Commons</title>
+    <title>3 Responsible Data Science and AI &#8212; Turing Commons</title>
     
   <link href="../../_static/css/theme.css" rel="stylesheet" />
   <link href="../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -22,8 +22,8 @@
       
 
     
-    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/sphinx-book-theme.e8e5499552300ddf5d7adccae7cc3b70.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
@@ -33,20 +33,17 @@
     
   <link rel="preload" as="script" href="../../_static/js/index.1c5a1a01449ed65a7b51.js">
 
-    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/language_data.js"></script>
     <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
-    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
-    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
-    <script >
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
         const thebe_selector_output = ".output"
@@ -54,8 +51,8 @@
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Project Planning and Problem Formulation" href="planning.html" />
-    <link rel="prev" title="Activity 2" href="../chapter2/activity2.html" />
+    <link rel="next" title="Responsible Data Science and AI" href="responsible_ds.html" />
+    <link rel="prev" title="Activity 2: Ethical Reflection and Deliberation" href="../chapter2/activity2.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -75,22 +72,23 @@
     <a class="navbar-brand text-wrap" href="../../index.html">
       
       
+      
       <h1 class="site-logo" id="site-title">Turing Commons</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
         <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../../index.html">
-   Welcome to the Turing Commons
+   Welcome
   </a>
  </li>
 </ul>
-<p class="caption">
+<p class="caption" role="heading">
  <span class="caption-text">
   Responsible Research and Innovation
  </span>
@@ -98,17 +96,17 @@
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../index.html">
-   About this Guidebook
+   About
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../intro/index.html">
-   Introduction
+   1 Introduction
   </a>
  </li>
  <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../chapter1/index.html">
-   What is Responsible Research and Innovation?
+  <a class="reference internal" href="../chapter2/index.html">
+   2 What is Responsible Research and Innovation?
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
@@ -117,114 +115,159 @@
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="../chapter1/responsibility.html">
-     Defining ‘Responsibility’
+    <a class="reference internal" href="../chapter2/responsibility.html">
+     What is ‘Responsibility’?
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../chapter1/history.html">
+    <a class="reference internal" href="../chapter2/history.html">
      A Short History of RRI
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../chapter1/activity1.html">
+    <a class="reference internal" href="../chapter2/activity1.html">
      Activity 1: Exploring Case Studies
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../chapter1/sts.html">
+    <a class="reference internal" href="../chapter2/sts.html">
      Science , Technology, and Society
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../chapter1/activity2.html">
-     Activity 2: Ethical Reflection and Deliberation
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../chapter2/index.html">
-   Responsible Data Science and AI
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
-  <label for="toctree-checkbox-2">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../chapter2/responsible_ds.html">
-     Responsible Data Science and AI
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../chapter2/project_lifecycle.html">
-     The Project Lifecycle (A Sociotechnical Approach)
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../chapter2/roles_responsibility.html">
-     Roles and Responsibilities
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../chapter2/activity1.html">
-     Activty 1
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../chapter2/reflect_act_justify.html">
-     Reflect, Act, and Justify (A Participatory Procedure for RRI)
+    <a class="reference internal" href="../chapter2/timeline.html">
+     Science and Technology Studies (A Timeline)
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../chapter2/activity2.html">
-     Activity 2
+     Activity 2: Ethical Reflection and Deliberation
     </a>
    </li>
   </ul>
  </li>
  <li class="toctree-l1 current active has-children">
   <a class="current reference internal" href="#">
-   Responsible Project Design
+   3 Responsible Data Science and AI
   </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
-  <label for="toctree-checkbox-3">
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
    <i class="fas fa-chevron-down">
    </i>
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="planning.html">
-     Project Planning and Problem Formulation
+    <a class="reference internal" href="responsible_ds.html">
+     Responsible Data Science and AI
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="project_lifecycle.html">
+     Introducing the Project Lifecycle (A Sociotechnical Approach)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="roles_responsibility.html">
+     Roles and Responsibilities
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="activity1.html">
-     Activity 1
+     Activty 3: Contributing to Collaborative Projects
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="data_extraction.html">
-     Data Extraction and Procurement
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="data_analysis.html">
-     Data Analysis
+    <a class="reference internal" href="understanding_bias.html">
+     Understanding Bias
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="activity2.html">
-     Activity 2
+     Activity 4: Bias Cards
     </a>
    </li>
   </ul>
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../chapter4/index.html">
-   Responsible Model Development
+   4 The Project Lifecycle
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../chapter4/case_studies.html">
+     Case Studies
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../chapter4/project_design/planning.html">
+     Project Planning
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../chapter4/project_design/problem.html">
+     Problem Formulation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../chapter4/project_design/data_extraction.html">
+     Data Extraction and Procurement
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../chapter4/project_design/data_analysis.html">
+     Data Analysis
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../chapter4/model_development/preprocessing.html">
+     Preprocessing and Feature Engineering
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../chapter4/model_development/model_selection.html">
+     Model Selection and Training
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../chapter4/model_development/model_testing.html">
+     Model Testing and Validation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../chapter4/model_development/model_reporting.html">
+     Model Reporting
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../chapter4/system_deployment/model_productionalisation.html">
+     Model Productionalisation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../chapter4/system_deployment/user_training.html">
+     User Training
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../chapter4/system_deployment/system_use.html">
+     System Use, Monitoring, and Updating
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../chapter4/system_deployment/model_updating.html">
+     Model Updating or Deprovisioning
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../chapter5/index.html">
+   5 Responsible Communication
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
   <label for="toctree-checkbox-4">
@@ -233,72 +276,25 @@
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="../chapter4/preprocessing.html">
-     Preprocessing and Feature Engineering
+    <a class="reference internal" href="../chapter5/assurance.html">
+     What is Argument-Based Assurance?
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../chapter4/activity1.html">
-     Activity 1
+    <a class="reference internal" href="../chapter5/communication.html">
+     Assurance and Responsible Communication
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../chapter4/model_selection.html">
-     Model Selection
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../chapter4/model_training.html">
-     Model Training and Testing
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../chapter4/model_documentation.html">
-     Model Documentation and Productionalization
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../chapter4/activity2.html">
-     Activity 2
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../chapter5/index.html">
-   Responsible System Deployment
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
-  <label for="toctree-checkbox-5">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../chapter5/user_training.html">
-     User Training
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../chapter5/activity1.html">
-     Activity 1
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../chapter5/system_use.html">
-     System Use, Monitoring, and Updating
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../chapter5/activity2.html">
-     Activity 2
+    <a class="reference internal" href="../chapter5/gpe.html">
+     Goals, Properties, and Evidence
     </a>
    </li>
   </ul>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../conclusion/index.html">
-   Conclusion (Looking Forward)
+   6 Conclusion (Looking Forward)
   </a>
  </li>
  <li class="toctree-l1">
@@ -307,9 +303,9 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p class="caption" role="heading">
  <span class="caption-text">
-  Public Communication of Science
+  Public Engagement and Communication of Science
  </span>
 </p>
 <ul class="nav bd-sidenav">
@@ -319,7 +315,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p class="caption" role="heading">
  <span class="caption-text">
   AI Ethics and Governance
  </span>
@@ -331,7 +327,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p class="caption" role="heading">
  <span class="caption-text">
   References
  </span>
@@ -427,7 +423,7 @@
             <div class="tocsection onthispage pt-5 pb-3">
                 <i class="fas fa-list"></i> Contents
             </div>
-            <nav id="bd-toc-nav">
+            <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#chapter-outline">
@@ -445,30 +441,29 @@
         
               <div>
                 
-  <div class="section" id="responsible-project-design">
-<h1>Responsible Project Design<a class="headerlink" href="#responsible-project-design" title="Permalink to this headline">¶</a></h1>
-<img alt="Illustration of data scientists" class="align-center" src="../../_images/data-science.png" />
+  <div class="tex2jax_ignore mathjax_ignore section" id="responsible-data-science-and-ai">
+<h1>3 Responsible Data Science and AI<a class="headerlink" href="#responsible-data-science-and-ai" title="Permalink to this headline">¶</a></h1>
+<img alt="Illustration of data science and AI applications (by [Johnny Lighthands](https://www.johnnylighthands.co.uk))" class="align-center" src="../../_images/ai.png" />
 <div class="tip admonition">
 <p class="admonition-title">Summary</p>
-<p>In this chapter we will start working through the key stages of the project lifecycle, beginning with (project) design. The first part of this stage will look at activities associated with project planning and problem formulation. The second part will cover activities and topics related to responsible data extraction, procurement, analysis and management.</p>
+<p>This chapter builds on the content of the previous one by applying many of the central concepts to research and innovation in data science and AI. First, we will look at what being responsible means in the context of data science and AI, and explore several principles that can help get us started with operationalising the term ‘responsibility’. Next, we explore a simple model that has been designed to help with reflection and deliberation throughout the project lifecycle, and also look at what this model means for individual roles within a project, as well as a broader notion of collective responsibility. Finally, we examine the concept of ‘bias’, which will play an important role in the subsequent chapters.</p>
 </div>
 <div class="admonition-learning-objectives admonition">
 <p class="admonition-title">Learning Objectives</p>
 <p>In this chapter, you will:</p>
 <ul class="simple">
-<li><p>look at how you can set your project up to succeed at the earliest stages of project planning and problem formulation, and ensure that issues do not cascade downstream to later stages of the project lifecycle</p></li>
-<li><p>gain an understanding of what it means to act responsibly with respect to the data protection and privacy rights and expectations of data subjects</p></li>
-<li><p>explore how social, statistical, and cognitive biases affects data analysis, and what ought to be done to minimise the effect of these biases</p></li>
+<li><p>Explore what differentiates responsible data science and AI from responsible research and innovation more generally.</p></li>
+<li><p>Examine a model of a typical project lifecycle to better appreciate why individual responsibility is often insufficient in the context of data science and AI.</p></li>
+<li><p>Understand the differences between social, statistical, and cognitive biases, and why they all matter for responsible data science and AI.</p></li>
 </ul>
 </div>
 <div class="section" id="chapter-outline">
 <h2>Chapter Outline<a class="headerlink" href="#chapter-outline" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p><a class="reference internal" href="planning.html"><span class="doc std std-doc">Project Planning and Problem Formulation</span></a></p></li>
-<li><p><a class="reference internal" href="activity1.html"><span class="doc std std-doc">Activity 1</span></a></p></li>
-<li><p><a class="reference internal" href="data_extraction.html"><span class="doc std std-doc">Data Extraction and Procurement</span></a></p></li>
-<li><p><a class="reference internal" href="data_analysis.html"><span class="doc std std-doc">Data Analysis</span></a></p></li>
-<li><p><a class="reference internal" href="activity2.html"><span class="doc std std-doc">Activity 2</span></a></p></li>
+<li><p><a class="reference internal" href="responsible_ds.html"><span class="doc std std-doc">Responsible Data Science and AI</span></a></p></li>
+<li><p><a class="reference internal" href="project_lifecycle.html"><span class="doc std std-doc">Introducing the Project Lifecycle (A Sociotechnical Approach)</span></a></p></li>
+<li><p><a class="reference internal" href="roles_responsibility.html"><span class="doc std std-doc">Roles and Responsibilities</span></a></p></li>
+<li><p><a class="reference internal" href="understanding_bias.html"><span class="doc std std-doc">Understanding Bias)</span></a></p></li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
@@ -498,22 +493,41 @@
               </div>
               
         
-        <div class='prev-next-bottom'>
             
-    <a class='left-prev' id="prev-link" href="../chapter2/activity2.html" title="previous page">Activity 2</a>
-    <a class='right-next' id="next-link" href="planning.html" title="next page">Project Planning and Problem Formulation</a>
 
-        </div>
+
+
+<div class='prev-next-bottom'>
+    
+    <div id="prev">
+        <a class="left-prev" href="../chapter2/activity2.html" title="previous page">
+            <i class="prevnext-label fas fa-angle-left"></i>
+            <div class="prevnext-info">
+                <p class="prevnext-label">previous</p>
+                <p class="prevnext-title">Activity 2: Ethical Reflection and Deliberation</p>
+            </div>
+        </a>
+    </div>
+     <div id="next">
+        <a class="right-next" href="responsible_ds.html" title="next page">
+            <div class="prevnext-info">
+                <p class="prevnext-label">next</p>
+                <p class="prevnext-title">Responsible Data Science and AI</p>
+            </div>
+            <i class="prevnext-label fas fa-angle-right"></i>
+        </a>
+     </div>
+
+</div>
         
         </div>
     </div>
-    <footer class="footer mt-5 mt-md-0">
+    <footer class="footer">
     <div class="container">
       <p>
         
           By Dr Christopher Burr<br/>
         
-            &copy; Copyright 2021.<br/>
       </p>
     </div>
   </footer>

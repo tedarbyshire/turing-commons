@@ -1,27 +1,26 @@
-# Responsible Project Design
+# 3 Responsible Data Science and AI
 
-```{image} /images/illustrations/data-science.png
-:alt: Illustration of data scientists
+```{image} /images/illustrations/ai.png
+:alt: Illustration of data science and AI applications (by [Johnny Lighthands](https://www.johnnylighthands.co.uk))
 :align: center
 ```
 
 ```{admonition} Summary
 :class: tip
-In this chapter we will start working through the key stages of the project lifecycle, beginning with (project) design. The first part of this stage will look at activities associated with project planning and problem formulation. The second part will cover activities and topics related to responsible data extraction, procurement, analysis and management.
+This chapter builds on the content of the previous one by applying many of the central concepts to research and innovation in data science and AI. First, we will look at what being responsible means in the context of data science and AI, and explore several principles that can help get us started with operationalising the term 'responsibility'. Next, we explore a simple model that has been designed to help with reflection and deliberation throughout the project lifecycle, and also look at what this model means for individual roles within a project, as well as a broader notion of collective responsibility. Finally, we examine the concept of 'bias', which will play an important role in the subsequent chapters.
 ```
 
 ```{admonition} Learning Objectives
 In this chapter, you will:
 
-- look at how you can set your project up to succeed at the earliest stages of project planning and problem formulation, and ensure that issues do not cascade downstream to later stages of the project lifecycle 
-- gain an understanding of what it means to act responsibly with respect to the data protection and privacy rights and expectations of data subjects
-- explore how social, statistical, and cognitive biases affects data analysis, and what ought to be done to minimise the effect of these biases
+- Explore what differentiates responsible data science and AI from responsible research and innovation more generally.
+- Examine a model of a typical project lifecycle to better appreciate why individual responsibility is often insufficient in the context of data science and AI.
+- Understand the differences between social, statistical, and cognitive biases, and why they all matter for responsible data science and AI.
 ```
 
 ## Chapter Outline
 
-- [Project Planning and Problem Formulation](planning.md)
-- [Activity 1](activity1.md)
-- [Data Extraction and Procurement](data_extraction.md)
-- [Data Analysis](data_analysis.ipynb)
-- [Activity 2](activity2.md)
+- [Responsible Data Science and AI](responsible_ds.md)
+- [Introducing the Project Lifecycle (A Sociotechnical Approach)](project_lifecycle.md)
+- [Roles and Responsibilities](roles_responsibility.md)
+- [Understanding Bias)](understanding_bias.md)

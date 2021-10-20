@@ -1,0 +1,726 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsible Data Science and AI &#8212; Turing Commons</title>
+    
+  <link href="../../_static/css/theme.css" rel="stylesheet" />
+  <link href="../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Introducing the Project Lifecycle (A Sociotechnical Approach)" href="project_lifecycle.html" />
+    <link rel="prev" title="3 Responsible Data Science and AI" href="index.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+      
+      
+      <h1 class="site-logo" id="site-title">Turing Commons</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../index.html">
+   Welcome
+  </a>
+ </li>
+</ul>
+<p class="caption" role="heading">
+ <span class="caption-text">
+  Responsible Research and Innovation
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../index.html">
+   About
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro/index.html">
+   1 Introduction
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../chapter2/index.html">
+   2 What is Responsible Research and Innovation?
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../chapter2/responsibility.html">
+     What is ‘Responsibility’?
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../chapter2/history.html">
+     A Short History of RRI
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../chapter2/activity1.html">
+     Activity 1: Exploring Case Studies
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../chapter2/sts.html">
+     Science , Technology, and Society
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../chapter2/timeline.html">
+     Science and Technology Studies (A Timeline)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../chapter2/activity2.html">
+     Activity 2: Ethical Reflection and Deliberation
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="index.html">
+   3 Responsible Data Science and AI
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Responsible Data Science and AI
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="project_lifecycle.html">
+     Introducing the Project Lifecycle (A Sociotechnical Approach)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="roles_responsibility.html">
+     Roles and Responsibilities
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="activity1.html">
+     Activty 3: Contributing to Collaborative Projects
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="understanding_bias.html">
+     Understanding Bias
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="activity2.html">
+     Activity 4: Bias Cards
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../chapter4/index.html">
+   4 The Project Lifecycle
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../chapter4/case_studies.html">
+     Case Studies
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../chapter4/project_design/planning.html">
+     Project Planning
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../chapter4/project_design/problem.html">
+     Problem Formulation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../chapter4/project_design/data_extraction.html">
+     Data Extraction and Procurement
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../chapter4/project_design/data_analysis.html">
+     Data Analysis
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../chapter4/model_development/preprocessing.html">
+     Preprocessing and Feature Engineering
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../chapter4/model_development/model_selection.html">
+     Model Selection and Training
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../chapter4/model_development/model_testing.html">
+     Model Testing and Validation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../chapter4/model_development/model_reporting.html">
+     Model Reporting
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../chapter4/system_deployment/model_productionalisation.html">
+     Model Productionalisation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../chapter4/system_deployment/user_training.html">
+     User Training
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../chapter4/system_deployment/system_use.html">
+     System Use, Monitoring, and Updating
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../chapter4/system_deployment/model_updating.html">
+     Model Updating or Deprovisioning
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../chapter5/index.html">
+   5 Responsible Communication
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../chapter5/assurance.html">
+     What is Argument-Based Assurance?
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../chapter5/communication.html">
+     Assurance and Responsible Communication
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../chapter5/gpe.html">
+     Goals, Properties, and Evidence
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../conclusion/index.html">
+   6 Conclusion (Looking Forward)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../further_resources/index.html">
+   Further Resources
+  </a>
+ </li>
+</ul>
+<p class="caption" role="heading">
+ <span class="caption-text">
+  Public Engagement and Communication of Science
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../pcs/index.html">
+   About this Guidebook
+  </a>
+ </li>
+</ul>
+<p class="caption" role="heading">
+ <span class="caption-text">
+  AI Ethics and Governance
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../aeg/index.html">
+   About this Guidebook
+  </a>
+ </li>
+</ul>
+<p class="caption" role="heading">
+ <span class="caption-text">
+  References
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../bibliography.html">
+   Bibliography
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/rri/chapter3/responsible_ds.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/chrisdburr/turing-commons"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/chrisdburr/turing-commons/issues/new?title=Issue%20on%20page%20%2Frri/chapter3/responsible_ds.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#safe-d-principles">
+   SAFE-D Principles
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#examples">
+     Examples
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#safety">
+     Safety
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#accountability">
+     Accountability
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#fairness">
+     Fairness
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#explainability">
+     Explainability
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#data-quality-integrity-protection-and-privacy">
+     Data Quality, Integrity, Protection and Privacy
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="responsible-data-science-and-ai">
+<h1>Responsible Data Science and AI<a class="headerlink" href="#responsible-data-science-and-ai" title="Permalink to this headline">¶</a></h1>
+<blockquote>
+<div><p>What separates responsible data science and AI from responsible research and innovation more generally?</p>
+</div></blockquote>
+<p>We saw in the <a class="reference internal" href="../chapter2/index.html"><span class="doc std std-doc">previous chapter</span></a> how RRI can be defined with reference to concepts that emphasise the need for ethical reflection on possible social harms and benefits, supported by inclusive participation of affected stakeholders.
+Responsible data science and AI shares this emphasis, but can be further refined by considering more specific principles that are geared towards the particular harms and benefits associated with data science and AI.
+These principles can help us identify what is unique to responsible data science and AI.</p>
+<div class="section" id="safe-d-principles">
+<h2>SAFE-D Principles<a class="headerlink" href="#safe-d-principles" title="Permalink to this headline">¶</a></h2>
+<p>According to <span id="id1">Mittelstadt [<a class="reference internal" href="../../bibliography.html#id35">2019</a>]</span>, in 2019 there were at least 84 statements that provided ‘’high-level principles, values and other tenets to guide the ethical development, deployment and governance of AI’’.
+By now there are surely many, many more!</p>
+<p>In response to this proliferation of principles, some have attempted to distil and condense the myriad documents, in order to identify commonalities and extract a unified list of shared principles <span id="id2">[<a class="reference internal" href="../../bibliography.html#id17">Floridi and Cowls, 2019</a>, <a class="reference internal" href="../../bibliography.html#id24">Jobin <em>et al.</em>, 2019</a>]</span>.
+However, regardless of which set of principles we start with, one thing remains the same: good principles should support ongoing reflection and deliberation; they are not decision procedures in their own right.</p>
+<div class="figure align-center" id="moral-deliberation">
+<img alt="An illustration of a man standing in front of a branching pathway of moral decisions and considerations" src="../../_images/deliberation.png" />
+<p class="caption"><span class="caption-number">Fig. 5 </span><span class="caption-text">Good principles can help us make sense of a maze of competing values, interests, and features that affect moral decision-making.</span><a class="headerlink" href="#moral-deliberation" title="Permalink to this image">¶</a></p>
+</div>
+<p>This point is sometimes lost in the ensuing debate about <em>which set</em> of principles should be used or adhered to, or which set is best.
+However, what matters is that the set of principles should (a) be responsive to the actual harms and benefits that matter to the communities of affected individuals, (b) be underwritten by a set of shared values, which support and motivate dialogue between stakeholders<a class="footnote-reference brackets" href="#values" id="id3">1</a>, and (c) serve as <em>starting points</em> in a wider process of reflection and deliberation.</p>
+<p>With these points in mind, we will make use of the following set of principles known as the ‘SAFE-D principles’:</p>
+<ul class="simple">
+<li><p>Safety</p></li>
+<li><p>Accountability</p></li>
+<li><p>Fairness</p></li>
+<li><p>Explainability</p></li>
+<li><p>Data Quality, Integrity, Protection and Privacy</p></li>
+</ul>
+<p>These principles are grounded in comprehensive research and understanding of human rights and data protection law, as well as applied ethics of data and AI. <span id="id4">[<a class="reference internal" href="../../bibliography.html#id32">Leslie <em>et al.</em>, 2021</a>]</span></p>
+<div class="section" id="examples">
+<h3>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h3>
+<p>You can click through the following illustrative examples to get an idea of some of the social harms associated with data-driven technologies:</p>
+<div class="sphinx-bs container pb-4 docutils">
+<div class="row docutils">
+<div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
+<div class="card w-100 shadow docutils">
+<div class="card-header docutils">
+<p class="card-text">Predicting Risk</p>
+</div>
+<div class="card-body docutils">
+<p class="card-text">Avon and Somerset Police and Bristol City Council developed a sophisticated predictive risk tool that was used, among other things, to predict the risk of children suffering sexual abuse. But, the Bristol Cable reported that many children were falsely flagged as being at risk, and that the tool was developed using dozens of public sector databases, including schools, housing, NHS records, and even credit scores from Experian.</p>
+</div>
+<div class="card-footer docutils">
+<p class="card-text"><a class="reference external" href="https://thebristolcable.org/2021/07/how-a-police-and-council-database-is-predicting-if-your-child-is-at-risk-of-harm/">The Bristol Cable, ‘How a police and council database is predicting if your child is at risk of harm’</a></p>
+</div>
+</div>
+</div>
+<div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
+<div class="card w-100 shadow docutils">
+<div class="card-header docutils">
+<p class="card-text">Facebook Discriminatory Job Adverts</p>
+</div>
+<div class="card-body docutils">
+<p class="card-text">The algorithmic system used by Facebook to automatically show job adverts to users it believes are most likely to engage with them was reported to perpetuate discriminatory gender norms. Thee BBC reported that</p>
+<blockquote>
+<div><p class="card-text">almost all Facebook users shown adverts for mechanics were men, while ads for nursery nurses were seen almost exclusively by women.</p>
+</div></blockquote>
+</div>
+<div class="card-footer docutils">
+<p class="card-text"><a class="reference external" href="https://www.bbc.co.uk/news/technology-58487026">BBC News, ‘Facebook accused of allowing sexist job advertising’</a></p>
+</div>
+</div>
+</div>
+<div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
+<div class="card w-100 shadow docutils">
+<div class="card-header docutils">
+<p class="card-text">Racist Photo Cropping Tool</p>
+</div>
+<div class="card-body docutils">
+<p class="card-text">Twitter was forced to apologise after many users reported that the automated tool for cropping images on the social media platform showed a racial bias towards faces of white people over faces of black people. According to <a class="reference external" href="https://blog.twitter.com/engineering/en_us/topics/insights/2021/sharing-learnings-about-our-image-cropping-algorithm">Twitter</a>, one source of the issue was the use of a ‘’saliency algorithm’’ that was trained on human eye-tracking data.</p>
+</div>
+<div class="card-footer docutils">
+<p class="card-text"><a class="reference external" href="https://www.theguardian.com/technology/2020/sep/21/twitter-apologises-for-racist-image-cropping-algorithm">The Guardian, ‘Twitter apologises for ‘racist’ image-cropping algorithm’</a></p>
+</div>
+</div>
+</div>
+<div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
+<div class="card w-100 shadow docutils">
+<div class="card-header docutils">
+<p class="card-text">Lethal Autonomous Weapons</p>
+</div>
+<div class="card-body docutils">
+<p class="card-text">Turkish company STM manufactures the <a class="reference external" href="https://www.stm.com.tr/uploads/docs/1628858259_tacticalminiuavsystems.pdf">Kargu-2</a>—an attack drone that can operate autonomously by using machine learning and real-time image processing to identify targets. According to a UN security council report this drone was reported to have been used to “remotely engage” and “hunt down” logistics convoys and retreating forces in the Libyan civil war during 2019.</p>
+</div>
+<div class="card-footer docutils">
+<p class="card-text"><a class="reference external" href="https://www.npr.org/2021/06/01/1002196245/a-u-n-report-suggests-libya-saw-the-first-battlefield-killing-by-an-autonomous-d">NPR, ‘A Military Drone With A Mind Of Its Own Was Used In Combat, U.N. Says’</a></p>
+</div>
+</div>
+</div>
+<div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
+<div class="card w-100 shadow docutils">
+<div class="card-header docutils">
+<p class="card-text">#TravelingWhileTrans</p>
+</div>
+<div class="card-body docutils">
+<p class="card-text">In their book, Design Justice, Sasha Costanza-Chock highlights how the design of sociotechnical systems reinforce and embed a variety of social norms and expectations that can be harmful to vulnerable or marginalised communities. For example, the impact of full-body scanners at airport security that require operators to select either ‘male’ or ‘female’, even when presented with non-binary or trans individuals whose bodies may not conform to the models embedded within the machine.</p>
+</div>
+<div class="card-footer docutils">
+<p class="card-text"><a class="reference external" href="https://design-justice.pubpub.org/pub/ap8rgw5e/release/1">Design Justice, ‘Introduction: #TravelingWhileTrans, Design Justice, and Escape from the Matrix of Domination’</a></p>
+</div>
+</div>
+</div>
+<div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
+<div class="card w-100 shadow docutils">
+<div class="card-header docutils">
+<p class="card-text">Any Others?</p>
+</div>
+<div class="card-body docutils">
+<p class="card-text">Do you know any other examples of social harms associated with data-driven technologies?</p>
+</div>
+<div class="card-footer docutils">
+</div>
+</div>
+</div>
+</div>
+</div>
+<p>Each of the SAFE-D principles is either motivated by and captures a specific set of harms that have been uncovered and exposed, responds to a set or well-documented risks that arise in the context of data science and AI, or is oriented towards the sustainable, ethical, and responsible use of data-driven technologies.
+Let’s look at each principle in turn.</p>
+</div>
+<div class="section" id="safety">
+<h3>Safety<a class="headerlink" href="#safety" title="Permalink to this headline">¶</a></h3>
+<p>Safety can mean a couple of things.
+From a technical perspective, safety requires the outputs of a project to be secure, robust, and reliable.
+For example, if an organisation is developing an autonomous vehicle, it should operate safely in the intended context of use.
+However, in the context of responsible data science and AI, safety also has a social sustainability component.
+This aspect of safety requires a project’s practices to be informed by ongoing consideration of the risk of exposing individuals to harms even after the system has been deployed and the project completed—a long-term (or sustainable) safety.</p>
+</div>
+<div class="section" id="accountability">
+<h3>Accountability<a class="headerlink" href="#accountability" title="Permalink to this headline">¶</a></h3>
+<p>Accountability can refer to transparency of processes and associated outcomes that enable people to understand how a project was conducted (e.g., project documentation), or why a specific decision was reached.
+But it can also refer to broader processes of responsible project governance that seek to establish clear roles of responsibility where full transparency may be inappropriate (e.g., confidential projects).</p>
+</div>
+<div class="section" id="fairness">
+<h3>Fairness<a class="headerlink" href="#fairness" title="Permalink to this headline">¶</a></h3>
+<p>Fairness is inseparably connected with legal conceptions of equality and justice, which may emphasize a variety of features such as non-discrimination, equitable outcomes, or procedural fairness through bias mitigation.
+However, these notions serve as a subset of broader normative considerations pertaining to social justice, socioeconomic capabilities, diversity and inclusivity.
+For this reason, the term ‘fairness’ can be confusing due to the wide variety of ways it is employed, and the large number of more specific concepts that fall within its scope.</p>
+</div>
+<div class="section" id="explainability">
+<h3>Explainability<a class="headerlink" href="#explainability" title="Permalink to this headline">¶</a></h3>
+<p>Explainability is a key condition for autonomous and informed decision-making in situations where data-driven systems interact with or influence human judgement and choice behaviour.
+Explainability goes beyond the ability to merely interpret specific aspects of a project (e.g., interpreting the parameters of a model); it also depends on the ability to provide an accessible and relevant information base about the processes behind the outcome.</p>
+</div>
+<div class="section" id="data-quality-integrity-protection-and-privacy">
+<h3>Data Quality, Integrity, Protection and Privacy<a class="headerlink" href="#data-quality-integrity-protection-and-privacy" title="Permalink to this headline">¶</a></h3>
+<p>Data quality, integrity, protection and privacy must all be established to be confident that a research or innovation project has been designed, developed, and deployed in a responsible manner.</p>
+<ul class="simple">
+<li><p>‘Data Quality’ captures the static properties of data, such as whether they are (a) <em>relevant</em> to and <em>representative</em> of the domain and use context, (b) <em>balanced</em> and <em>complete</em> in terms of how well the dataset represents the underlying data generating process, and (c) <em>up-to-date</em> and <em>accurate</em> as required by the project.</p></li>
+<li><p>‘Data Integrity’ refers to more dynamic properties of data stewardship, such as how a dataset evolves over the course of a project lifecycle. In this manner, data integrity requires (a) <em>contemporaneous</em> and <em>attributable</em> records from the start of a project (e.g., process logs; research statements), (b) ensuring <em>consistent</em> and <em>verifiable</em> means of data analysis or processing during development, and (c) taking steps to establish <em>findable</em>, <em>accessible</em>, <em>interoperable</em>, and <em>reusable</em> records towards the end of a project’s lifecycle.<a class="footnote-reference brackets" href="#fair" id="id5">2</a></p></li>
+<li><p>‘Data protection and privacy’ reflect ongoing developments and priorities as set out in relevant legislation and regulation of data practices as they pertain to fundamental rights and freedoms, democracy, and the rule of law. For example, the right for data subjects to have inaccurate personal data rectified or erased.<span id="id6">[<a class="reference internal" href="../../bibliography.html#id22">ICO, 2021</a>]</span></p></li>
+</ul>
+<p>Each of these principles can be treated as a goal to which responsible data science and AI ought to be directed.<a class="footnote-reference brackets" href="#pcs" id="id7">3</a>
+But, on their own they are insufficient for establishing what specific actions or decisions should be taken in any given project.
+For instance, what does it mean to develop a <em>fair</em> diagnostic model in healthcare?</p>
+<p>Does it mean ensuring that all patients are exposed to the same level of risk with respect to the distribution of possible false negatives?</p>
+<p>What about false positives instead?</p>
+<p>What about the use of the decision support system in which thee model is implemented?</p>
+<p>Will it be used in all hospitals on all patients?</p>
+<p>Or, will only those wealthy enough to afford private healthcare receive this service?</p>
+<p>Should it instead be used for the most vulnerable and worse off in society?</p>
+<p>Questions such as these have no straightforward answer and are heavily context-dependant.
+Even if consensus were to be reached for a specific model used, say, in the diagnosis of lung cancer <span id="id8">[<a class="reference internal" href="../../bibliography.html#id49">Svoboda, 2020</a>]</span>, this would be no guarantee of a similar answer in a different area of healthcare (e.g., paediatrics, mental healthcare), or even for another diagnostic model in radiology (e.g., MRI instead of CT scans).
+Therefore, starting in the next section we will look at a model for helping us get a clear grasp of the situated and sociotechnical context under consideration in research and innovation projects.</p>
+<hr class="footnotes docutils" />
+<dl class="footnote brackets">
+<dt class="label" id="values"><span class="brackets"><a class="fn-backref" href="#id3">1</a></span></dt>
+<dd><p>We won’t say much about ethical values in this course. However, the course on <span class="xref myst">AI Ethics &amp; Governance</span> focuses on them directlu.</p>
+</dd>
+<dt class="label" id="fair"><span class="brackets"><a class="fn-backref" href="#id5">2</a></span></dt>
+<dd><p>These are known as the FAIR principles (<a class="reference external" href="https://www.go-fair.org/fair-principles/">read more here</a>).</p>
+</dd>
+<dt class="label" id="pcs"><span class="brackets"><a class="fn-backref" href="#id7">3</a></span></dt>
+<dd><p>In our guidebook on <a class="reference external" href="https://turing-commons.netlify.app/pvs/index.html">public communication of science</a> we formalise this notion of an ethical goal in relation to a method known as argument-based assurance. Here, the goals are supported by specific properties that must be established in a project, in order to provide justifiable assurance to stakeholders that the respective goal has been realised.</p>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./rri/chapter3"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            
+
+
+
+<div class='prev-next-bottom'>
+    
+    <div id="prev">
+        <a class="left-prev" href="index.html" title="previous page">
+            <i class="prevnext-label fas fa-angle-left"></i>
+            <div class="prevnext-info">
+                <p class="prevnext-label">previous</p>
+                <p class="prevnext-title">3 Responsible Data Science and AI</p>
+            </div>
+        </a>
+    </div>
+     <div id="next">
+        <a class="right-next" href="project_lifecycle.html" title="next page">
+            <div class="prevnext-info">
+                <p class="prevnext-label">next</p>
+                <p class="prevnext-title">Introducing the Project Lifecycle (A Sociotechnical Approach)</p>
+            </div>
+            <i class="prevnext-label fas fa-angle-right"></i>
+        </a>
+     </div>
+
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By Dr Christopher Burr<br/>
+        
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>
