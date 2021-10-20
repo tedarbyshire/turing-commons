@@ -11,6 +11,7 @@
 | **Chat** | Coming Soon |
 | **Build** | [![Netlify Status](https://api.netlify.com/api/v1/badges/01447c9a-9d12-4b68-b5fa-8f17a5663667/deploy-status)](https://app.netlify.com/sites/turing-commons/deploys)|
 | **Cite** | Coming Soon |
+| **License** | [![CC BY 4.0][cc-by-shield]][cc-by] |
 
 Welcome to the GitHub repository for the Ethics Team's (Alan Turing Institute) online training resources, known as Turing Commons.
 At present, the repository is used to host a collection of guidebooks on the following topics:
@@ -37,3 +38,12 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- prettier-ignore-end -->
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This work is licensed under a
+[Creative Commons Attribution 4.0 International License][cc-by].
+
+[![CC BY 4.0][cc-by-image]][cc-by]
+
+[cc-by]: http://creativecommons.org/licenses/by/4.0/
+[cc-by-image]: https://i.creativecommons.org/l/by/4.0/88x31.png
+[cc-by-shield]: https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg
