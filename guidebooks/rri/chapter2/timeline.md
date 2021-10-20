@@ -21,16 +21,15 @@ Therefore, the following potted (and incomplete) history of STS provides a refer
 
 [^Rohracher]: The following timelines is based on the account by {cite}`rohracher2015`, which goes back further than the 1960s.
 
-```{sidebar} 1960s
-Influential Precursors to STS
-```
-
+```{sidebar}
 - (1962) Thomas Kuhn publishes, 'The Structure of Scientific Revolutions'.
   - This book challenged the idea of technological determinism by suggesting that science does not progress as a accumulation of accepted facts and theories {cite}`kuhn1996`. Rather, Kuhn proposes, it follows an episodic model in which periods of ''normal science'' are punctuated by revolutions in thought, due to a crisis with the dominant paradigm's ability to account for anomalies.
 - Women's studies grows as an academic field.
   - The 1960s saw the accreditation of specific courses in the U.S., which begin to examine how social and cultural constructs of gender, and structural forms of oppression intersect with other key theoretical terms in the behavioural and social sciences.
 - (1968) Garrett Hardin publishes an essay in *Science* that popularises the phrase ''tragedy of the commons''.
   - Hardin's focus was on economic science and the problem of overpopulation on finite and dwindling environmental resources.
+```
+## 1960s: Precursors to STS
 
 
 ```{sidebar} 1970s
