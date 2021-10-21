@@ -25,7 +25,9 @@ parts:
       sections:
       - file: rri/chapter4/case_studies
       - file: rri/chapter4/project_design/planning
+      - file: rri/chapter4/project_design/activity5
       - file: rri/chapter4/project_design/problem
+      - file: rri/chapter4/project_design/activity6
       - file: rri/chapter4/project_design/data_extraction
       - file: rri/chapter4/project_design/data_analysis
       - file: rri/chapter4/model_development/preprocessing
