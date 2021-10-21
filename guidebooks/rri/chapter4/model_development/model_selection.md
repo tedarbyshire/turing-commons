@@ -1,4 +1,4 @@
-# Model Selection and Training
+# Model Selection
 
 This stage determines the model type and structure that will be produced in the next stages.
 In some projects, model selection will result in multiple models for the purpose of comparison based on some performance metric (e.g. accuracy).
@@ -84,25 +84,3 @@ Commonly used unsupervised learning algorithms include:
 Finally, we have reinforcement learning (RL). RL algorithms try to learn an optimal policy that has the goal of maximising some value function when interacting within a particular environment. For example, an intelligent agent that has the goal of scoring the highest number of points in a video game by learning what actions to perform in response to visual feedback from a screen.
 
 RL algorithms can be split into *model-free* or *model-based* methods, where the latter tries to build a model of its environment on which to choose the optimal policy. {cite}`ai2019`
-
-## Splitting the Dataset
-
-A final step to undertake before training the model is to split the dataset into 'training' and 'testing' sets to avoid model overfitting.[^overfitting^]
-
-```{figure} /images/graphics/overfitting.png
----
-align: center
-name: overfitting
-alt: An example of overfitting, underfitting and the appropriate balance.
----
-An example of overfitting, underfitting and the appropriate balance {cite}`bronshtein2020`
-```
-
-The *training set* is the one used to fit the ML model, whereas the *testing set* is a hold-out sample that is used to evaluate the fit of the ML model to the underlying data distribution.
-There are various methods for splitting a dataset into these components, which are widely available in popular package libraries (e.g. the scikit-learn library for the Python programming language).
-The human input at this stage is about deciding on the training-testing split and about how this shapes desiderata for model validation—a subsequent process where the model is validated either internally or in wholly new environments (i.e. external validation).
-As such, the decision can be very consequential for the trustworthiness and reasonableness of the development phase of an ML/AI system.
-We won't delve into the practicalities of this any further, or look at the code used to train a model.
-However, the following article offers a useful introduction {cite}`bronshtein2020.
-
-[^overfitting]: In short, overfitting occurs when a model is fit too closely to a specific set of data, likely leading to unnecessary complexity (e.g., too many features or parameters when compared to the number of observations). The model may perform very well on the training data, but perform poorly when presented with new observations.
