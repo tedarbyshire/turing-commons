@@ -18,7 +18,7 @@ We have designed this model to support the ethical reflection and deliberation t
 However, it is important to note that the model is a heuristic for reflection and deliberation.
 Therefore, it is not intended to be perfectly capture of describe the processes for all data science or AI projects.
 
-```{figure} /images/graphics/lifecycle.png
+```{figure} /images/graphics/project-lifecycle.png
 ---
 align: center
 name: project-lifecycle

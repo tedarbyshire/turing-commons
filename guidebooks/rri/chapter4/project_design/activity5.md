@@ -29,3 +29,12 @@ Don't worry; the results of this activity are not what matter.
 Rather, it is intended as an aid for reflection.
 It's fine if you need to speculate a bit to fill in the gaps.
 Just make sure to discuss it with your team to ensure the details are plausible and largely agreed upon.
+
+<!-- 
+### Activity 5: Privilege Walk 
+
+This is the first activity that will involve the case studies introduced at the start of the chapter. It is a known as a "privilege walk" and is designed to help you reflect on how disparate forms of social privilege interact and how different harms or benefits associated with your research or innovation project may have disparate impacts on affected stakeholders.
+
+Please visit https://bit.ly/3jqJjx8 to view the associated instructions.
+
+-->

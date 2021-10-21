@@ -344,7 +344,7 @@
 </nav> <!-- To handle the deprecated key -->
 
 <div class="navbar_extra_footer">
-  <a href="https://www.netlify.com"><img src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg" alt="Deploys by Netlify" /></a></br></br>This book is powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+  <a href="https://www.netlify.com"><img src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg" alt="Deploys by Netlify" /></a></br></br>Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
 </div>
 
 </div>
@@ -448,8 +448,8 @@
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#covid-19-hopsital-data">
-   COVID-19 Hopsital Data
+  <a class="reference internal nav-link" href="#covid-19-hospital-data">
+   COVID-19 Hospital Data
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
@@ -463,9 +463,26 @@
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#cleaning-and-querying-the-data">
-     Cleaning and Querying the Data
+    <a class="reference internal nav-link" href="#cleaning-the-data">
+     Cleaning the Data
     </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#removing-unnecessary-variables">
+       Removing Unnecessary Variables
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#removing-outliers">
+       Removing Outliers
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#handling-missing-data">
+       Handling Missing Data
+      </a>
+     </li>
+    </ul>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#analysing-the-data">
@@ -493,46 +510,53 @@
   <div class="tex2jax_ignore mathjax_ignore section" id="data-analysis">
 <h1>Data Analysis<a class="headerlink" href="#data-analysis" title="Permalink to this headline">¶</a></h1>
 <p>This module will introduce and examine the stage of ‘exploratory data analysis’.</p>
-<p>Rather than focusing on the statistical or technical techniques employed in modern data science though, we will approach this stage with a bias-aware perspective. However, we will make use of Jupyter notebooks—a popular tool in data science—to aid our exploratory data analysis[^jupyter] by visualising some data. You do not need to be familiar with either Python or Jupyter Notebooks if you just want to gain an understanding of how social, cognitive, and statistical biases interact and affect downstream stages in the research and innovation lifecycle. But the code is presented for those who wish to get more “hands-on”.</p>
+<p>Rather than focusing on the statistical or technical techniques employed in modern data science though, we will approach this stage with a bias-aware perspective.
+However, we will make use of Jupyter notebooks—a popular tool in data science—to aid our exploratory data analysis[^jupyter] by visualising some data.
+You do not need to be familiar with either Python or Jupyter Notebooks if you just want to gain an understanding of how social, cognitive, and statistical biases interact and affect downstream stages in the research and innovation lifecycle.
+But the code is presented for those who wish to get more “hands-on”.</p>
+<p>You can also edit this code in an interactive Jupyter notebook:
+<a class="reference external" href="https://mybinder.org/v2/gh/chrisdburr/turing-commons/master?labpath=https%3A%2F%2Fgithub.com%2Fchrisdburr%2Fturing-commons%2Fblob%2Fmaster%2Fguidebooks%2Frri%2Fchapter4%2Fproject_design%2Fdata_analysis.ipynb"><img alt="Binder" src="https://mybinder.org/badge_logo.svg" /></a></p>
 <div class="section" id="what-is-exploratory-data-analysis">
 <h2>What is Exploratory Data Analysis?<a class="headerlink" href="#what-is-exploratory-data-analysis" title="Permalink to this headline">¶</a></h2>
 <p>Exploratory data analysis is a crucial stage in the project lifecycle. It is where a number of techniques are employed for the purpose of gaining a better understanding of the dataset and any relationships that exist between the relevant variables. Among other things, this could mean,</p>
 <ul class="simple">
 <li><p>Describing the dataset and important variables</p></li>
-<li><p>Identifying missing data and outliers, and deciding how to handle them</p></li>
 <li><p>Cleaning the dataset</p></li>
+<li><p>Identifying missing data and outliers, and deciding how to handle them</p></li>
 <li><p>Provisional analysis of any relationships between variables</p></li>
 <li><p>Uncovering possible limitations of the dataset (e.g. class imbalances) that could affect the project</p></li>
 </ul>
 <p>We will cover each of these sub-stages of EDA briefly, but to reiterate, our primary focus in this section is on the risks and challenges that stem from a variety of biases that can cause cascading issues that affect downstream tasks (e.g. model training).</p>
 </div>
-<div class="section" id="covid-19-hopsital-data">
-<h2>COVID-19 Hopsital Data<a class="headerlink" href="#covid-19-hopsital-data" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="covid-19-hospital-data">
+<h2>COVID-19 Hospital Data<a class="headerlink" href="#covid-19-hospital-data" title="Permalink to this headline">¶</a></h2>
 <p>For the purpose of this section we have created a synthetic dataset that contains X records for fictional patients who were triaged (and possibly admitted) to a single hospital for treatment of COVID-19.</p>
-<p>The dataset has been designed with this pedagogical task in mind. Therefore, although we relied upon plausible assumptions when developing our generative model, the data are not intended to be fully representative of actual patients. Our methodology for generating this dataset can be found here.</p>
+<p>The dataset has been designed with this pedagogical task in mind.
+Therefore, although we relied upon plausible assumptions when developing our generative model, the data are not intended to be fully representative of actual patients. Our methodology for generating this dataset can be <span class="xref myst">found here</span>.</p>
 <div class="section" id="importing-data">
 <h3>Importing Data<a class="headerlink" href="#importing-data" title="Permalink to this headline">¶</a></h3>
-<p>First of all, we need to import our data and the software packages that we will use to describe, analyse, and visualise the data. The following lines of code achieve this, and also loads our data into a DataFrame using the Pandas package:</p>
+<p>First of all, we need to import our data and the software packages that we will use to describe, analyse, and visualise the data.
+The following lines of code achieve this by importing a series of software packages and then loading a csv file <code class="docutils literal notranslate"><span class="pre">covid_patients_syn_data.csv</span></code> into a DataFrame <code class="docutils literal notranslate"><span class="pre">df</span></code> using the <code class="docutils literal notranslate"><span class="pre">pd.read_csv</span></code> command from the Pandas package.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># The following lines import necessary packages</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># The following lines import necessary packages and renames them </span>
 
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pylab</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
 
-<span class="c1"># This line imports data from a csv file into a DataFrame (df)</span>
+<span class="c1"># This line imports data from a csv file </span>
 
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;train.csv&#39;</span><span class="p">)</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;covid_patients_syn_data.csv&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
-<span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">folders</span><span class="o">/</span><span class="n">_l</span><span class="o">/</span><span class="n">l9rdg7gs4kx5gglxn_1y0wn00000gq</span><span class="o">/</span><span class="n">T</span><span class="o">/</span><span class="n">ipykernel_35236</span><span class="o">/</span><span class="mf">544658898.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># The following lines import necessary packages</span>
+<span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">folders</span><span class="o">/</span><span class="n">_l</span><span class="o">/</span><span class="n">l9rdg7gs4kx5gglxn_1y0wn00000gq</span><span class="o">/</span><span class="n">T</span><span class="o">/</span><span class="n">ipykernel_60708</span><span class="o">/</span><span class="mf">2972460523.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># The following lines import necessary packages and renames them</span>
 <span class="g g-Whitespace">      </span><span class="mi">2</span> 
 <span class="ne">----&gt; </span><span class="mi">3</span> <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -546,58 +570,93 @@
 </div>
 <div class="section" id="describing-the-data">
 <h3>Describing the Data<a class="headerlink" href="#describing-the-data" title="Permalink to this headline">¶</a></h3>
+<p>Once we have imported our data, we will then want to identify what variables there are, what their typical values are, and also assess a variety of other summary statistics.
+We can use several commands to help us describe our dataset and get a quick overview.</p>
+<p>First, we can use the <code class="docutils literal notranslate"><span class="pre">shape</span></code> attribute to list the number of rows and columns in our dataset.
+The output (30000, 11) means that there are 3000 rows and 12 columns.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># This line returns information about the number of rows and the number of columns for a dataset.</span>
-
-<span class="n">df</span><span class="o">.</span><span class="n">shape</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">shape</span>
 </pre></div>
 </div>
 </div>
 </div>
+<p>Second, we can use the <code class="docutils literal notranslate"><span class="pre">head</span></code> attribute to return the first 5 rows of our dataset, which can be useful if you want to see a small sample of values for each variable.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># This line returns the first 5 rows of a dataset, which can be useful if you want to see a small sample of values for each variable.</span>
-
-<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span> 
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span> 
 </pre></div>
 </div>
 </div>
 </div>
+<p>Third, we can use the <code class="docutils literal notranslate"><span class="pre">columns</span></code> attribute to list all the names all of the columns in our dataset.
+This is helpful if you want to quickly see which variables you will have access to during your analysis.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># This line returns the name of all of the columns in your dataset. This is helpful if you want to quickly see which variables you will have access to during your analysis.</span>
-
-<span class="n">df</span><span class="o">.</span><span class="n">columns</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">columns</span>
 </pre></div>
 </div>
 </div>
 </div>
+<p>Finally, if we want to see how many <em>unique</em> values there are for each of the variables, we can use the <code class="docutils literal notranslate"><span class="pre">nunique</span></code> attribute (i.e., number (n) of unique values).
+For example, in the ethnicity column there are 5 different values, which align with the formal list used by Public Health England in a report on the <a class="reference external" href="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/908434/Disparities_in_the_risk_and_outcomes_of_COVID_August_2020_update.pdf">Disparities in the risk and outcomes of COVID-19</a>—this report was used as the basis for generating our synthetic data.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># This line returns the number of unique values for each of the variables. For example, in the ethnicity column there are X different values.</span>
-
-<span class="n">df</span><span class="o">.</span><span class="n">nunique</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">nunique</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 </div>
+<p>These commands can be helpful for describing some basic aspects of our dataset. But what about more useful statistical information?
+For that we have the <code class="docutils literal notranslate"><span class="pre">describe</span></code> attribute, which returns the numeric values for <code class="docutils literal notranslate"><span class="pre">count</span></code>, <code class="docutils literal notranslate"><span class="pre">mean</span></code>, <code class="docutils literal notranslate"><span class="pre">standard</span> <span class="pre">deviation</span></code>, <code class="docutils literal notranslate"><span class="pre">min</span></code>, and <code class="docutils literal notranslate"><span class="pre">max</span></code>.
+The code after the brackets (<code class="docutils literal notranslate"><span class="pre">apply(lambda</span> <span class="pre">s:</span> <span class="pre">s.apply(lambda</span> <span class="pre">x:</span> <span class="pre">format(x,</span> <span class="pre">'f'))</span></code> helps improve readability.)</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># This line uses the pandas &#39;describe()&#39; method to provide a summary of the dataset (formatted for readability). This includes the count, mean, standard deviation, min, and max for numeric variables.</span>
-
-<span class="n">df</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">s</span><span class="p">:</span> <span class="n">s</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">format</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="s1">&#39;f&#39;</span><span class="p">)))</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">s</span><span class="p">:</span> <span class="n">s</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">format</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="s1">&#39;f&#39;</span><span class="p">)))</span>
 </pre></div>
 </div>
 </div>
 </div>
 </div>
-<div class="section" id="cleaning-and-querying-the-data">
-<h3>Cleaning and Querying the Data<a class="headerlink" href="#cleaning-and-querying-the-data" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="cleaning-the-data">
+<h3>Cleaning the Data<a class="headerlink" href="#cleaning-the-data" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="removing-unnecessary-variables">
+<h4>Removing Unnecessary Variables<a class="headerlink" href="#removing-unnecessary-variables" title="Permalink to this headline">¶</a></h4>
+<p>Our dataset has been created for this specific task, so there isn’t much cleaning that is required.
+Datasets that are downloaded from public repositories may not be so well structured, and will likely require tidying up.
+For instance, there may be redundant columns that are not needed, such as the <code class="docutils literal notranslate"><span class="pre">site_id</span></code> column for our dataset, which is the same for all values due to the data being collected from a single hospital site (<code class="docutils literal notranslate"><span class="pre">UHJ_43643</span></code>).
+These can be easily removed with the <code class="docutils literal notranslate"><span class="pre">drop</span></code> function.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_cleaned</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;site_id&#39;</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">df_cleaned</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="removing-outliers">
+<h4>Removing Outliers<a class="headerlink" href="#removing-outliers" title="Permalink to this headline">¶</a></h4>
+<p>It is also possible that there may be some outliers that are probably the result of human mistakes in recording, such as the <code class="docutils literal notranslate"><span class="pre">X</span></code> value in the <code class="docutils literal notranslate"><span class="pre">Y</span></code> column.
+It’s probably a safe assumption to assume that this is a mistake!</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_cleaned</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="s2">&quot;height&quot;</span><span class="p">)</span> 
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="handling-missing-data">
+<h4>Handling Missing Data<a class="headerlink" href="#handling-missing-data" title="Permalink to this headline">¶</a></h4>
+<p>However, one of the biggest challenges with cleaning datasets is choosing how to handle missing data.
+As you can see from the following lines of code, there are <code class="docutils literal notranslate"><span class="pre">X</span></code> columns with missing data, which are represented in our datasets using the <code class="docutils literal notranslate"><span class="pre">null</span></code> value.</p>
+<!-- This section needs to have something about how simply removing rows with null values or trying to impute the likelihood of a M or F based on the other variables may exacerbate representation bias. -->
+</div>
 </div>
 <div class="section" id="analysing-the-data">
 <h3>Analysing the Data<a class="headerlink" href="#analysing-the-data" title="Permalink to this headline">¶</a></h3>
-<div class="cell docutils container">
+<!-- This section needs to add some useful illustrations of how Python can help you identify and understand correlations between variables in your dataset, and help document your exploratory data analysis method by using Jupyter Notebooks. --><div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># The following lines return a correlation matrix, for the cleaned dataframe, using the seaborn package</span>
 <span class="n">corr</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">corr</span><span class="p">()</span><span class="c1"># plot the heatmap</span>
@@ -610,7 +669,7 @@
 </div>
 <div class="section" id="visualising-the-data">
 <h3>Visualising the Data<a class="headerlink" href="#visualising-the-data" title="Permalink to this headline">¶</a></h3>
-</div>
+<!-- This section should show how including people who died in care homes would affect the correlation between age and one or more of the outcomes. This will be used to help support the missing data narrative. --></div>
 </div>
 </div>
 

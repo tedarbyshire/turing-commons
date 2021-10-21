@@ -17,22 +17,22 @@ Traceback (most recent call last):
     raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
 nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
 ------------------
-# The following lines import necessary packages
+# The following lines import necessary packages and renames them 
 
 import numpy as np
 import pandas as pd
 import matplotlib.pylab as plt
 import seaborn as sns
 
-# This line imports data from a csv file into a DataFrame (df)
+# This line imports data from a csv file 
 
-df = pd.read_csv('train.csv')
+df = pd.read_csv('covid_patients_syn_data.csv')
 ------------------
 
 [0;31m---------------------------------------------------------------------------[0m
 [0;31mModuleNotFoundError[0m                       Traceback (most recent call last)
-[0;32m/var/folders/_l/l9rdg7gs4kx5gglxn_1y0wn00000gq/T/ipykernel_35236/544658898.py[0m in [0;36m<module>[0;34m[0m
-[1;32m      1[0m [0;31m# The following lines import necessary packages[0m[0;34m[0m[0;34m[0m[0;34m[0m[0m
+[0;32m/var/folders/_l/l9rdg7gs4kx5gglxn_1y0wn00000gq/T/ipykernel_60708/2972460523.py[0m in [0;36m<module>[0;34m[0m
+[1;32m      1[0m [0;31m# The following lines import necessary packages and renames them[0m[0;34m[0m[0;34m[0m[0;34m[0m[0m
 [1;32m      2[0m [0;34m[0m[0m
 [0;32m----> 3[0;31m [0;32mimport[0m [0mnumpy[0m [0;32mas[0m [0mnp[0m[0;34m[0m[0;34m[0m[0m
 [0m[1;32m      4[0m [0;32mimport[0m [0mpandas[0m [0;32mas[0m [0mpd[0m[0;34m[0m[0;34m[0m[0m

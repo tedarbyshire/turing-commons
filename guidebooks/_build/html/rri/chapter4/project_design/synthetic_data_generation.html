@@ -1,0 +1,2914 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Generating a synthetic healthcare dataset &#8212; Turing Commons</title>
+    
+  <link href="../../../_static/css/theme.css" rel="stylesheet" />
+  <link href="../../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/togglebutton.js"></script>
+    <script src="../../../_static/clipboard.min.js"></script>
+    <script src="../../../_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../../../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../../index.html">
+      
+      
+      
+      <h1 class="site-logo" id="site-title">Turing Commons</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../index.html">
+   Welcome
+  </a>
+ </li>
+</ul>
+<p class="caption" role="heading">
+ <span class="caption-text">
+  Responsible Research and Innovation
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../index.html">
+   About
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../intro/index.html">
+   1 Introduction
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../chapter2/index.html">
+   2 What is Responsible Research and Innovation?
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../chapter2/responsibility.html">
+     What is ‘Responsibility’?
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../chapter2/history.html">
+     A Short History of RRI
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../chapter2/activity1.html">
+     Activity 1: Exploring Case Studies
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../chapter2/sts.html">
+     Science , Technology, and Society
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../chapter2/timeline.html">
+     Science and Technology Studies (A Timeline)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../chapter2/activity2.html">
+     Activity 2: Ethical Reflection and Deliberation
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../chapter3/index.html">
+   3 Responsible Data Science and AI
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../chapter3/responsible_ds.html">
+     Responsible Data Science and AI
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../chapter3/project_lifecycle.html">
+     Introducing the Project Lifecycle (A Sociotechnical Approach)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../chapter3/roles_responsibility.html">
+     Roles and Responsibilities
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../chapter3/activity1.html">
+     Activty 3: Contributing to Collaborative Projects
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../chapter3/understanding_bias.html">
+     Understanding Bias
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../chapter3/activity2.html">
+     Activity 4: Bias Cards
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../index.html">
+   4 The Project Lifecycle
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../case_studies.html">
+     Case Studies
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="planning.html">
+     Project Planning
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="problem.html">
+     Problem Formulation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="data_extraction.html">
+     Data Extraction and Procurement
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="data_analysis.html">
+     Data Analysis
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../model_development/preprocessing.html">
+     Preprocessing and Feature Engineering
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../model_development/model_selection.html">
+     Model Selection and Training
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../model_development/model_testing.html">
+     Model Testing and Validation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../model_development/model_reporting.html">
+     Model Reporting
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../system_deployment/model_productionalisation.html">
+     Model Productionalisation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../system_deployment/user_training.html">
+     User Training
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../system_deployment/system_use.html">
+     System Use, Monitoring, and Updating
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../system_deployment/model_updating.html">
+     Model Updating or Deprovisioning
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../chapter5/index.html">
+   5 Responsible Communication
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../chapter5/assurance.html">
+     What is Argument-Based Assurance?
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../chapter5/communication.html">
+     Assurance and Responsible Communication
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../chapter5/gpe.html">
+     Goals, Properties, and Evidence
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../conclusion/index.html">
+   6 Conclusion (Looking Forward)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../further_resources/index.html">
+   Further Resources
+  </a>
+ </li>
+</ul>
+<p class="caption" role="heading">
+ <span class="caption-text">
+  Public Engagement and Communication of Science
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../pcs/index.html">
+   About this Guidebook
+  </a>
+ </li>
+</ul>
+<p class="caption" role="heading">
+ <span class="caption-text">
+  AI Ethics and Governance
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../aeg/index.html">
+   About this Guidebook
+  </a>
+ </li>
+</ul>
+<p class="caption" role="heading">
+ <span class="caption-text">
+  References
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../bibliography.html">
+   Bibliography
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  <a href="https://www.netlify.com"><img src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg" alt="Deploys by Netlify" /></a></br></br>Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../../_sources/rri/chapter4/project_design/synthetic_data_generation.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/chrisdburr/turing-commons"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/chrisdburr/turing-commons/issues/new?title=Issue%20on%20page%20%2Frri/chapter4/project_design/synthetic_data_generation.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/chrisdburr/turing-commons/master?urlpath=tree/guidebooks/rri/chapter4/project_design/synthetic_data_generation.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../../../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Generating a synthetic healthcare dataset
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#nhs-id">
+     NHS ID
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#generating-age-and-gender">
+     Generating age and gender
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#generating-ethnicity">
+   Generating ethnicity
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#week-of-admission">
+     Week of admission
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#probability-of-admission-and-of-invasive-ventilation">
+     Probability of admission, and of invasive ventilation
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#generating-other-variables">
+   Generating other variables
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#survival-rate">
+   Survival rate
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#putting-it-all-together">
+   Putting it all together
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#adding-biases-into-the-dataset">
+   Adding biases into the dataset
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="generating-a-synthetic-healthcare-dataset">
+<h1>Generating a synthetic healthcare dataset<a class="headerlink" href="#generating-a-synthetic-healthcare-dataset" title="Permalink to this headline">¶</a></h1>
+<p>This notebook will go through the steps of creating a very simplistic (and therefore unrealistic!) model to generate a synthetic dataset, where each row represents a simulated “person”, for illustrative purposes.</p>
+<p>While several sophisticated and powerful tools (e.g. numpyro, Stan) exist for creating models in Python, here we will try to do something simple and understandable using nothing more than <code class="docutils literal notranslate"><span class="pre">pandas</span></code>, and the built-in <code class="docutils literal notranslate"><span class="pre">random</span></code> library.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
+<span class="kn">import</span> <span class="nn">datetime</span>
+<span class="kn">import</span> <span class="nn">uuid</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
+<span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">folders</span><span class="o">/</span><span class="n">_l</span><span class="o">/</span><span class="n">l9rdg7gs4kx5gglxn_1y0wn00000gq</span><span class="o">/</span><span class="n">T</span><span class="o">/</span><span class="n">ipykernel_60719</span><span class="o">/</span><span class="mf">2101736591.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="kn">import</span> <span class="nn">datetime</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="kn">import</span> <span class="nn">uuid</span>
+<span class="ne">----&gt; </span><span class="mi">4</span> <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="g g-Whitespace">      </span><span class="mi">6</span> <span class="n">get_ipython</span><span class="p">()</span><span class="o">.</span><span class="n">run_line_magic</span><span class="p">(</span><span class="s1">&#39;matplotlib&#39;</span><span class="p">,</span> <span class="s1">&#39;inline&#39;</span><span class="p">)</span>
+
+<span class="ne">ModuleNotFoundError</span>: No module named &#39;pandas&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="nhs-id">
+<h2>NHS ID<a class="headerlink" href="#nhs-id" title="Permalink to this headline">¶</a></h2>
+<p>This one is easy - we’ll just make up a unique string using the “uuid” library.   The first 8 characters of the string will be more than enough to essentially guarantee uniqueness among tens of thousands of rows.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">get_nhs_id</span><span class="p">():</span>
+    <span class="k">return</span> <span class="nb">str</span><span class="p">(</span><span class="n">uuid</span><span class="o">.</span><span class="n">uuid4</span><span class="p">())[:</span><span class="mi">8</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="generating-age-and-gender">
+<h2>Generating age and gender<a class="headerlink" href="#generating-age-and-gender" title="Permalink to this headline">¶</a></h2>
+<p>One of the main inputs we will use for our generative model is some data on the age profiles of Covid cases and deaths in the UK, taken from this <a class="reference external" href="https://www.gov.uk/government/publications/covid-19-review-of-disparities-in-risks-and-outcomes">Public Health England report</a></p>
+<p>The data is in Open Document (ods) format - we need to install the <code class="docutils literal notranslate"><span class="pre">odfpy</span></code> package to read it in into pandas in the same way as we would an Excel document.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>pip install odfpy
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting odfpy
+  Using cached https://files.pythonhosted.org/packages/97/73/8ade73f6749177003f7ce3304f524774adda96e6aaab30ea79fd8fda7934/odfpy-1.4.1.tar.gz
+Requirement already satisfied: defusedxml in /Users/nbarlow/opt/anaconda3/lib/python3.7/site-packages (from odfpy) (0.6.0)
+Building wheels for collected packages: odfpy
+  Building wheel for odfpy (setup.py) ... ?25ldone
+?25h  Created wheel for odfpy: filename=odfpy-1.4.1-py2.py3-none-any.whl size=137340 sha256=ad460cfd2a60c216223b1795b0b61f46954e7f96d6f6f735e43717ba0b158d10
+  Stored in directory: /Users/nbarlow/Library/Caches/pip/wheels/ce/6b/93/ec330f2991c5f1546abf640360e5a2022f76cb16e5d99ed2fd
+Successfully built odfpy
+Installing collected packages: odfpy
+Successfully installed odfpy-1.4.1
+</pre></div>
+</div>
+</div>
+</div>
+<p>The document contains a couple of useful sheets - Figure_1_1 has the age/sex pyramid of lab-confirmed COVID cases, while Figure_1_4 has the equivalent table for deaths following a positive COVID test - we may use this second one later on.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_cases_age_sex</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="s2">&quot;https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/906917/Section_1_-_Age_and_Sex.ods&quot;</span><span class="p">,</span>
+                                 <span class="n">sheet_name</span><span class="o">=</span><span class="s2">&quot;Figure_1_1&quot;</span><span class="p">,</span><span class="n">engine</span><span class="o">=</span><span class="s2">&quot;odf&quot;</span><span class="p">,</span><span class="n">skiprows</span><span class="o">=</span><span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">6</span><span class="p">))</span><span class="o">+</span><span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span><span class="mi">27</span><span class="p">)))</span>
+<span class="c1"># remove the first two rows, dealing with &lt;20 year olds</span>
+<span class="n">df_cases_age_sex</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">df_cases_age_sex</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Age group</th>
+      <th>Males</th>
+      <th>Females</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2</td>
+      <td>20-29</td>
+      <td>3361</td>
+      <td>7470</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>30-39</td>
+      <td>5240</td>
+      <td>8868</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>40-49</td>
+      <td>7020</td>
+      <td>9646</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>50-59</td>
+      <td>9476</td>
+      <td>11083</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>60-69</td>
+      <td>8907</td>
+      <td>6731</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>70-79</td>
+      <td>11350</td>
+      <td>8074</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>80+</td>
+      <td>17199</td>
+      <td>20447</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>We can just sum the “Males” and “Females” columns to get the total number of each gender and calculate the probability of our simulated person being female, then just generate a random number and compare to that probability.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">get_sex</span><span class="p">(</span><span class="n">df</span><span class="p">):</span>
+    <span class="n">prob_female</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;Females&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">/</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;Males&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">+</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;Females&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">())</span>
+    <span class="k">if</span> <span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span> <span class="o">&lt;</span> <span class="n">prob_female</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s2">&quot;F&quot;</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s2">&quot;M&quot;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>To generate an age from an age-profile distribution, we can use a trick - by calculating the cumulative fraction over the rows, we can then generate a random number between 0 and 1, and see which row that number falls in, to give us a 10-year age range.  We then pick a random year from that range.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_cases_age_sex</span><span class="p">[</span><span class="s2">&quot;cumulative_sum_m&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_cases_age_sex</span><span class="p">[</span><span class="s2">&quot;Males&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">cumsum</span><span class="p">()</span><span class="o">/</span><span class="n">df_cases_age_sex</span><span class="p">[</span><span class="s2">&quot;Males&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+<span class="n">df_cases_age_sex</span><span class="p">[</span><span class="s2">&quot;cumulative_sum_f&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_cases_age_sex</span><span class="p">[</span><span class="s2">&quot;Females&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">cumsum</span><span class="p">()</span><span class="o">/</span><span class="n">df_cases_age_sex</span><span class="p">[</span><span class="s2">&quot;Females&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+<span class="n">df_cases_age_sex</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Age group</th>
+      <th>Males</th>
+      <th>Females</th>
+      <th>cumulative_sum_m</th>
+      <th>cumulative_sum_f</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2</td>
+      <td>20-29</td>
+      <td>3361</td>
+      <td>7470</td>
+      <td>0.053730</td>
+      <td>0.103292</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>30-39</td>
+      <td>5240</td>
+      <td>8868</td>
+      <td>0.137499</td>
+      <td>0.225916</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>40-49</td>
+      <td>7020</td>
+      <td>9646</td>
+      <td>0.249724</td>
+      <td>0.359297</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>50-59</td>
+      <td>9476</td>
+      <td>11083</td>
+      <td>0.401212</td>
+      <td>0.512549</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>60-69</td>
+      <td>8907</td>
+      <td>6731</td>
+      <td>0.543603</td>
+      <td>0.605622</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>70-79</td>
+      <td>11350</td>
+      <td>8074</td>
+      <td>0.725049</td>
+      <td>0.717267</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>80+</td>
+      <td>17199</td>
+      <td>20447</td>
+      <td>1.000000</td>
+      <td>1.000000</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">get_age</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">sex</span><span class="p">):</span>
+    <span class="c1"># are we looking in the male or female column?</span>
+    <span class="n">column_name</span> <span class="o">=</span> <span class="s2">&quot;cumulative_sum_f&quot;</span> <span class="k">if</span> <span class="n">sex</span><span class="o">==</span><span class="s2">&quot;F&quot;</span> <span class="k">else</span> <span class="s2">&quot;cumulative_sum_m&quot;</span>
+    <span class="c1"># generate a random number between 0 and 1</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span>
+    <span class="c1"># Highly inefficient way of finding which row of the dataframe</span>
+    <span class="c1"># has that x value in the cumulative sum range.</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="p">)):</span>
+        <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">column_name</span><span class="p">]:</span>
+            <span class="k">break</span>
+        <span class="k">elif</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="n">column_name</span><span class="p">]</span> <span class="ow">and</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">column_name</span><span class="p">]:</span>
+            <span class="k">break</span>
+    <span class="c1"># Now we know the row number &quot;i&quot; - pick an age from that 10-yr range</span>
+    <span class="c1">#    we have the &quot;age_range&quot; label as a string, e.g. &quot;0-9&quot; - first</span>
+    <span class="c1">#    split on the dash to get lower and upper bounds</span>
+    <span class="n">age_range</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="s2">&quot;Age group&quot;</span><span class="p">]</span>
+    <span class="c1"># deal with a couple of special cases</span>
+    <span class="k">if</span> <span class="n">age_range</span> <span class="o">==</span> <span class="s2">&quot;&lt;10&quot;</span><span class="p">:</span>
+        <span class="n">age_range</span> <span class="o">=</span> <span class="s2">&quot;0-9&quot;</span>
+    <span class="k">elif</span> <span class="n">age_range</span> <span class="o">==</span> <span class="s2">&quot;80+&quot;</span><span class="p">:</span>
+        <span class="n">age_range</span><span class="o">=</span><span class="s2">&quot;80-89&quot;</span>
+    <span class="n">age_range</span> <span class="o">=</span> <span class="n">age_range</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;-&quot;</span><span class="p">)</span>
+    <span class="c1"># Now use &quot;randint&quot; to choose an age (note that lower and upper bounds</span>
+    <span class="c1"># are inclusive here)</span>
+    <span class="n">age</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">age_range</span><span class="p">[</span><span class="mi">0</span><span class="p">]),</span> <span class="nb">int</span><span class="p">(</span><span class="n">age_range</span><span class="p">[</span><span class="mi">1</span><span class="p">]))</span>
+    <span class="k">return</span> <span class="n">age</span>
+    
+</pre></div>
+</div>
+</div>
+</div>
+<p>Let’s just check that these functions are doing something sensible - generate 1000 ages and plot them as a histogram:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ages</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;M&quot;</span><span class="p">:</span> <span class="p">[],</span> <span class="s2">&quot;F&quot;</span><span class="p">:[]}</span>
+<span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1000</span><span class="p">):</span>
+    <span class="n">sex</span> <span class="o">=</span> <span class="n">get_sex</span><span class="p">(</span><span class="n">df_cases_age_sex</span><span class="p">)</span>
+    <span class="n">ages</span><span class="p">[</span><span class="n">sex</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">get_age</span><span class="p">(</span><span class="n">df_cases_age_sex</span><span class="p">,</span> <span class="n">sex</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">ages</span><span class="p">[</span><span class="s2">&quot;M&quot;</span><span class="p">],</span><span class="n">bins</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span><span class="nb">range</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">100</span><span class="p">),</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;M&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">ages</span><span class="p">[</span><span class="s2">&quot;F&quot;</span><span class="p">],</span><span class="n">bins</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span><span class="nb">range</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">100</span><span class="p">),</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;F&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(array([  0.,   0.,  52.,  72.,  82.,  73.,  46.,  53., 148.,   0.]),
+ array([  0.,  10.,  20.,  30.,  40.,  50.,  60.,  70.,  80.,  90., 100.]),
+ &lt;a list of 10 Patch objects&gt;)
+</pre></div>
+</div>
+<img alt="../../../_images/synthetic_data_generation_14_1.png" src="../../../_images/synthetic_data_generation_14_1.png" />
+</div>
+</div>
+<p>OK, that looks reasonable.  We see the (surprising?) feature that women in their 60s and 70s are less likely than women in their 50s (or men in their 60s and 70s) to be diagnosed with Covid - checking back on the original DataFrame, we see that this is reflected in the numbers.</p>
+<p>Let’s move on.</p>
+</div>
+</div>
+<div class="section" id="generating-ethnicity">
+<h1>Generating ethnicity<a class="headerlink" href="#generating-ethnicity" title="Permalink to this headline">¶</a></h1>
+<p>We will use exactly the same approach to generate the ethnicity of our simulated people, using data from the same <a class="reference external" href="https://www.gov.uk/government/publications/covid-19-review-of-disparities-in-risks-and-outcomes">Public Health England report</a>.
+Again, we read tables from an .ods file into pandas</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_ethnicity</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="s2">&quot;https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/906922/Section_4_-_Ethnicity.ods&quot;</span><span class="p">,</span>
+                             <span class="n">sheet_name</span><span class="o">=</span><span class="s2">&quot;Figure_4_1&quot;</span><span class="p">,</span><span class="n">engine</span><span class="o">=</span><span class="s2">&quot;odf&quot;</span><span class="p">,</span><span class="n">skiprows</span><span class="o">=</span><span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">))</span><span class="o">+</span><span class="p">[</span><span class="mi">55</span><span class="p">,</span><span class="mi">56</span><span class="p">])</span>
+<span class="n">df_ethnicity</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Ethnicity</th>
+      <th>Week ending</th>
+      <th>Deaths</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>White</td>
+      <td>Up to 07-Mar</td>
+      <td>324</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>White</td>
+      <td>14-Mar</td>
+      <td>1352</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>White</td>
+      <td>21-Mar</td>
+      <td>3831</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>White</td>
+      <td>28-Mar</td>
+      <td>11158</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>White</td>
+      <td>04-Apr</td>
+      <td>18887</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>White</td>
+      <td>11-Apr</td>
+      <td>20007</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>White</td>
+      <td>18-Apr</td>
+      <td>17280</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>White</td>
+      <td>25-Apr</td>
+      <td>14724</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>White</td>
+      <td>02-May</td>
+      <td>10518</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>White</td>
+      <td>09-May</td>
+      <td>6213</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Asian / Asian British</td>
+      <td>Up to 07-Mar</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>Asian / Asian British</td>
+      <td>14-Mar</td>
+      <td>155</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>Asian / Asian British</td>
+      <td>21-Mar</td>
+      <td>575</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>Asian / Asian British</td>
+      <td>28-Mar</td>
+      <td>1358</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>Asian / Asian British</td>
+      <td>04-Apr</td>
+      <td>2311</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>Asian / Asian British</td>
+      <td>11-Apr</td>
+      <td>2358</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>Asian / Asian British</td>
+      <td>18-Apr</td>
+      <td>1700</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>Asian / Asian British</td>
+      <td>25-Apr</td>
+      <td>1134</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>Asian / Asian British</td>
+      <td>02-May</td>
+      <td>726</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>Asian / Asian British</td>
+      <td>09-May</td>
+      <td>482</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>Black / Black British</td>
+      <td>Up to 07-Mar</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>Black / Black British</td>
+      <td>14-Mar</td>
+      <td>161</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>Black / Black British</td>
+      <td>21-Mar</td>
+      <td>558</td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td>Black / Black British</td>
+      <td>28-Mar</td>
+      <td>1152</td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td>Black / Black British</td>
+      <td>04-Apr</td>
+      <td>1512</td>
+    </tr>
+    <tr>
+      <td>25</td>
+      <td>Black / Black British</td>
+      <td>11-Apr</td>
+      <td>1262</td>
+    </tr>
+    <tr>
+      <td>26</td>
+      <td>Black / Black British</td>
+      <td>18-Apr</td>
+      <td>873</td>
+    </tr>
+    <tr>
+      <td>27</td>
+      <td>Black / Black British</td>
+      <td>25-Apr</td>
+      <td>538</td>
+    </tr>
+    <tr>
+      <td>28</td>
+      <td>Black / Black British</td>
+      <td>02-May</td>
+      <td>332</td>
+    </tr>
+    <tr>
+      <td>29</td>
+      <td>Black / Black British</td>
+      <td>09-May</td>
+      <td>229</td>
+    </tr>
+    <tr>
+      <td>30</td>
+      <td>Mixed / Multiple Ethnic Groups</td>
+      <td>Up to 07-Mar</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>31</td>
+      <td>Mixed / Multiple Ethnic Groups</td>
+      <td>14-Mar</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <td>32</td>
+      <td>Mixed / Multiple Ethnic Groups</td>
+      <td>21-Mar</td>
+      <td>78</td>
+    </tr>
+    <tr>
+      <td>33</td>
+      <td>Mixed / Multiple Ethnic Groups</td>
+      <td>28-Mar</td>
+      <td>162</td>
+    </tr>
+    <tr>
+      <td>34</td>
+      <td>Mixed / Multiple Ethnic Groups</td>
+      <td>04-Apr</td>
+      <td>239</td>
+    </tr>
+    <tr>
+      <td>35</td>
+      <td>Mixed / Multiple Ethnic Groups</td>
+      <td>11-Apr</td>
+      <td>263</td>
+    </tr>
+    <tr>
+      <td>36</td>
+      <td>Mixed / Multiple Ethnic Groups</td>
+      <td>18-Apr</td>
+      <td>241</td>
+    </tr>
+    <tr>
+      <td>37</td>
+      <td>Mixed / Multiple Ethnic Groups</td>
+      <td>25-Apr</td>
+      <td>171</td>
+    </tr>
+    <tr>
+      <td>38</td>
+      <td>Mixed / Multiple Ethnic Groups</td>
+      <td>02-May</td>
+      <td>121</td>
+    </tr>
+    <tr>
+      <td>39</td>
+      <td>Mixed / Multiple Ethnic Groups</td>
+      <td>09-May</td>
+      <td>52</td>
+    </tr>
+    <tr>
+      <td>40</td>
+      <td>Any other ethnic group</td>
+      <td>Up to 07-Mar</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>41</td>
+      <td>Any other ethnic group</td>
+      <td>14-Mar</td>
+      <td>98</td>
+    </tr>
+    <tr>
+      <td>42</td>
+      <td>Any other ethnic group</td>
+      <td>21-Mar</td>
+      <td>221</td>
+    </tr>
+    <tr>
+      <td>43</td>
+      <td>Any other ethnic group</td>
+      <td>28-Mar</td>
+      <td>492</td>
+    </tr>
+    <tr>
+      <td>44</td>
+      <td>Any other ethnic group</td>
+      <td>04-Apr</td>
+      <td>806</td>
+    </tr>
+    <tr>
+      <td>45</td>
+      <td>Any other ethnic group</td>
+      <td>11-Apr</td>
+      <td>771</td>
+    </tr>
+    <tr>
+      <td>46</td>
+      <td>Any other ethnic group</td>
+      <td>18-Apr</td>
+      <td>541</td>
+    </tr>
+    <tr>
+      <td>47</td>
+      <td>Any other ethnic group</td>
+      <td>25-Apr</td>
+      <td>337</td>
+    </tr>
+    <tr>
+      <td>48</td>
+      <td>Any other ethnic group</td>
+      <td>02-May</td>
+      <td>243</td>
+    </tr>
+    <tr>
+      <td>49</td>
+      <td>Any other ethnic group</td>
+      <td>09-May</td>
+      <td>156</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p><em>Note</em> the column here is <em>incorrectly</em> labelled as “deaths”, however, it does in fact refer to cases.
+Here we have a bit more work to do.  For the moment, we don’t care about the date, so we just want to sum over all dates for each ethnic group.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_ethnicity_summary</span><span class="o">=</span><span class="n">df_ethnicity</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s2">&quot;Ethnicity&quot;</span><span class="p">])[</span><span class="s2">&quot;Deaths&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">.</span><span class="n">to_frame</span><span class="p">(</span><span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;sum&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+<span class="c1"># calculate the cumulative sum again</span>
+<span class="n">df_ethnicity_summary</span><span class="p">[</span><span class="s2">&quot;cumulative_frac&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_ethnicity_summary</span><span class="p">[</span><span class="s2">&quot;sum&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">cumsum</span><span class="p">()</span><span class="o">/</span><span class="n">df_ethnicity_summary</span><span class="p">[</span><span class="s2">&quot;sum&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+<span class="n">df_ethnicity_summary</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Ethnicity</th>
+      <th>sum</th>
+      <th>cumulative_frac</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>Any other ethnic group</td>
+      <td>3676</td>
+      <td>0.028998</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Asian / Asian British</td>
+      <td>10815</td>
+      <td>0.114313</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Black / Black British</td>
+      <td>6630</td>
+      <td>0.166614</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Mixed / Multiple Ethnic Groups</td>
+      <td>1351</td>
+      <td>0.177272</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>White</td>
+      <td>104294</td>
+      <td>1.000000</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>We can now write a function to generate an ethnicity, using the same trick as above with the cumulative fraction:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">get_ethnicity</span><span class="p">(</span><span class="n">df</span><span class="p">):</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="p">)):</span>
+        <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="s2">&quot;cumulative_frac&quot;</span><span class="p">]:</span>
+            <span class="k">break</span>
+        <span class="k">elif</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="s2">&quot;cumulative_frac&quot;</span><span class="p">]</span> <span class="ow">and</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="s2">&quot;cumulative_frac&quot;</span><span class="p">]:</span>
+            <span class="k">break</span>
+    <span class="k">return</span> <span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="s2">&quot;Ethnicity&quot;</span><span class="p">]</span>    
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="week-of-admission">
+<h2>Week of admission<a class="headerlink" href="#week-of-admission" title="Permalink to this headline">¶</a></h2>
+<p>There is a table on hospital admission rates for different regions of the country on the PHE document.  We will read this table, but just sum over all regions.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_hospital_admissions</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="s2">&quot;https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/906920/Section_2_-_Geography.ods&quot;</span><span class="p">,</span>
+                                       <span class="n">sheet_name</span><span class="o">=</span><span class="s2">&quot;Figure_2_3&quot;</span><span class="p">,</span><span class="n">engine</span><span class="o">=</span><span class="s2">&quot;odf&quot;</span><span class="p">,</span><span class="n">skiprows</span><span class="o">=</span><span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">6</span><span class="p">))</span><span class="o">+</span><span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">74</span><span class="p">,</span><span class="mi">85</span><span class="p">)))</span>
+<span class="n">df_hospital_admissions</span><span class="p">[</span><span class="s2">&quot;sum&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_hospital_admissions</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">df_hospital_admissions</span><span class="p">[</span><span class="s2">&quot;cumulative_frac&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_hospital_admissions</span><span class="p">[</span><span class="s2">&quot;sum&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">cumsum</span><span class="p">()</span><span class="o">/</span><span class="n">df_hospital_admissions</span><span class="p">[</span><span class="s2">&quot;sum&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+<span class="n">df_hospital_admissions</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Date</th>
+      <th>East of England</th>
+      <th>London</th>
+      <th>Midlands</th>
+      <th>North East and Yorkshire</th>
+      <th>North West</th>
+      <th>South East</th>
+      <th>South West</th>
+      <th>sum</th>
+      <th>cumulative_frac</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>2020-03-15</td>
+      <td>0.462386</td>
+      <td>1.375504</td>
+      <td>0.657536</td>
+      <td>0.176744</td>
+      <td>0.252844</td>
+      <td>0.732170</td>
+      <td>0.638893</td>
+      <td>4.296078</td>
+      <td>0.004329</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2020-03-16</td>
+      <td>0.362086</td>
+      <td>1.009173</td>
+      <td>0.997340</td>
+      <td>0.198712</td>
+      <td>0.439675</td>
+      <td>0.667369</td>
+      <td>0.530120</td>
+      <td>4.204475</td>
+      <td>0.008566</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2020-03-17</td>
+      <td>0.347109</td>
+      <td>0.886416</td>
+      <td>1.111063</td>
+      <td>0.282595</td>
+      <td>0.573627</td>
+      <td>0.669402</td>
+      <td>0.619731</td>
+      <td>4.489943</td>
+      <td>0.013090</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2020-03-18</td>
+      <td>0.482617</td>
+      <td>1.211076</td>
+      <td>1.636191</td>
+      <td>0.417030</td>
+      <td>0.759145</td>
+      <td>0.667377</td>
+      <td>0.606065</td>
+      <td>5.779501</td>
+      <td>0.018914</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>2020-03-19</td>
+      <td>0.465834</td>
+      <td>1.192118</td>
+      <td>1.464436</td>
+      <td>0.552994</td>
+      <td>0.749891</td>
+      <td>0.804439</td>
+      <td>0.762027</td>
+      <td>5.991739</td>
+      <td>0.024952</td>
+    </tr>
+    <tr>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <td>62</td>
+      <td>2020-05-16</td>
+      <td>1.427815</td>
+      <td>0.594825</td>
+      <td>1.196602</td>
+      <td>1.039190</td>
+      <td>1.415612</td>
+      <td>0.924951</td>
+      <td>0.532021</td>
+      <td>7.131016</td>
+      <td>0.969539</td>
+    </tr>
+    <tr>
+      <td>63</td>
+      <td>2020-05-17</td>
+      <td>1.117478</td>
+      <td>0.558639</td>
+      <td>1.173588</td>
+      <td>0.964181</td>
+      <td>1.373635</td>
+      <td>1.027334</td>
+      <td>0.516066</td>
+      <td>6.730921</td>
+      <td>0.976322</td>
+    </tr>
+    <tr>
+      <td>64</td>
+      <td>2020-05-18</td>
+      <td>1.307164</td>
+      <td>0.562730</td>
+      <td>1.196908</td>
+      <td>0.909968</td>
+      <td>1.645427</td>
+      <td>0.959921</td>
+      <td>1.025206</td>
+      <td>7.607323</td>
+      <td>0.983987</td>
+    </tr>
+    <tr>
+      <td>65</td>
+      <td>2020-05-19</td>
+      <td>1.270414</td>
+      <td>0.481934</td>
+      <td>1.308001</td>
+      <td>0.936890</td>
+      <td>1.816946</td>
+      <td>1.042363</td>
+      <td>1.023926</td>
+      <td>7.880474</td>
+      <td>0.991928</td>
+    </tr>
+    <tr>
+      <td>66</td>
+      <td>2020-05-20</td>
+      <td>1.219007</td>
+      <td>0.562721</td>
+      <td>1.311021</td>
+      <td>0.923970</td>
+      <td>2.098666</td>
+      <td>0.890263</td>
+      <td>1.004612</td>
+      <td>8.010260</td>
+      <td>1.000000</td>
+    </tr>
+  </tbody>
+</table>
+<p>67 rows × 10 columns</p>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">get_admission_date</span><span class="p">(</span><span class="n">df</span><span class="p">):</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="p">)):</span>
+        <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="s2">&quot;cumulative_frac&quot;</span><span class="p">]:</span>
+            <span class="k">break</span>
+        <span class="k">elif</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="s2">&quot;cumulative_frac&quot;</span><span class="p">]</span> <span class="ow">and</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="s2">&quot;cumulative_frac&quot;</span><span class="p">]:</span>
+            <span class="k">break</span>
+    <span class="k">return</span> <span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="s2">&quot;Date&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">to_pydatetime</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="probability-of-admission-and-of-invasive-ventilation">
+<h2>Probability of admission, and of invasive ventilation<a class="headerlink" href="#probability-of-admission-and-of-invasive-ventilation" title="Permalink to this headline">¶</a></h2>
+<p>We will use yet another table from the PHE report to get the probability of being admitted to hospital, and of getting critical care (here simplified to saying “received invasive ventilation”), as a function of ethnicity.  We also make a correction to the latter probability, based on date of admission - at some point, as medical staff learned more, ventilation became less likely.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_hospital_care</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="s2">&quot;https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/906922/Section_4_-_Ethnicity.ods&quot;</span><span class="p">,</span>
+                                 <span class="n">sheet_name</span><span class="o">=</span><span class="s2">&quot;Figure_4_3&quot;</span><span class="p">,</span><span class="n">engine</span><span class="o">=</span><span class="s2">&quot;odf&quot;</span><span class="p">,</span><span class="n">skiprows</span><span class="o">=</span><span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span><span class="o">+</span><span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">25</span><span class="p">)))</span>
+<span class="n">df_hospital_care</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Ethnic group</th>
+      <th>Critical care (%)</th>
+      <th>Lower level of care (%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>White</td>
+      <td>64.088226</td>
+      <td>89.050804</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Black / Black British</td>
+      <td>7.828518</td>
+      <td>2.179336</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Asian / Asian British</td>
+      <td>17.365641</td>
+      <td>6.341079</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Mixed / Multiple ethnic groups</td>
+      <td>2.889096</td>
+      <td>0.774583</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Other ethnic groups</td>
+      <td>7.828518</td>
+      <td>1.654195</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Total admitted</td>
+      <td>3219.000000</td>
+      <td>7617.000000</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>Here, we want to convert the percentages into absolute numbers, so we can combine with <code class="docutils literal notranslate"><span class="pre">df_ethnicity_summary</span></code> to get the probability of being admitted (sum of both “Lower level of care” and “Critical care”), and of being put on ventilation (“Critical care”)</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_hospital_care</span><span class="p">[</span><span class="s2">&quot;num_lower&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">df_hospital_care</span><span class="p">[</span><span class="s2">&quot;Lower level of care (%)&quot;</span><span class="p">]</span><span class="o">/</span><span class="mi">100</span><span class="p">)</span> <span class="o">*</span> <span class="n">df_hospital_care</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">5</span><span class="p">][</span><span class="s2">&quot;Lower level of care (%)&quot;</span><span class="p">]</span>
+<span class="n">df_hospital_care</span><span class="p">[</span><span class="s2">&quot;num_critical&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">df_hospital_care</span><span class="p">[</span><span class="s2">&quot;Critical care (%)&quot;</span><span class="p">]</span><span class="o">/</span><span class="mi">100</span><span class="p">)</span> <span class="o">*</span> <span class="n">df_hospital_care</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">5</span><span class="p">][</span><span class="s2">&quot;Critical care (%)&quot;</span><span class="p">]</span>
+<span class="n">df_hospital_care</span><span class="p">[</span><span class="s2">&quot;num_admitted&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">df_hospital_care</span><span class="p">[</span><span class="s2">&quot;num_lower&quot;</span><span class="p">]</span> <span class="o">+</span> <span class="n">df_hospital_care</span><span class="p">[</span><span class="s2">&quot;num_critical&quot;</span><span class="p">])</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
+<span class="c1"># Get rid of the &quot;Total admitted&quot; row of this dataframe</span>
+<span class="n">df_hospital_care</span> <span class="o">=</span> <span class="n">df_hospital_care</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="n">df_hospital_care</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Ethnic group</th>
+      <th>Critical care (%)</th>
+      <th>Lower level of care (%)</th>
+      <th>num_lower</th>
+      <th>num_critical</th>
+      <th>num_admitted</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>White</td>
+      <td>64.088226</td>
+      <td>89.050804</td>
+      <td>6782.999751</td>
+      <td>2063.000005</td>
+      <td>8845</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Black / Black British</td>
+      <td>7.828518</td>
+      <td>2.179336</td>
+      <td>165.999992</td>
+      <td>252.000007</td>
+      <td>417</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Asian / Asian British</td>
+      <td>17.365641</td>
+      <td>6.341079</td>
+      <td>483.000005</td>
+      <td>558.999972</td>
+      <td>1041</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Mixed / Multiple ethnic groups</td>
+      <td>2.889096</td>
+      <td>0.774583</td>
+      <td>58.999999</td>
+      <td>93.000001</td>
+      <td>152</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Other ethnic groups</td>
+      <td>7.828518</td>
+      <td>1.654195</td>
+      <td>126.000002</td>
+      <td>252.000007</td>
+      <td>378</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>So let’s:</p>
+<ul class="simple">
+<li><p>Merge with the “df_ethnicity_summary” dataframe on “Ethnicity”</p></li>
+<li><p>Add new columns for “prob admitted” and “prob ventilation”</p></li>
+</ul>
+<p>Note that there are some mismatches in the “ethnicity” names - we should rename “Any other ethnic group” in df_ethnicity_summary to “Other ethnic groups”, and also fix capitalisation on “Mixed / Multiple ethnic groups”</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># fix name mismatches</span>
+<span class="n">df_ethnicity_summary</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">to_replace</span><span class="o">=</span><span class="s2">&quot;Any other ethnic group&quot;</span><span class="p">,</span> <span class="n">value</span><span class="o">=</span><span class="s2">&quot;Other ethnic groups&quot;</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">df_ethnicity_summary</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">to_replace</span><span class="o">=</span><span class="s2">&quot;Mixed / Multiple Ethnic Groups&quot;</span><span class="p">,</span> <span class="n">value</span><span class="o">=</span><span class="s2">&quot;Mixed / Multiple ethnic groups&quot;</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="c1"># harmonize column names</span>
+<span class="n">df_hospital_care</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;Ethnic group&quot;</span><span class="p">:</span><span class="s2">&quot;Ethnicity&quot;</span><span class="p">},</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="c1"># merge dataframes</span>
+<span class="n">df_hospital_care</span> <span class="o">=</span> <span class="n">df_hospital_care</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">df_ethnicity_summary</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="s2">&quot;Ethnicity&quot;</span><span class="p">)</span>
+<span class="c1"># add columns</span>
+<span class="n">df_hospital_care</span><span class="p">[</span><span class="s2">&quot;prob_admitted&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_hospital_care</span><span class="p">[</span><span class="s2">&quot;num_admitted&quot;</span><span class="p">]</span><span class="o">/</span><span class="n">df_hospital_care</span><span class="p">[</span><span class="s2">&quot;sum&quot;</span><span class="p">]</span>
+<span class="n">df_hospital_care</span><span class="p">[</span><span class="s2">&quot;prob_ventilation&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_hospital_care</span><span class="p">[</span><span class="s2">&quot;num_critical&quot;</span><span class="p">]</span><span class="o">/</span><span class="n">df_hospital_care</span><span class="p">[</span><span class="s2">&quot;sum&quot;</span><span class="p">]</span>
+<span class="n">df_hospital_care</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Ethnicity</th>
+      <th>Critical care (%)</th>
+      <th>Lower level of care (%)</th>
+      <th>num_lower</th>
+      <th>num_critical</th>
+      <th>num_admitted</th>
+      <th>sum</th>
+      <th>cumulative_frac</th>
+      <th>prob_admitted</th>
+      <th>prob_ventilation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>White</td>
+      <td>64.088226</td>
+      <td>89.050804</td>
+      <td>6782.999751</td>
+      <td>2063.000005</td>
+      <td>8845</td>
+      <td>104294</td>
+      <td>1.000000</td>
+      <td>0.084808</td>
+      <td>0.019781</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Black / Black British</td>
+      <td>7.828518</td>
+      <td>2.179336</td>
+      <td>165.999992</td>
+      <td>252.000007</td>
+      <td>417</td>
+      <td>6630</td>
+      <td>0.166614</td>
+      <td>0.062896</td>
+      <td>0.038009</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Asian / Asian British</td>
+      <td>17.365641</td>
+      <td>6.341079</td>
+      <td>483.000005</td>
+      <td>558.999972</td>
+      <td>1041</td>
+      <td>10815</td>
+      <td>0.114313</td>
+      <td>0.096255</td>
+      <td>0.051687</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Mixed / Multiple ethnic groups</td>
+      <td>2.889096</td>
+      <td>0.774583</td>
+      <td>58.999999</td>
+      <td>93.000001</td>
+      <td>152</td>
+      <td>1351</td>
+      <td>0.177272</td>
+      <td>0.112509</td>
+      <td>0.068838</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Other ethnic groups</td>
+      <td>7.828518</td>
+      <td>1.654195</td>
+      <td>126.000002</td>
+      <td>252.000007</td>
+      <td>378</td>
+      <td>3676</td>
+      <td>0.028998</td>
+      <td>0.102829</td>
+      <td>0.068553</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>Let’s combine all this to get hospital admission and care data:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">get_hospital_data</span><span class="p">(</span><span class="n">df_admission</span><span class="p">,</span> <span class="n">df_care</span><span class="p">,</span> <span class="n">ethnicity</span><span class="p">,</span> <span class="n">change_date</span><span class="o">=</span><span class="s2">&quot;2020-04-15&quot;</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    params</span>
+<span class="sd">    ======</span>
+<span class="sd">    df_admission: pandas DataFrame containing admission dates</span>
+<span class="sd">    df_care: pandas DataFrame containing probabilities of admission and ventilation by ethnicity</span>
+<span class="sd">    ethnicity: str, the ethnicity of the simulated patient</span>
+<span class="sd">    change_date: str, ISO date format, date at which ventilation became less likely.</span>
+<span class="sd">    </span>
+<span class="sd">    returns</span>
+<span class="sd">    =======</span>
+<span class="sd">    (admitted, admission_date, ventilated): tuple of (bool, datetime, bool)</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># did they get admitted?  If not, everything else is moot</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span>
+    <span class="n">prob_admitted</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">df_care</span><span class="p">[</span><span class="n">df_care</span><span class="o">.</span><span class="n">Ethnicity</span><span class="o">==</span><span class="n">ethnicity</span><span class="p">][</span><span class="s2">&quot;prob_admitted&quot;</span><span class="p">])</span>
+    <span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="n">prob_admitted</span><span class="p">:</span>
+        <span class="c1"># they weren&#39;t admitted to hospital, so no admission date, and no ventilation</span>
+        <span class="k">return</span> <span class="kc">False</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">False</span>
+    <span class="n">change_date</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">fromisoformat</span><span class="p">(</span><span class="n">change_date</span><span class="p">)</span>
+    <span class="n">admission_date</span> <span class="o">=</span> <span class="n">get_admission_date</span><span class="p">(</span><span class="n">df_admission</span><span class="p">)</span>
+    <span class="n">prob_ventilation</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">df_care</span><span class="p">[</span><span class="n">df_care</span><span class="o">.</span><span class="n">Ethnicity</span><span class="o">==</span><span class="n">ethnicity</span><span class="p">][</span><span class="s2">&quot;prob_ventilation&quot;</span><span class="p">])</span>
+    <span class="c1"># modify prob_ventilation based on change_date</span>
+    <span class="k">if</span> <span class="n">admission_date</span> <span class="o">&lt;</span> <span class="n">change_date</span><span class="p">:</span>
+        <span class="n">prob_ventilation</span> <span class="o">*=</span> <span class="mf">1.2</span>
+    <span class="k">else</span><span class="p">:</span> 
+        <span class="n">prob_ventilation</span> <span class="o">*=</span> <span class="mf">0.5</span>
+    <span class="n">ventilated</span> <span class="o">=</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="n">prob_ventilation</span>
+    <span class="k">return</span> <span class="p">(</span><span class="kc">True</span><span class="p">,</span> <span class="n">admission_date</span><span class="p">,</span> <span class="n">ventilated</span><span class="p">)</span>
+    
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="generating-other-variables">
+<h1>Generating other variables<a class="headerlink" href="#generating-other-variables" title="Permalink to this headline">¶</a></h1>
+<p>For height and weight, we will assume Gaussian distributions of height and BMI (BMI is height (in m) divided by weight (in kg) squared), with sex-dependent means and standard deviations.
+The mean and standard deviations in height are taken from <a class="reference external" href="https://www.restore.ac.uk/srme/www/fac/soc/wie/research-new/srme/modules/mod1/8/index.html">“restore”, here</a> while those for BMI are estimates based on the values provided by <a class="reference external" href="https://www.statista.com/statistics/375886/adult-s-body-mass-index-by-gender-and-age-in-england/">statistica, here</a>.</p>
+<p>We then do some purely ad-hoc corrections to these values to account for age.  We estimate that babies are about 0.5m tall on average, with average BMI of 23.
+For height, we assume a linear relation between average height and age from the ages 0-16, then flat afterwards, while for BMI we assume a two-sided linear relation between BMI and age, with the maximum value at age 60.</p>
+<p>These assumptions and guesses give us means and standard deviations for Gaussians, depending on age and sex.  We can then use <code class="docutils literal notranslate"><span class="pre">random.gauss</span></code> to draw from these Gaussians and get a height and BMI for a simulated person, then use these to calculate weight.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">get_height_weight</span><span class="p">(</span><span class="n">age</span><span class="p">,</span> <span class="n">sex</span><span class="p">):</span>
+    <span class="c1"># if sex is given as &quot;null&quot;, assign a 50/50 chance to treating  </span>
+    <span class="c1"># as &quot;M&quot; or &quot;F&quot; for the purpose of height/weight generation</span>
+    <span class="k">if</span> <span class="n">sex</span> <span class="o">==</span> <span class="s2">&quot;null&quot;</span><span class="p">:</span>
+        <span class="n">sex</span> <span class="o">=</span> <span class="s2">&quot;F&quot;</span> <span class="k">if</span> <span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span> <span class="o">&lt;</span> <span class="mf">0.5</span> <span class="k">else</span> <span class="s2">&quot;M&quot;</span> 
+    <span class="c1"># assume linear growth from 0.5m to avg between ages of 0 and 16</span>
+    <span class="n">avg_height</span> <span class="o">=</span> <span class="mf">1.78</span> <span class="k">if</span> <span class="n">sex</span><span class="o">==</span><span class="s2">&quot;M&quot;</span> <span class="k">else</span> <span class="mf">1.63</span>
+    <span class="n">std_height</span> <span class="o">=</span> <span class="mf">0.07</span> <span class="k">if</span> <span class="n">sex</span><span class="o">==</span><span class="s2">&quot;M&quot;</span> <span class="k">else</span> <span class="mf">0.06</span>
+    <span class="k">if</span> <span class="n">age</span> <span class="o">&lt;</span> <span class="mi">16</span><span class="p">:</span>
+        <span class="n">avg_height</span> <span class="o">=</span> <span class="mf">0.5</span> <span class="o">+</span> <span class="p">(</span><span class="n">avg_height</span><span class="o">-</span><span class="mf">0.5</span><span class="p">)</span><span class="o">*</span><span class="n">age</span><span class="o">/</span><span class="mi">16</span>
+    <span class="n">height</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">gauss</span><span class="p">(</span><span class="n">avg_height</span><span class="p">,</span> <span class="n">std_height</span><span class="p">)</span>
+    <span class="c1"># BMI tends to peak at age 60 and is similar for men and women.</span>
+    <span class="c1"># Take _very_ simplified model where we take max_avg_bmi to be 29</span>
+    <span class="c1"># at age 60, and min_avg_bmi to be 23 at 60 years away from this,</span>
+    <span class="c1"># and linearly interpolate between</span>
+    <span class="n">avg_bmi_max</span> <span class="o">=</span> <span class="mi">29</span>
+    <span class="n">avg_bmi_min</span> <span class="o">=</span> <span class="mi">23</span>
+    <span class="n">avg_bmi</span> <span class="o">=</span> <span class="nb">abs</span><span class="p">(</span><span class="mi">60</span><span class="o">-</span><span class="n">age</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">avg_bmi_max</span><span class="o">-</span><span class="n">avg_bmi_min</span><span class="p">)</span><span class="o">/</span><span class="mi">60</span> <span class="o">+</span> <span class="n">avg_bmi_min</span>
+    <span class="n">std_bmi</span> <span class="o">=</span> <span class="mf">6.1</span> <span class="k">if</span> <span class="n">sex</span><span class="o">==</span><span class="s2">&quot;F&quot;</span> <span class="k">else</span> <span class="mf">4.7</span>
+    <span class="n">bmi</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">gauss</span><span class="p">(</span><span class="n">avg_bmi</span><span class="p">,</span> <span class="n">std_bmi</span><span class="p">)</span>
+    <span class="c1"># calculate weight from height and bmi</span>
+    <span class="n">weight</span> <span class="o">=</span> <span class="n">bmi</span> <span class="o">*</span> <span class="n">height</span><span class="o">*</span><span class="n">height</span>
+    <span class="k">return</span> <span class="n">height</span><span class="p">,</span> <span class="n">weight</span>
+    
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="survival-rate">
+<h1>Survival rate<a class="headerlink" href="#survival-rate" title="Permalink to this headline">¶</a></h1>
+<p>Now we come to the most critical part, and also the one where we are making the most assumptions - the chance for a simulated patient who has a positive COVID test to die.
+We will start from a small baseline probability, and increase this based on several factors:</p>
+<ul class="simple">
+<li><p>Age - the chance of dying from COVID increases almost exponentially with age.  Based on CDC figures <a class="reference external" href="https://www.cdc.gov/coronavirus/2019-ncov/covid-data/investigations-discovery/hospitalization-death-by-age.html">here</a> we estimate that using 20-year-olds as the baseline, the chances of dying with COVID approximately double for every 8 years older.</p></li>
+<li><p>BMI - having a BMI over 30 increases the chance of dying</p></li>
+<li><p>Sex - Men have a higher chance of dying of COVID than women</p></li>
+<li><p>Ethnicity - People of Chinese, Indian, Pakistani, Other Asian, Black Caribbean and Other Black ethnicity had between 10 and 50% higher risk of death when compared to White British - the numbers used here are based on table A1 in <a class="reference external" href="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/908434/Disparities_in_the_risk_and_outcomes_of_COVID_August_2020_update.pdf">the PHE document</a></p></li>
+<li><p>We also make some ad-hoc assumptions regarding whether the patient was hospitalised and had intrusive ventilation.   In general we assume that the most seriously ill patients were admitted, and given critical care, and these were most likely to die.  However, we don’t enforce this relation for patients over 75, who were perhaps more likely to be in care homes.</p></li>
+</ul>
+<ul class="simple">
+<li><p>For those that were admitted, we apply a small correction to account for the fact that the knowledge in hospitals improved over time - we say 1% relative per day after 15th April</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">did_patient_die</span><span class="p">(</span><span class="n">age</span><span class="p">,</span> 
+                    <span class="n">height</span><span class="p">,</span> 
+                    <span class="n">weight</span><span class="p">,</span> 
+                    <span class="n">sex</span><span class="p">,</span> 
+                    <span class="n">ethnicity</span><span class="p">,</span> 
+                    <span class="n">admitted</span><span class="p">,</span> 
+                    <span class="n">admission_date</span><span class="p">,</span> 
+                    <span class="n">ventilation</span><span class="p">,</span> 
+                    <span class="n">change_date</span><span class="o">=</span><span class="s2">&quot;2020-04-15&quot;</span><span class="p">,</span> 
+                    <span class="n">baseline_prob</span><span class="o">=</span><span class="mf">0.001</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Returns: bool, True if patient died, False otherwise</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># modify for age - chance of death doubles every 8 years</span>
+    <span class="n">prob</span> <span class="o">=</span> <span class="n">baseline_prob</span> <span class="o">*</span> <span class="nb">pow</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="p">(</span><span class="n">age</span> <span class="o">-</span> <span class="mi">20</span><span class="p">)</span><span class="o">/</span><span class="mf">8.</span><span class="p">)</span>
+    <span class="c1"># modify for sex</span>
+    <span class="n">prob</span> <span class="o">=</span> <span class="n">prob</span><span class="o">*</span><span class="mf">1.2</span> <span class="k">if</span> <span class="n">sex</span> <span class="o">==</span> <span class="s2">&quot;M&quot;</span> <span class="k">else</span> <span class="n">prob</span><span class="o">*</span><span class="mf">0.8</span>
+    <span class="c1"># modify for BMI - linear relation factor 1.05 per unit of BMI over 23</span>
+    <span class="n">BMI</span> <span class="o">=</span> <span class="n">height</span> <span class="o">/</span> <span class="n">weight</span><span class="o">*</span><span class="n">weight</span>
+    <span class="k">if</span> <span class="n">BMI</span> <span class="o">&gt;</span> <span class="mi">23</span><span class="p">:</span>
+        <span class="n">bmi_factor</span> <span class="o">=</span> <span class="mf">1.05</span> <span class="o">*</span> <span class="p">(</span><span class="n">BMI</span><span class="o">-</span><span class="mi">23</span><span class="p">)</span>
+        <span class="n">prob</span> <span class="o">=</span> <span class="n">prob</span> <span class="o">*</span> <span class="n">bmi_factor</span>
+    <span class="c1"># modify for ethnicity</span>
+    <span class="k">if</span> <span class="n">ethnicity</span> <span class="o">==</span> <span class="s2">&quot;Asian / Asian British&quot;</span><span class="p">:</span>
+        <span class="n">prob</span> <span class="o">=</span> <span class="n">prob</span> <span class="o">*</span> <span class="mf">1.35</span>
+    <span class="k">elif</span> <span class="n">ethnicity</span> <span class="o">==</span> <span class="s2">&quot;Black / Black British&quot;</span><span class="p">:</span>
+        <span class="n">prob</span> <span class="o">=</span> <span class="n">prob</span> <span class="o">*</span> <span class="mf">1.2</span>
+    <span class="k">elif</span> <span class="n">ethnicity</span> <span class="o">==</span> <span class="s2">&quot;Mixed / Multiple ethnic groups&quot;</span><span class="p">:</span>
+        <span class="n">prob</span> <span class="o">=</span> <span class="n">prob</span> <span class="o">*</span> <span class="mf">1.1</span>
+    <span class="k">elif</span> <span class="n">ethnicity</span> <span class="o">==</span> <span class="s2">&quot;Other ethnic groups&quot;</span><span class="p">:</span>
+        <span class="n">prob</span> <span class="o">=</span> <span class="n">prob</span> <span class="o">*</span> <span class="mf">1.02</span>
+    <span class="c1"># ad-hoc corrections for whether the patient was </span>
+    <span class="c1"># hospitalised, and given ventilation</span>
+    <span class="k">if</span> <span class="n">age</span> <span class="o">&lt;</span> <span class="mi">75</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">admitted</span><span class="p">:</span>
+            <span class="n">prob</span> <span class="o">*=</span> <span class="mi">2</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">prob</span> <span class="o">*=</span> <span class="mf">0.5</span>
+        <span class="k">if</span> <span class="n">ventilation</span><span class="p">:</span> <span class="c1"># double the risk again</span>
+            <span class="n">prob</span> <span class="o">*=</span> <span class="mi">2</span>
+    <span class="c1"># if patient was admitted, account for the fact that care improved after some date</span>
+    <span class="k">if</span> <span class="n">admitted</span><span class="p">:</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">admission_date</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
+            <span class="n">admission_date</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">fromisoformat</span><span class="p">(</span><span class="n">admission_date</span><span class="p">)</span>
+        <span class="n">t</span> <span class="o">=</span> <span class="p">(</span><span class="n">admission_date</span> <span class="o">-</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">fromisoformat</span><span class="p">(</span><span class="n">change_date</span><span class="p">))</span><span class="o">.</span><span class="n">days</span>
+        <span class="k">if</span> <span class="n">t</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">prob</span> <span class="o">=</span> <span class="n">prob</span><span class="o">*</span><span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">t</span><span class="o">*</span><span class="mf">0.01</span><span class="p">)</span>
+    <span class="c1"># now lets see whether random number 0&lt;x&lt;1 is below prob</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span>
+<span class="c1">#    return prob</span>
+    <span class="k">return</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="n">prob</span>
+    
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="putting-it-all-together">
+<h1>Putting it all together<a class="headerlink" href="#putting-it-all-together" title="Permalink to this headline">¶</a></h1>
+<p>We’re now ready to generate some simulated people.  We first get the age, then the sex, then use these to get a height and weight, using the functions defined above.  Each simulated person will be returned as a JSON object, which we can then accumulate into a pandas dataframe.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">generate_person</span><span class="p">(</span><span class="n">df_age_sex</span><span class="p">,</span> <span class="n">df_ethnicity</span><span class="p">,</span> <span class="n">df_admission</span><span class="p">,</span> <span class="n">df_care</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Generate characteristics of a simulated person, and return as JSON</span>
+<span class="sd">    </span>
+<span class="sd">    parameter: df: pd.DataFrame, the age and sex profile of cases(including cumulative sum)</span>
+<span class="sd">    returns: JSON object containing all generated parameters.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">nhs_id</span> <span class="o">=</span> <span class="n">get_nhs_id</span><span class="p">()</span>
+    <span class="n">sex</span> <span class="o">=</span> <span class="n">get_sex</span><span class="p">(</span><span class="n">df_age_sex</span><span class="p">)</span>
+    <span class="n">age</span> <span class="o">=</span> <span class="n">get_age</span><span class="p">(</span><span class="n">df_age_sex</span><span class="p">,</span> <span class="n">sex</span><span class="p">)</span>
+    <span class="n">ethnicity</span> <span class="o">=</span> <span class="n">get_ethnicity</span><span class="p">(</span><span class="n">df_ethnicity</span><span class="p">)</span>
+    <span class="n">admitted</span><span class="p">,</span> <span class="n">admission_date</span><span class="p">,</span> <span class="n">ventilated</span> <span class="o">=</span> <span class="n">get_hospital_data</span><span class="p">(</span><span class="n">df_admission</span><span class="p">,</span> <span class="n">df_care</span><span class="p">,</span> <span class="n">ethnicity</span><span class="p">)</span>
+    <span class="n">height</span><span class="p">,</span> <span class="n">weight</span> <span class="o">=</span> <span class="n">get_height_weight</span><span class="p">(</span><span class="n">age</span><span class="p">,</span> <span class="n">sex</span><span class="p">)</span>
+    <span class="n">died</span> <span class="o">=</span> <span class="n">did_patient_die</span><span class="p">(</span><span class="n">age</span><span class="p">,</span> <span class="n">height</span><span class="p">,</span> <span class="n">weight</span><span class="p">,</span> <span class="n">sex</span><span class="p">,</span> <span class="n">ethnicity</span><span class="p">,</span> <span class="n">admitted</span><span class="p">,</span> <span class="n">admission_date</span><span class="p">,</span> <span class="n">ventilated</span><span class="p">)</span>
+    <span class="k">return</span> <span class="p">{</span>
+        <span class="s2">&quot;nhs_id&quot;</span><span class="p">:</span> <span class="n">nhs_id</span><span class="p">,</span> 
+        <span class="s2">&quot;site_id&quot;</span><span class="p">:</span> <span class="s2">&quot;UHJ_43643&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;age&quot;</span><span class="p">:</span> <span class="n">age</span><span class="p">,</span> 
+        <span class="s2">&quot;sex&quot;</span><span class="p">:</span> <span class="n">sex</span><span class="p">,</span> 
+        <span class="s2">&quot;ethnicity&quot;</span><span class="p">:</span> <span class="n">ethnicity</span><span class="p">,</span>
+        <span class="s2">&quot;height&quot;</span><span class="p">:</span> <span class="n">height</span><span class="p">,</span> 
+        <span class="s2">&quot;weight&quot;</span><span class="p">:</span> <span class="n">weight</span><span class="p">,</span>
+        <span class="s2">&quot;admitted&quot;</span><span class="p">:</span> <span class="n">admitted</span><span class="p">,</span>
+        <span class="s2">&quot;admission_date&quot;</span><span class="p">:</span> <span class="n">admission_date</span><span class="p">,</span>
+        <span class="s2">&quot;intrusive_ventilation&quot;</span><span class="p">:</span> <span class="n">ventilated</span><span class="p">,</span>
+        <span class="s2">&quot;died&quot;</span><span class="p">:</span> <span class="n">died</span>
+    <span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">people</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">30000</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">1000</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Generating&quot;</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span>
+    <span class="n">people</span><span class="o">.</span><span class="n">append</span><span class="p">(</span>
+        <span class="n">generate_person</span><span class="p">(</span>
+            <span class="n">df_cases_age_sex</span><span class="p">,</span> 
+            <span class="n">df_ethnicity_summary</span><span class="p">,</span> 
+            <span class="n">df_hospital_admissions</span><span class="p">,</span>
+            <span class="n">df_hospital_care</span><span class="p">)</span>
+    <span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Generating 0
+Generating 1000
+Generating 2000
+Generating 3000
+Generating 4000
+Generating 5000
+Generating 6000
+Generating 7000
+Generating 8000
+Generating 9000
+Generating 10000
+Generating 11000
+Generating 12000
+Generating 13000
+Generating 14000
+Generating 15000
+Generating 16000
+Generating 17000
+Generating 18000
+Generating 19000
+Generating 20000
+Generating 21000
+Generating 22000
+Generating 23000
+Generating 24000
+Generating 25000
+Generating 26000
+Generating 27000
+Generating 28000
+Generating 29000
+</pre></div>
+</div>
+</div>
+</div>
+<p>Now put this list of dicts into a pandas dataframe:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_people</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="o">.</span><span class="n">from_records</span><span class="p">(</span><span class="n">people</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_people</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>nhs_id</th>
+      <th>site_id</th>
+      <th>age</th>
+      <th>sex</th>
+      <th>ethnicity</th>
+      <th>height</th>
+      <th>weight</th>
+      <th>admitted</th>
+      <th>admission_date</th>
+      <th>intrusive_ventilation</th>
+      <th>died</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>6f08335b</td>
+      <td>UHJ_43643</td>
+      <td>38</td>
+      <td>F</td>
+      <td>Asian / Asian British</td>
+      <td>1.717366</td>
+      <td>114.563245</td>
+      <td>False</td>
+      <td>NaT</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>4a65709f</td>
+      <td>UHJ_43643</td>
+      <td>84</td>
+      <td>F</td>
+      <td>White</td>
+      <td>1.642079</td>
+      <td>60.578631</td>
+      <td>False</td>
+      <td>NaT</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>c625c729</td>
+      <td>UHJ_43643</td>
+      <td>57</td>
+      <td>F</td>
+      <td>White</td>
+      <td>1.676216</td>
+      <td>53.907925</td>
+      <td>False</td>
+      <td>NaT</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>3639fee6</td>
+      <td>UHJ_43643</td>
+      <td>70</td>
+      <td>F</td>
+      <td>White</td>
+      <td>1.613161</td>
+      <td>73.296739</td>
+      <td>False</td>
+      <td>NaT</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>58a53667</td>
+      <td>UHJ_43643</td>
+      <td>76</td>
+      <td>M</td>
+      <td>Asian / Asian British</td>
+      <td>1.642212</td>
+      <td>65.811733</td>
+      <td>False</td>
+      <td>NaT</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>e66c1260</td>
+      <td>UHJ_43643</td>
+      <td>72</td>
+      <td>F</td>
+      <td>White</td>
+      <td>1.676257</td>
+      <td>85.734952</td>
+      <td>False</td>
+      <td>NaT</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>a49a89d8</td>
+      <td>UHJ_43643</td>
+      <td>58</td>
+      <td>M</td>
+      <td>White</td>
+      <td>1.847655</td>
+      <td>88.290675</td>
+      <td>False</td>
+      <td>NaT</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>568cd887</td>
+      <td>UHJ_43643</td>
+      <td>62</td>
+      <td>M</td>
+      <td>White</td>
+      <td>1.784558</td>
+      <td>60.485770</td>
+      <td>False</td>
+      <td>NaT</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>98aef5df</td>
+      <td>UHJ_43643</td>
+      <td>83</td>
+      <td>M</td>
+      <td>White</td>
+      <td>1.865958</td>
+      <td>107.031795</td>
+      <td>False</td>
+      <td>NaT</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>86b062bf</td>
+      <td>UHJ_43643</td>
+      <td>72</td>
+      <td>M</td>
+      <td>White</td>
+      <td>1.788505</td>
+      <td>51.331755</td>
+      <td>False</td>
+      <td>NaT</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>1b881729</td>
+      <td>UHJ_43643</td>
+      <td>77</td>
+      <td>F</td>
+      <td>White</td>
+      <td>1.724081</td>
+      <td>63.907298</td>
+      <td>False</td>
+      <td>NaT</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>9fdd67c3</td>
+      <td>UHJ_43643</td>
+      <td>85</td>
+      <td>F</td>
+      <td>White</td>
+      <td>1.744707</td>
+      <td>69.801964</td>
+      <td>False</td>
+      <td>NaT</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>09e5472c</td>
+      <td>UHJ_43643</td>
+      <td>26</td>
+      <td>F</td>
+      <td>White</td>
+      <td>1.659949</td>
+      <td>63.751031</td>
+      <td>False</td>
+      <td>NaT</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>bb032107</td>
+      <td>UHJ_43643</td>
+      <td>44</td>
+      <td>M</td>
+      <td>White</td>
+      <td>1.861781</td>
+      <td>67.682398</td>
+      <td>False</td>
+      <td>NaT</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>cba05d9f</td>
+      <td>UHJ_43643</td>
+      <td>60</td>
+      <td>M</td>
+      <td>White</td>
+      <td>1.759659</td>
+      <td>61.537639</td>
+      <td>False</td>
+      <td>NaT</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>76adadcb</td>
+      <td>UHJ_43643</td>
+      <td>86</td>
+      <td>M</td>
+      <td>White</td>
+      <td>1.893698</td>
+      <td>93.847646</td>
+      <td>False</td>
+      <td>NaT</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>4908d907</td>
+      <td>UHJ_43643</td>
+      <td>78</td>
+      <td>M</td>
+      <td>White</td>
+      <td>1.677584</td>
+      <td>68.601576</td>
+      <td>False</td>
+      <td>NaT</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>d83c41c9</td>
+      <td>UHJ_43643</td>
+      <td>84</td>
+      <td>F</td>
+      <td>White</td>
+      <td>1.714169</td>
+      <td>64.661712</td>
+      <td>False</td>
+      <td>NaT</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>799d1d36</td>
+      <td>UHJ_43643</td>
+      <td>59</td>
+      <td>M</td>
+      <td>White</td>
+      <td>1.749339</td>
+      <td>65.788641</td>
+      <td>False</td>
+      <td>NaT</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>b4cfde22</td>
+      <td>UHJ_43643</td>
+      <td>82</td>
+      <td>M</td>
+      <td>White</td>
+      <td>1.730038</td>
+      <td>75.877570</td>
+      <td>False</td>
+      <td>NaT</td>
+      <td>False</td>
+      <td>True</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>Now export this to a CSV file:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_people</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s2">&quot;covid_patients_syn_data.csv&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Quick check on whether the age profile of the people that died looks sensible:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_died</span> <span class="o">=</span> <span class="n">df_people</span><span class="p">[</span><span class="n">df_people</span><span class="o">.</span><span class="n">died</span><span class="o">==</span><span class="kc">True</span><span class="p">]</span>
+<span class="n">ages</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;M&quot;</span><span class="p">:</span> <span class="p">[],</span> <span class="s2">&quot;F&quot;</span><span class="p">:[]}</span>
+<span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1000</span><span class="p">):</span>
+    <span class="n">ages</span><span class="p">[</span><span class="s2">&quot;M&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">df_died</span><span class="p">[</span><span class="n">df_died</span><span class="o">.</span><span class="n">sex</span><span class="o">==</span><span class="s2">&quot;M&quot;</span><span class="p">][</span><span class="s2">&quot;age&quot;</span><span class="p">])</span>
+    <span class="n">ages</span><span class="p">[</span><span class="s2">&quot;F&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">df_died</span><span class="p">[</span><span class="n">df_died</span><span class="o">.</span><span class="n">sex</span><span class="o">==</span><span class="s2">&quot;F&quot;</span><span class="p">][</span><span class="s2">&quot;age&quot;</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">ages</span><span class="p">[</span><span class="s2">&quot;M&quot;</span><span class="p">],</span><span class="n">bins</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span><span class="nb">range</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">100</span><span class="p">),</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;M&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">ages</span><span class="p">[</span><span class="s2">&quot;F&quot;</span><span class="p">],</span><span class="n">bins</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span><span class="nb">range</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">100</span><span class="p">),</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;F&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(array([  0.,   0.,   0.,   2.,  11.,  33.,  44., 135., 975.,   0.]),
+ array([  0.,  10.,  20.,  30.,  40.,  50.,  60.,  70.,  80.,  90., 100.]),
+ &lt;a list of 10 Patch objects&gt;)
+</pre></div>
+</div>
+<img alt="../../../_images/synthetic_data_generation_47_1.png" src="../../../_images/synthetic_data_generation_47_1.png" />
+</div>
+</div>
+</div>
+<div class="section" id="adding-biases-into-the-dataset">
+<h1>Adding biases into the dataset<a class="headerlink" href="#adding-biases-into-the-dataset" title="Permalink to this headline">¶</a></h1>
+<p>There are a few possible ways that the data can be imperfect.  A simple example is the binary classification of sex into “M” and “F” - some fraction of our simulated patients may be non-binary, or will have not filled in this value.  Let’s replace 5% of our “M” and “F” labels with “null”.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">add_null_gender</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">null_prob</span><span class="o">=</span><span class="mf">0.05</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">irow</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="p">)):</span>
+        <span class="k">if</span> <span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span> <span class="o">&lt;</span> <span class="mf">0.05</span><span class="p">:</span>
+            <span class="n">df</span><span class="o">.</span><span class="n">at</span><span class="p">[</span><span class="n">irow</span><span class="p">,</span><span class="s2">&quot;sex&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;null&quot;</span>
+    <span class="k">return</span> <span class="n">df</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_people</span> <span class="o">=</span> <span class="n">add_null_gender</span><span class="p">(</span><span class="n">df_people</span><span class="p">)</span>
+<span class="n">df_people</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">30</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>nhs_id</th>
+      <th>site_id</th>
+      <th>age</th>
+      <th>sex</th>
+      <th>ethnicity</th>
+      <th>height</th>
+      <th>weight</th>
+      <th>admitted</th>
+      <th>admission_date</th>
+      <th>intrusive_ventilation</th>
+      <th>died</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>6f08335b</td>
+      <td>UHJ_43643</td>
+      <td>38</td>
+      <td>F</td>
+      <td>Asian / Asian British</td>
+      <td>1.717366</td>
+      <td>114.563245</td>
+      <td>False</td>
+      <td>NaT</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>4a65709f</td>
+      <td>UHJ_43643</td>
+      <td>84</td>
+      <td>F</td>
+      <td>White</td>
+      <td>1.642079</td>
+      <td>60.578631</td>
+      <td>False</td>
+      <td>NaT</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>c625c729</td>
+      <td>UHJ_43643</td>
+      <td>57</td>
+      <td>F</td>
+      <td>White</td>
+      <td>1.676216</td>
+      <td>53.907925</td>
+      <td>False</td>
+      <td>NaT</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>3639fee6</td>
+      <td>UHJ_43643</td>
+      <td>70</td>
+      <td>F</td>
+      <td>White</td>
+      <td>1.613161</td>
+      <td>73.296739</td>
+      <td>False</td>
+      <td>NaT</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>58a53667</td>
+      <td>UHJ_43643</td>
+      <td>76</td>
+      <td>M</td>
+      <td>Asian / Asian British</td>
+      <td>1.642212</td>
+      <td>65.811733</td>
+      <td>False</td>
+      <td>NaT</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>e66c1260</td>
+      <td>UHJ_43643</td>
+      <td>72</td>
+      <td>F</td>
+      <td>White</td>
+      <td>1.676257</td>
+      <td>85.734952</td>
+      <td>False</td>
+      <td>NaT</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>a49a89d8</td>
+      <td>UHJ_43643</td>
+      <td>58</td>
+      <td>M</td>
+      <td>White</td>
+      <td>1.847655</td>
+      <td>88.290675</td>
+      <td>False</td>
+      <td>NaT</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>568cd887</td>
+      <td>UHJ_43643</td>
+      <td>62</td>
+      <td>M</td>
+      <td>White</td>
+      <td>1.784558</td>
+      <td>60.485770</td>
+      <td>False</td>
+      <td>NaT</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>98aef5df</td>
+      <td>UHJ_43643</td>
+      <td>83</td>
+      <td>M</td>
+      <td>White</td>
+      <td>1.865958</td>
+      <td>107.031795</td>
+      <td>False</td>
+      <td>NaT</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>86b062bf</td>
+      <td>UHJ_43643</td>
+      <td>72</td>
+      <td>M</td>
+      <td>White</td>
+      <td>1.788505</td>
+      <td>51.331755</td>
+      <td>False</td>
+      <td>NaT</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>1b881729</td>
+      <td>UHJ_43643</td>
+      <td>77</td>
+      <td>F</td>
+      <td>White</td>
+      <td>1.724081</td>
+      <td>63.907298</td>
+      <td>False</td>
+      <td>NaT</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>9fdd67c3</td>
+      <td>UHJ_43643</td>
+      <td>85</td>
+      <td>F</td>
+      <td>White</td>
+      <td>1.744707</td>
+      <td>69.801964</td>
+      <td>False</td>
+      <td>NaT</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>09e5472c</td>
+      <td>UHJ_43643</td>
+      <td>26</td>
+      <td>F</td>
+      <td>White</td>
+      <td>1.659949</td>
+      <td>63.751031</td>
+      <td>False</td>
+      <td>NaT</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>bb032107</td>
+      <td>UHJ_43643</td>
+      <td>44</td>
+      <td>M</td>
+      <td>White</td>
+      <td>1.861781</td>
+      <td>67.682398</td>
+      <td>False</td>
+      <td>NaT</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>cba05d9f</td>
+      <td>UHJ_43643</td>
+      <td>60</td>
+      <td>M</td>
+      <td>White</td>
+      <td>1.759659</td>
+      <td>61.537639</td>
+      <td>False</td>
+      <td>NaT</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>76adadcb</td>
+      <td>UHJ_43643</td>
+      <td>86</td>
+      <td>M</td>
+      <td>White</td>
+      <td>1.893698</td>
+      <td>93.847646</td>
+      <td>False</td>
+      <td>NaT</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>4908d907</td>
+      <td>UHJ_43643</td>
+      <td>78</td>
+      <td>M</td>
+      <td>White</td>
+      <td>1.677584</td>
+      <td>68.601576</td>
+      <td>False</td>
+      <td>NaT</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>d83c41c9</td>
+      <td>UHJ_43643</td>
+      <td>84</td>
+      <td>F</td>
+      <td>White</td>
+      <td>1.714169</td>
+      <td>64.661712</td>
+      <td>False</td>
+      <td>NaT</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>799d1d36</td>
+      <td>UHJ_43643</td>
+      <td>59</td>
+      <td>M</td>
+      <td>White</td>
+      <td>1.749339</td>
+      <td>65.788641</td>
+      <td>False</td>
+      <td>NaT</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>b4cfde22</td>
+      <td>UHJ_43643</td>
+      <td>82</td>
+      <td>M</td>
+      <td>White</td>
+      <td>1.730038</td>
+      <td>75.877570</td>
+      <td>False</td>
+      <td>NaT</td>
+      <td>False</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>47df828a</td>
+      <td>UHJ_43643</td>
+      <td>34</td>
+      <td>F</td>
+      <td>White</td>
+      <td>1.664476</td>
+      <td>49.875473</td>
+      <td>False</td>
+      <td>NaT</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>0f514bdd</td>
+      <td>UHJ_43643</td>
+      <td>84</td>
+      <td>M</td>
+      <td>White</td>
+      <td>1.811962</td>
+      <td>93.412754</td>
+      <td>False</td>
+      <td>NaT</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>a2f2b389</td>
+      <td>UHJ_43643</td>
+      <td>60</td>
+      <td>M</td>
+      <td>White</td>
+      <td>1.764534</td>
+      <td>90.464090</td>
+      <td>False</td>
+      <td>NaT</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td>085b4c0c</td>
+      <td>UHJ_43643</td>
+      <td>43</td>
+      <td>M</td>
+      <td>White</td>
+      <td>1.821682</td>
+      <td>72.433720</td>
+      <td>False</td>
+      <td>NaT</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td>0496c239</td>
+      <td>UHJ_43643</td>
+      <td>43</td>
+      <td>F</td>
+      <td>White</td>
+      <td>1.679833</td>
+      <td>94.202146</td>
+      <td>False</td>
+      <td>NaT</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>25</td>
+      <td>e947bbc5</td>
+      <td>UHJ_43643</td>
+      <td>60</td>
+      <td>F</td>
+      <td>White</td>
+      <td>1.755347</td>
+      <td>48.342100</td>
+      <td>False</td>
+      <td>NaT</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>26</td>
+      <td>04a95700</td>
+      <td>UHJ_43643</td>
+      <td>35</td>
+      <td>M</td>
+      <td>White</td>
+      <td>1.762349</td>
+      <td>57.558648</td>
+      <td>False</td>
+      <td>NaT</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>27</td>
+      <td>b8274949</td>
+      <td>UHJ_43643</td>
+      <td>50</td>
+      <td>F</td>
+      <td>White</td>
+      <td>1.673268</td>
+      <td>51.608010</td>
+      <td>False</td>
+      <td>NaT</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>28</td>
+      <td>e49579ea</td>
+      <td>UHJ_43643</td>
+      <td>86</td>
+      <td>M</td>
+      <td>White</td>
+      <td>1.774035</td>
+      <td>82.687007</td>
+      <td>False</td>
+      <td>NaT</td>
+      <td>False</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>29</td>
+      <td>e3324138</td>
+      <td>UHJ_43643</td>
+      <td>49</td>
+      <td>M</td>
+      <td>White</td>
+      <td>1.736817</td>
+      <td>65.778846</td>
+      <td>False</td>
+      <td>NaT</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>Another potential bias could be that older people are under-represented in the dataset because they never presented at a hospital - write a function to remove some fraction of people in some age range:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">remove_elderly_non_hospitalised</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">age_range</span><span class="p">,</span> <span class="n">prob_remove</span><span class="o">=</span><span class="mf">0.5</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Remove some fraction (prob_remove) of people in a given age range </span>
+<span class="sd">    who weren&#39;t admitted to hospital</span>
+<span class="sd">    </span>
+<span class="sd">    Parameters</span>
+<span class="sd">    ==========</span>
+<span class="sd">    df: pandas DataFrame</span>
+<span class="sd">    age_range: list of 2 ints, min and max of age range to be removed</span>
+<span class="sd">    prob_remove (optional): fraction of patients within age range to remove</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">query_string</span> <span class="o">=</span> <span class="s2">&quot;(</span><span class="si">{}</span><span class="s2"> &lt; age &lt; </span><span class="si">{}</span><span class="s2">) &amp; (admitted==False)&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">age_range</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">age_range</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+    <span class="n">df_new</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="n">query_string</span><span class="p">)</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="n">frac</span><span class="o">=</span><span class="n">prob_remove</span><span class="p">)</span><span class="o">.</span><span class="n">index</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">df_new</span>
+            
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_people</span> <span class="o">=</span> <span class="n">remove_elderly_non_hospitalised</span><span class="p">(</span><span class="n">df_people</span><span class="p">,[</span><span class="mi">75</span><span class="p">,</span><span class="mi">85</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_people</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s2">&quot;covid_patients_syn_data_with_biases.csv&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./rri/chapter4/project_design"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            
+
+
+
+<div class='prev-next-bottom'>
+    
+
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By Dr Christopher Burr<br/>
+        
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../../../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>
