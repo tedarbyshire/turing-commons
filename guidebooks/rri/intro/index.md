@@ -1,5 +1,7 @@
 # 1 Introduction
 
+![](../../images/illustrations/algorithm2.png)
+
 ```{admonition} Summary
 :class: tip
 This introduction serves to motivate the significance of some of the topics that will be explored throughout this guidebook. Although some topics and concepts are introduced, they are not explored fully in this introduction. 
