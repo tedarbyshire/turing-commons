@@ -32,6 +32,6 @@ We will use HackMD to collaboratively design these cards.
 
 In this activity you will design hypothetical model reports for the case studies that you have been considering throughout the chapter.
 
-Please visit  to view the associated instructions.
+Please visit https://bit.ly/3B4VllZ to view the associated instructions.
 
 --->
