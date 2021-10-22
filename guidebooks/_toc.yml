@@ -39,6 +39,7 @@ parts:
       - file: rri/chapter4/system_deployment/user_training
       - file: rri/chapter4/system_deployment/system_use
       - file: rri/chapter4/system_deployment/model_updating
+      - file: rri/chapter4/summary
     - file: rri/chapter5/index
       sections:
       - file: rri/chapter5/assurance
