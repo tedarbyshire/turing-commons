@@ -34,10 +34,12 @@ parts:
       - file: rri/chapter4/model_development/model_selection
       - file: rri/chapter4/model_development/model_testing
       - file: rri/chapter4/model_development/model_reporting
+      - file: rri/chapter4/model_development/activity8
       - file: rri/chapter4/system_deployment/model_productionalisation
       - file: rri/chapter4/system_deployment/user_training
       - file: rri/chapter4/system_deployment/system_use
       - file: rri/chapter4/system_deployment/model_updating
+      - file: rri/chapter4/summary
     - file: rri/chapter5/index
       sections:
       - file: rri/chapter5/communication
