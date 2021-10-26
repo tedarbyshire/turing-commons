@@ -62,30 +62,77 @@ The above example helps us identify a minimal set of elements that need to be es
 The top-level goal orients and delineates the case by setting a direction and helping to establish the scope of what claims need to be included.
 For instance, a particular claim about the privacy or security of a project's data management policy many be important but unnecessary to include in an assurance case that justifies why a model does not cause any discriminatory harm.
 
-In addition to any clarificatory claims that pertain to the goal (e.g., what type of model is being assured; the context of use for the system), the lower-level claims should further specify the goal by a) addressing the specific activities that have been carried out during the project, or b) identifying properties of the system that help ensure the goal claim is legitimate. 
+In addition to any clarificatory claims that pertain to the goal (e.g., what type of model is being assured; the context of use for the system), the lower-level claims should further specify the goal by a) addressing the specific activities that have been carried out during the project, or b) identifying properties of the system that help ensure the goal claim is legitimate.
 We can, therefore, separate the type of lower-level claim being established as either a *project* or *system* property claim.
 
 Unless the claim is self-evidential, there will need to be a final element that points to some supporting evidence.
 This evidence establishes the foundation upon which the justifiability of the overall argument depends.
+The following two figures show the relationship between these elements and also provide an example of a partial assurance case that focuses on a goal of safety.
 
 ````{panels}
 Figure A
 ^^^
-![A minimal set of elements for an assurance case.](../images/graphics/gce.png)
+![](../../images/graphics/gce.png)
 +++
-Panel footer 1
+A minimal set of elements for an assurance case.
 ---
 
 Figure B
 ^^^
-![An example of a goal, claims, and evidence using the minimal set of elements identified previously.](../images/graphics/gce-example.png)
+![](../../images/graphics/gce-example.png)
 +++
 An example of a goal, claims, and evidence using the minimal set of elements identified previously.
 ````
 
-As you can probably imagine, all of these elements help play a vital role in the effective communication of an assurance case. 
+### Who is the Target Audience?
 
-[...]
+As you can probably imagine, all of these elements help play a vital role in the effective communication of an assurance case.
+A clear goal helps signal to stakeholders what values underwrite and motivate your project, as well as providing the means for more critical evaluation and engagement (i.e. an assessment by the stakeholders of whether your goal has been obtained, conditional on the evidence provided).
+The set of claims collectively establishes the scope and content of your argument, enabling stakeholders to identify whether there are any gaps (i.e. whether your argument is complete).
+And, the evidential base allows stakeholders to determine whether there is a legitimate reason for accepting your argument.
 
-
+However, the justifiability and acceptability of an assurance case, in part, depends on who is the target audience.
 Sticking with the interpretability example, we can note that what is interpretable to an expert in statistical learning theory may be completely uninterpretable for a policy-maker tasked with evaluating whether a particular model is suitable to deploy in their own project.
+Therefore, prior to building an assurance case, it is important to identify its target audience.
+In some cases, this may be determined on the behalf of the project team (e.g. where an external auditor requests assurance for compliance objectives).
+In other cases, identifying relevant stakeholders may have been performed through stakeholder engagement processes carried out as part of the '[Project Planning](../chapter4/project_design/planning.md)' activities.
+
+## Reflect, Act, Justify
+
+The process of building an assurance case can be split into a series of three steps, which also complement the goals of the [project lifecycle](../chapter3/project_lifecycle.md):
+
+1. Reflect
+2. Act
+3. Justify
+
+**Reflection** is an anticipatory process, so the steps taken in this stage can be thought of as deliberative prompts:
+
+1. What are the goals of your system?
+2. How are these goals defined?
+3. Which stakeholders have participated in the identification and defining of these goals?
+4. What properties need to be implemented in the project or system to ensure that these goals are achieved?
+5. Which actions ought to be taken to establish these properties within the project or system?
+
+**Action** occurs throughout all of the stages of the project lifecycle, and the output of many of these actions are likely to serve as the evidence for the claims of the assurance case.
+These actions and evidential artefacts can also help you identify what claims may be relevant in your argument.
+As such, the following questions serve only to provide some additional supporting structure to this process:
+
+1. What actions have been undertaken during **(project) design** that have generated salient evidence for your goals and claims?
+2.	What actions have been undertaken during **(model) development** that have generated salient evidence for your goals and claims?
+3.	What actions have been undertaken during **(system) deployment** that have generated salient evidence for your goals and claims?
+
+The final step is to **justify** that your evidence base is sufficient to warrant the claims that are being made about the properties of your project or system. This connection is a vital step and can expose weaknesses in the overall case being developed.
+To help evaluate the evidence, the following questions can be instructive:
+
+1. Which stakeholders, identified in your stakeholder engagement plan, can support the evaluation of your evidence and overall case?
+2. Is any evidence missing from your case?
+3. Are the collection of property claims jointly sufficient to support your top-level goal?
+
+```{figure} /images/graphics/raj.png
+---
+align: center
+name: reflect-act-justify
+alt: A schematic that depicts the reflect, act and justify process.
+---
+A schematic that depicts the reflect, act and justify process.
+```
