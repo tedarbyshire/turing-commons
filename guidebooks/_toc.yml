@@ -40,8 +40,8 @@ parts:
       - file: rri/chapter4/system_deployment/model_updating
     - file: rri/chapter5/index
       sections:
-      - file: rri/chapter5/assurance
       - file: rri/chapter5/communication
+      - file: rri/chapter5/assurance
       - file: rri/chapter5/gpe
     - file: rri/conclusion/index
     - file: rri/further_resources/index
