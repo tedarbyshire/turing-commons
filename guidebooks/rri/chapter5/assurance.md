@@ -118,8 +118,8 @@ These actions and evidential artefacts can also help you identify what claims ma
 As such, the following questions serve only to provide some additional supporting structure to this process:
 
 1. What actions have been undertaken during **(project) design** that have generated salient evidence for your goals and claims?
-2.	What actions have been undertaken during **(model) development** that have generated salient evidence for your goals and claims?
-3.	What actions have been undertaken during **(system) deployment** that have generated salient evidence for your goals and claims?
+2. What actions have been undertaken during **(model) development** that have generated salient evidence for your goals and claims?
+3. What actions have been undertaken during **(system) deployment** that have generated salient evidence for your goals and claims?
 
 The final step is to **justify** that your evidence base is sufficient to warrant the claims that are being made about the properties of your project or system. This connection is a vital step and can expose weaknesses in the overall case being developed.
 To help evaluate the evidence, the following questions can be instructive:
