@@ -143,15 +143,4 @@ To help this process, deliberative prompts such as the following can be instruct
 
 However, in general stakeholder engagement—especially with domain experts—is essential.
 
-To summarise, {ref}`reflect-act-justify` presents a simple illustration of the above process.
-
-```{figure} /images/graphics/raj.png
----
-align: center
-name: reflect-act-justify
-alt: A schematic that depicts the reflect, act and justify process.
----
-A schematic that depicts the reflect, act and justify process.
-```
-
 In the next section, we will discuss some possible orienting goals and principles, to help you identify the sorts of properties that may comprise an ethical and responsible assurance case.
