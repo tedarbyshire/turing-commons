@@ -103,9 +103,9 @@ Here, unfortunately, we can only provide some illustrative examples that link a 
 
 | Goal & Attribute | Example Property Claim | Project Lifecycle Stage |
 | --- | --- | --- |
-| Sustainability / Robustness | "The model used in our system has been internally and externally validated. The external validation has been carried out across several varied environments to ensure robustness of the system." | Model Training, Testing and Validation |
-| Accountability / Accessibility | "All identified stakeholders were consulted prior to the development of our system to help critically evaluate our project plans and ensure they were intelligible." | Project Planning and Problem Formulation |
-| Fairness / Equality | "Persons affected by use of the system have avenues of recourse, ability to contest system outputs and demand human intervention." | System Use & Monitoring |
-| Explainability / Responsible Model Selection | Features were hand-selected in conjunction with domain experts to optimise for both interpretability and predictive power. | Preprocessing & Feature Engineering and Model Selection |
-| Data Quality / Timeliness & Recency | "Only data that were collected within the previous 3 months were used to ensure the training data were up-to-date." | Data Extraction or Procurement |
+| **Sustainability** (Robustness) | *The model used in our system has been internally and externally validated. The external validation has been carried out across several varied environments to ensure robustness of the system.* | Model Training, Testing and Validation |
+| **Accountability** (Accessibility) | *All identified stakeholders were consulted prior to the development of our system to help critically evaluate our project plans and ensure they were intelligible.* | Project Planning and Problem Formulation |
+| **Fairness** (Equality) | *Persons affected by use of the system have avenues of recourse, ability to contest system outputs and demand human intervention.* | System Use & Monitoring |
+| **Explainability** (Responsible Model Selection) | *Features were hand-selected in conjunction with domain experts to optimise for both interpretability and predictive power.* | Preprocessing & Feature Engineering and Model Selection |
+| **Data Quality** (Timeliness & Recency) | *Only data that were collected within the previous 3 months were used to ensure the training data were up-to-date.* | Data Extraction or Procurement |
 
