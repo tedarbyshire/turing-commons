@@ -45,6 +45,7 @@ parts:
       - file: rri/chapter5/communication
       - file: rri/chapter5/assurance
       - file: rri/chapter5/gpe
+      - file: rri/chapter5/activity10
     - file: rri/conclusion/index
     - file: rri/further_resources/index
   - caption: Public Engagement and Communication of Science
