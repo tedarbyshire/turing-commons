@@ -1,4 +1,4 @@
-# Activity 8: Designing Model Reports
+# Activity 9: Designing Model Reports
 
 In this activity you will consider what criteria or information ought to be included in a model report for the case studies that you have been working with over the course of this chapter. 
 

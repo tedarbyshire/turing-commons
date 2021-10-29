@@ -1,4 +1,4 @@
-# Activity 5: Privilege Walk
+# Activity 6: Privilege Walk
 
 Individuals may be affected by technology in different ways.
 This is uncontroversial.
