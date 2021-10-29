@@ -24,7 +24,7 @@ As you may recall, the project lifecycle image showed this final stage connected
 ```{figure} /images/graphics/project-lifecycle.png
 ---
 align: center
-name: project-lifecycle
+name: project-lifecycle-2
 alt: The Project Lifecycle. 
 ---
 The Project Lifecycle. 
