@@ -1,4 +1,4 @@
-# Activity 1: Exploring Case Studies
+# Activity 1: Exploring Historical Case Studies
 
 In one respect, our first activity is a simple one.
 
@@ -17,7 +17,7 @@ This is to be expected, and you should also pay careful attention to the reasons
 
 <!---
 
-### Activity 1: Exploring Case Studies
+### Activity 1: Exploring Historical Case Studies
 
 In this activity you will answer several questions related to the three case studies and either discuss in a group or reflect on them on your own.
 
