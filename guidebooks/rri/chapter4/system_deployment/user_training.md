@@ -5,3 +5,5 @@ Although the performance of the model is evaluated in earlier stages, the model'
 <!-- - Reproducible and replicable science
 - Explainable systems
 - Returning to bias: algorithmic aversion -->
+
+Training users to operate the AI system may include: a) conveying basic knowledge about the nature of machine learning, b) explaining the limitations of the system, c) educating users about the risks of AI-related biases, such as decision-automation bias or automation-distrust bias, and d) encouraging users to view the benefits and risks of deploying these systems in terms of their role in helping humans to come to judgements, rather than replacing that judgement.
