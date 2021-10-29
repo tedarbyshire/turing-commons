@@ -30,7 +30,7 @@ They are rooted in and interconnected with wide-ranging and multi-disciplinary m
 As such, the SAFE-D principles represent significant normative goals and valuable starting points for a process of reflection, action and justification.
 While it is not possible to show how they can be operationalised in every possible data science or AI project, it is possible to expand upon the goals by discussing some of their core attributes.
 
-### Sustainability
+## Sustainability
 
 | Core Attribute | Description |
 | --- | --- |
@@ -40,7 +40,7 @@ While it is not possible to show how they can be operationalised in every possib
 | Reliability | The objective of reliability is that an AI system behaves exactly as its designers intended and anticipated. A reliable system adheres to the specifications it was programmed to carry out. Reliability is therefore a measure of consistency and can establish confidence in the safety of a system based upon the dependability with which it conforms to its intended functionality. |
 | Accuracy and Performance | The accuracy of a model is the proportion of examples for which it generates a correct output. This performance measure is also sometimes characterised conversely as an error rate or the fraction of cases for which the model produces an incorrect output. Specifying a reasonable performance level for the system may also require refining or exchanging the measure of accuracy. For instance, if certain errors are more significant or costly than others, a metric for total cost can be integrated into the model so that the cost of one class of errors can be weighed against that of another. |
 
-### Accountability
+## Accountability
 
 | Core Attribute | Description |
 | --- | --- |
@@ -51,7 +51,7 @@ While it is not possible to show how they can be operationalised in every possib
 | Accessibility | Accessibility involves ensuring that information about the processes that took place to design, develop, and deploy an AI system are easily accessible by individuals. This not only refers to suitable means of explanation (clear, understandable, and accessible language) but also the mediums for delivery. |
 | Reproducibility | Related to and dependant on the above four properties, reproducibility refers to the ability for others to reproduce the steps you have taken throughout your project to achieve the desired outcomes and where necessary to replicate the same outcomes by following the same procedure. |
 
-### Fairness
+## Fairness
 
 | Core Attribute | Description |
 | --- | --- |
@@ -60,7 +60,7 @@ While it is not possible to show how they can be operationalised in every possib
 | Non-Discrimination| A system or model should not create or contribute to circumstances whereby members of protected groups are treated differently or less favourably than other groups because of their respective protected characteristic. |
 | Equality | the outcome or impact of a system should either maintain or promote a state of affairs in which every individual has equal rights and liberties, and equal access or opportunities to whatever good or service the AI system brings about. |
 
-### Explainability
+## Explainability
 
 | Core Attribute | Description |
 | --- | --- |
@@ -69,7 +69,7 @@ While it is not possible to show how they can be operationalised in every possib
 | Accessible Rationale Explanation | The reasons that led to a decision—especially one that is automated—delivered in an accessible and non-technical way. |
 | Implementation and User Training | Training users to operate the AI system may include: a) conveying basic knowledge about the nature of machine learning, b) explaining the limitations of the system, c) educating users about the risks of AI-related biases, such as decision-automation bias or automation-distrust bias, and d) encouraging users to view the benefits and risks of deploying these systems in terms of their role in helping humans to come to judgements, rather than replacing that judgement. |
 
-### Data Quality, Integrity, Protection and Privacy
+## Data Quality, Integrity, Protection and Privacy
 
 | Core Attribute | Description |
 | --- | --- |
