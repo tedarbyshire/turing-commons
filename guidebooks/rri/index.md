@@ -42,3 +42,16 @@ This guidebook has the following learning objectives:
 6. [Conclusion](conclusion/index.md)
 7. [Further Resources](further_resources/index.md)
 8. [Bibliography](../bibliography.md)
+
+### List of Activities
+
+1. [Exploring Historical Case Studies](chapter2/activity2-1.md)
+2. [Ethical Reflection and Deliberation](chapter2/activity2-2.md)
+3. [Specifying Principles](chapter3/activity3-1.md)
+4. [Contributing to Collaborative Projects](chapter3/activity3-2.md)
+5. [Bias Cards](chapter3/activity3-3.md)
+6. [Privilege Walk](chapter4/project_design/activity4-1.md)
+7. [Developing Case Studies](chapter4/project_design/activity4-2.md)
+8. [Identifying Missing Data](chapter4/project_design/activity4-3.md)
+9. [Designing Model Reports](chapter4/model_development/activity4-4.md)
+10. [Building an Assurance Case](chapter5/activity5-1.md)
