@@ -9,32 +9,34 @@ parts:
       sections:
       - file: rri/chapter2/responsibility
       - file: rri/chapter2/history
-      - file: rri/chapter2/activity1
+      - file: rri/chapter2/activity2-1
       - file: rri/chapter2/sts
       - file: rri/chapter2/timeline
-      - file: rri/chapter2/activity2
+      - file: rri/chapter2/activity2-2
     - file: rri/chapter3/index
       sections:
       - file: rri/chapter3/responsible_ds
+      - file: rri/chapter3/activity3-1
       - file: rri/chapter3/project_lifecycle
       - file: rri/chapter3/roles_responsibility
-      - file: rri/chapter3/activity1
+      - file: rri/chapter3/activity3-2
       - file: rri/chapter3/understanding_bias
-      - file: rri/chapter3/activity2
+      - file: rri/chapter3/activity3-3
     - file: rri/chapter4/index
       sections:
       - file: rri/chapter4/case_studies
       - file: rri/chapter4/project_design/planning
-      - file: rri/chapter4/project_design/activity5
+      - file: rri/chapter4/project_design/activity4-1
       - file: rri/chapter4/project_design/problem
-      - file: rri/chapter4/project_design/activity6
       - file: rri/chapter4/project_design/data_extraction
+      - file: rri/chapter4/project_design/activity4-2
       - file: rri/chapter4/project_design/data_analysis
+      - file: rri/chapter4/project_design/activity4-3
       - file: rri/chapter4/model_development/preprocessing
       - file: rri/chapter4/model_development/model_selection
       - file: rri/chapter4/model_development/model_testing
       - file: rri/chapter4/model_development/model_reporting
-      - file: rri/chapter4/model_development/activity8
+      - file: rri/chapter4/model_development/activity4-4
       - file: rri/chapter4/system_deployment/model_productionalisation
       - file: rri/chapter4/system_deployment/user_training
       - file: rri/chapter4/system_deployment/system_use
@@ -45,7 +47,7 @@ parts:
       - file: rri/chapter5/communication
       - file: rri/chapter5/assurance
       - file: rri/chapter5/gpe
-      - file: rri/chapter5/activity10
+      - file: rri/chapter5/activity5-1
     - file: rri/conclusion/index
     - file: rri/further_resources/index
   - caption: Public Engagement and Communication of Science
