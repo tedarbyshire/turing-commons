@@ -109,3 +109,4 @@ Here, unfortunately, we can only provide some illustrative examples that link a 
 | **Explainability** (Responsible Model Selection) | *Features were hand-selected in conjunction with domain experts to optimise for both interpretability and predictive power.* | Preprocessing & Feature Engineering and Model Selection |
 | **Data Quality** (Timeliness & Recency) | *Only data that were collected within the previous 3 months were used to ensure the training data were up-to-date.* | Data Extraction or Procurement |
 
+In the next activity, however, we will consider what properties and evidence ought to be included for a hypothetical assurance case for the projects we have been considering.
