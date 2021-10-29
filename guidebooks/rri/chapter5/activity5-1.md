@@ -5,7 +5,7 @@ In this final activity, you will build a hypothetical assurance case for this pr
 As with the previous activities, this will involve some speculation.
 It's important to remember that the aim here is to familiarise yourself with the reflective and deliberative procedure, rather than worrying too much about the specific details.
 
-```{admonition}Instructions
+```{admonition} Instructions
 For this activity we will be using Mural to construct an assurance case. Individual links will be provided to each of the groups.
 ```
 
