@@ -4,7 +4,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>What is Argument-Based Assurance? &#8212; Turing Commons</title>
     
   <link href="../../_static/css/theme.css" rel="stylesheet" />
@@ -23,7 +24,7 @@
 
     
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-book-theme.e8e5499552300ddf5d7adccae7cc3b70.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
@@ -42,7 +43,7 @@
     <script src="../../_static/copybutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script>
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
@@ -51,8 +52,8 @@
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Assurance and Responsible Communication" href="communication.html" />
-    <link rel="prev" title="5 Responsible Communication" href="index.html" />
+    <link rel="next" title="Goals, Properties, and Evidence" href="gpe.html" />
+    <link rel="prev" title="Responsible Communication" href="communication.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -72,14 +73,13 @@
     <a class="navbar-brand text-wrap" href="../../index.html">
       
       
-      
       <h1 class="site-logo" id="site-title">Turing Commons</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
     <div class="bd-toc-item active">
         <ul class="nav bd-sidenav">
  <li class="toctree-l1">
@@ -209,8 +209,18 @@
     </a>
    </li>
    <li class="toctree-l2">
+    <a class="reference internal" href="../chapter4/project_design/activity5.html">
+     Activity 5: Privilege Walk
+    </a>
+   </li>
+   <li class="toctree-l2">
     <a class="reference internal" href="../chapter4/project_design/problem.html">
      Problem Formulation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../chapter4/project_design/activity6.html">
+     Activity 6: Developing Case Studies
     </a>
    </li>
    <li class="toctree-l2">
@@ -230,17 +240,22 @@
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../chapter4/model_development/model_selection.html">
-     Model Selection and Training
+     Model Selection
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../chapter4/model_development/model_testing.html">
-     Model Testing and Validation
+     Model Training, Testing and Validation
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../chapter4/model_development/model_reporting.html">
      Model Reporting
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../chapter4/model_development/activity8.html">
+     Activity 8: Designing Model Reports
     </a>
    </li>
    <li class="toctree-l2">
@@ -255,12 +270,17 @@
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../chapter4/system_deployment/system_use.html">
-     System Use, Monitoring, and Updating
+     System Use and Monitoring
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../chapter4/system_deployment/model_updating.html">
      Model Updating or Deprovisioning
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../chapter4/summary.html">
+     Summary of Chapter
     </a>
    </li>
   </ul>
@@ -275,14 +295,14 @@
    </i>
   </label>
   <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="communication.html">
+     Responsible Communication
+    </a>
+   </li>
    <li class="toctree-l2 current active">
     <a class="current reference internal" href="#">
      What is Argument-Based Assurance?
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="communication.html">
-     Assurance and Responsible Communication
     </a>
    </li>
    <li class="toctree-l2">
@@ -420,6 +440,26 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#assurance-cases">
+   Assurance Cases
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#elements-of-an-assurance-case">
+     Elements of an Assurance Case
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -428,9 +468,98 @@
         
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="what-is-argument-based-assurance">
+  <section class="tex2jax_ignore mathjax_ignore" id="what-is-argument-based-assurance">
 <h1>What is Argument-Based Assurance?<a class="headerlink" href="#what-is-argument-based-assurance" title="Permalink to this headline">¶</a></h1>
+<div class="tip admonition">
+<p class="admonition-title">Note</p>
+<p>This section is based on <span id="id1">[<a class="reference internal" href="../../bibliography.html#id13">Burr and Leslie, 2021</a>]</span>, which provides a more thorough account of the argument-based assurance methodology and how it applies to responsible research and innovation in data science and AI.</p>
 </div>
+<p>The method we will look at to facilitate responsible communication is known as <em>argument-based assurance</em>.</p>
+<blockquote>
+<div><p>Argument-based assurance is a process of using structured argumentation to provide assurance to another party (or parties) that a particular claim (or set of related claims) about a property of a system is warranted given the available evidence.</p>
+</div></blockquote>
+<p>As a structured method for communication that provides assurance, it is already widely used in safety-critical domains or industries where manufacturing and development processes are required to comply with strict regulatory standards and support industry-recognised best practices <span id="id2">[<a class="reference internal" href="../../bibliography.html#id27">Hawkins <em>et al.</em>, 2021</a>]</span>.</p>
+<p>However, ABA is useful for more than just demonstrating regulatory compliance.
+It can also</p>
+<ul class="simple">
+<li><p>assist internal <strong>reflection</strong> and <strong>deliberation</strong> by providing a systematic and structured means for evaluating how the development of systems or products can fulfil certain normative goals (e.g. safety or robustness), according to certain well-defined properties (e.g. software hazards identified) and criteria (e.g. risk reduction thresholds met)</p></li>
+<li><p>provide a deliberate means for the <strong>anticipation</strong> and <strong>pre-emption</strong> of potential risks and adverse impacts through mechanisms of end-to-end assessment and redress;</p></li>
+<li><p>facilitate <strong>transparent communication</strong> between developers and affected stakeholders;</p></li>
+<li><p>support mechanisms and processes of <strong>documentation</strong> (or, reporting) to <strong>ensure accountability</strong> (e.g. audits, compliance);</p></li>
+<li><p>and build <strong>trust and confidence</strong> by promoting the adoption of best practices (e.g. standards for warranted evidence) and by conveying the integration of these into design, development, and deployment lifecycles to impacted stakeholders.</p></li>
+</ul>
+<p>For these reasons, it is a useful foundation upon which to build a framework for responsible communication.</p>
+<section id="assurance-cases">
+<h2>Assurance Cases<a class="headerlink" href="#assurance-cases" title="Permalink to this headline">¶</a></h2>
+<p>When a barrister stands in a court room, in front of the judge, jury, and defendant, they are tasked with presenting a case.
+If they are responsible for prosecution, their role is to convince the jury, beyond all reasonable doubt, that the defendant is guilty of committing the crimes of which they stand accused.</p>
+<p>Although the format and goals may be different, the purpose of argument-based assurance is also to develop and present a case.
+The scope and content of what we can call an ‘assurance case’ is determined by the relevant details of the project in question, and what the project team need to provide assurance for.</p>
+<p>For example, if a project team needs to communicate the processes by which they have ensured the interpretability of their model, they may need to develop an interpretability case, which could look something like the following:</p>
+<figure class="align-center" id="interpretability-case">
+<img alt="A template of an assurance case that focuses on providing assurance for the interpretability of a machine learning model." src="../../_images/interpretability-case.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 14 </span><span class="caption-text">A template of an assurance case that focuses on providing assurance for the interpretability of a machine learning model. Reprinted from <span id="id3">[<a class="reference internal" href="../../bibliography.html#id64">Ward and Habli, 2020</a>]</span></span><a class="headerlink" href="#interpretability-case" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>Here, the assurance case is represented in a structured and graphical format.
+The top-level claim is a goal that is supported and justified by the lower level claims that further specify what it means to say “The {ML model} is sufficiently {interpretable} in the intended {context}.
+At the lowest level is the evidence that supports and establishes the relevant basis for making the specific claims.
+Overall, the case is a <em>structured argument</em> that is oriented towards and attempts to justify the top-level goal.</p>
+<p>This is achieved by first specifying what the goal claim means.
+For instance, what are the parameters of <em>sufficiently interpretable</em>?
+Or, what is the <em>intended context</em>?
+Then, it validates these additional claims with reference to supporting <em>evidence</em>.</p>
+<section id="elements-of-an-assurance-case">
+<h3>Elements of an Assurance Case<a class="headerlink" href="#elements-of-an-assurance-case" title="Permalink to this headline">¶</a></h3>
+<p>The above example helps us identify a minimal set of elements that need to be established in an assurance case:</p>
+<ol class="simple">
+<li><p>A top-level normative goal</p></li>
+<li><p>Claims about the project or system</p></li>
+<li><p>Supporting evidence</p></li>
+</ol>
+<p>The top-level goal orients and delineates the case by setting a direction and helping to establish the scope of what claims need to be included.
+For instance, a particular claim about the privacy or security of a project’s data management policy many be important but unnecessary to include in an assurance case that justifies why a model does not cause any discriminatory harm.</p>
+<p>In addition to any clarificatory claims that pertain to the goal (e.g., what type of model is being assured; the context of use for the system), the lower-level claims should further specify the goal by a) addressing the specific activities that have been carried out during the project, or b) identifying properties of the system that help ensure the goal claim is legitimate.
+We can, therefore, separate the type of lower-level claim being established as either a <em>project</em> or <em>system</em> property claim.</p>
+<p>Unless the claim is self-evidential, there will need to be a final element that points to some supporting evidence.
+This evidence establishes the foundation upon which the justifiability of the overall argument depends.</p>
+<div class="sphinx-bs container pb-4 docutils">
+<div class="row docutils">
+<div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
+<div class="card w-100 shadow docutils">
+<div class="card-header docutils">
+<p class="card-text">Figure A</p>
+</div>
+<div class="card-body docutils">
+<p class="card-text"><img alt="" src="../../_images/gce.png" /></p>
+</div>
+<div class="card-footer docutils">
+<p class="card-text">Panel footer 1</p>
+</div>
+</div>
+</div>
+<div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
+<div class="card w-100 shadow docutils">
+<div class="card-header docutils">
+<p class="card-text">Figure B</p>
+</div>
+<div class="card-body docutils">
+<p class="card-text"><img alt="" src="../../_images/gce-example.png" /></p>
+</div>
+<div class="card-footer docutils">
+<p class="card-text">An example of a goal, claims, and evidence using the minimal set of elements identified previously.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p>As you can probably imagine, all of these elements help play a vital role in the effective communication of an assurance case.</p>
+<p>[…]</p>
+<p>Sticking with the interpretability example, we can note that what is interpretable to an expert in statistical learning theory may be completely uninterpretable for a policy-maker tasked with evaluating whether a particular model is suitable to deploy in their own project.</p>
+</section>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -455,36 +584,16 @@
               </div>
               
         
+        <div class='prev-next-bottom'>
             
+    <a class='left-prev' id="prev-link" href="communication.html" title="previous page">Responsible Communication</a>
+    <a class='right-next' id="next-link" href="gpe.html" title="next page">Goals, Properties, and Evidence</a>
 
-
-
-<div class='prev-next-bottom'>
-    
-    <div id="prev">
-        <a class="left-prev" href="index.html" title="previous page">
-            <i class="prevnext-label fas fa-angle-left"></i>
-            <div class="prevnext-info">
-                <p class="prevnext-label">previous</p>
-                <p class="prevnext-title">5 Responsible Communication</p>
-            </div>
-        </a>
-    </div>
-     <div id="next">
-        <a class="right-next" href="communication.html" title="next page">
-            <div class="prevnext-info">
-                <p class="prevnext-label">next</p>
-                <p class="prevnext-title">Assurance and Responsible Communication</p>
-            </div>
-            <i class="prevnext-label fas fa-angle-right"></i>
-        </a>
-     </div>
-
-</div>
+        </div>
         
         </div>
     </div>
-    <footer class="footer">
+    <footer class="footer mt-5 mt-md-0">
     <div class="container">
       <p>
         

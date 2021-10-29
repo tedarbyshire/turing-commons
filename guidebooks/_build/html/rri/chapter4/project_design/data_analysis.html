@@ -4,7 +4,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Data Analysis &#8212; Turing Commons</title>
     
   <link href="../../../_static/css/theme.css" rel="stylesheet" />
@@ -23,7 +24,7 @@
 
     
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-book-theme.e8e5499552300ddf5d7adccae7cc3b70.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.css" />
@@ -42,7 +43,7 @@
     <script src="../../../_static/copybutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script>
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
@@ -72,14 +73,13 @@
     <a class="navbar-brand text-wrap" href="../../../index.html">
       
       
-      
       <h1 class="site-logo" id="site-title">Turing Commons</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../../../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
     <div class="bd-toc-item active">
         <ul class="nav bd-sidenav">
  <li class="toctree-l1">
@@ -209,8 +209,18 @@
     </a>
    </li>
    <li class="toctree-l2">
+    <a class="reference internal" href="activity5.html">
+     Activity 5: Privilege Walk
+    </a>
+   </li>
+   <li class="toctree-l2">
     <a class="reference internal" href="problem.html">
      Problem Formulation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="activity6.html">
+     Activity 6: Developing Case Studies
     </a>
    </li>
    <li class="toctree-l2">
@@ -230,17 +240,22 @@
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../model_development/model_selection.html">
-     Model Selection and Training
+     Model Selection
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../model_development/model_testing.html">
-     Model Testing and Validation
+     Model Training, Testing and Validation
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../model_development/model_reporting.html">
      Model Reporting
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../model_development/activity8.html">
+     Activity 8: Designing Model Reports
     </a>
    </li>
    <li class="toctree-l2">
@@ -255,12 +270,17 @@
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../system_deployment/system_use.html">
-     System Use, Monitoring, and Updating
+     System Use and Monitoring
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../system_deployment/model_updating.html">
      Model Updating or Deprovisioning
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../summary.html">
+     Summary of Chapter
     </a>
    </li>
   </ul>
@@ -276,13 +296,13 @@
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="../../chapter5/assurance.html">
-     What is Argument-Based Assurance?
+    <a class="reference internal" href="../../chapter5/communication.html">
+     Responsible Communication
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../../chapter5/communication.html">
-     Assurance and Responsible Communication
+    <a class="reference internal" href="../../chapter5/assurance.html">
+     What is Argument-Based Assurance?
     </a>
    </li>
    <li class="toctree-l2">
@@ -440,7 +460,7 @@
             <div class="tocsection onthispage pt-5 pb-3">
                 <i class="fas fa-list"></i> Contents
             </div>
-            <nav id="bd-toc-nav" aria-label="Page">
+            <nav id="bd-toc-nav">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#what-is-exploratory-data-analysis">
@@ -494,7 +514,17 @@
      Visualising the Data
     </a>
    </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#dependency-on-other-factors">
+     Dependency on other factors
+    </a>
+   </li>
   </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#missing-data">
+   Missing data
+  </a>
  </li>
 </ul>
 
@@ -507,7 +537,7 @@
         
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="data-analysis">
+  <section class="tex2jax_ignore mathjax_ignore" id="data-analysis">
 <h1>Data Analysis<a class="headerlink" href="#data-analysis" title="Permalink to this headline">¶</a></h1>
 <p>This module will introduce and examine the stage of ‘exploratory data analysis’.</p>
 <p>Rather than focusing on the statistical or technical techniques employed in modern data science though, we will approach this stage with a bias-aware perspective.
@@ -516,7 +546,7 @@ You do not need to be familiar with either Python or Jupyter Notebooks if you ju
 But the code is presented for those who wish to get more “hands-on”.</p>
 <p>You can also edit this code in an interactive Jupyter notebook:
 <a class="reference external" href="https://mybinder.org/v2/gh/chrisdburr/turing-commons/master?labpath=https%3A%2F%2Fgithub.com%2Fchrisdburr%2Fturing-commons%2Fblob%2Fmaster%2Fguidebooks%2Frri%2Fchapter4%2Fproject_design%2Fdata_analysis.ipynb"><img alt="Binder" src="https://mybinder.org/badge_logo.svg" /></a></p>
-<div class="section" id="what-is-exploratory-data-analysis">
+<section id="what-is-exploratory-data-analysis">
 <h2>What is Exploratory Data Analysis?<a class="headerlink" href="#what-is-exploratory-data-analysis" title="Permalink to this headline">¶</a></h2>
 <p>Exploratory data analysis is a crucial stage in the project lifecycle. It is where a number of techniques are employed for the purpose of gaining a better understanding of the dataset and any relationships that exist between the relevant variables. Among other things, this could mean,</p>
 <ul class="simple">
@@ -527,13 +557,13 @@ But the code is presented for those who wish to get more “hands-on”.</p>
 <li><p>Uncovering possible limitations of the dataset (e.g. class imbalances) that could affect the project</p></li>
 </ul>
 <p>We will cover each of these sub-stages of EDA briefly, but to reiterate, our primary focus in this section is on the risks and challenges that stem from a variety of biases that can cause cascading issues that affect downstream tasks (e.g. model training).</p>
-</div>
-<div class="section" id="covid-19-hospital-data">
+</section>
+<section id="covid-19-hospital-data">
 <h2>COVID-19 Hospital Data<a class="headerlink" href="#covid-19-hospital-data" title="Permalink to this headline">¶</a></h2>
 <p>For the purpose of this section we have created a synthetic dataset that contains X records for fictional patients who were triaged (and possibly admitted) to a single hospital for treatment of COVID-19.</p>
 <p>The dataset has been designed with this pedagogical task in mind.
 Therefore, although we relied upon plausible assumptions when developing our generative model, the data are not intended to be fully representative of actual patients. Our methodology for generating this dataset can be <span class="xref myst">found here</span>.</p>
-<div class="section" id="importing-data">
+<section id="importing-data">
 <h3>Importing Data<a class="headerlink" href="#importing-data" title="Permalink to this headline">¶</a></h3>
 <p>First of all, we need to import our data and the software packages that we will use to describe, analyse, and visualise the data.
 The following lines of code achieve this by importing a series of software packages and then loading a csv file <code class="docutils literal notranslate"><span class="pre">covid_patients_syn_data.csv</span></code> into a DataFrame <code class="docutils literal notranslate"><span class="pre">df</span></code> using the <code class="docutils literal notranslate"><span class="pre">pd.read_csv</span></code> command from the Pandas package.</p>
@@ -554,26 +584,96 @@ The following lines of code achieve this by importing a series of software packa
 </div>
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
-<span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">folders</span><span class="o">/</span><span class="n">_l</span><span class="o">/</span><span class="n">l9rdg7gs4kx5gglxn_1y0wn00000gq</span><span class="o">/</span><span class="n">T</span><span class="o">/</span><span class="n">ipykernel_60708</span><span class="o">/</span><span class="mf">2972460523.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># The following lines import necessary packages and renames them</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span> 
-<span class="ne">----&gt; </span><span class="mi">3</span> <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="ne">KeyboardInterrupt</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
+<span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">folders</span><span class="o">/</span><span class="n">_l</span><span class="o">/</span><span class="n">l9rdg7gs4kx5gglxn_1y0wn00000gq</span><span class="o">/</span><span class="n">T</span><span class="o">/</span><span class="n">ipykernel_6476</span><span class="o">/</span><span class="mf">2972460523.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
 <span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="kn">import</span> <span class="nn">matplotlib.pylab</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="ne">----&gt; </span><span class="mi">6</span> <span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="g g-Whitespace">      </span><span class="mi">7</span> 
+<span class="g g-Whitespace">      </span><span class="mi">8</span> <span class="c1"># This line imports data from a csv file</span>
 
-<span class="ne">ModuleNotFoundError</span>: No module named &#39;numpy&#39;
+<span class="o">~/</span><span class="n">opt</span><span class="o">/</span><span class="n">anaconda3</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="mf">.8</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="o">/</span><span class="n">seaborn</span><span class="o">/</span><span class="fm">__init__</span><span class="o">.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># Import seaborn objects</span>
+<span class="ne">----&gt; </span><span class="mi">2</span> <span class="kn">from</span> <span class="nn">.rcmod</span> <span class="kn">import</span> <span class="o">*</span>  <span class="c1"># noqa: F401,F403</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="kn">from</span> <span class="nn">.utils</span> <span class="kn">import</span> <span class="o">*</span>  <span class="c1"># noqa: F401,F403</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="kn">from</span> <span class="nn">.palettes</span> <span class="kn">import</span> <span class="o">*</span>  <span class="c1"># noqa: F401,F403</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="kn">from</span> <span class="nn">.relational</span> <span class="kn">import</span> <span class="o">*</span>  <span class="c1"># noqa: F401,F403</span>
+
+<span class="o">~/</span><span class="n">opt</span><span class="o">/</span><span class="n">anaconda3</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="mf">.8</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="o">/</span><span class="n">seaborn</span><span class="o">/</span><span class="n">rcmod</span><span class="o">.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="kn">import</span> <span class="nn">matplotlib</span> <span class="k">as</span> <span class="nn">mpl</span>
+<span class="g g-Whitespace">      </span><span class="mi">6</span> <span class="kn">from</span> <span class="nn">cycler</span> <span class="kn">import</span> <span class="n">cycler</span>
+<span class="ne">----&gt; </span><span class="mi">7</span> <span class="kn">from</span> <span class="nn">.</span> <span class="kn">import</span> <span class="n">palettes</span>
+<span class="g g-Whitespace">      </span><span class="mi">8</span> 
+<span class="g g-Whitespace">      </span><span class="mi">9</span> 
+
+<span class="o">~/</span><span class="n">opt</span><span class="o">/</span><span class="n">anaconda3</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="mf">.8</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="o">/</span><span class="n">seaborn</span><span class="o">/</span><span class="n">palettes</span><span class="o">.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">7</span> <span class="kn">from</span> <span class="nn">.external</span> <span class="kn">import</span> <span class="n">husl</span>
+<span class="g g-Whitespace">      </span><span class="mi">8</span> 
+<span class="ne">----&gt; </span><span class="mi">9</span> <span class="kn">from</span> <span class="nn">.utils</span> <span class="kn">import</span> <span class="n">desaturate</span><span class="p">,</span> <span class="n">get_color_cycle</span>
+<span class="g g-Whitespace">     </span><span class="mi">10</span> <span class="kn">from</span> <span class="nn">.colors</span> <span class="kn">import</span> <span class="n">xkcd_rgb</span><span class="p">,</span> <span class="n">crayons</span>
+<span class="g g-Whitespace">     </span><span class="mi">11</span> 
+
+<span class="o">~/</span><span class="n">opt</span><span class="o">/</span><span class="n">anaconda3</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="mf">.8</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="o">/</span><span class="n">seaborn</span><span class="o">/</span><span class="n">utils</span><span class="o">.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">8</span> 
+<span class="g g-Whitespace">      </span><span class="mi">9</span> <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="ne">---&gt; </span><span class="mi">10</span> <span class="kn">from</span> <span class="nn">scipy</span> <span class="kn">import</span> <span class="n">stats</span>
+<span class="g g-Whitespace">     </span><span class="mi">11</span> <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="g g-Whitespace">     </span><span class="mi">12</span> <span class="kn">import</span> <span class="nn">matplotlib</span> <span class="k">as</span> <span class="nn">mpl</span>
+
+<span class="o">~/</span><span class="n">opt</span><span class="o">/</span><span class="n">anaconda3</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="mf">.8</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="o">/</span><span class="n">scipy</span><span class="o">/</span><span class="n">stats</span><span class="o">/</span><span class="fm">__init__</span><span class="o">.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">    </span><span class="mi">439</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="g g-Whitespace">    </span><span class="mi">440</span><span class="s2"> </span>
+<span class="ne">--&gt; </span><span class="mi">441</span><span class="s2"> from .stats import *</span>
+<span class="g g-Whitespace">    </span><span class="mi">442</span><span class="s2"> from .distributions import *</span>
+<span class="g g-Whitespace">    </span><span class="mi">443</span><span class="s2"> from .morestats import *</span>
+
+<span class="s2">~/opt/anaconda3/lib/python3.8/site-packages/scipy/stats/stats.py in &lt;module&gt;</span>
+<span class="g g-Whitespace">     </span><span class="mi">41</span><span class="s2"> import scipy.special as special</span>
+<span class="g g-Whitespace">     </span><span class="mi">42</span><span class="s2"> from scipy import linalg</span>
+<span class="ne">---&gt; </span><span class="mi">43</span><span class="s2"> from . import distributions</span>
+<span class="g g-Whitespace">     </span><span class="mi">44</span><span class="s2"> from . import mstats_basic</span>
+<span class="g g-Whitespace">     </span><span class="mi">45</span><span class="s2"> from ._stats_mstats_common import (_find_repeats, linregress, theilslopes,</span>
+
+<span class="s2">~/opt/anaconda3/lib/python3.8/site-packages/scipy/stats/distributions.py in &lt;module&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">6</span><span class="s2"> #       instead of `git blame -Lxxx,+x`.</span>
+<span class="g g-Whitespace">      </span><span class="mi">7</span><span class="s2"> #</span>
+<span class="ne">----&gt; </span><span class="mi">8</span><span class="s2"> from ._distn_infrastructure import (rv_discrete, rv_continuous, rv_frozen)</span>
+<span class="g g-Whitespace">      </span><span class="mi">9</span><span class="s2"> </span>
+<span class="g g-Whitespace">     </span><span class="mi">10</span><span class="s2"> from . import _continuous_distns</span>
+
+<span class="s2">~/opt/anaconda3/lib/python3.8/site-packages/scipy/stats/_distn_infrastructure.py in &lt;module&gt;</span>
+<span class="g g-Whitespace">     </span><span class="mi">25</span><span class="s2"> </span>
+<span class="g g-Whitespace">     </span><span class="mi">26</span><span class="s2"> # for functions of continuous distributions (e.g. moments, entropy, cdf)</span>
+<span class="ne">---&gt; </span><span class="mi">27</span><span class="s2"> from scipy import integrate</span>
+<span class="g g-Whitespace">     </span><span class="mi">28</span><span class="s2"> </span>
+<span class="g g-Whitespace">     </span><span class="mi">29</span><span class="s2"> # to approximate the pdf of a continuous distribution given its cdf</span>
+
+<span class="s2">~/opt/anaconda3/lib/python3.8/site-packages/scipy/integrate/__init__.py in &lt;module&gt;</span>
+<span class="g g-Whitespace">     </span><span class="mi">90</span><span class="s2"> from ._quadrature import *</span>
+<span class="g g-Whitespace">     </span><span class="mi">91</span><span class="s2"> from .odepack import *</span>
+<span class="ne">---&gt; </span><span class="mi">92</span><span class="s2"> from .quadpack import *</span>
+<span class="g g-Whitespace">     </span><span class="mi">93</span><span class="s2"> from ._ode import *</span>
+<span class="g g-Whitespace">     </span><span class="mi">94</span><span class="s2"> from ._bvp import solve_bvp</span>
+
+<span class="s2">~/opt/anaconda3/lib/python3.8/site-packages/scipy/integrate/quadpack.py in &lt;module&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span><span class="s2"> from functools import partial</span>
+<span class="g g-Whitespace">      </span><span class="mi">6</span><span class="s2"> </span>
+<span class="ne">----&gt; </span><span class="mi">7</span><span class="s2"> from . import _quadpack</span>
+<span class="g g-Whitespace">      </span><span class="mi">8</span><span class="s2"> import numpy</span>
+<span class="g g-Whitespace">      </span><span class="mi">9</span><span class="s2"> from numpy import Inf</span>
+
+<span class="ne">KeyboardInterrupt</span>: 
 </pre></div>
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="describing-the-data">
+</section>
+<section id="describing-the-data">
 <h3>Describing the Data<a class="headerlink" href="#describing-the-data" title="Permalink to this headline">¶</a></h3>
 <p>Once we have imported our data, we will then want to identify what variables there are, what their typical values are, and also assess a variety of other summary statistics.
 We can use several commands to help us describe our dataset and get a quick overview.</p>
 <p>First, we can use the <code class="docutils literal notranslate"><span class="pre">shape</span></code> attribute to list the number of rows and columns in our dataset.
-The output (30000, 11) means that there are 3000 rows and 12 columns.</p>
+The output (27308, 12) means that there are 27308 rows and 12 columns.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">shape</span>
@@ -617,10 +717,10 @@ The code after the brackets (<code class="docutils literal notranslate"><span cl
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="cleaning-the-data">
+</section>
+<section id="cleaning-the-data">
 <h3>Cleaning the Data<a class="headerlink" href="#cleaning-the-data" title="Permalink to this headline">¶</a></h3>
-<div class="section" id="removing-unnecessary-variables">
+<section id="removing-unnecessary-variables">
 <h4>Removing Unnecessary Variables<a class="headerlink" href="#removing-unnecessary-variables" title="Permalink to this headline">¶</a></h4>
 <p>Our dataset has been created for this specific task, so there isn’t much cleaning that is required.
 Datasets that are downloaded from public repositories may not be so well structured, and will likely require tidying up.
@@ -634,44 +734,188 @@ These can be easily removed with the <code class="docutils literal notranslate">
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="removing-outliers">
+</section>
+<section id="removing-outliers">
 <h4>Removing Outliers<a class="headerlink" href="#removing-outliers" title="Permalink to this headline">¶</a></h4>
-<p>It is also possible that there may be some outliers that are probably the result of human mistakes in recording, such as the <code class="docutils literal notranslate"><span class="pre">X</span></code> value in the <code class="docutils literal notranslate"><span class="pre">Y</span></code> column.
+<p>It is also possible that there may be some outliers that are probably the result of human mistakes in recording.  For example, someone may enter a height in feet and inches, such that we end up with a value of greater than 5 in that column.
 It’s probably a safe assumption to assume that this is a mistake!</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_cleaned</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="s2">&quot;height&quot;</span><span class="p">)</span> 
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_cleaned</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="s2">&quot;height&quot;</span><span class="p">,</span> <span class="n">log</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> 
 </pre></div>
 </div>
 </div>
 </div>
+<p>We can see there is one entry with a height of between 5.5 and 6m!  We can manually remove this row, and any others with a height greater than 2.5m:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_cleaned</span> <span class="o">=</span> <span class="n">df_cleaned</span><span class="p">[</span><span class="n">df_cleaned</span><span class="o">.</span><span class="n">height</span><span class="o">&lt;</span> <span class="mf">2.5</span><span class="p">]</span>
+<span class="n">df_cleaned</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="s2">&quot;height&quot;</span><span class="p">)</span>
+</pre></div>
 </div>
-<div class="section" id="handling-missing-data">
+</div>
+</div>
+</section>
+<section id="handling-missing-data">
 <h4>Handling Missing Data<a class="headerlink" href="#handling-missing-data" title="Permalink to this headline">¶</a></h4>
-<p>However, one of the biggest challenges with cleaning datasets is choosing how to handle missing data.
-As you can see from the following lines of code, there are <code class="docutils literal notranslate"><span class="pre">X</span></code> columns with missing data, which are represented in our datasets using the <code class="docutils literal notranslate"><span class="pre">null</span></code> value.</p>
+<p>One of the biggest challenges with cleaning datasets is choosing how to handle missing data.
+As you can see from the following line of code, there are 1326 rows with missing data in the “sex” column, which are represented in our datasets using the <code class="docutils literal notranslate"><span class="pre">NaN</span></code> (not-a-number) value.</p>
 <!-- This section needs to have something about how simply removing rows with null values or trying to impute the likelihood of a M or F based on the other variables may exacerbate representation bias. -->
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">df_cleaned</span><span class="p">[</span><span class="n">df_cleaned</span><span class="o">.</span><span class="n">sex</span><span class="o">.</span><span class="n">isnull</span><span class="p">()])</span>
+</pre></div>
 </div>
 </div>
-<div class="section" id="analysing-the-data">
+</div>
+<p>The simplest thing that one can do is to remove rows containing missing data.  However, this could introduce bias.</p>
+<p>The best case scenario is that the missingness occurs at random - in this case removing the rows would reduce our statistical precision (because we would have a smaller dataset), but would not bias the result.</p>
+<p>However, if the reason why the data is missing is correlated with some other variable, then simply removing them will mean that the remaining dataset is skewed in some way.   The best thing to do in this case could be to <em>impute</em> the missing values, based on other variables in the same row.  However, this is often a complex process, and needs to be done with care!</p>
+</section>
+</section>
+<section id="analysing-the-data">
 <h3>Analysing the Data<a class="headerlink" href="#analysing-the-data" title="Permalink to this headline">¶</a></h3>
-<!-- This section needs to add some useful illustrations of how Python can help you identify and understand correlations between variables in your dataset, and help document your exploratory data analysis method by using Jupyter Notebooks. --><div class="cell docutils container">
+<!-- This section needs to add some useful illustrations of how Python can help you identify and understand correlations between variables in your dataset, and help document your exploratory data analysis method by using Jupyter Notebooks. --><p>For convenience, we may want to calculate some new variables based on those already in the dataset, that we think may be relevant.  For example, there have been reports that Body Mass Index (BMI) is a risk factor for Covid.  We can calculate this easily given the height and weight:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_cleaned</span><span class="p">[</span><span class="s2">&quot;BMI&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_cleaned</span><span class="p">[</span><span class="s2">&quot;weight&quot;</span><span class="p">]</span><span class="o">/</span><span class="nb">pow</span><span class="p">(</span><span class="n">df_cleaned</span><span class="p">[</span><span class="s2">&quot;height&quot;</span><span class="p">],</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">df_cleaned</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>A quick way to get an idea of what variables are correlated with one another is to plot a “heatmap”.  Higher numbers in this plot represent stronger correlations (note the diagonal line of red squares all containing “1” - every variable is 100% correlated with itself!)</p>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># The following lines return a correlation matrix, for the cleaned dataframe, using the seaborn package</span>
-<span class="n">corr</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">corr</span><span class="p">()</span><span class="c1"># plot the heatmap</span>
+<span class="n">corr</span> <span class="o">=</span> <span class="n">df_cleaned</span><span class="p">[[</span><span class="s2">&quot;age&quot;</span><span class="p">,</span><span class="s2">&quot;BMI&quot;</span><span class="p">,</span><span class="s2">&quot;admitted&quot;</span><span class="p">,</span><span class="s2">&quot;intrusive_ventilation&quot;</span><span class="p">,</span><span class="s2">&quot;died&quot;</span><span class="p">]]</span><span class="o">.</span><span class="n">corr</span><span class="p">()</span><span class="c1"># plot the heatmap</span>
 
-<span class="n">sns</span><span class="o">.</span><span class="n">heatmap</span><span class="p">(</span><span class="n">corr</span><span class="p">,</span> <span class="n">xticklabels</span><span class="o">=</span><span class="n">corr</span><span class="o">.</span><span class="n">columns</span><span class="p">,</span> <span class="n">yticklabels</span><span class="o">=</span><span class="n">corr</span><span class="o">.</span><span class="n">columns</span><span class="p">,</span> <span class="n">annot</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="n">sns</span><span class="o">.</span><span class="n">diverging_palette</span><span class="p">(</span><span class="mi">220</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="n">as_cmap</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">heatmap</span><span class="p">(</span><span class="n">corr</span><span class="p">,</span> <span class="n">xticklabels</span><span class="o">=</span><span class="n">corr</span><span class="o">.</span><span class="n">columns</span><span class="p">,</span> <span class="n">yticklabels</span><span class="o">=</span><span class="n">corr</span><span class="o">.</span><span class="n">columns</span><span class="p">,</span> <span class="n">annot</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="n">sns</span><span class="o">.</span><span class="n">diverging_palette</span><span class="p">(</span><span class="mi">220</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="n">as_cmap</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
+<span class="n">bottom</span><span class="p">,</span> <span class="n">top</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">get_ylim</span><span class="p">()</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="n">bottom</span> <span class="o">+</span> <span class="mf">0.5</span><span class="p">,</span> <span class="n">top</span> <span class="o">-</span> <span class="mf">0.5</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="visualising-the-data">
+<p>Note that this heatmap only works for numeric (or boolean) variables.  For categorical variables such as “ethnicity”, we will use other methods to visualise the data.</p>
+</section>
+<section id="visualising-the-data">
 <h3>Visualising the Data<a class="headerlink" href="#visualising-the-data" title="Permalink to this headline">¶</a></h3>
-<!-- This section should show how including people who died in care homes would affect the correlation between age and one or more of the outcomes. This will be used to help support the missing data narrative. --></div>
+<!-- This section should show how including people who died in care homes would affect the correlation between age and one or more of the outcomes. This will be used to help support the missing data narrative. --><p>As we saw from the heatmap above, the age of the patient is perhaps the most important variable with regard to outcomes such as hospital admission or death.  We will therefore separate the data into different “bins” of age, to see if we can observe other dependencies.</p>
+<p>This is a bit tricky to do in pandas, we need to define the bin boundaries, and then “group by” the other variable that we’re interested in, summing the numbers of patients and deaths over each category.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_plot</span> <span class="o">=</span> <span class="n">df_cleaned</span><span class="o">.</span><span class="n">copy</span><span class="p">(</span><span class="n">deep</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="c1"># add a &#39;counter&#39; variable, which is just 1 for each row, so that when we sum over categories, we know how many rows we </span>
+<span class="c1"># originally had in that category</span>
+<span class="n">df_plot</span><span class="p">[</span><span class="s2">&quot;counter&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="mf">1.0</span>
+<span class="c1"># now we want to put the data in bins of age-range and ethnicity, and sum the numbers of</span>
+<span class="c1"># patients (total, admitted, ventilated, died) over these bins</span>
+<span class="n">bins</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span><span class="mi">100</span><span class="p">,</span><span class="mi">10</span><span class="p">)</span>
+<span class="n">df_plot</span> <span class="o">=</span> <span class="n">df_plot</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s2">&quot;ethnicity&quot;</span><span class="p">,</span><span class="n">pd</span><span class="o">.</span><span class="n">cut</span><span class="p">(</span><span class="n">df_plot</span><span class="p">[</span><span class="s2">&quot;age&quot;</span><span class="p">],</span> <span class="n">bins</span><span class="p">)])</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+<span class="c1"># calculate probability that patient died by dividing num(died) by the total in each bin</span>
+<span class="n">df_plot</span><span class="p">[</span><span class="s2">&quot;prob_died&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_plot</span><span class="p">[</span><span class="s2">&quot;died&quot;</span><span class="p">]</span><span class="o">/</span><span class="n">df_plot</span><span class="p">[</span><span class="s2">&quot;counter&quot;</span><span class="p">]</span> 
+<span class="c1"># we can also calculate the uncertainty on this probability, using binomial errors</span>
+<span class="n">df_plot</span><span class="p">[</span><span class="s2">&quot;prob_died_std&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">df_plot</span><span class="p">[</span><span class="s2">&quot;prob_died&quot;</span><span class="p">]</span><span class="o">*</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">df_plot</span><span class="p">[</span><span class="s2">&quot;prob_died&quot;</span><span class="p">])</span><span class="o">/</span><span class="n">df_plot</span><span class="p">[</span><span class="s2">&quot;counter&quot;</span><span class="p">])</span>
+<span class="c1"># at this point, we have a redundant column &quot;age&quot; which is the sum of all the ages in the bin - drop this,</span>
+<span class="c1"># so that we can then promote the index age-range to a column (which will also be called &quot;age&quot;)</span>
+<span class="n">df_plot</span> <span class="o">=</span> <span class="n">df_plot</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s2">&quot;age&quot;</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="c1"># we can also drop the other columns that no longer make sense since we have summed over</span>
+<span class="c1"># all the patients in the age range</span>
+<span class="n">df_plot</span> <span class="o">=</span> <span class="n">df_plot</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s2">&quot;Unnamed: 0&quot;</span><span class="p">,</span><span class="s2">&quot;height&quot;</span><span class="p">,</span><span class="s2">&quot;weight&quot;</span><span class="p">,</span> <span class="s2">&quot;BMI&quot;</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">df_plot</span> <span class="o">=</span> <span class="n">df_plot</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+<span class="c1"># convert this new &quot;age&quot; column to a string</span>
+<span class="n">df_plot</span><span class="p">[</span><span class="s2">&quot;age&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_plot</span><span class="p">[</span><span class="s2">&quot;age&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span>
+<span class="n">df_plot</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+</pre></div>
 </div>
 </div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">9</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">pointplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df_plot</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s2">&quot;age&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;prob_died&quot;</span><span class="p">,</span> <span class="n">hue</span><span class="o">=</span><span class="s2">&quot;ethnicity&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Ideally we would plot error bars here so we could see the uncertainties on the probabilities, but it does seem to be a consistent pattern that “White” patients had a lower probability of death across a range of ages, while for older patients, the “Asian / Asian British” ethnicity had a higher probability of dying.</p>
+</section>
+<section id="dependency-on-other-factors">
+<h3>Dependency on other factors<a class="headerlink" href="#dependency-on-other-factors" title="Permalink to this headline">¶</a></h3>
+<p>It is generally very difficult to quantify correlations in situations like this where multiple factors might affect the probability of a death, especially when these factors might be correlated with one another.<br />
+We can try though to see whether we can see a dependency on sex, and/or BMI.  Since we know that the strongest dependency is on age, we will just choose a limited age range to make this plot - in order to have a reasonable number of patients we’ll look at the rows with age between 70 and 80.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_newplot</span> <span class="o">=</span> <span class="n">df_cleaned</span><span class="o">.</span><span class="n">copy</span><span class="p">(</span><span class="n">deep</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">df_newplot</span> <span class="o">=</span> <span class="n">df_newplot</span><span class="p">[(</span><span class="n">df_newplot</span><span class="o">.</span><span class="n">age</span> <span class="o">&gt;</span> <span class="mi">70</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">df_newplot</span><span class="o">.</span><span class="n">age</span> <span class="o">&lt;</span> <span class="mi">80</span><span class="p">)]</span>
+<span class="n">df_newplot</span><span class="p">[</span><span class="s2">&quot;counter&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="mf">1.0</span>
+<span class="c1"># now we want to put the data in bins of BMI and sex, and sum the numbers of</span>
+<span class="c1"># patients (total, admitted, ventilated, died) over these bins</span>
+<span class="n">bins</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">45</span><span class="p">,</span><span class="mi">6</span><span class="p">)</span>
+<span class="n">df_newplot</span> <span class="o">=</span> <span class="n">df_newplot</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s2">&quot;sex&quot;</span><span class="p">,</span><span class="n">pd</span><span class="o">.</span><span class="n">cut</span><span class="p">(</span><span class="n">df_newplot</span><span class="p">[</span><span class="s2">&quot;BMI&quot;</span><span class="p">],</span> <span class="n">bins</span><span class="p">)])</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+<span class="c1"># calculate probability that patient died by dividing num(died) by the total in each bin</span>
+<span class="n">df_newplot</span><span class="p">[</span><span class="s2">&quot;prob_died&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_newplot</span><span class="p">[</span><span class="s2">&quot;died&quot;</span><span class="p">]</span><span class="o">/</span><span class="n">df_newplot</span><span class="p">[</span><span class="s2">&quot;counter&quot;</span><span class="p">]</span> 
+<span class="n">df_newplot</span><span class="p">[</span><span class="s2">&quot;prob_died_std&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">df_newplot</span><span class="p">[</span><span class="s2">&quot;prob_died&quot;</span><span class="p">]</span><span class="o">*</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">df_newplot</span><span class="p">[</span><span class="s2">&quot;prob_died&quot;</span><span class="p">])</span><span class="o">/</span><span class="n">df_newplot</span><span class="p">[</span><span class="s2">&quot;counter&quot;</span><span class="p">])</span>
+<span class="n">df_newplot</span> <span class="o">=</span> <span class="n">df_newplot</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s2">&quot;BMI&quot;</span><span class="p">,</span><span class="s2">&quot;Unnamed: 0&quot;</span><span class="p">,</span><span class="s2">&quot;age&quot;</span><span class="p">,</span><span class="s2">&quot;height&quot;</span><span class="p">,</span><span class="s2">&quot;weight&quot;</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">df_newplot</span> <span class="o">=</span> <span class="n">df_newplot</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+<span class="c1"># convert this new &quot;BMI&quot; column to a string</span>
+<span class="n">df_newplot</span><span class="p">[</span><span class="s2">&quot;BMI&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_newplot</span><span class="p">[</span><span class="s2">&quot;BMI&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span>
+<span class="n">df_newplot</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sns</span><span class="o">.</span><span class="n">pointplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df_newplot</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s2">&quot;BMI&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;prob_died&quot;</span><span class="p">,</span> <span class="n">hue</span><span class="o">=</span><span class="s2">&quot;sex&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Well, we can clearly see that there is a difference between men and women, with men having a higher probability of death right across the BMI range.</p>
+<p>But the dependence on BMI doesn’t look like we might expect - why is this?   Well, it would take a detailed analysis to find out for sure, but one plausible hypothesis is that BMI is negatively correlated with age.  (In fact if we look at the <span class="xref myst">code used to generate this synthetic dataset</span> we can see that this is indeed the case - average BMI peaks at age 60 and decreases linearly with age after that).  Even though we only took a limited age-range, the variation within this 10-year slice is still big enough that it is the dominant factor in determining the shape of this plot.</p>
+<p>This is just one example of the pitfalls of trying to ascertain relationships between outcomes and variables - it’s not easy!</p>
+</section>
+</section>
+<section id="missing-data">
+<h2>Missing data<a class="headerlink" href="#missing-data" title="Permalink to this headline">¶</a></h2>
+<p>As well as isolated rows with missing or incorrectly entered data, it is possible that there are entire categories that are under-represented in our dataset, as an artifact of the data collection procedure.   For example, perhaps we are missing some of the older patients in our dataset, as they may have been too frail to even present at the hospital.
+We are in the fortunate situation here of using synthetic data, so we can see the effect of this by adding back in some rows that were artificially removed in the dataset we have used up to now:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_all</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;covid_patients_syn_data_unbiased.csv&quot;</span><span class="p">)</span>
+<span class="n">df_all</span><span class="o">.</span><span class="n">shape</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>To see how the data was affected, we can compare the histograms of ages of patients, and patients that died, between our dataset and the dataset with the missing rows restored.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
+<span class="n">ages_orig</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">df_cleaned</span><span class="p">[</span><span class="s2">&quot;age&quot;</span><span class="p">])</span>
+<span class="n">ages_all</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">df_all</span><span class="p">[</span><span class="s2">&quot;age&quot;</span><span class="p">])</span>
+<span class="n">ages_died_orig</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">df_cleaned</span><span class="p">[</span><span class="n">df_cleaned</span><span class="p">[</span><span class="s2">&quot;died&quot;</span><span class="p">]</span><span class="o">==</span><span class="kc">True</span><span class="p">][</span><span class="s2">&quot;age&quot;</span><span class="p">])</span>
+<span class="n">ages_died_all</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">df_all</span><span class="p">[</span><span class="n">df_all</span><span class="p">[</span><span class="s2">&quot;died&quot;</span><span class="p">]</span><span class="o">==</span><span class="kc">True</span><span class="p">][</span><span class="s2">&quot;age&quot;</span><span class="p">])</span>
+
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">ages_all</span><span class="p">,</span><span class="n">bins</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span><span class="nb">range</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">100</span><span class="p">),</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;unbiased dataset&quot;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">ages_orig</span><span class="p">,</span><span class="n">bins</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span><span class="nb">range</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">100</span><span class="p">),</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;our dataset&quot;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;Age of patient&quot;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;Number of cases&quot;</span><span class="p">)</span>
+<span class="n">leg</span> <span class="o">=</span> <span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">ages_died_all</span><span class="p">,</span><span class="n">bins</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span><span class="nb">range</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">100</span><span class="p">),</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;unbiased dataset&quot;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">ages_died_orig</span><span class="p">,</span><span class="n">bins</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span><span class="nb">range</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">100</span><span class="p">),</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;our dataset&quot;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;Age of patient&quot;</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;Number of deaths&quot;</span><span class="p">)</span>
+<span class="n">leg</span> <span class="o">=</span> <span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -696,36 +940,16 @@ As you can see from the following lines of code, there are <code class="docutils
               </div>
               
         
+        <div class='prev-next-bottom'>
             
+    <a class='left-prev' id="prev-link" href="data_extraction.html" title="previous page">Data Extraction and Procurement</a>
+    <a class='right-next' id="next-link" href="../model_development/preprocessing.html" title="next page">Preprocessing and Feature Engineering</a>
 
-
-
-<div class='prev-next-bottom'>
-    
-    <div id="prev">
-        <a class="left-prev" href="data_extraction.html" title="previous page">
-            <i class="prevnext-label fas fa-angle-left"></i>
-            <div class="prevnext-info">
-                <p class="prevnext-label">previous</p>
-                <p class="prevnext-title">Data Extraction and Procurement</p>
-            </div>
-        </a>
-    </div>
-     <div id="next">
-        <a class="right-next" href="../model_development/preprocessing.html" title="next page">
-            <div class="prevnext-info">
-                <p class="prevnext-label">next</p>
-                <p class="prevnext-title">Preprocessing and Feature Engineering</p>
-            </div>
-            <i class="prevnext-label fas fa-angle-right"></i>
-        </a>
-     </div>
-
-</div>
+        </div>
         
         </div>
     </div>
-    <footer class="footer">
+    <footer class="footer mt-5 mt-md-0">
     <div class="container">
       <p>
         

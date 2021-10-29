@@ -30,8 +30,8 @@ In this chapter, you will:
 ### (Model) Development
 
 - [Preprocessing and Feature Engineering](model_development/preprocessing.md)
-- [Model Selection and Training](model_development/model_selection.md) <!-- Exploring trade-offs -->
-- [Model Testing and Validation](model_development/model_testing.md)
+- [Model Selection](model_development/model_selection.md) <!-- Exploring trade-offs -->
+- [Model Training, Testing and Validation](model_development/model_testing.md)
 - [Model Reporting](model_development/model_reporting.md) <!-- Model Cards -->
 
 ### (System) Deployment

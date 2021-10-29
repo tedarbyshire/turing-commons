@@ -4,7 +4,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Activity 5: Privilege Walk &#8212; Turing Commons</title>
     
   <link href="../../../_static/css/theme.css" rel="stylesheet" />
@@ -23,7 +24,7 @@
 
     
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-book-theme.e8e5499552300ddf5d7adccae7cc3b70.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.css" />
@@ -42,7 +43,7 @@
     <script src="../../../_static/copybutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script>
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
@@ -72,14 +73,13 @@
     <a class="navbar-brand text-wrap" href="../../../index.html">
       
       
-      
       <h1 class="site-logo" id="site-title">Turing Commons</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../../../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
     <div class="bd-toc-item active">
         <ul class="nav bd-sidenav">
  <li class="toctree-l1">
@@ -240,17 +240,22 @@
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../model_development/model_selection.html">
-     Model Selection and Training
+     Model Selection
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../model_development/model_testing.html">
-     Model Testing and Validation
+     Model Training, Testing and Validation
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../model_development/model_reporting.html">
      Model Reporting
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../model_development/activity8.html">
+     Activity 8: Designing Model Reports
     </a>
    </li>
    <li class="toctree-l2">
@@ -265,12 +270,17 @@
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../system_deployment/system_use.html">
-     System Use, Monitoring, and Updating
+     System Use and Monitoring
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../system_deployment/model_updating.html">
      Model Updating or Deprovisioning
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../summary.html">
+     Summary of Chapter
     </a>
    </li>
   </ul>
@@ -286,13 +296,13 @@
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="../../chapter5/assurance.html">
-     What is Argument-Based Assurance?
+    <a class="reference internal" href="../../chapter5/communication.html">
+     Responsible Communication
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../../chapter5/communication.html">
-     Assurance and Responsible Communication
+    <a class="reference internal" href="../../chapter5/assurance.html">
+     What is Argument-Based Assurance?
     </a>
    </li>
    <li class="toctree-l2">
@@ -433,7 +443,7 @@
             <div class="tocsection onthispage pt-5 pb-3">
                 <i class="fas fa-list"></i> Contents
             </div>
-            <nav id="bd-toc-nav" aria-label="Page">
+            <nav id="bd-toc-nav">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#instructions">
@@ -451,7 +461,7 @@
         
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="activity-5-privilege-walk">
+  <section class="tex2jax_ignore mathjax_ignore" id="activity-5-privilege-walk">
 <h1>Activity 5: Privilege Walk<a class="headerlink" href="#activity-5-privilege-walk" title="Permalink to this headline">¶</a></h1>
 <p>Individuals may be affected by technology in different ways.
 This is uncontroversial.
@@ -465,7 +475,7 @@ Similarly, those with darker skin may be disadvantaged by the deployment of a te
 If you have ever participated in a privilege walk before, you may know that it can be a daunting experience for people who may have to share details of their personal and lived experience.
 However, we will be using hypothetical personas to avoid placing anyone in such a position.
 This is the first activity, therefore, where you will use one of the <a class="reference internal" href="../case_studies.html"><span class="doc std std-doc">case studies</span></a> designed for this chapter.</p>
-<div class="section" id="instructions">
+<section id="instructions">
 <h2>Instructions<a class="headerlink" href="#instructions" title="Permalink to this headline">¶</a></h2>
 <ol class="simple">
 <li><p>First of all, go and read over the three <a class="reference internal" href="../case_studies.html"><span class="doc std std-doc">case studies</span></a>. Make sure to read them carefully because you will then have to decide with your group which one to select. It will then be used for all of the remaining activities in this chapter.</p></li>
@@ -477,14 +487,22 @@ Don’t worry; the results of this activity are not what matter.
 Rather, it is intended as an aid for reflection.
 It’s fine if you need to speculate a bit to fill in the gaps.
 Just make sure to discuss it with your team to ensure the details are plausible and largely agreed upon.</p>
+<!-- 
+### Activity 5: Privilege Walk 
+
+This is the first activity that will involve the case studies introduced at the start of the chapter. It is a known as a "privilege walk" and is designed to help you reflect on how disparate forms of social privilege interact and how different harms or benefits associated with your research or innovation project may have disparate impacts on affected stakeholders.
+
+Please visit https://bit.ly/3jqJjx8 to view the associated instructions.
+
+-->
 <hr class="footnotes docutils" />
 <dl class="footnote brackets">
 <dt class="label" id="bbc"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
 <dd><p>This example is real, and was reported on by the <a class="reference external" href="https://www.bbc.co.uk/news/technology-54349538">BBC</a> who carried out the research, which was supported by the Alan Turing Institute. The research found that women with darker skin were more than twice as likely to be told their photos fail UK passport rules when they submit them online than lighter-skinned men.</p>
 </dd>
 </dl>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -509,36 +527,16 @@ Just make sure to discuss it with your team to ensure the details are plausible 
               </div>
               
         
+        <div class='prev-next-bottom'>
             
+    <a class='left-prev' id="prev-link" href="planning.html" title="previous page">Project Planning</a>
+    <a class='right-next' id="next-link" href="problem.html" title="next page">Problem Formulation</a>
 
-
-
-<div class='prev-next-bottom'>
-    
-    <div id="prev">
-        <a class="left-prev" href="planning.html" title="previous page">
-            <i class="prevnext-label fas fa-angle-left"></i>
-            <div class="prevnext-info">
-                <p class="prevnext-label">previous</p>
-                <p class="prevnext-title">Project Planning</p>
-            </div>
-        </a>
-    </div>
-     <div id="next">
-        <a class="right-next" href="problem.html" title="next page">
-            <div class="prevnext-info">
-                <p class="prevnext-label">next</p>
-                <p class="prevnext-title">Problem Formulation</p>
-            </div>
-            <i class="prevnext-label fas fa-angle-right"></i>
-        </a>
-     </div>
-
-</div>
+        </div>
         
         </div>
     </div>
-    <footer class="footer">
+    <footer class="footer mt-5 mt-md-0">
     <div class="container">
       <p>
         

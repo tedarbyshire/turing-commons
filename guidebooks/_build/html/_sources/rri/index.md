@@ -1,6 +1,6 @@
 # About
 
-<!-- Johnny's illustration to go here -->
+![](../images/illustrations/sociotechnical_2.png)
 
 ## Summary
 

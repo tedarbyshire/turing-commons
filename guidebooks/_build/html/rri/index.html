@@ -4,7 +4,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>About &#8212; Turing Commons</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet" />
@@ -23,7 +24,7 @@
 
     
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.e8e5499552300ddf5d7adccae7cc3b70.css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -42,7 +43,7 @@
     <script src="../_static/copybutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script>
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
@@ -72,14 +73,13 @@
     <a class="navbar-brand text-wrap" href="../index.html">
       
       
-      
       <h1 class="site-logo" id="site-title">Turing Commons</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
     <div class="bd-toc-item active">
         <ul class="nav bd-sidenav">
  <li class="toctree-l1">
@@ -209,8 +209,18 @@
     </a>
    </li>
    <li class="toctree-l2">
+    <a class="reference internal" href="chapter4/project_design/activity5.html">
+     Activity 5: Privilege Walk
+    </a>
+   </li>
+   <li class="toctree-l2">
     <a class="reference internal" href="chapter4/project_design/problem.html">
      Problem Formulation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter4/project_design/activity6.html">
+     Activity 6: Developing Case Studies
     </a>
    </li>
    <li class="toctree-l2">
@@ -230,17 +240,22 @@
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="chapter4/model_development/model_selection.html">
-     Model Selection and Training
+     Model Selection
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="chapter4/model_development/model_testing.html">
-     Model Testing and Validation
+     Model Training, Testing and Validation
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="chapter4/model_development/model_reporting.html">
      Model Reporting
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter4/model_development/activity8.html">
+     Activity 8: Designing Model Reports
     </a>
    </li>
    <li class="toctree-l2">
@@ -255,12 +270,17 @@
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="chapter4/system_deployment/system_use.html">
-     System Use, Monitoring, and Updating
+     System Use and Monitoring
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="chapter4/system_deployment/model_updating.html">
      Model Updating or Deprovisioning
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="chapter4/summary.html">
+     Summary of Chapter
     </a>
    </li>
   </ul>
@@ -276,13 +296,13 @@
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="chapter5/assurance.html">
-     What is Argument-Based Assurance?
+    <a class="reference internal" href="chapter5/communication.html">
+     Responsible Communication
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="chapter5/communication.html">
-     Assurance and Responsible Communication
+    <a class="reference internal" href="chapter5/assurance.html">
+     What is Argument-Based Assurance?
     </a>
    </li>
    <li class="toctree-l2">
@@ -423,7 +443,7 @@
             <div class="tocsection onthispage pt-5 pb-3">
                 <i class="fas fa-list"></i> Contents
             </div>
-            <nav id="bd-toc-nav" aria-label="Page">
+            <nav id="bd-toc-nav">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#summary">
@@ -456,10 +476,10 @@
         
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="about">
+  <section class="tex2jax_ignore mathjax_ignore" id="about">
 <h1>About<a class="headerlink" href="#about" title="Permalink to this headline">¶</a></h1>
-<!-- Johnny's illustration to go here -->
-<div class="section" id="summary">
+<p><img alt="" src="../_images/sociotechnical_2.png" /></p>
+<section id="summary">
 <h2>Summary<a class="headerlink" href="#summary" title="Permalink to this headline">¶</a></h2>
 <p>Responsible research and innovation (RRI) plays a significant and often central role within academic, public, private, and third-sector organisations.
 For example, the UKRI’s Engineering and Physical Sciences Research Council (EPSRC) is increasingly making a commitment to RRI necessary for research funding, and also embedding RRI training into its Centres for Doctoral Training.
@@ -467,8 +487,8 @@ Furthermore, the UK Government has highlighted the importance of RRI in both of 
 <p>Building on these commitments, this course will explore what it means to take (individual and collective) responsibility for (and over) the processes and outcomes of research and innovation in data science and AI.</p>
 <p>The notion of ‘responsibility’ employed throughout this course will be grounded in an understanding of the moral relationship between science, technology, and society, exploring both historical and contemporary examples of RRI practices.
 As well as looking at the theoretical basis of RRI this course will also take a hands-on approach by exploring a variety of tools and procedures that can help operationalise and implement a robust notion of responsibility within research and innovation practices.</p>
-</div>
-<div class="section" id="who-is-this-guidebook-for">
+</section>
+<section id="who-is-this-guidebook-for">
 <h2>Who is this Guidebook For?<a class="headerlink" href="#who-is-this-guidebook-for" title="Permalink to this headline">¶</a></h2>
 <p>Primarily, this guidebook is for researchers with an active interest in RRI.
 This doesn’t mean you have to be a data scientist, or a researcher using R or Python to analyse data.
@@ -476,8 +496,8 @@ You could be an ethicist, sociologist, or someone with an interest in law and po
 However, the guide is oriented towards research issues and related topics.</p>
 <p>In addition, while this course has practical, and sometimes hands-on activities, these activities are geared towards ethical reflection and deliberation.
 If you want to dive deeper into the specific day-to-day requirements of RRI for data science, we recommend heading on over to <a class="reference external" href="https://the-turing-way.netlify.app/welcome">The Turing Way</a> community, organised by our fantastic colleagues.</p>
-</div>
-<div class="section" id="learning-objectives">
+</section>
+<section id="learning-objectives">
 <h2>Learning Objectives<a class="headerlink" href="#learning-objectives" title="Permalink to this headline">¶</a></h2>
 <p>This guidebook has the following learning objectives:</p>
 <ul class="simple">
@@ -486,8 +506,8 @@ If you want to dive deeper into the specific day-to-day requirements of RRI for 
 <li><p>Explore practical tools and mechanisms for operationalising the concept of ‘responsibility’ within the context of data science and AI research and innovation.</p></li>
 <li><p>Gain an appreciation of shared goals and values across scientific disciplines and research domains through dialogue with other participants.</p></li>
 </ul>
-</div>
-<div class="section" id="table-of-contents">
+</section>
+<section id="table-of-contents">
 <h2>Table of Contents<a class="headerlink" href="#table-of-contents" title="Permalink to this headline">¶</a></h2>
 <ol class="simple">
 <li><p><a class="reference internal" href="intro/index.html"><span class="doc std std-doc">Introduction</span></a></p></li>
@@ -499,8 +519,8 @@ If you want to dive deeper into the specific day-to-day requirements of RRI for 
 <li><p><a class="reference internal" href="further_resources/index.html"><span class="doc std std-doc">Further Resources</span></a></p></li>
 <li><p><a class="reference internal" href="../bibliography.html"><span class="doc std std-doc">Bibliography</span></a></p></li>
 </ol>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -525,36 +545,16 @@ If you want to dive deeper into the specific day-to-day requirements of RRI for 
               </div>
               
         
+        <div class='prev-next-bottom'>
             
+    <a class='left-prev' id="prev-link" href="../index.html" title="previous page">Welcome</a>
+    <a class='right-next' id="next-link" href="intro/index.html" title="next page">1 Introduction</a>
 
-
-
-<div class='prev-next-bottom'>
-    
-    <div id="prev">
-        <a class="left-prev" href="../index.html" title="previous page">
-            <i class="prevnext-label fas fa-angle-left"></i>
-            <div class="prevnext-info">
-                <p class="prevnext-label">previous</p>
-                <p class="prevnext-title">Welcome</p>
-            </div>
-        </a>
-    </div>
-     <div id="next">
-        <a class="right-next" href="intro/index.html" title="next page">
-            <div class="prevnext-info">
-                <p class="prevnext-label">next</p>
-                <p class="prevnext-title">1 Introduction</p>
-            </div>
-            <i class="prevnext-label fas fa-angle-right"></i>
-        </a>
-     </div>
-
-</div>
+        </div>
         
         </div>
     </div>
-    <footer class="footer">
+    <footer class="footer mt-5 mt-md-0">
     <div class="container">
       <p>
         

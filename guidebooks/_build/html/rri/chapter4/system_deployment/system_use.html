@@ -4,8 +4,9 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>System Use, Monitoring, and Updating &#8212; Turing Commons</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>System Use and Monitoring &#8212; Turing Commons</title>
     
   <link href="../../../_static/css/theme.css" rel="stylesheet" />
   <link href="../../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -23,7 +24,7 @@
 
     
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-book-theme.e8e5499552300ddf5d7adccae7cc3b70.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.css" />
@@ -42,7 +43,7 @@
     <script src="../../../_static/copybutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script>
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
@@ -72,14 +73,13 @@
     <a class="navbar-brand text-wrap" href="../../../index.html">
       
       
-      
       <h1 class="site-logo" id="site-title">Turing Commons</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../../../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
     <div class="bd-toc-item active">
         <ul class="nav bd-sidenav">
  <li class="toctree-l1">
@@ -209,8 +209,18 @@
     </a>
    </li>
    <li class="toctree-l2">
+    <a class="reference internal" href="../project_design/activity5.html">
+     Activity 5: Privilege Walk
+    </a>
+   </li>
+   <li class="toctree-l2">
     <a class="reference internal" href="../project_design/problem.html">
      Problem Formulation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../project_design/activity6.html">
+     Activity 6: Developing Case Studies
     </a>
    </li>
    <li class="toctree-l2">
@@ -230,17 +240,22 @@
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../model_development/model_selection.html">
-     Model Selection and Training
+     Model Selection
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../model_development/model_testing.html">
-     Model Testing and Validation
+     Model Training, Testing and Validation
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../model_development/model_reporting.html">
      Model Reporting
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../model_development/activity8.html">
+     Activity 8: Designing Model Reports
     </a>
    </li>
    <li class="toctree-l2">
@@ -255,12 +270,17 @@
    </li>
    <li class="toctree-l2 current active">
     <a class="current reference internal" href="#">
-     System Use, Monitoring, and Updating
+     System Use and Monitoring
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="model_updating.html">
      Model Updating or Deprovisioning
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../summary.html">
+     Summary of Chapter
     </a>
    </li>
   </ul>
@@ -276,13 +296,13 @@
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="../../chapter5/assurance.html">
-     What is Argument-Based Assurance?
+    <a class="reference internal" href="../../chapter5/communication.html">
+     Responsible Communication
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../../chapter5/communication.html">
-     Assurance and Responsible Communication
+    <a class="reference internal" href="../../chapter5/assurance.html">
+     What is Argument-Based Assurance?
     </a>
    </li>
    <li class="toctree-l2">
@@ -428,14 +448,12 @@
         
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="system-use-monitoring-and-updating">
-<h1>System Use, Monitoring, and Updating<a class="headerlink" href="#system-use-monitoring-and-updating" title="Permalink to this headline">¶</a></h1>
-<ul class="simple">
-<li><p>Model drift and concept creep</p></li>
-<li><p>Responsibility though sustainability: monitoring and updating</p></li>
-</ul>
+  <section class="tex2jax_ignore mathjax_ignore" id="system-use-and-monitoring">
+<h1>System Use and Monitoring<a class="headerlink" href="#system-use-and-monitoring" title="Permalink to this headline">¶</a></h1>
 <p>Depending on the context of deployment, it is likely that the performance of the model could degrade over time. This process of <em>model drift</em> is typically caused by increasing variation between how representative the training dataset was at the time of development and how representative it is at later stages, perhaps due to changing social norms (e.g. changing patterns of consumer spending, evolving linguistic norms that affect word embeddings). As such, mechanisms for monitoring the model’s performance should be instantiated within the system’s runtime protocols to track model drift, and key thresholds should be determined at early stages of a project (e.g. during project planning or in initial impact assessment) and revised as necessary based on monitoring of the system’s use.</p>
-</div>
+<!-- - Model drift and concept creep
+- Responsibility though sustainability: monitoring and updating -->
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -460,36 +478,16 @@
               </div>
               
         
+        <div class='prev-next-bottom'>
             
+    <a class='left-prev' id="prev-link" href="user_training.html" title="previous page">User Training</a>
+    <a class='right-next' id="next-link" href="model_updating.html" title="next page">Model Updating or Deprovisioning</a>
 
-
-
-<div class='prev-next-bottom'>
-    
-    <div id="prev">
-        <a class="left-prev" href="user_training.html" title="previous page">
-            <i class="prevnext-label fas fa-angle-left"></i>
-            <div class="prevnext-info">
-                <p class="prevnext-label">previous</p>
-                <p class="prevnext-title">User Training</p>
-            </div>
-        </a>
-    </div>
-     <div id="next">
-        <a class="right-next" href="model_updating.html" title="next page">
-            <div class="prevnext-info">
-                <p class="prevnext-label">next</p>
-                <p class="prevnext-title">Model Updating or Deprovisioning</p>
-            </div>
-            <i class="prevnext-label fas fa-angle-right"></i>
-        </a>
-     </div>
-
-</div>
+        </div>
         
         </div>
     </div>
-    <footer class="footer">
+    <footer class="footer mt-5 mt-md-0">
     <div class="container">
       <p>
         

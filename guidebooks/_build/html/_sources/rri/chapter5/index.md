@@ -1,5 +1,7 @@
 # 5 Responsible Communication
 
+![](../../images/illustrations/discussion.png)
+
 ```{admonition} Summary
 :class: tip
 In this chapter we will look at what happens when a project reaches the stage where it is necessary to communicate research findings or present the output of the innovation lifecycle to a broader audience. We will consider a method known as argument-based assurance, which has been designed to help developers and project members engage their audience in a trustworthy and transparent manner. 

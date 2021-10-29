@@ -4,7 +4,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>What is ‘Responsibility’? &#8212; Turing Commons</title>
     
   <link href="../../_static/css/theme.css" rel="stylesheet" />
@@ -23,7 +24,7 @@
 
     
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-book-theme.e8e5499552300ddf5d7adccae7cc3b70.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
@@ -42,7 +43,7 @@
     <script src="../../_static/copybutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script>
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
@@ -72,14 +73,13 @@
     <a class="navbar-brand text-wrap" href="../../index.html">
       
       
-      
       <h1 class="site-logo" id="site-title">Turing Commons</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
     <div class="bd-toc-item active">
         <ul class="nav bd-sidenav">
  <li class="toctree-l1">
@@ -209,8 +209,18 @@
     </a>
    </li>
    <li class="toctree-l2">
+    <a class="reference internal" href="../chapter4/project_design/activity5.html">
+     Activity 5: Privilege Walk
+    </a>
+   </li>
+   <li class="toctree-l2">
     <a class="reference internal" href="../chapter4/project_design/problem.html">
      Problem Formulation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../chapter4/project_design/activity6.html">
+     Activity 6: Developing Case Studies
     </a>
    </li>
    <li class="toctree-l2">
@@ -230,17 +240,22 @@
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../chapter4/model_development/model_selection.html">
-     Model Selection and Training
+     Model Selection
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../chapter4/model_development/model_testing.html">
-     Model Testing and Validation
+     Model Training, Testing and Validation
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../chapter4/model_development/model_reporting.html">
      Model Reporting
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../chapter4/model_development/activity8.html">
+     Activity 8: Designing Model Reports
     </a>
    </li>
    <li class="toctree-l2">
@@ -255,12 +270,17 @@
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../chapter4/system_deployment/system_use.html">
-     System Use, Monitoring, and Updating
+     System Use and Monitoring
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../chapter4/system_deployment/model_updating.html">
      Model Updating or Deprovisioning
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../chapter4/summary.html">
+     Summary of Chapter
     </a>
    </li>
   </ul>
@@ -276,13 +296,13 @@
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="../chapter5/assurance.html">
-     What is Argument-Based Assurance?
+    <a class="reference internal" href="../chapter5/communication.html">
+     Responsible Communication
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../chapter5/communication.html">
-     Assurance and Responsible Communication
+    <a class="reference internal" href="../chapter5/assurance.html">
+     What is Argument-Based Assurance?
     </a>
    </li>
    <li class="toctree-l2">
@@ -428,13 +448,13 @@
         
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="what-is-responsibility">
+  <section class="tex2jax_ignore mathjax_ignore" id="what-is-responsibility">
 <h1>What is ‘Responsibility’?<a class="headerlink" href="#what-is-responsibility" title="Permalink to this headline">¶</a></h1>
 <p>If we want a systematic and reliable method for evaluating research and innovation projects—whether past, present, or future instances—we need to have an operationalisable definition of ‘responsibility’.
 Fortunately, we don’t have to start from scratch.</p>
 <p>In an oft-cited article, Von Schomberg defines RRI as follows:</p>
 <blockquote>
-<div><p>“Responsible Research and Innovation is a transparent, interactive process by which societal actors and innovators become mutually responsive to each other with a view on the (ethical) acceptability, sustainability and societal desirability of the innovation process and its marketable products (in order to allow a proper embedding of scientific and technological advances in our society).” <span id="id1">[<a class="reference internal" href="../../bibliography.html#id57">Von Schomberg, 2011</a>]</span></p>
+<div><p>“Responsible Research and Innovation is a transparent, interactive process by which societal actors and innovators become mutually responsive to each other with a view on the (ethical) acceptability, sustainability and societal desirability of the innovation process and its marketable products (in order to allow a proper embedding of scientific and technological advances in our society).” <span id="id1">[<a class="reference internal" href="../../bibliography.html#id63">Von Schomberg, 2011</a>]</span></p>
 </div></blockquote>
 <p>This is a helpful definition, but it can be challenging to grasp its meaning on first glance, so let’s break it down.</p>
 <p>First, we have the phrase, <strong>“transparent, interactive process by which societal actors and innovators become mutually responsive to each other”</strong>.
@@ -459,7 +479,7 @@ However, this would give rise to misleading impression that RRI is a top-down ap
 In contrast, RRI is a normative framework that has been constructed slowly and iteratively in response to tangible social harms and felt injustices.
 The principles that have emerged have been shaped by such events.
 Therefore, although we will eventually discuss a set of principles for RRI, it is important to first explore some notable historical case studies.</p>
-</div>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -484,36 +504,16 @@ Therefore, although we will eventually discuss a set of principles for RRI, it i
               </div>
               
         
+        <div class='prev-next-bottom'>
             
+    <a class='left-prev' id="prev-link" href="index.html" title="previous page">2 What is Responsible Research and Innovation?</a>
+    <a class='right-next' id="next-link" href="history.html" title="next page">A Short History of RRI</a>
 
-
-
-<div class='prev-next-bottom'>
-    
-    <div id="prev">
-        <a class="left-prev" href="index.html" title="previous page">
-            <i class="prevnext-label fas fa-angle-left"></i>
-            <div class="prevnext-info">
-                <p class="prevnext-label">previous</p>
-                <p class="prevnext-title">2 What is Responsible Research and Innovation?</p>
-            </div>
-        </a>
-    </div>
-     <div id="next">
-        <a class="right-next" href="history.html" title="next page">
-            <div class="prevnext-info">
-                <p class="prevnext-label">next</p>
-                <p class="prevnext-title">A Short History of RRI</p>
-            </div>
-            <i class="prevnext-label fas fa-angle-right"></i>
-        </a>
-     </div>
-
-</div>
+        </div>
         
         </div>
     </div>
-    <footer class="footer">
+    <footer class="footer mt-5 mt-md-0">
     <div class="container">
       <p>
         

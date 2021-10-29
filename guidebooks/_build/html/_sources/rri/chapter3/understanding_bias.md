@@ -1,8 +1,17 @@
 # Understanding Bias
 
+```{figure} /images/illustrations/bias.png
+---
+align: center
+name: bias
+alt: An artistic representation of social, statistical, and cognitive biases
+---
+An artistic representation of social, statistical, and cognitive biases (by [Johnny Lighthands](https://www.johnnylighthands.co.uk))
+```
+
 Before we start exploring the [project lifecycle](../chapter4/index.md) and its associated activiyies there is a final topic that we need to explore.
 You will likely have some prior familiarity of the term 'bias', but your understanding of the concept may emphasise specific properties that reflect a specific focus of your research background.
-This section will present three common ways that 'bias' can be understood as it applies to and affects the research and innovation lifecycle. 
+This section will present three common ways that 'bias' can be understood as it applies to and affects the research and innovation lifecycle.
 The three perspectives that we will look at are: social, statistical, and cognitive bias.
 
 ## Social Bias
@@ -110,12 +119,7 @@ However, those who adopt a view known as 'ecological rationality' argue that suc
 This alternative account, made famous by Herbert Simon, and later developed by Gerd Gigerenzer reframes a lot of human judgement and decision-making as underpinned by “fast and frugal” heuristics, which are highly adaptive and support decision-making in complex and uncertain environments.
 It's not necessary to delve into this debate for the present purposes, but it is an interesting tangent for those interested in exploring how the choice to present statistical information in different ways (e.g., as probabilities versus frequencies) can affect comprehension and understanding.[^debate]
 
-[^debate]: For those who want to reconstruct the debate between Kahneman, Tversky, and Gigerenzer, the following papers can be read in order:
-
-   1. {cite}`tversky1974`
-   2. {cite}`gigerenzer1991`
-   3. {cite}`kahneman1996`
-   4. {cite}`gigerenzer1996`
+[^debate]: For those who want to reconstruct the debate between Kahneman, Tversky, and Gigerenzer, the following papers can be read in order: (1) {cite}`tversky1974`, (2) {cite}`gigerenzer1991`, (3) {cite}`kahneman1996`, (4) {cite}`gigerenzer1996`
 
 When carrying out research and innovation in data science and AI, cognitive biases can impact the processes and outcome of the project lifecycle in myriad ways.
 There is, after all, a [large list](https://en.wikipedia.org/wiki/List_of_cognitive_biases) of cognitive biases to consider.

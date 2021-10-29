@@ -4,8 +4,9 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Model Testing and Validation &#8212; Turing Commons</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Model Training, Testing and Validation &#8212; Turing Commons</title>
     
   <link href="../../../_static/css/theme.css" rel="stylesheet" />
   <link href="../../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -23,7 +24,7 @@
 
     
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-book-theme.e8e5499552300ddf5d7adccae7cc3b70.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.css" />
@@ -42,7 +43,7 @@
     <script src="../../../_static/copybutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script>
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
@@ -52,7 +53,7 @@
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
     <link rel="next" title="Model Reporting" href="model_reporting.html" />
-    <link rel="prev" title="Model Selection and Training" href="model_selection.html" />
+    <link rel="prev" title="Model Selection" href="model_selection.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -72,14 +73,13 @@
     <a class="navbar-brand text-wrap" href="../../../index.html">
       
       
-      
       <h1 class="site-logo" id="site-title">Turing Commons</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../../../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
     <div class="bd-toc-item active">
         <ul class="nav bd-sidenav">
  <li class="toctree-l1">
@@ -209,8 +209,18 @@
     </a>
    </li>
    <li class="toctree-l2">
+    <a class="reference internal" href="../project_design/activity5.html">
+     Activity 5: Privilege Walk
+    </a>
+   </li>
+   <li class="toctree-l2">
     <a class="reference internal" href="../project_design/problem.html">
      Problem Formulation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../project_design/activity6.html">
+     Activity 6: Developing Case Studies
     </a>
    </li>
    <li class="toctree-l2">
@@ -230,17 +240,22 @@
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="model_selection.html">
-     Model Selection and Training
+     Model Selection
     </a>
    </li>
    <li class="toctree-l2 current active">
     <a class="current reference internal" href="#">
-     Model Testing and Validation
+     Model Training, Testing and Validation
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="model_reporting.html">
      Model Reporting
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="activity8.html">
+     Activity 8: Designing Model Reports
     </a>
    </li>
    <li class="toctree-l2">
@@ -255,12 +270,17 @@
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../system_deployment/system_use.html">
-     System Use, Monitoring, and Updating
+     System Use and Monitoring
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../system_deployment/model_updating.html">
      Model Updating or Deprovisioning
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../summary.html">
+     Summary of Chapter
     </a>
    </li>
   </ul>
@@ -276,13 +296,13 @@
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="../../chapter5/assurance.html">
-     What is Argument-Based Assurance?
+    <a class="reference internal" href="../../chapter5/communication.html">
+     Responsible Communication
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../../chapter5/communication.html">
-     Assurance and Responsible Communication
+    <a class="reference internal" href="../../chapter5/assurance.html">
+     What is Argument-Based Assurance?
     </a>
    </li>
    <li class="toctree-l2">
@@ -428,26 +448,40 @@
         
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="model-testing-and-validation">
-<h1>Model Testing and Validation<a class="headerlink" href="#model-testing-and-validation" title="Permalink to this headline">¶</a></h1>
-<!--  
-Test
-A test uses pass / fail criteria to check a specific, single function.
-
-Evaluation
-An evaluation combines multiple tests and experimental use, to provide an overall judgement.
-
-Verification
-Verification is the act of checking against a specification. It asks, ‘did we build the thing right?’ or ‘are we doing the thing right?’
-
-Tests are usually associated with verification.
-
-Validation
-Validation is the act of checking against an end user’s need. It asks, ‘did we build the right thing?’ or ‘are we doing the right thing?’
--->
-<p><a class="reference external" href="https://www.gov.uk/government/publications/assurance-of-ai-and-autonomous-systems-a-dstl-biscuit-book/assurance-of-artificial-intelligence-and-autonomous-systems-a-dstl-biscuit-book">DSTL Biscuit Book</a></p>
-<p>The testing set is typically kept separate from the training set, in order to provide an unbiased evaluation of the final model fit on the training dataset. However, the training set can be further split to create a validation set, which can then be used to evaluate the model while also <em>tuning model hyperparameters</em>. This process can be performed repeatedly, in a technique known as (k-fold) cross-validation, where the training data are resampled (<em>k</em>-times) to compare models and estimate their performance in general when used to make predictions on unseen data. This type of validation is also known as ‘internal validation’, to distinguish it from external validation, and, in a similar way to choices made about the training-testing split, the manner in which it is approached can have critical consequences for how the performance of a system is measured against the real-world conditions that it will face when operating “in the wild.”</p>
-</div>
+  <section class="tex2jax_ignore mathjax_ignore" id="model-training-testing-and-validation">
+<h1>Model Training, Testing and Validation<a class="headerlink" href="#model-training-testing-and-validation" title="Permalink to this headline">¶</a></h1>
+<p>Before training a model, the data need to be split into ‘training’ and ‘testing’ sets to avoid model overfitting.[^overfitting^]</p>
+<figure class="align-center" id="overfitting">
+<img alt="An example of overfitting, underfitting and the appropriate balance." src="../../../_images/overfitting.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 12 </span><span class="caption-text">An example of overfitting, underfitting and the appropriate balance <span id="id1">[<a class="reference internal" href="../../../bibliography.html#id11">Bronshtein, 2020</a>]</span></span><a class="headerlink" href="#overfitting" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>The <em>training set</em> is the one used, as the name suggests, to train the model, whereas the <em>testing set</em> is a hold-out sample that is used to evaluate the fit of the ML model to the underlying data distribution.
+The testing set is kept separate while training the model to provide an less biased evaluation of the model once it has been fit to the training dataset.</p>
+<p>The human input at this stage is about deciding on the training-testing split and about how this shapes desiderata for <a class="reference internal" href="#"><span class="doc std std-doc">model validation</span></a>—a subsequent process where the model is validated either internally or in wholly new environments (i.e. external validation).
+As such, the decision can be very consequential for the trustworthiness and reasonableness of the development phase of an ML/AI system.
+For instance, what if the training/testing split is not random?
+What if, hypothetically, the training data contain only examples from one class of objects and the testing data contain instances of an entirely different class?
+We would be unlikely to get a very useful model.</p>
+<p>There are various methods to help reduce the chance of this issue occurring, which are widely available in popular package libraries (e.g. the scikit-learn library for the Python programming language).
+However, a common method is to use something known as ‘cross validation’.</p>
+<p>One of the most popular forms of cross validation is K-Folds Cross Validation.
+Here, the dataset is first split into training and testing sets, and then the training set is further split into <em>k</em> different subsets (e.g. 10 subsets).
+The model training process then occurs <em>k</em> times, using a different subset as the validation set on each round.
+At the end, an average is taken from the <em>k</em> models and this is tested against the original hold out testing set.
+The following graphic should help you visualise this.</p>
+<figure class="align-center" id="cross-validation">
+<img alt="A simple representation of the K-Folds Cross Validation Process" src="../../../_images/cross-validation.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 13 </span><span class="caption-text">A simple representation of the K-Folds Cross Validation Process.</span><a class="headerlink" href="#cross-validation" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>This type of validation is also known as ‘internal validation’, to distinguish it from external validation, and, in a similar way to choices made about the original training-testing split, the manner in which it is approached can have critical consequences for how the performance of a system is measured against the real-world conditions that it will face when operating “in the wild.”</p>
+<p>Therefore, external validation can also be performed, either using entirely novel datasets—perhaps from different sites or using different collection methods.
+Or, separate external teams may even be able to externally validate a research model by attempting to reproduce similar results.
+To support this it is vital to ensure that the steps taken during these stages are properly documented and reported, as we will see in the next section.</p>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -472,36 +506,16 @@ Validation is the act of checking against an end user’s need. It asks, ‘did 
               </div>
               
         
+        <div class='prev-next-bottom'>
             
+    <a class='left-prev' id="prev-link" href="model_selection.html" title="previous page">Model Selection</a>
+    <a class='right-next' id="next-link" href="model_reporting.html" title="next page">Model Reporting</a>
 
-
-
-<div class='prev-next-bottom'>
-    
-    <div id="prev">
-        <a class="left-prev" href="model_selection.html" title="previous page">
-            <i class="prevnext-label fas fa-angle-left"></i>
-            <div class="prevnext-info">
-                <p class="prevnext-label">previous</p>
-                <p class="prevnext-title">Model Selection and Training</p>
-            </div>
-        </a>
-    </div>
-     <div id="next">
-        <a class="right-next" href="model_reporting.html" title="next page">
-            <div class="prevnext-info">
-                <p class="prevnext-label">next</p>
-                <p class="prevnext-title">Model Reporting</p>
-            </div>
-            <i class="prevnext-label fas fa-angle-right"></i>
-        </a>
-     </div>
-
-</div>
+        </div>
         
         </div>
     </div>
-    <footer class="footer">
+    <footer class="footer mt-5 mt-md-0">
     <div class="container">
       <p>
         

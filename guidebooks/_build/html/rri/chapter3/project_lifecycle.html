@@ -4,7 +4,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Introducing the Project Lifecycle (A Sociotechnical Approach) &#8212; Turing Commons</title>
     
   <link href="../../_static/css/theme.css" rel="stylesheet" />
@@ -23,7 +24,7 @@
 
     
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-book-theme.e8e5499552300ddf5d7adccae7cc3b70.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
@@ -42,7 +43,7 @@
     <script src="../../_static/copybutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script>
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
@@ -72,14 +73,13 @@
     <a class="navbar-brand text-wrap" href="../../index.html">
       
       
-      
       <h1 class="site-logo" id="site-title">Turing Commons</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
     <div class="bd-toc-item active">
         <ul class="nav bd-sidenav">
  <li class="toctree-l1">
@@ -209,8 +209,18 @@
     </a>
    </li>
    <li class="toctree-l2">
+    <a class="reference internal" href="../chapter4/project_design/activity5.html">
+     Activity 5: Privilege Walk
+    </a>
+   </li>
+   <li class="toctree-l2">
     <a class="reference internal" href="../chapter4/project_design/problem.html">
      Problem Formulation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../chapter4/project_design/activity6.html">
+     Activity 6: Developing Case Studies
     </a>
    </li>
    <li class="toctree-l2">
@@ -230,17 +240,22 @@
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../chapter4/model_development/model_selection.html">
-     Model Selection and Training
+     Model Selection
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../chapter4/model_development/model_testing.html">
-     Model Testing and Validation
+     Model Training, Testing and Validation
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../chapter4/model_development/model_reporting.html">
      Model Reporting
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../chapter4/model_development/activity8.html">
+     Activity 8: Designing Model Reports
     </a>
    </li>
    <li class="toctree-l2">
@@ -255,12 +270,17 @@
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../chapter4/system_deployment/system_use.html">
-     System Use, Monitoring, and Updating
+     System Use and Monitoring
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../chapter4/system_deployment/model_updating.html">
      Model Updating or Deprovisioning
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../chapter4/summary.html">
+     Summary of Chapter
     </a>
    </li>
   </ul>
@@ -276,13 +296,13 @@
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="../chapter5/assurance.html">
-     What is Argument-Based Assurance?
+    <a class="reference internal" href="../chapter5/communication.html">
+     Responsible Communication
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../chapter5/communication.html">
-     Assurance and Responsible Communication
+    <a class="reference internal" href="../chapter5/assurance.html">
+     What is Argument-Based Assurance?
     </a>
    </li>
    <li class="toctree-l2">
@@ -428,21 +448,23 @@
         
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="introducing-the-project-lifecycle-a-sociotechnical-approach">
+  <section class="tex2jax_ignore mathjax_ignore" id="introducing-the-project-lifecycle-a-sociotechnical-approach">
 <h1>Introducing the Project Lifecycle (A Sociotechnical Approach)<a class="headerlink" href="#introducing-the-project-lifecycle-a-sociotechnical-approach" title="Permalink to this headline">¶</a></h1>
 <p>There are many ways of carving up the lifecycle for a data science or AI project (hereafter, ‘project lifecycle’).<a class="footnote-reference brackets" href="#assurance" id="id1">1</a>
-For instance, <span id="id2">[<a class="reference internal" href="../../bibliography.html#id53">Sweenor <em>et al.</em>, 2020</a>]</span> break it into four stages: Build, Manage, Deploy &amp; Integrate, Monitor.<a class="footnote-reference brackets" href="#mlops" id="id3">2</a>
-<span id="id4">Ashmore <em>et al.</em> [<a class="reference internal" href="../../bibliography.html#id4">2019</a>]</span> also identify four stages, which have a more specific focus on data science: data management, model learning, model verification, and model deployment.</p>
+For instance, <span id="id2">[<a class="reference internal" href="../../bibliography.html#id59">Sweenor <em>et al.</em>, 2020</a>]</span> break it into four stages: Build, Manage, Deploy &amp; Integrate, Monitor.<a class="footnote-reference brackets" href="#mlops" id="id3">2</a>
+<span id="id4">Ashmore <em>et al.</em> [<a class="reference internal" href="../../bibliography.html#id5">2019</a>]</span> also identify four stages, which have a more specific focus on data science: data management, model learning, model verification, and model deployment.</p>
 <p>The multiplicity of approaches is likely a product of the evolution of diverse methods in data mining/analytics, the significant impact of ML on research and innovation, and the specific practices and considerations inherent to each of the various domains where ML techniques are applied.
 While there are many benefits of existing frameworks, they do not tend to focus on the wider social or ethical aspects that interweave throughout the various stages of a ML lifecycle.</p>
 <p><a class="reference internal" href="#project-lifecycle"><span class="std std-numref">Fig. 6</span></a>, therefore, presents a model of a <em>typical</em> lifecycle for a project involving data science or the production of an ML/AI system.
 We have designed this model to support the ethical reflection and deliberation that is characteristic of responsible data science and AI, while remaining faithful to the technical details.
 However, it is important to note that the model is a heuristic for reflection and deliberation.
 Therefore, it is not intended to be perfectly capture of describe the processes for all data science or AI projects.</p>
-<div class="figure align-center" id="project-lifecycle">
-<img alt="A model of a typical data science and AI project" src="../../_images/lifecycle.png" />
-<p class="caption"><span class="caption-number">Fig. 6 </span><span class="caption-text">The Project Lifecycle. The overarching stages of design, development, and deployment (for a typical data-driven project) can be split into indicative tasks and activities. In practice, both the stages and the tasks will overlap with their neighbours, and may be revisited where a particular task requires an iterative approach. The spiral indicates that this is a diachronic, macroscopic process that evolves and develops over time, and as the deployment stage finishes, a new iteration is likely to begin.</span><a class="headerlink" href="#project-lifecycle" title="Permalink to this image">¶</a></p>
-</div>
+<figure class="align-center" id="project-lifecycle">
+<img alt="A model of a typical data science and AI project" src="../../_images/project-lifecycle.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 6 </span><span class="caption-text">The Project Lifecycle. The overarching stages of design, development, and deployment (for a typical data-driven project) can be split into indicative tasks and activities. In practice, both the stages and the tasks will overlap with their neighbours, and may be revisited where a particular task requires an iterative approach. The spiral indicates that this is a diachronic, macroscopic process that evolves and develops over time, and as the deployment stage finishes, a new iteration is likely to begin.</span><a class="headerlink" href="#project-lifecycle" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
 <p>To begin, the inner circle breaks the project lifecycle into three processes:</p>
 <ol class="simple">
 <li><p>(Project) Design</p></li>
@@ -467,7 +489,7 @@ In doing so, we expose a wide range of diverse tasks, each of which give rise to
 <hr class="footnotes docutils" />
 <dl class="footnote brackets">
 <dt class="label" id="assurance"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
-<dd><p>The following text is adapted from a publication titled, ‘Ethical Assurance: A practical approach to the responsible design, development, and deployment of data-driven technologies’ <span id="id5">[<a class="reference internal" href="../../bibliography.html#id10">Burr and Leslie, 2021</a>]</span>.</p>
+<dd><p>The following text is adapted from a publication titled, ‘Ethical Assurance: A practical approach to the responsible design, development, and deployment of data-driven technologies’ <span id="id5">[<a class="reference internal" href="../../bibliography.html#id13">Burr and Leslie, 2021</a>]</span>.</p>
 </dd>
 <dt class="label" id="mlops"><span class="brackets"><a class="fn-backref" href="#id3">2</a></span></dt>
 <dd><p>These four stages are influenced by an ‘ML OPs’ perspective.
@@ -475,7 +497,7 @@ The term ‘MLOps’ refers to the application of DevOps practices to ML pipelin
 The term is often used in an inclusive manner to incorporate traditional statistical or data science practices that support the ML lifecycle, but are not themselves constitutive of machine learning (e.g. exploratory data analysis), as well as deployment practices that are important within business and operational contexts (e.g. monitoring key performance indicators).</p>
 </dd>
 </dl>
-</div>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -500,36 +522,16 @@ The term is often used in an inclusive manner to incorporate traditional statist
               </div>
               
         
+        <div class='prev-next-bottom'>
             
+    <a class='left-prev' id="prev-link" href="responsible_ds.html" title="previous page">Responsible Data Science and AI</a>
+    <a class='right-next' id="next-link" href="roles_responsibility.html" title="next page">Roles and Responsibilities</a>
 
-
-
-<div class='prev-next-bottom'>
-    
-    <div id="prev">
-        <a class="left-prev" href="responsible_ds.html" title="previous page">
-            <i class="prevnext-label fas fa-angle-left"></i>
-            <div class="prevnext-info">
-                <p class="prevnext-label">previous</p>
-                <p class="prevnext-title">Responsible Data Science and AI</p>
-            </div>
-        </a>
-    </div>
-     <div id="next">
-        <a class="right-next" href="roles_responsibility.html" title="next page">
-            <div class="prevnext-info">
-                <p class="prevnext-label">next</p>
-                <p class="prevnext-title">Roles and Responsibilities</p>
-            </div>
-            <i class="prevnext-label fas fa-angle-right"></i>
-        </a>
-     </div>
-
-</div>
+        </div>
         
         </div>
     </div>
-    <footer class="footer">
+    <footer class="footer mt-5 mt-md-0">
     <div class="container">
       <p>
         

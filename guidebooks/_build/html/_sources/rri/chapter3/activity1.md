@@ -31,10 +31,10 @@ This activity is a relatively easy one, but it's also very important for some of
 - Submitted a pull request that will allow you to be added as a contributor to this course's repository
 
 <!---
-Activity 1: Contributing to Collaborative Projects
+Activity 3: Contributing to Collaborative Projects
 
 If you are following this guide as part of an online course, there is an associated activity that is designed to help you collaborate with your team.
 Please visit https://bit.ly/3lL2KTc to view the associated activity.
 
-If you are reading this as a self-directed exercise, you can instead visit [https://the-turing-way.netlify.app/collaboration/](https://the-turing-way.netlify.app/collaboration/) to read more about collaborative research.
+If you are reading this as a self-directed exercise, you can instead visit https://the-turing-way.netlify.app/collaboration/ to read more about collaborative research.
 --->

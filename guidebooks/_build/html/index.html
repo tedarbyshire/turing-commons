@@ -4,7 +4,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Welcome &#8212; Turing Commons</title>
     
   <link href="_static/css/theme.css" rel="stylesheet" />
@@ -23,7 +24,7 @@
 
     
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.e8e5499552300ddf5d7adccae7cc3b70.css" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
@@ -42,7 +43,7 @@
     <script src="_static/copybutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script>
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
@@ -71,14 +72,13 @@
     <a class="navbar-brand text-wrap" href="#">
       
       
-      
       <h1 class="site-logo" id="site-title">Turing Commons</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
     <div class="bd-toc-item active">
         <ul class="nav bd-sidenav">
  <li class="toctree-l1 current">
@@ -239,17 +239,22 @@
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="rri/chapter4/model_development/model_selection.html">
-     Model Selection and Training
+     Model Selection
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="rri/chapter4/model_development/model_testing.html">
-     Model Testing and Validation
+     Model Training, Testing and Validation
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="rri/chapter4/model_development/model_reporting.html">
      Model Reporting
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="rri/chapter4/model_development/activity8.html">
+     Activity 8: Designing Model Reports
     </a>
    </li>
    <li class="toctree-l2">
@@ -264,12 +269,17 @@
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="rri/chapter4/system_deployment/system_use.html">
-     System Use, Monitoring, and Updating
+     System Use and Monitoring
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="rri/chapter4/system_deployment/model_updating.html">
      Model Updating or Deprovisioning
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="rri/chapter4/summary.html">
+     Summary of Chapter
     </a>
    </li>
   </ul>
@@ -285,13 +295,13 @@
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="rri/chapter5/assurance.html">
-     What is Argument-Based Assurance?
+    <a class="reference internal" href="rri/chapter5/communication.html">
+     Responsible Communication
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="rri/chapter5/communication.html">
-     Assurance and Responsible Communication
+    <a class="reference internal" href="rri/chapter5/assurance.html">
+     What is Argument-Based Assurance?
     </a>
    </li>
    <li class="toctree-l2">
@@ -432,7 +442,7 @@
             <div class="tocsection onthispage pt-5 pb-3">
                 <i class="fas fa-list"></i> Contents
             </div>
-            <nav id="bd-toc-nav" aria-label="Page">
+            <nav id="bd-toc-nav">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#contributing">
@@ -450,7 +460,7 @@
         
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="welcome">
+  <section class="tex2jax_ignore mathjax_ignore" id="welcome">
 <h1>Welcome<a class="headerlink" href="#welcome" title="Permalink to this headline">¶</a></h1>
 <p>Hello 👋
 This is the Turing Commons—a home for resources and tools to help you reflect, discuss, and take responsibility for the design, development, and use of data-driven technologies.</p>
@@ -464,7 +474,7 @@ We have a range of resources for those curious about the ethical and responsible
 <li><p><a class="reference internal" href="pcs/index.html"><span class="doc std std-doc">Public Engagement and Communication of Science (PCS)</span></a></p></li>
 <li><p><a class="reference internal" href="aeg/index.html"><span class="doc std std-doc">AI Ethics &amp; Governance (AEG)</span></a></p></li>
 </ul>
-<div class="section" id="contributing">
+<section id="contributing">
 <h2>Contributing<a class="headerlink" href="#contributing" title="Permalink to this headline">¶</a></h2>
 <p>If you’d like to get involved and help contribute to these resources, you can either:</p>
 <ul class="simple">
@@ -481,7 +491,7 @@ We have a range of resources for those curious about the ethical and responsible
 </ul>
 </li>
 </ul>
-</div>
+</section>
 <div class="toctree-wrapper compound">
 </div>
 <div class="toctree-wrapper compound">
@@ -490,7 +500,7 @@ We have a range of resources for those curious about the ethical and responsible
 </div>
 <div class="toctree-wrapper compound">
 </div>
-</div>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -515,27 +525,15 @@ We have a range of resources for those curious about the ethical and responsible
               </div>
               
         
+        <div class='prev-next-bottom'>
             
+    <a class='right-next' id="next-link" href="rri/index.html" title="next page">About</a>
 
-
-
-<div class='prev-next-bottom'>
-    
-     <div id="next">
-        <a class="right-next" href="rri/index.html" title="next page">
-            <div class="prevnext-info">
-                <p class="prevnext-label">next</p>
-                <p class="prevnext-title">About</p>
-            </div>
-            <i class="prevnext-label fas fa-angle-right"></i>
-        </a>
-     </div>
-
-</div>
+        </div>
         
         </div>
     </div>
-    <footer class="footer">
+    <footer class="footer mt-5 mt-md-0">
     <div class="container">
       <p>
         

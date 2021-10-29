@@ -139,11 +139,13 @@ plt.hist(ages["F"],bins=10,range=(0,100), alpha=0.5, label="F")
 
 df_ethnicity = pd.read_excel("https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/906922/Section_4_-_Ethnicity.ods",
                              sheet_name="Figure_4_1",engine="odf",skiprows=list(range(4))+[55,56])
-df_ethnicity
+df_ethnicity.head()
 
 
 # *Note* the column here is _incorrectly_ labelled as "deaths", however, it does in fact refer to cases.
 # Here we have a bit more work to do.  For the moment, we don't care about the date, so we just want to sum over all dates for each ethnic group.
+# 
+# Again, we also calculate the cumulative sum, which will allow us to generate the ethnicity of a simulated patient from this distribution.
 
 # In[10]:
 
@@ -171,7 +173,7 @@ def get_ethnicity(df):
 
 # ### Week of admission
 # 
-# There is a table on hospital admission rates for different regions of the country on the PHE document.  We will read this table, but just sum over all regions.
+# There is a table on hospital admission rates for different regions of the country on the PHE document.  We will read this table, but just sum over all regions, and yet again, calculate the cumulative fraction as we go.
 
 # In[12]:
 
@@ -180,7 +182,7 @@ df_hospital_admissions = pd.read_excel("https://assets.publishing.service.gov.uk
                                        sheet_name="Figure_2_3",engine="odf",skiprows=list(range(6))+list(range(74,85)))
 df_hospital_admissions["sum"] = df_hospital_admissions.sum(axis=1)
 df_hospital_admissions["cumulative_frac"] = df_hospital_admissions["sum"].cumsum()/df_hospital_admissions["sum"].sum()
-df_hospital_admissions
+df_hospital_admissions.head()
 
 
 # In[13]:
@@ -200,7 +202,7 @@ def get_admission_date(df):
 # 
 # We will use yet another table from the PHE report to get the probability of being admitted to hospital, and of getting critical care (here simplified to saying "received invasive ventilation"), as a function of ethnicity.  We also make a correction to the latter probability, based on date of admission - at some point, as medical staff learned more, ventilation became less likely.
 
-# In[15]:
+# In[14]:
 
 
 df_hospital_care = pd.read_excel("https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/906922/Section_4_-_Ethnicity.ods",
@@ -210,7 +212,7 @@ df_hospital_care
 
 # Here, we want to convert the percentages into absolute numbers, so we can combine with `df_ethnicity_summary` to get the probability of being admitted (sum of both "Lower level of care" and "Critical care"), and of being put on ventilation ("Critical care")
 
-# In[16]:
+# In[15]:
 
 
 df_hospital_care["num_lower"] = (df_hospital_care["Lower level of care (%)"]/100) * df_hospital_care.loc[5]["Lower level of care (%)"]
@@ -227,7 +229,7 @@ df_hospital_care
 # 
 # Note that there are some mismatches in the "ethnicity" names - we should rename "Any other ethnic group" in df_ethnicity_summary to "Other ethnic groups", and also fix capitalisation on "Mixed / Multiple ethnic groups"
 
-# In[17]:
+# In[16]:
 
 
 # fix name mismatches
@@ -245,7 +247,7 @@ df_hospital_care
 
 # Let's combine all this to get hospital admission and care data:
 
-# In[18]:
+# In[17]:
 
 
 def get_hospital_data(df_admission, df_care, ethnicity, change_date="2020-04-15"):
@@ -293,7 +295,7 @@ def get_hospital_data(df_admission, df_care, ethnicity, change_date="2020-04-15"
 # 
 # These assumptions and guesses give us means and standard deviations for Gaussians, depending on age and sex.  We can then use `random.gauss` to draw from these Gaussians and get a height and BMI for a simulated person, then use these to calculate weight.
 
-# In[19]:
+# In[18]:
 
 
 def get_height_weight(age, sex):
@@ -333,7 +335,7 @@ def get_height_weight(age, sex):
 # * We also make some ad-hoc assumptions regarding whether the patient was hospitalised and had intrusive ventilation.   In general we assume that the most seriously ill patients were admitted, and given critical care, and these were most likely to die.  However, we don't enforce this relation for patients over 75, who were perhaps more likely to be in care homes.
 # - For those that were admitted, we apply a small correction to account for the fact that the knowledge in hospitals improved over time - we say 1% relative per day after 15th April
 
-# In[20]:
+# In[19]:
 
 
 def did_patient_die(age, 
@@ -394,7 +396,7 @@ def did_patient_die(age,
 # 
 # We're now ready to generate some simulated people.  We first get the age, then the sex, then use these to get a height and weight, using the functions defined above.  Each simulated person will be returned as a JSON object, which we can then accumulate into a pandas dataframe.
 
-# In[26]:
+# In[20]:
 
 
 def generate_person(df_age_sex, df_ethnicity, df_admission, df_care):
@@ -426,7 +428,7 @@ def generate_person(df_age_sex, df_ethnicity, df_admission, df_care):
     }
 
 
-# In[31]:
+# In[21]:
 
 
 people = []
@@ -444,13 +446,13 @@ for i in range(30000):
 
 # Now put this list of dicts into a pandas dataframe:
 
-# In[33]:
+# In[34]:
 
 
 df_people = pd.DataFrame.from_records(people)
 
 
-# In[34]:
+# In[35]:
 
 
 df_people.head(20)
@@ -458,15 +460,15 @@ df_people.head(20)
 
 # Now export this to a CSV file:
 
-# In[35]:
+# In[28]:
 
 
-df_people.to_csv("covid_patients_syn_data.csv")
+df_people.to_csv("covid_patients_syn_data_unbiased.csv")
 
 
 # Quick check on whether the age profile of the people that died looks sensible:
 
-# In[36]:
+# In[29]:
 
 
 df_died = df_people[df_people.died==True]
@@ -482,7 +484,7 @@ plt.hist(ages["F"],bins=10,range=(0,100), alpha=0.5, label="F")
 # 
 # There are a few possible ways that the data can be imperfect.  A simple example is the binary classification of sex into "M" and "F" - some fraction of our simulated patients may be non-binary, or will have not filled in this value.  Let's replace 5% of our "M" and "F" labels with "null".
 
-# In[37]:
+# In[30]:
 
 
 def add_null_gender(df, null_prob=0.05):
@@ -492,16 +494,16 @@ def add_null_gender(df, null_prob=0.05):
     return df
 
 
-# In[38]:
+# In[36]:
 
 
 df_people = add_null_gender(df_people)
-df_people.head(30)
+df_people.head(20)
 
 
 # Another potential bias could be that older people are under-represented in the dataset because they never presented at a hospital - write a function to remove some fraction of people in some age range:
 
-# In[39]:
+# In[37]:
 
 
 def remove_elderly_non_hospitalised(df, age_range, prob_remove=0.5):
@@ -521,16 +523,27 @@ def remove_elderly_non_hospitalised(df, age_range, prob_remove=0.5):
             
 
 
-# In[40]:
+# In[38]:
 
 
 df_people = remove_elderly_non_hospitalised(df_people,[75,85])
 
 
+# Data entry errors can also occur - perhaps someone gave their height in feet and inches rather than metres:
+
 # In[41]:
 
 
-df_people.to_csv("covid_patients_syn_data_with_biases.csv")
+index = random.randint(0,len(df_people))
+df_people.at[index,"height"] = 5.9
+
+
+# OK, let's output this to a different CSV file, which is what we will use as input for the data analysis task.
+
+# In[43]:
+
+
+df_people.to_csv("covid_patients_syn_data.csv")
 
 
 # In[ ]:

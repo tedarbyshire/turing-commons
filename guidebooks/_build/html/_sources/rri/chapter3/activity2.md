@@ -16,7 +16,7 @@ There are two caveats here:
 
 <!---
 
-Activity 1: Bias Cards
+Activity 4: Bias Cards
 
 This activity introduces 9 key biases (3 for each of the different types), and explores which of the stages and activities for the project lifecycle is most impacted by their effects.
 
