@@ -24,11 +24,13 @@ Unfortunately, this activity can only be done when using this guide as part of a
 However, there are other ways to use GitHub to contribute to this project ([click here](https://github.com/chrisdburr/turing-commons/blob/master/CONTRIBUTING.md)).
 ```
 
-This activity is a relatively easy one, but it's also very important for some of the later activities. By the end of the activity you will have:
+This activity is a relatively easy one, but it's also very important for some of the later activities. You will be guided through the following steps, which you will then perform yourself:
 
-- Created a GitHub account (if you don't have one already)
-- Introduced yourself by using an issue and a branch, relevant to the course
-- Submitted a pull request that will allow you to be added as a contributor to this course's repository
+- [ ] Create a GitHub account (if you don't have one already)
+- [ ] Explore the Turing Commons Repository
+- [ ] Switch to the branch for your specific online workshop
+- [ ] Introduce yourself by adding to an issue
+- [ ] Submit a pull request to be added as a contributor to the course's repository
 
 <!---
 Activity 3: Contributing to Collaborative Projects
