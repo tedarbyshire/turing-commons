@@ -1,5 +1,10 @@
 # 4 The Project Lifecycle
 
+```{image} /images/illustrations/participatory-design.png
+:alt: Illustration of data science and AI applications (by [Johnny Lighthands](https://www.johnnylighthands.co.uk))
+:align: center
+```
+
 ## Chapter Outline
 
 - [Case Studies](case_studies.md)
