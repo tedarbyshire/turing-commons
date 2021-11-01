@@ -26,11 +26,12 @@ However, there are other ways to use GitHub to contribute to this project ([clic
 
 This activity is a relatively easy one, but it's also very important for some of the later activities. You will be guided through the following steps, which you will then perform yourself:
 
-- [ ] Create a GitHub account (if you don't have one already)
-- [ ] Explore the Turing Commons Repository
-- [ ] Switch to the branch for your specific online workshop
-- [ ] Introduce yourself by adding to an issue
-- [ ] Submit a pull request to be added as a contributor to the course's repository
+1. Create a GitHub account (if you don't have one already)
+2. Explore the Turing Commons Repository
+3. Fork the repository to your own account
+4. Switch to the branch for your specific online workshop
+5. Introduce yourself by adding to an issue
+6. Submit a pull request to be added as a contributor to the course's repository
 
 <!---
 Activity 3: Contributing to Collaborative Projects
