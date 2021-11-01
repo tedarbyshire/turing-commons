@@ -1,11 +1,6 @@
 # Activity 2: Ethical Reflection and Deliberation
 
 Our second activity is another group discussion, but this time there is a bit more structure that is intended to help you think about the societal impact of decision-making and actions.
-
-A page has been set up on Mural—a collaborative whiteboard tool—to guide you in a process of ethical reflection and deliberation:
-
-[Link to Mural Board](https://app.mural.co/t/responsibleresearchandinnova4822/m/responsibleresearchandinnova4822/1635763831435/a8738c1ef8c2eeb6766867eabfeae92ac2e28111?sender=ue70a2ec1949058a4e57a7053)
-
 The activity proceeds as follows:
 
 1. You will need to identify an ethical challenge or question that either has arisen or could arise in your life or research? For example, you could consider the question of whether you should fly to international conferences, whether you should eat meat, or when it is appropriate to make datasets publicly available.
@@ -18,6 +13,8 @@ The goal is simply to become familiar with the process of identifying and consid
 We will consider evaluation in a later section.
 
 [^agent]: In moral philosophy, a _moral agent_ is someone who has the capacity to make moral judgments, based on a concept of rightness or wrongness, and then act upon these judgements. As such, moral agency is a requirement for moral accountability (i.e., the attribution of praise or blame in response to the consequences of practical decision-making). This concept is used to draw a distinction between rational agents and those who lack the capacity for rational deliberation, (e.g., non-human animals, children, people with severe mental disabilities). In contrast, _moral patients_ or subjects, are those to whom moral agents have responsibility when deciding upon a course of action. Other humans can be moral subjects, but the list can also include non-human animals, ecological systems, and even inanimate objects (e.g., national artefacts).
+
+If you are doing this activity as part of an instructor-led version of the course, a whiteboard has been setup on Mural to support the activity.
 
 <!---
 
