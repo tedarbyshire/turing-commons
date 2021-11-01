@@ -1,19 +1,19 @@
 # Activity 9: Designing Model Reports
 
-In this activity you will consider what criteria or information ought to be included in a model report for the case studies that you have been working with over the course of this chapter. 
+In this activity you will consider what criteria or information ought to be included in a model report for the case studies that you have been working with over the course of this chapter.
 
-When thinking about what to add, you can consult the following templates:
+When thinking about what to add, you can consult the following resources:
 
-- [Model Cards for Model Reporting]
-- [TRIPOD Statement]
+|TRIPOD Statement {cite}`collins2015`| [Link to Checklist](https://www.tripod-statement.org/wp-content/uploads/2020/01/Tripod-Checklist-Prediction-Model-Development-and-Validation-PDF.pdf) |
+|Model Cards for Model Reporting {cite}`mitchell2019`| ![Model Cards](../../../images/graphics/model-cards.png) |
 
 ```{admonition} Note
 The TRIPOD statement was designed to systematise the reporting of models developed (or validated) in a medical research context, so it is unlikely you will need to include all of the items.
 ```
 
-However, you should also think about the specific context in which your model is likely to be deployed and the domain-specific risks that need to be considered. 
+However, you should also think about the specific context in which your model is likely to be deployed and the domain-specific risks that need to be considered.
 Therefore, you should also consider each item's inclusion carefully and discuss whether there may be any issues by including the information.
-For instance, does including the full list of features used by the model pose an intellectual property risk or a representational risk to stakeholders? 
+For instance, does including the full list of features used by the model pose an intellectual property risk or a representational risk to stakeholders?
 If so, should the model report only be shared with specific parties?
 
 Some example questions that you could ask include:
