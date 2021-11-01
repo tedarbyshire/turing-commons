@@ -38,8 +38,6 @@ With these points in mind, we will make use of the following set of principles k
 
 These principles are grounded in comprehensive research and understanding of human rights and data protection law, as well as applied ethics of data and AI. {cite}`leslie2021`
 
-### Examples
-
 You can click through the following illustrative examples to get an idea of some of the social harms associated with data-driven technologies:
 
 ````{panels}
