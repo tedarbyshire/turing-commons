@@ -1,4 +1,4 @@
-# Responsible Communication
+# Engaging, Communicating, Assuring
 
 In this final chapter, we will consider what it means to communicate the processes and outputs of your research or innovation project in a responsible manner.
 Although we have already looked at several relevant mechanisms for communication, such as [stakeholder engagement](../chapter4/project_design/planning.md) or [model reporting](../chapter4/model_development/model_reporting.md), these mechanisms are only two pieces within a larger puzzle.
