@@ -1,4 +1,4 @@
-# Summary of Chapter
+# Next Steps
 
 The overview and summary of the project lifecycle presented in this chapter, by necessity, skips over a lot of detail.
 However, it provides a useful anchor for subsequent discussion, and serves to motivate the following question:
