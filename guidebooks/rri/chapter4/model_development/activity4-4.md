@@ -13,7 +13,7 @@ The TRIPOD statement was designed to systematise the reporting of models develop
 
 - [Model Cards for Model Reporting](https://modelcards.withgoogle.com/about) {cite}`mitchell2019`
 
-```{dropdown} Here's my dropdown
+```{dropdown} Model Card Template
 ![Model Cards](../../../images/graphics/model-cards.png)
 ```
 
