@@ -9,5 +9,6 @@ For instance, if one of the principles was 'Autonomy' a short sentence could be 
 
 > All algorithmic systems that interact with humans should be designed to support and promote human autonomy and self-determination. They should not coerce, deceive, or otherwise use manipulative nudges that are intended to shape user behaviour in a non-transparent or non-deliberative manner.
 
-If you are following this guide as part of an instructor-led course, you will be given a link to an online collaborative tool where you can draft the statements for each of the SAFE-D principles.
-Otherwise, you can use any text editor.
+```{admonition} Summary
+If you are following this guide as part of an instructor-led course, you will be given a link to a HackMd document where you can draft the statements for each of the SAFE-D principles. Otherwise, you can use any text editor.
+```
