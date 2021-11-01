@@ -1,4 +1,4 @@
-# About
+# About this Guidebook
 
 ![](../images/illustrations/sociotechnical_2.png)
 
@@ -43,7 +43,7 @@ This guidebook has the following learning objectives:
 7. [Further Resources](further_resources/index.md)
 8. [Bibliography](../bibliography.md)
 
-### List of Activities
+## List of Activities
 
 1. [Exploring Historical Case Studies](chapter2/activity2-1.md)
 2. [Ethical Reflection and Deliberation](chapter2/activity2-2.md)
