@@ -4,11 +4,17 @@ In this activity you will consider what criteria or information ought to be incl
 
 When thinking about what to add, you can consult the following resources:
 
-|TRIPOD Statement {cite}`collins2015`| [Link to Checklist](https://www.tripod-statement.org/wp-content/uploads/2020/01/Tripod-Checklist-Prediction-Model-Development-and-Validation-PDF.pdf) |
-|[Model Cards for Model Reporting](https://modelcards.withgoogle.com/about) {cite}`mitchell2019`| ![Model Cards](../../../images/graphics/model-cards.png) |
+- TRIPOD Statement {cite}`collins2015` 
+  - [Link to Checklist](https://www.tripod-statement.org/wp-content/uploads/2020/01/Tripod-Checklist-Prediction-Model-Development-and-Validation-PDF.pdf)
 
 ```{admonition} Note
 The TRIPOD statement was designed to systematise the reporting of models developed (or validated) in a *medical research context*, so many of the items will be very specific.
+```
+
+- [Model Cards for Model Reporting](https://modelcards.withgoogle.com/about) {cite}`mitchell2019`
+
+```{dropdown} Here's my dropdown
+![Model Cards](../../../images/graphics/model-cards.png)
 ```
 
 However, you should also think about the specific context in which your model is likely to be deployed and the domain-specific risks that need to be considered.
