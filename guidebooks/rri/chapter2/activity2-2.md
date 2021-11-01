@@ -4,7 +4,7 @@ Our second activity is another group discussion, but this time there is a bit mo
 
 A page has been set up on Mural—a collaborative whiteboard tool—to guide you in a process of ethical reflection and deliberation:
 
-[Link to Mural Board]()
+[Link to Mural Board](https://app.mural.co/t/responsibleresearchandinnova4822/m/responsibleresearchandinnova4822/1635763831435/a8738c1ef8c2eeb6766867eabfeae92ac2e28111?sender=ue70a2ec1949058a4e57a7053)
 
 The activity proceeds as follows:
 
