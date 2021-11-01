@@ -16,9 +16,9 @@ You are a project team responsible for developing a predictive risk assessment t
 
 ### Details
 
-| | |
+| Category | Details |
 | --- | --- |
-[*Type of technology:*| Decision Support Tool|
+|*Type of technology:*| Decision Support Tool|
 |*Context of Use:*| Sentencing Decisions in Criminal Courts|
 |*Outcome:*| A Risk Score |
 |*Project Team:*| Data scientists working for the courts|
@@ -32,9 +32,9 @@ You are a project team responsible for developing a predictive risk assessment t
 You work for an EdTech company and need to develop a recommender system that will be sold to schools to augment careers advice for students considering university courses. The system will ask each student to answer a series of questions, and will then provide an ordered list of recommended courses (linked to the respective university) that it "believes" are good options for the student. The system will also use satisfaction survey results and obtained degree results from those students who used the system previously as a way of calibrating and adjusting its recommendations (i.e., learning).
 ```
 
-| | |
+| Category | Details |
 | --- | --- |
-[*Type of technology:*| Recommendation System|
+|*Type of technology:*| Recommendation System|
 |*Context of Use:*| Secondary Schools or Colleges|
 |*Outcome:*| A ranking of possible degrees and career paths |
 |*Project Team:*| Private EdTech Organisation|
@@ -48,9 +48,9 @@ You work for an EdTech company and need to develop a recommender system that wil
 You are a team of social data scientists employed as consultants for a social media company. You have been tasked with reducing the levels of hate speech on the company's platform by developing a classifier that can flag potential instances of hate speech for review by human moderators. The tool will automatically review every post submitted to the platform, but will only flag those that are likely to represent an instance of hate speech, based on whether they exceed some likelihood threshold. In addition to the textual content contained within the post, your tool can also use a variety of other input sources to improve its decision-making, including feedback from the human moderators that help improve the accuracy of the model over time. 
 ```
 
-| | |
+| Category | Details |
 | --- | --- |
-[*Type of technology:*| Hate Speech Classifier|
+|*Type of technology:*| Hate Speech Classifier|
 |*Context of Use:*| Social Media Platform|
 |*Outcome:*| Binary variable ('hate speech' or 'not hate speech') with confidence rating |
 |*Project Team:*| Social Media Consultants and Platform|
