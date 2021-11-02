@@ -4,17 +4,21 @@ In this activity you will consider what criteria or information ought to be incl
 
 When thinking about what to add, you can consult the following resources:
 
-- TRIPOD Statement {cite}`collins2015` 
-  - [Link to Checklist](https://www.tripod-statement.org/wp-content/uploads/2020/01/Tripod-Checklist-Prediction-Model-Development-and-Validation-PDF.pdf)
-
-```{admonition} Note
-The TRIPOD statement was designed to systematise the reporting of models developed (or validated) in a *medical research context*, so many of the items will be very specific.
+```{admonition} TRIPOD Statement
+The TRIPOD statement was designed to systematise the reporting of models developed (or validated) in a *medical research context* {cite}`collins2015`. Therefore, many of the items will be very specific but could also be helpful for inspiration—[Link to Checklist](https://www.tripod-statement.org/wp-content/uploads/2020/01/Tripod-Checklist-Prediction-Model-Development-and-Validation-PDF.pdf).
 ```
 
-- [Model Cards for Model Reporting](https://modelcards.withgoogle.com/about) {cite}`mitchell2019`
-
 ```{dropdown} Model Card Template
+The [Model Cards for Model Reporting](https://modelcards.withgoogle.com/about) project, by Google, and first presented in {cite}`mitchell2019`, presents a helpful summary of features to include in a model report (or, "model card").
 ![Model Cards](../../../images/graphics/model-cards.png)
+```
+
+```{dropdown}} The Data Nutrition Project
+Inspired by the food nutrition labels, this project—led by Assembly, a program run by the MIT Media Lab and the Berkman Klein Center— seeks to develop a simple summary of the features that are salient for datasets. 
+
+[Visit Site](https://datanutrition.org/)
+
+![Example of a Data Nutrition Label](../../../images/graphics/datafacts.png)
 ```
 
 However, you should also think about the specific context in which your model is likely to be deployed and the domain-specific risks that need to be considered.
