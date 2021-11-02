@@ -19,6 +19,22 @@ These guidebooks are themselves being updated and added to, so may be in differe
 - [Public Engagement and Communication of Science (PCS)](pcs/index.md)
 - [AI Ethics & Governance (AEG)](aeg/index.md)
 
+## Accessibility Statement
+
+We would like to ensure these resources are accessible for as many people as possible.
+At present, this site is configured to allow users to:
+
+- zoom in up to 300% without the text spilling off the screen
+- navigate most of the website using just a keyboard
+- use a screen reader or translation tool on most of the content
+
+For keyboard navigation, <kbd>Up Arrow</kbd> and <kbd>Down Arrow</kbd>keys can be used to scroll up and down on the current page.
+<kbd>Left Arrow</kbd> and <kbd>Right Arrow</kbd> keys can be used to move forwards and backwards through the pages of the book.
+Tabbed content (including code example) can be focused using the <kbd>Tab</kbd> key. <kbd>Left Arrow</kbd> and <kbd>Right Arrow</kbd> keys are then used to focus the required tab option, where <kbd>Enter</kbd> can be used to select that option and display the associated content.
+
+However, we know that more can be done.
+If there is something that can be improved, please let us know by [getting in touch](mailto:cburr@turing.ac.uk), [raising an issue](https://github.com/chrisdburr/turing-commons/issues), or even contributing on GitHub 👇.
+
 ## Contributing
 
 If you'd like to get involved and help contribute to these resources, you can either:
