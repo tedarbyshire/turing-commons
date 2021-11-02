@@ -1,6 +1,9 @@
-# 1 Introduction
+```{image} ../../images/illustrations/chatbot.png
+:alt: Illustration by [Johnny Lighthands](https://www.johnnylighthands.co.uk))
+:align: center
+```
 
-![](../../images/illustrations/algorithm2.png)
+# 1 Introduction
 
 ```{admonition} Summary
 :class: tip
@@ -17,7 +20,7 @@ Prozac is a technology in the broad sense of the term, but it is not the sort of
 
 Although the scientists who were involved in the discovery and development of fluoxetine hydrochloride were confident that it could be used in the treatment of depression, the company Eli Lilly initially tested the drug as a treatment for high blood pressure and as an anti-obesity drug. Part of the reason for this was due to market analysis forecasting a limited demand for another antidepressant drug to rival the class of medications known as 'tricyclic antidepressants' that were already in use. So, as one of the discovers of Prozac admits,
 
-> it would be presumptive to claim that we anticipated the wide acceptance of Prozac by both physicians and patients. Neither did we foresee that its pale-green and light-yellow capsule would appear on the cover of Newsweek (26 March 1990), which described it as: ``A breakthrough drug for depression''.
+> "it would be presumptive to claim that we anticipated the wide acceptance of Prozac by both physicians and patients. Neither did we foresee that its pale-green and light-yellow capsule would appear on the cover of Newsweek (26 March 1990), which described it as: 'A breakthrough drug for depression'."
 
 As we will see throughout this course, *anticipating* the effects of your research or innovation project is a core part of what it means to take responsibility. But the discovery of Prozac shows us that there are limits to anticipation, and that sometimes unintended consequences may arise. For instance, antidepressants such as Prozac have received a large amount of critical scrutiny that focuses on their over-prescription and overuse in society, which can often lead to alternative (non-pharmaceutical treatments) being overlooked; the patchy state of our empirical understanding regarding how they affect and alter an individual's brain; and the range of side effects, including nausea, headaches, difficulty sleeping, dizziness, fatigue, and even increased suicidal ideation—the very thing that the drugs are often prescribed to help alleviate {cite:p}`spence2013`. Should the developers of Prozac have anticipated these consequences? Does taking responsibility for research and innovation require researchers and innovators to have near-omniscient levels of anticipatory capabilities, in order to ensure no unintended consequences arise? Obviously, the answer is no. Any sensible moral theory that is intended to support practical decision-making must make room for the cognitive limitations of human individuals and teams, and we cannot ignore the many positive impacts that counteract the potentially negative and unintended consequences.
 
@@ -33,8 +36,8 @@ This brings us to another significant aspect of RRI, which we will discuss in de
 
 Good intentions are not sufficient for acting responsibly. Let's look at an example. Cathy—a data scientist with an interest in machine learning—may believe that she is doing a good act by developing an automated system that uses natural language processing to secretly monitor the tweets or comments of her friends on social media and then alerts her if it detects negative language that could be indicative of depression or suicidal ideation. If it detects a message, it notifies Cathy so she can reach out to her friends and try to offer some help or support. But is she acting responsibly in doing so? Your immediate reaction is probably one of discomfort, leading you to think the answer to this question should be 'no'. Let's explore some of the relevant factors to see why this is likely the case.
 
-### An Example
-
+```{admonition} An Example
+:class: tip
 First of all, you may think that in spite of the fact that Cathy may be trying to help, if she were to explain to her friend that she had reached out on the basis of an automated monitoring tool, they would probably feel as though she were violating an important expectation of trust by operating this tool in secrecy. Arguably, this is an outcome that she should have been able to anticipate had she reflected on the consequences of her project. Although Cathy's friend's messages and comments were made in public, they would have a reasonable expectation that Cathy would not use their posts or data for purposes that could be perceived as some form of surveillance. Had Cathy reached out to her friends and included them in her initial idea formation, they would probably have been able to save her a lot of wasted effort and prevented the unnecessary harms to their friendship.
 
 Second, let's assume that Cathy has developed this tool and hosted the code on a public GitHub repository. Her intention is to allow others to help and support their friends in the same way, and is operating under the belief that by making her work open, accessible, and transparent—several principles that are commonly found in ethical frameworks—she is contributing to the public good. But what if the tool becomes incredibly popular and widely used? A possible unintended consequence of this is that many users of social media begin to feel unsafe posting on platforms that they had, hitherto, used for the purpose of seeking help and advice from a supportive community? Unfortunately, Cathy did not properly reflect on how these principles would operate within the context of her project, and falsely assumed they were unconditional goods.
@@ -42,5 +45,6 @@ Second, let's assume that Cathy has developed this tool and hosted the code on a
 Finally, let's pretend that Cathy has genuinely overlooked both of these consequences and, therefore, has made no plans for rectifying the potential harm her tool has caused. By now, she is unable to respond to the emergence of the unintended consequences except by apologising and removing the tool, which could have already been copied to other user's computers.
 
 It should be clear that this example is a case of irresponsible technological innovation that gives rise to several socially undesirable outcomes and harms. However, what is not necessarily clear at present is that Cathy's project can also be seen to contravene several principles of RRI: anticipation, reflexivity, inclusiveness, and responsiveness.
+```
 
 We will explore these principles in more detail in a later section. However, this introduction has already indirectly introduced you to most of the themes, topics, and principles that are covered in this guide. In the remainder of the guide we will approach each of them in a more systematic and structured manner, taking time to discuss and explore how they can help you conduct more responsible research and innovation in data science and AI.

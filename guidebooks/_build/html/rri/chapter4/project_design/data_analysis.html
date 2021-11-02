@@ -4,8 +4,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Data Analysis &#8212; Turing Commons</title>
     
   <link href="../../../_static/css/theme.css" rel="stylesheet" />
@@ -24,7 +23,7 @@
 
     
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-book-theme.e8e5499552300ddf5d7adccae7cc3b70.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
     <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.css" />
@@ -43,7 +42,7 @@
     <script src="../../../_static/copybutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script>
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
@@ -52,8 +51,8 @@
     <script async="async" src="../../../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="Preprocessing and Feature Engineering" href="../model_development/preprocessing.html" />
-    <link rel="prev" title="Data Extraction and Procurement" href="data_extraction.html" />
+    <link rel="next" title="Activity 8: Identifying Missing Data" href="activity4-3.html" />
+    <link rel="prev" title="Activity 7: Developing Case Studies" href="activity4-2.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -73,13 +72,14 @@
     <a class="navbar-brand text-wrap" href="../../../index.html">
       
       
+      
       <h1 class="site-logo" id="site-title">Turing Commons</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../../../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
         <ul class="nav bd-sidenav">
  <li class="toctree-l1">
@@ -96,7 +96,7 @@
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../../index.html">
-   About
+   About this Guidebook
   </a>
  </li>
  <li class="toctree-l1">
@@ -125,8 +125,8 @@
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../../chapter2/activity1.html">
-     Activity 1: Exploring Case Studies
+    <a class="reference internal" href="../../chapter2/activity2-1.html">
+     Activity 1: Exploring Historical Case Studies
     </a>
    </li>
    <li class="toctree-l2">
@@ -140,7 +140,7 @@
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../../chapter2/activity2.html">
+    <a class="reference internal" href="../../chapter2/activity2-2.html">
      Activity 2: Ethical Reflection and Deliberation
     </a>
    </li>
@@ -162,6 +162,11 @@
     </a>
    </li>
    <li class="toctree-l2">
+    <a class="reference internal" href="../../chapter3/activity3-1.html">
+     Activity 3: Specifying Principles
+    </a>
+   </li>
+   <li class="toctree-l2">
     <a class="reference internal" href="../../chapter3/project_lifecycle.html">
      Introducing the Project Lifecycle (A Sociotechnical Approach)
     </a>
@@ -172,8 +177,8 @@
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../../chapter3/activity1.html">
-     Activty 3: Contributing to Collaborative Projects
+    <a class="reference internal" href="../../chapter3/activity3-2.html">
+     Activty 4: Contributing to Collaborative Projects
     </a>
    </li>
    <li class="toctree-l2">
@@ -182,8 +187,8 @@
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../../chapter3/activity2.html">
-     Activity 4: Bias Cards
+    <a class="reference internal" href="../../chapter3/activity3-3.html">
+     Activity 5: Bias Cards
     </a>
    </li>
   </ul>
@@ -209,8 +214,8 @@
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="activity5.html">
-     Activity 5: Privilege Walk
+    <a class="reference internal" href="activity4-1.html">
+     Activity 6: Privilege Walk
     </a>
    </li>
    <li class="toctree-l2">
@@ -219,18 +224,23 @@
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="activity6.html">
-     Activity 6: Developing Case Studies
+    <a class="reference internal" href="data_extraction.html">
+     Data Extraction and Procurement
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="data_extraction.html">
-     Data Extraction and Procurement
+    <a class="reference internal" href="activity4-2.html">
+     Activity 7: Developing Case Studies
     </a>
    </li>
    <li class="toctree-l2 current active">
     <a class="current reference internal" href="#">
      Data Analysis
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="activity4-3.html">
+     Activity 8: Identifying Missing Data
     </a>
    </li>
    <li class="toctree-l2">
@@ -254,8 +264,8 @@
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../model_development/activity8.html">
-     Activity 8: Designing Model Reports
+    <a class="reference internal" href="../model_development/activity4-4.html">
+     Activity 9: Designing Model Reports
     </a>
    </li>
    <li class="toctree-l2">
@@ -280,7 +290,7 @@
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../summary.html">
-     Summary of Chapter
+     Next Steps
     </a>
    </li>
   </ul>
@@ -297,7 +307,7 @@
   <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="../../chapter5/communication.html">
-     Responsible Communication
+     Engaging, Communicating, Assuring
     </a>
    </li>
    <li class="toctree-l2">
@@ -310,6 +320,11 @@
      Goals, Properties, and Evidence
     </a>
    </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../chapter5/activity5-1.html">
+     Activity 10: Building an Assurance Case
+    </a>
+   </li>
   </ul>
  </li>
  <li class="toctree-l1">
@@ -317,10 +332,27 @@
    6 Conclusion (Looking Forward)
   </a>
  </li>
- <li class="toctree-l1">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="../../further_resources/index.html">
-   Further Resources
+   Additional Resources
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../further_resources/further-reading.html">
+     Further Reading
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="synthetic_data_generation.html">
+     Generating a Synthetic Healthcare Dataset
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 <p class="caption" role="heading">
@@ -460,7 +492,7 @@
             <div class="tocsection onthispage pt-5 pb-3">
                 <i class="fas fa-list"></i> Contents
             </div>
-            <nav id="bd-toc-nav">
+            <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#what-is-exploratory-data-analysis">
@@ -537,16 +569,16 @@
         
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="data-analysis">
+  <div class="tex2jax_ignore mathjax_ignore section" id="data-analysis">
 <h1>Data Analysis<a class="headerlink" href="#data-analysis" title="Permalink to this headline">¶</a></h1>
 <p>This module will introduce and examine the stage of ‘exploratory data analysis’.</p>
 <p>Rather than focusing on the statistical or technical techniques employed in modern data science though, we will approach this stage with a bias-aware perspective.
-However, we will make use of Jupyter notebooks—a popular tool in data science—to aid our exploratory data analysis[^jupyter] by visualising some data.
+However, we will make use of <a class="reference external" href="https://jupyter.org">Jupyter notebooks</a>—a popular tool in data science—to aid our exploratory data analysis by visualising some data.
 You do not need to be familiar with either Python or Jupyter Notebooks if you just want to gain an understanding of how social, cognitive, and statistical biases interact and affect downstream stages in the research and innovation lifecycle.
 But the code is presented for those who wish to get more “hands-on”.</p>
-<p>You can also edit this code in an interactive Jupyter notebook:
-<a class="reference external" href="https://mybinder.org/v2/gh/chrisdburr/turing-commons/master?labpath=https%3A%2F%2Fgithub.com%2Fchrisdburr%2Fturing-commons%2Fblob%2Fmaster%2Fguidebooks%2Frri%2Fchapter4%2Fproject_design%2Fdata_analysis.ipynb"><img alt="Binder" src="https://mybinder.org/badge_logo.svg" /></a></p>
-<section id="what-is-exploratory-data-analysis">
+<!-- You can also edit this code in an interactive Jupyter notebook: 
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/chrisdburr/turing-commons/master?labpath=https%3A%2F%2Fgithub.com%2Fchrisdburr%2Fturing-commons%2Fblob%2Fmaster%2Fguidebooks%2Frri%2Fchapter4%2Fproject_design%2Fdata_analysis.ipynb) -->
+<div class="section" id="what-is-exploratory-data-analysis">
 <h2>What is Exploratory Data Analysis?<a class="headerlink" href="#what-is-exploratory-data-analysis" title="Permalink to this headline">¶</a></h2>
 <p>Exploratory data analysis is a crucial stage in the project lifecycle. It is where a number of techniques are employed for the purpose of gaining a better understanding of the dataset and any relationships that exist between the relevant variables. Among other things, this could mean,</p>
 <ul class="simple">
@@ -557,13 +589,13 @@ But the code is presented for those who wish to get more “hands-on”.</p>
 <li><p>Uncovering possible limitations of the dataset (e.g. class imbalances) that could affect the project</p></li>
 </ul>
 <p>We will cover each of these sub-stages of EDA briefly, but to reiterate, our primary focus in this section is on the risks and challenges that stem from a variety of biases that can cause cascading issues that affect downstream tasks (e.g. model training).</p>
-</section>
-<section id="covid-19-hospital-data">
+</div>
+<div class="section" id="covid-19-hospital-data">
 <h2>COVID-19 Hospital Data<a class="headerlink" href="#covid-19-hospital-data" title="Permalink to this headline">¶</a></h2>
 <p>For the purpose of this section we have created a synthetic dataset that contains X records for fictional patients who were triaged (and possibly admitted) to a single hospital for treatment of COVID-19.</p>
 <p>The dataset has been designed with this pedagogical task in mind.
-Therefore, although we relied upon plausible assumptions when developing our generative model, the data are not intended to be fully representative of actual patients. Our methodology for generating this dataset can be <span class="xref myst">found here</span>.</p>
-<section id="importing-data">
+Therefore, although we relied upon plausible assumptions when developing our generative model, the data are not intended to be fully representative of actual patients. Our methodology for generating this dataset can be <a class="reference external" href="https://github.com/chrisdburr/turing-commons/blob/master/guidebooks/rri/chapter4/project_design/synthetic_data_generation.ipynb">found here</a>.</p>
+<div class="section" id="importing-data">
 <h3>Importing Data<a class="headerlink" href="#importing-data" title="Permalink to this headline">¶</a></h3>
 <p>First of all, we need to import our data and the software packages that we will use to describe, analyse, and visualise the data.
 The following lines of code achieve this by importing a series of software packages and then loading a csv file <code class="docutils literal notranslate"><span class="pre">covid_patients_syn_data.csv</span></code> into a DataFrame <code class="docutils literal notranslate"><span class="pre">df</span></code> using the <code class="docutils literal notranslate"><span class="pre">pd.read_csv</span></code> command from the Pandas package.</p>
@@ -582,93 +614,9 @@ The following lines of code achieve this by importing a series of software packa
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">KeyboardInterrupt</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
-<span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">folders</span><span class="o">/</span><span class="n">_l</span><span class="o">/</span><span class="n">l9rdg7gs4kx5gglxn_1y0wn00000gq</span><span class="o">/</span><span class="n">T</span><span class="o">/</span><span class="n">ipykernel_6476</span><span class="o">/</span><span class="mf">2972460523.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="kn">import</span> <span class="nn">matplotlib.pylab</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="ne">----&gt; </span><span class="mi">6</span> <span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
-<span class="g g-Whitespace">      </span><span class="mi">7</span> 
-<span class="g g-Whitespace">      </span><span class="mi">8</span> <span class="c1"># This line imports data from a csv file</span>
-
-<span class="o">~/</span><span class="n">opt</span><span class="o">/</span><span class="n">anaconda3</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="mf">.8</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="o">/</span><span class="n">seaborn</span><span class="o">/</span><span class="fm">__init__</span><span class="o">.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># Import seaborn objects</span>
-<span class="ne">----&gt; </span><span class="mi">2</span> <span class="kn">from</span> <span class="nn">.rcmod</span> <span class="kn">import</span> <span class="o">*</span>  <span class="c1"># noqa: F401,F403</span>
-<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="kn">from</span> <span class="nn">.utils</span> <span class="kn">import</span> <span class="o">*</span>  <span class="c1"># noqa: F401,F403</span>
-<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="kn">from</span> <span class="nn">.palettes</span> <span class="kn">import</span> <span class="o">*</span>  <span class="c1"># noqa: F401,F403</span>
-<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="kn">from</span> <span class="nn">.relational</span> <span class="kn">import</span> <span class="o">*</span>  <span class="c1"># noqa: F401,F403</span>
-
-<span class="o">~/</span><span class="n">opt</span><span class="o">/</span><span class="n">anaconda3</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="mf">.8</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="o">/</span><span class="n">seaborn</span><span class="o">/</span><span class="n">rcmod</span><span class="o">.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="kn">import</span> <span class="nn">matplotlib</span> <span class="k">as</span> <span class="nn">mpl</span>
-<span class="g g-Whitespace">      </span><span class="mi">6</span> <span class="kn">from</span> <span class="nn">cycler</span> <span class="kn">import</span> <span class="n">cycler</span>
-<span class="ne">----&gt; </span><span class="mi">7</span> <span class="kn">from</span> <span class="nn">.</span> <span class="kn">import</span> <span class="n">palettes</span>
-<span class="g g-Whitespace">      </span><span class="mi">8</span> 
-<span class="g g-Whitespace">      </span><span class="mi">9</span> 
-
-<span class="o">~/</span><span class="n">opt</span><span class="o">/</span><span class="n">anaconda3</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="mf">.8</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="o">/</span><span class="n">seaborn</span><span class="o">/</span><span class="n">palettes</span><span class="o">.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="g g-Whitespace">      </span><span class="mi">7</span> <span class="kn">from</span> <span class="nn">.external</span> <span class="kn">import</span> <span class="n">husl</span>
-<span class="g g-Whitespace">      </span><span class="mi">8</span> 
-<span class="ne">----&gt; </span><span class="mi">9</span> <span class="kn">from</span> <span class="nn">.utils</span> <span class="kn">import</span> <span class="n">desaturate</span><span class="p">,</span> <span class="n">get_color_cycle</span>
-<span class="g g-Whitespace">     </span><span class="mi">10</span> <span class="kn">from</span> <span class="nn">.colors</span> <span class="kn">import</span> <span class="n">xkcd_rgb</span><span class="p">,</span> <span class="n">crayons</span>
-<span class="g g-Whitespace">     </span><span class="mi">11</span> 
-
-<span class="o">~/</span><span class="n">opt</span><span class="o">/</span><span class="n">anaconda3</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="mf">.8</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="o">/</span><span class="n">seaborn</span><span class="o">/</span><span class="n">utils</span><span class="o">.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="g g-Whitespace">      </span><span class="mi">8</span> 
-<span class="g g-Whitespace">      </span><span class="mi">9</span> <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="ne">---&gt; </span><span class="mi">10</span> <span class="kn">from</span> <span class="nn">scipy</span> <span class="kn">import</span> <span class="n">stats</span>
-<span class="g g-Whitespace">     </span><span class="mi">11</span> <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="g g-Whitespace">     </span><span class="mi">12</span> <span class="kn">import</span> <span class="nn">matplotlib</span> <span class="k">as</span> <span class="nn">mpl</span>
-
-<span class="o">~/</span><span class="n">opt</span><span class="o">/</span><span class="n">anaconda3</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="mf">.8</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="o">/</span><span class="n">scipy</span><span class="o">/</span><span class="n">stats</span><span class="o">/</span><span class="fm">__init__</span><span class="o">.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="g g-Whitespace">    </span><span class="mi">439</span> <span class="s2">&quot;&quot;&quot;</span>
-<span class="g g-Whitespace">    </span><span class="mi">440</span><span class="s2"> </span>
-<span class="ne">--&gt; </span><span class="mi">441</span><span class="s2"> from .stats import *</span>
-<span class="g g-Whitespace">    </span><span class="mi">442</span><span class="s2"> from .distributions import *</span>
-<span class="g g-Whitespace">    </span><span class="mi">443</span><span class="s2"> from .morestats import *</span>
-
-<span class="s2">~/opt/anaconda3/lib/python3.8/site-packages/scipy/stats/stats.py in &lt;module&gt;</span>
-<span class="g g-Whitespace">     </span><span class="mi">41</span><span class="s2"> import scipy.special as special</span>
-<span class="g g-Whitespace">     </span><span class="mi">42</span><span class="s2"> from scipy import linalg</span>
-<span class="ne">---&gt; </span><span class="mi">43</span><span class="s2"> from . import distributions</span>
-<span class="g g-Whitespace">     </span><span class="mi">44</span><span class="s2"> from . import mstats_basic</span>
-<span class="g g-Whitespace">     </span><span class="mi">45</span><span class="s2"> from ._stats_mstats_common import (_find_repeats, linregress, theilslopes,</span>
-
-<span class="s2">~/opt/anaconda3/lib/python3.8/site-packages/scipy/stats/distributions.py in &lt;module&gt;</span>
-<span class="g g-Whitespace">      </span><span class="mi">6</span><span class="s2"> #       instead of `git blame -Lxxx,+x`.</span>
-<span class="g g-Whitespace">      </span><span class="mi">7</span><span class="s2"> #</span>
-<span class="ne">----&gt; </span><span class="mi">8</span><span class="s2"> from ._distn_infrastructure import (rv_discrete, rv_continuous, rv_frozen)</span>
-<span class="g g-Whitespace">      </span><span class="mi">9</span><span class="s2"> </span>
-<span class="g g-Whitespace">     </span><span class="mi">10</span><span class="s2"> from . import _continuous_distns</span>
-
-<span class="s2">~/opt/anaconda3/lib/python3.8/site-packages/scipy/stats/_distn_infrastructure.py in &lt;module&gt;</span>
-<span class="g g-Whitespace">     </span><span class="mi">25</span><span class="s2"> </span>
-<span class="g g-Whitespace">     </span><span class="mi">26</span><span class="s2"> # for functions of continuous distributions (e.g. moments, entropy, cdf)</span>
-<span class="ne">---&gt; </span><span class="mi">27</span><span class="s2"> from scipy import integrate</span>
-<span class="g g-Whitespace">     </span><span class="mi">28</span><span class="s2"> </span>
-<span class="g g-Whitespace">     </span><span class="mi">29</span><span class="s2"> # to approximate the pdf of a continuous distribution given its cdf</span>
-
-<span class="s2">~/opt/anaconda3/lib/python3.8/site-packages/scipy/integrate/__init__.py in &lt;module&gt;</span>
-<span class="g g-Whitespace">     </span><span class="mi">90</span><span class="s2"> from ._quadrature import *</span>
-<span class="g g-Whitespace">     </span><span class="mi">91</span><span class="s2"> from .odepack import *</span>
-<span class="ne">---&gt; </span><span class="mi">92</span><span class="s2"> from .quadpack import *</span>
-<span class="g g-Whitespace">     </span><span class="mi">93</span><span class="s2"> from ._ode import *</span>
-<span class="g g-Whitespace">     </span><span class="mi">94</span><span class="s2"> from ._bvp import solve_bvp</span>
-
-<span class="s2">~/opt/anaconda3/lib/python3.8/site-packages/scipy/integrate/quadpack.py in &lt;module&gt;</span>
-<span class="g g-Whitespace">      </span><span class="mi">5</span><span class="s2"> from functools import partial</span>
-<span class="g g-Whitespace">      </span><span class="mi">6</span><span class="s2"> </span>
-<span class="ne">----&gt; </span><span class="mi">7</span><span class="s2"> from . import _quadpack</span>
-<span class="g g-Whitespace">      </span><span class="mi">8</span><span class="s2"> import numpy</span>
-<span class="g g-Whitespace">      </span><span class="mi">9</span><span class="s2"> from numpy import Inf</span>
-
-<span class="ne">KeyboardInterrupt</span>: 
-</pre></div>
 </div>
 </div>
-</div>
-</section>
-<section id="describing-the-data">
+<div class="section" id="describing-the-data">
 <h3>Describing the Data<a class="headerlink" href="#describing-the-data" title="Permalink to this headline">¶</a></h3>
 <p>Once we have imported our data, we will then want to identify what variables there are, what their typical values are, and also assess a variety of other summary statistics.
 We can use several commands to help us describe our dataset and get a quick overview.</p>
@@ -680,6 +628,11 @@ The output (27308, 12) means that there are 27308 rows and 12 columns.</p>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(27308, 12)
+</pre></div>
+</div>
+</div>
 </div>
 <p>Second, we can use the <code class="docutils literal notranslate"><span class="pre">head</span></code> attribute to return the first 5 rows of our dataset, which can be useful if you want to see a small sample of values for each variable.</p>
 <div class="cell docutils container">
@@ -688,6 +641,118 @@ The output (27308, 12) means that there are 27308 rows and 12 columns.</p>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Unnamed: 0</th>
+      <th>nhs_id</th>
+      <th>site_id</th>
+      <th>age</th>
+      <th>sex</th>
+      <th>ethnicity</th>
+      <th>height</th>
+      <th>weight</th>
+      <th>admitted</th>
+      <th>admission_date</th>
+      <th>intrusive_ventilation</th>
+      <th>died</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>b2d7345e</td>
+      <td>UHJ_43643</td>
+      <td>48</td>
+      <td>F</td>
+      <td>White</td>
+      <td>1.577876</td>
+      <td>33.388356</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>ead19985</td>
+      <td>UHJ_43643</td>
+      <td>80</td>
+      <td>F</td>
+      <td>White</td>
+      <td>1.640164</td>
+      <td>71.938813</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3</td>
+      <td>669082d5</td>
+      <td>UHJ_43643</td>
+      <td>66</td>
+      <td>F</td>
+      <td>White</td>
+      <td>1.469061</td>
+      <td>31.679456</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4</td>
+      <td>150f52d1</td>
+      <td>UHJ_43643</td>
+      <td>85</td>
+      <td>M</td>
+      <td>White</td>
+      <td>1.846977</td>
+      <td>77.164762</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>5</td>
+      <td>5feb9000</td>
+      <td>UHJ_43643</td>
+      <td>53</td>
+      <td>NaN</td>
+      <td>White</td>
+      <td>1.736242</td>
+      <td>73.458529</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
 </div>
 <p>Third, we can use the <code class="docutils literal notranslate"><span class="pre">columns</span></code> attribute to list all the names all of the columns in our dataset.
 This is helpful if you want to quickly see which variables you will have access to during your analysis.</p>
@@ -697,12 +762,37 @@ This is helpful if you want to quickly see which variables you will have access 
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Index([&#39;Unnamed: 0&#39;, &#39;nhs_id&#39;, &#39;site_id&#39;, &#39;age&#39;, &#39;sex&#39;, &#39;ethnicity&#39;, &#39;height&#39;,
+       &#39;weight&#39;, &#39;admitted&#39;, &#39;admission_date&#39;, &#39;intrusive_ventilation&#39;,
+       &#39;died&#39;],
+      dtype=&#39;object&#39;)
+</pre></div>
+</div>
+</div>
 </div>
 <p>Finally, if we want to see how many <em>unique</em> values there are for each of the variables, we can use the <code class="docutils literal notranslate"><span class="pre">nunique</span></code> attribute (i.e., number (n) of unique values).
 For example, in the ethnicity column there are 5 different values, which align with the formal list used by Public Health England in a report on the <a class="reference external" href="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/908434/Disparities_in_the_risk_and_outcomes_of_COVID_August_2020_update.pdf">Disparities in the risk and outcomes of COVID-19</a>—this report was used as the basis for generating our synthetic data.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">nunique</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Unnamed: 0               27308
+nhs_id                   27307
+site_id                      1
+age                         70
+sex                          2
+ethnicity                    5
+height                   27308
+weight                   27308
+admitted                     2
+admission_date              67
+intrusive_ventilation        2
+died                         2
+dtype: int64
 </pre></div>
 </div>
 </div>
@@ -716,11 +806,96 @@ The code after the brackets (<code class="docutils literal notranslate"><span cl
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Unnamed: 0</th>
+      <th>age</th>
+      <th>height</th>
+      <th>weight</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>27308.000000</td>
+      <td>27308.000000</td>
+      <td>27308.000000</td>
+      <td>27308.000000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>15013.859675</td>
+      <td>59.152995</td>
+      <td>1.699453</td>
+      <td>71.601769</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>8663.023499</td>
+      <td>20.311303</td>
+      <td>0.102201</td>
+      <td>17.835281</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>1.000000</td>
+      <td>20.000000</td>
+      <td>1.402760</td>
+      <td>-8.046726</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>7502.750000</td>
+      <td>43.000000</td>
+      <td>1.623002</td>
+      <td>59.454984</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>15046.500000</td>
+      <td>59.000000</td>
+      <td>1.690112</td>
+      <td>71.334741</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>22500.250000</td>
+      <td>78.000000</td>
+      <td>1.773432</td>
+      <td>83.484033</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>29999.000000</td>
+      <td>89.000000</td>
+      <td>5.900000</td>
+      <td>155.031500</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
 </div>
-</section>
-<section id="cleaning-the-data">
+</div>
+<div class="section" id="cleaning-the-data">
 <h3>Cleaning the Data<a class="headerlink" href="#cleaning-the-data" title="Permalink to this headline">¶</a></h3>
-<section id="removing-unnecessary-variables">
+<div class="section" id="removing-unnecessary-variables">
 <h4>Removing Unnecessary Variables<a class="headerlink" href="#removing-unnecessary-variables" title="Permalink to this headline">¶</a></h4>
 <p>Our dataset has been created for this specific task, so there isn’t much cleaning that is required.
 Datasets that are downloaded from public repositories may not be so well structured, and will likely require tidying up.
@@ -733,9 +908,115 @@ These can be easily removed with the <code class="docutils literal notranslate">
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Unnamed: 0</th>
+      <th>nhs_id</th>
+      <th>age</th>
+      <th>sex</th>
+      <th>ethnicity</th>
+      <th>height</th>
+      <th>weight</th>
+      <th>admitted</th>
+      <th>admission_date</th>
+      <th>intrusive_ventilation</th>
+      <th>died</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>b2d7345e</td>
+      <td>48</td>
+      <td>F</td>
+      <td>White</td>
+      <td>1.577876</td>
+      <td>33.388356</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>ead19985</td>
+      <td>80</td>
+      <td>F</td>
+      <td>White</td>
+      <td>1.640164</td>
+      <td>71.938813</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3</td>
+      <td>669082d5</td>
+      <td>66</td>
+      <td>F</td>
+      <td>White</td>
+      <td>1.469061</td>
+      <td>31.679456</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4</td>
+      <td>150f52d1</td>
+      <td>85</td>
+      <td>M</td>
+      <td>White</td>
+      <td>1.846977</td>
+      <td>77.164762</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>5</td>
+      <td>5feb9000</td>
+      <td>53</td>
+      <td>NaN</td>
+      <td>White</td>
+      <td>1.736242</td>
+      <td>73.458529</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
 </div>
-</section>
-<section id="removing-outliers">
+</div>
+<div class="section" id="removing-outliers">
 <h4>Removing Outliers<a class="headerlink" href="#removing-outliers" title="Permalink to this headline">¶</a></h4>
 <p>It is also possible that there may be some outliers that are probably the result of human mistakes in recording.  For example, someone may enter a height in feet and inches, such that we end up with a value of greater than 5 in that column.
 It’s probably a safe assumption to assume that this is a mistake!</p>
@@ -744,6 +1025,12 @@ It’s probably a safe assumption to assume that this is a mistake!</p>
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_cleaned</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="s2">&quot;height&quot;</span><span class="p">,</span> <span class="n">log</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> 
 </pre></div>
 </div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[&lt;AxesSubplot:title={&#39;center&#39;:&#39;height&#39;}&gt;]], dtype=object)
+</pre></div>
+</div>
+<img alt="../../../_images/data_analysis_15_1.png" src="../../../_images/data_analysis_15_1.png" />
 </div>
 </div>
 <p>We can see there is one entry with a height of between 5.5 and 6m!  We can manually remove this row, and any others with a height greater than 2.5m:</p>
@@ -754,9 +1041,15 @@ It’s probably a safe assumption to assume that this is a mistake!</p>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[&lt;AxesSubplot:title={&#39;center&#39;:&#39;height&#39;}&gt;]], dtype=object)
+</pre></div>
 </div>
-</section>
-<section id="handling-missing-data">
+<img alt="../../../_images/data_analysis_17_1.png" src="../../../_images/data_analysis_17_1.png" />
+</div>
+</div>
+</div>
+<div class="section" id="handling-missing-data">
 <h4>Handling Missing Data<a class="headerlink" href="#handling-missing-data" title="Permalink to this headline">¶</a></h4>
 <p>One of the biggest challenges with cleaning datasets is choosing how to handle missing data.
 As you can see from the following line of code, there are 1326 rows with missing data in the “sex” column, which are represented in our datasets using the <code class="docutils literal notranslate"><span class="pre">NaN</span></code> (not-a-number) value.</p>
@@ -767,13 +1060,18 @@ As you can see from the following line of code, there are 1326 rows with missing
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1326
+</pre></div>
+</div>
+</div>
 </div>
 <p>The simplest thing that one can do is to remove rows containing missing data.  However, this could introduce bias.</p>
 <p>The best case scenario is that the missingness occurs at random - in this case removing the rows would reduce our statistical precision (because we would have a smaller dataset), but would not bias the result.</p>
 <p>However, if the reason why the data is missing is correlated with some other variable, then simply removing them will mean that the remaining dataset is skewed in some way.   The best thing to do in this case could be to <em>impute</em> the missing values, based on other variables in the same row.  However, this is often a complex process, and needs to be done with care!</p>
-</section>
-</section>
-<section id="analysing-the-data">
+</div>
+</div>
+<div class="section" id="analysing-the-data">
 <h3>Analysing the Data<a class="headerlink" href="#analysing-the-data" title="Permalink to this headline">¶</a></h3>
 <!-- This section needs to add some useful illustrations of how Python can help you identify and understand correlations between variables in your dataset, and help document your exploratory data analysis method by using Jupyter Notebooks. --><p>For convenience, we may want to calculate some new variables based on those already in the dataset, that we think may be relevant.  For example, there have been reports that Body Mass Index (BMI) is a risk factor for Covid.  We can calculate this easily given the height and weight:</p>
 <div class="cell docutils container">
@@ -783,6 +1081,343 @@ As you can see from the following line of code, there are 1326 rows with missing
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Unnamed: 0</th>
+      <th>nhs_id</th>
+      <th>age</th>
+      <th>sex</th>
+      <th>ethnicity</th>
+      <th>height</th>
+      <th>weight</th>
+      <th>admitted</th>
+      <th>admission_date</th>
+      <th>intrusive_ventilation</th>
+      <th>died</th>
+      <th>BMI</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>b2d7345e</td>
+      <td>48</td>
+      <td>F</td>
+      <td>White</td>
+      <td>1.577876</td>
+      <td>33.388356</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>13.410638</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>ead19985</td>
+      <td>80</td>
+      <td>F</td>
+      <td>White</td>
+      <td>1.640164</td>
+      <td>71.938813</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>26.741692</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3</td>
+      <td>669082d5</td>
+      <td>66</td>
+      <td>F</td>
+      <td>White</td>
+      <td>1.469061</td>
+      <td>31.679456</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>14.679047</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4</td>
+      <td>150f52d1</td>
+      <td>85</td>
+      <td>M</td>
+      <td>White</td>
+      <td>1.846977</td>
+      <td>77.164762</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>True</td>
+      <td>22.620183</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>5</td>
+      <td>5feb9000</td>
+      <td>53</td>
+      <td>NaN</td>
+      <td>White</td>
+      <td>1.736242</td>
+      <td>73.458529</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>24.368090</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>6</td>
+      <td>290b9d21</td>
+      <td>30</td>
+      <td>F</td>
+      <td>White</td>
+      <td>1.658339</td>
+      <td>65.757120</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>23.910900</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>7</td>
+      <td>f314ebb2</td>
+      <td>75</td>
+      <td>F</td>
+      <td>White</td>
+      <td>1.671430</td>
+      <td>77.650406</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>27.795043</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>8</td>
+      <td>eb1aee30</td>
+      <td>45</td>
+      <td>F</td>
+      <td>White</td>
+      <td>1.672083</td>
+      <td>84.986236</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>30.397146</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>9</td>
+      <td>d380252a</td>
+      <td>37</td>
+      <td>F</td>
+      <td>Other ethnic groups</td>
+      <td>1.620353</td>
+      <td>47.227723</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>17.987781</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>10</td>
+      <td>f805e493</td>
+      <td>83</td>
+      <td>F</td>
+      <td>White</td>
+      <td>1.659073</td>
+      <td>69.517318</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>25.255857</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>12</td>
+      <td>4b220be8</td>
+      <td>70</td>
+      <td>M</td>
+      <td>White</td>
+      <td>1.827594</td>
+      <td>74.105328</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>22.186559</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>13</td>
+      <td>33c4c37e</td>
+      <td>49</td>
+      <td>F</td>
+      <td>White</td>
+      <td>1.632662</td>
+      <td>64.152379</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>24.066897</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>14</td>
+      <td>50e76e88</td>
+      <td>49</td>
+      <td>F</td>
+      <td>White</td>
+      <td>1.631914</td>
+      <td>56.188252</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>21.098458</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>15</td>
+      <td>e60fa30b</td>
+      <td>74</td>
+      <td>F</td>
+      <td>White</td>
+      <td>1.626103</td>
+      <td>97.393239</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>36.832632</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>16</td>
+      <td>febe38ff</td>
+      <td>53</td>
+      <td>F</td>
+      <td>White</td>
+      <td>1.683077</td>
+      <td>74.678795</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>26.362666</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>17</td>
+      <td>d99bf7a6</td>
+      <td>40</td>
+      <td>F</td>
+      <td>White</td>
+      <td>1.613884</td>
+      <td>77.895890</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>29.906802</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>18</td>
+      <td>2315cbf6</td>
+      <td>89</td>
+      <td>M</td>
+      <td>White</td>
+      <td>1.817695</td>
+      <td>69.937249</td>
+      <td>True</td>
+      <td>2020-04-13</td>
+      <td>False</td>
+      <td>True</td>
+      <td>21.167344</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>19</td>
+      <td>f90d7923</td>
+      <td>62</td>
+      <td>F</td>
+      <td>White</td>
+      <td>1.713221</td>
+      <td>86.916660</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>29.612566</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>20</td>
+      <td>df98b181</td>
+      <td>51</td>
+      <td>F</td>
+      <td>Asian / Asian British</td>
+      <td>1.679056</td>
+      <td>65.257125</td>
+      <td>False</td>
+      <td>NaN</td>
+      <td>False</td>
+      <td>False</td>
+      <td>23.147152</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>21</td>
+      <td>cca6ce15</td>
+      <td>50</td>
+      <td>M</td>
+      <td>White</td>
+      <td>1.623643</td>
+      <td>56.300063</td>
+      <td>True</td>
+      <td>2020-05-20</td>
+      <td>True</td>
+      <td>False</td>
+      <td>21.356378</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
 </div>
 <p>A quick way to get an idea of what variables are correlated with one another is to plot a “heatmap”.  Higher numbers in this plot represent stronger correlations (note the diagonal line of red squares all containing “1” - every variable is 100% correlated with itself!)</p>
 <div class="cell docutils container">
@@ -796,10 +1431,16 @@ As you can see from the following line of code, there are 1326 rows with missing
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(5.5, -0.5)
+</pre></div>
+</div>
+<img alt="../../../_images/data_analysis_25_1.png" src="../../../_images/data_analysis_25_1.png" />
+</div>
 </div>
 <p>Note that this heatmap only works for numeric (or boolean) variables.  For categorical variables such as “ethnicity”, we will use other methods to visualise the data.</p>
-</section>
-<section id="visualising-the-data">
+</div>
+<div class="section" id="visualising-the-data">
 <h3>Visualising the Data<a class="headerlink" href="#visualising-the-data" title="Permalink to this headline">¶</a></h3>
 <!-- This section should show how including people who died in care homes would affect the correlation between age and one or more of the outcomes. This will be used to help support the missing data narrative. --><p>As we saw from the heatmap above, the age of the patient is perhaps the most important variable with regard to outcomes such as hospital admission or death.  We will therefore separate the data into different “bins” of age, to see if we can observe other dependencies.</p>
 <p>This is a bit tricky to do in pandas, we need to define the bin boundaries, and then “group by” the other variable that we’re interested in, summing the numbers of patients and deaths over each category.</p>
@@ -830,6 +1471,149 @@ As you can see from the following line of code, there are 1326 rows with missing
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>ethnicity</th>
+      <th>age</th>
+      <th>admitted</th>
+      <th>intrusive_ventilation</th>
+      <th>died</th>
+      <th>counter</th>
+      <th>prob_died</th>
+      <th>prob_died_std</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Asian / Asian British</td>
+      <td>(20, 30]</td>
+      <td>24</td>
+      <td>14</td>
+      <td>1</td>
+      <td>211.0</td>
+      <td>0.004739</td>
+      <td>0.004728</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Asian / Asian British</td>
+      <td>(30, 40]</td>
+      <td>14</td>
+      <td>10</td>
+      <td>0</td>
+      <td>280.0</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Asian / Asian British</td>
+      <td>(40, 50]</td>
+      <td>38</td>
+      <td>18</td>
+      <td>1</td>
+      <td>347.0</td>
+      <td>0.002882</td>
+      <td>0.002878</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Asian / Asian British</td>
+      <td>(50, 60]</td>
+      <td>33</td>
+      <td>14</td>
+      <td>7</td>
+      <td>366.0</td>
+      <td>0.019126</td>
+      <td>0.007159</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Asian / Asian British</td>
+      <td>(60, 70]</td>
+      <td>31</td>
+      <td>11</td>
+      <td>18</td>
+      <td>314.0</td>
+      <td>0.057325</td>
+      <td>0.013119</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Asian / Asian British</td>
+      <td>(70, 80]</td>
+      <td>51</td>
+      <td>24</td>
+      <td>65</td>
+      <td>328.0</td>
+      <td>0.198171</td>
+      <td>0.022010</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Asian / Asian British</td>
+      <td>(80, 90]</td>
+      <td>60</td>
+      <td>30</td>
+      <td>221</td>
+      <td>549.0</td>
+      <td>0.402550</td>
+      <td>0.020930</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>Black / Black British</td>
+      <td>(20, 30]</td>
+      <td>11</td>
+      <td>5</td>
+      <td>0</td>
+      <td>140.0</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>Black / Black British</td>
+      <td>(30, 40]</td>
+      <td>9</td>
+      <td>6</td>
+      <td>1</td>
+      <td>180.0</td>
+      <td>0.005556</td>
+      <td>0.005540</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>Black / Black British</td>
+      <td>(40, 50]</td>
+      <td>10</td>
+      <td>5</td>
+      <td>0</td>
+      <td>178.0</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -838,10 +1622,16 @@ As you can see from the following line of code, there are 1326 rows with missing
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;AxesSubplot:xlabel=&#39;age&#39;, ylabel=&#39;prob_died&#39;&gt;
+</pre></div>
+</div>
+<img alt="../../../_images/data_analysis_30_1.png" src="../../../_images/data_analysis_30_1.png" />
+</div>
 </div>
 <p>Ideally we would plot error bars here so we could see the uncertainties on the probabilities, but it does seem to be a consistent pattern that “White” patients had a lower probability of death across a range of ages, while for older patients, the “Asian / Asian British” ethnicity had a higher probability of dying.</p>
-</section>
-<section id="dependency-on-other-factors">
+</div>
+<div class="section" id="dependency-on-other-factors">
 <h3>Dependency on other factors<a class="headerlink" href="#dependency-on-other-factors" title="Permalink to this headline">¶</a></h3>
 <p>It is generally very difficult to quantify correlations in situations like this where multiple factors might affect the probability of a death, especially when these factors might be correlated with one another.<br />
 We can try though to see whether we can see a dependency on sex, and/or BMI.  Since we know that the strongest dependency is on age, we will just choose a limited age range to make this plot - in order to have a reasonable number of patients we’ll look at the rows with age between 70 and 80.</p>
@@ -865,6 +1655,127 @@ We can try though to see whether we can see a dependency on sex, and/or BMI.  Si
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>sex</th>
+      <th>BMI</th>
+      <th>admitted</th>
+      <th>intrusive_ventilation</th>
+      <th>died</th>
+      <th>counter</th>
+      <th>prob_died</th>
+      <th>prob_died_std</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>F</td>
+      <td>(10, 16]</td>
+      <td>17</td>
+      <td>4</td>
+      <td>7</td>
+      <td>93.0</td>
+      <td>0.075269</td>
+      <td>0.027357</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>F</td>
+      <td>(16, 22]</td>
+      <td>32</td>
+      <td>12</td>
+      <td>20</td>
+      <td>298.0</td>
+      <td>0.067114</td>
+      <td>0.014495</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>F</td>
+      <td>(22, 28]</td>
+      <td>47</td>
+      <td>11</td>
+      <td>39</td>
+      <td>448.0</td>
+      <td>0.087054</td>
+      <td>0.013319</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>F</td>
+      <td>(28, 34]</td>
+      <td>32</td>
+      <td>12</td>
+      <td>18</td>
+      <td>254.0</td>
+      <td>0.070866</td>
+      <td>0.016101</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>F</td>
+      <td>(34, 40]</td>
+      <td>8</td>
+      <td>2</td>
+      <td>3</td>
+      <td>59.0</td>
+      <td>0.050847</td>
+      <td>0.028601</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>M</td>
+      <td>(10, 16]</td>
+      <td>4</td>
+      <td>0</td>
+      <td>9</td>
+      <td>63.0</td>
+      <td>0.142857</td>
+      <td>0.044087</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>M</td>
+      <td>(16, 22]</td>
+      <td>53</td>
+      <td>12</td>
+      <td>53</td>
+      <td>484.0</td>
+      <td>0.109504</td>
+      <td>0.014194</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>M</td>
+      <td>(22, 28]</td>
+      <td>98</td>
+      <td>25</td>
+      <td>106</td>
+      <td>858.0</td>
+      <td>0.123543</td>
+      <td>0.011234</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -872,13 +1783,19 @@ We can try though to see whether we can see a dependency on sex, and/or BMI.  Si
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;AxesSubplot:xlabel=&#39;BMI&#39;, ylabel=&#39;prob_died&#39;&gt;
+</pre></div>
+</div>
+<img alt="../../../_images/data_analysis_34_1.png" src="../../../_images/data_analysis_34_1.png" />
+</div>
 </div>
 <p>Well, we can clearly see that there is a difference between men and women, with men having a higher probability of death right across the BMI range.</p>
 <p>But the dependence on BMI doesn’t look like we might expect - why is this?   Well, it would take a detailed analysis to find out for sure, but one plausible hypothesis is that BMI is negatively correlated with age.  (In fact if we look at the <span class="xref myst">code used to generate this synthetic dataset</span> we can see that this is indeed the case - average BMI peaks at age 60 and decreases linearly with age after that).  Even though we only took a limited age-range, the variation within this 10-year slice is still big enough that it is the dominant factor in determining the shape of this plot.</p>
 <p>This is just one example of the pitfalls of trying to ascertain relationships between outcomes and variables - it’s not easy!</p>
-</section>
-</section>
-<section id="missing-data">
+</div>
+</div>
+<div class="section" id="missing-data">
 <h2>Missing data<a class="headerlink" href="#missing-data" title="Permalink to this headline">¶</a></h2>
 <p>As well as isolated rows with missing or incorrectly entered data, it is possible that there are entire categories that are under-represented in our dataset, as an artifact of the data collection procedure.   For example, perhaps we are missing some of the older patients in our dataset, as they may have been too frail to even present at the hospital.
 We are in the fortunate situation here of using synthetic data, so we can see the effect of this by adding back in some rows that were artificially removed in the dataset we have used up to now:</p>
@@ -886,6 +1803,11 @@ We are in the fortunate situation here of using synthetic data, so we can see th
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_all</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;covid_patients_syn_data_unbiased.csv&quot;</span><span class="p">)</span>
 <span class="n">df_all</span><span class="o">.</span><span class="n">shape</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(30000, 12)
 </pre></div>
 </div>
 </div>
@@ -913,9 +1835,12 @@ We are in the fortunate situation here of using synthetic data, so we can see th
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<img alt="../../../_images/data_analysis_39_0.png" src="../../../_images/data_analysis_39_0.png" />
 </div>
-</section>
-</section>
+</div>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -940,16 +1865,36 @@ We are in the fortunate situation here of using synthetic data, so we can see th
               </div>
               
         
-        <div class='prev-next-bottom'>
             
-    <a class='left-prev' id="prev-link" href="data_extraction.html" title="previous page">Data Extraction and Procurement</a>
-    <a class='right-next' id="next-link" href="../model_development/preprocessing.html" title="next page">Preprocessing and Feature Engineering</a>
 
-        </div>
+
+
+<div class='prev-next-bottom'>
+    
+    <div id="prev">
+        <a class="left-prev" href="activity4-2.html" title="previous page">
+            <i class="prevnext-label fas fa-angle-left"></i>
+            <div class="prevnext-info">
+                <p class="prevnext-label">previous</p>
+                <p class="prevnext-title">Activity 7: Developing Case Studies</p>
+            </div>
+        </a>
+    </div>
+     <div id="next">
+        <a class="right-next" href="activity4-3.html" title="next page">
+            <div class="prevnext-info">
+                <p class="prevnext-label">next</p>
+                <p class="prevnext-title">Activity 8: Identifying Missing Data</p>
+            </div>
+            <i class="prevnext-label fas fa-angle-right"></i>
+        </a>
+     </div>
+
+</div>
         
         </div>
     </div>
-    <footer class="footer mt-5 mt-md-0">
+    <footer class="footer">
     <div class="container">
       <p>
         

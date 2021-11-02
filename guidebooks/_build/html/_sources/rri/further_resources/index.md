@@ -1,7 +1,6 @@
-# Further Resources
+# Additional Resources
 
+In this section, you will find the following resources:
 
-### Interpretability and Explainability
-
-- Christoph Molnar (2019) [Interpretable Machine Learning: A Guide for Making Black Box Models Explainable](https://christophm.github.io/interpretable-ml-book/). {cite}`molnar2019`
-- ICO (2020) [Explaining decisions made with AI](https://ico.org.uk/media/for-organisations/guide-to-data-protection/key-data-protection-themes/explaining-decisions-made-with-artificial-intelligence-1-0.pdf). {cite}`ico2020`
+- Further Reading: a list of further reading, organised by the topics covered in the guidebook.
+- Synthetic Data Generation: a Jupyter Notebook explaining how the synthetic data were generated for the '[Data Analysis](../chapter4/project_design/data_analysis.ipynb)' section in [Chapter 4](../chapter4/index.md).

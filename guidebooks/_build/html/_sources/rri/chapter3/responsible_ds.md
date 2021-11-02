@@ -30,15 +30,13 @@ However, what matters is that the set of principles should (a) be responsive to 
 
 With these points in mind, we will make use of the following set of principles known as the 'SAFE-D principles':
 
-- Safety
+- Sustainability
 - Accountability
 - Fairness
 - Explainability
 - Data Quality, Integrity, Protection and Privacy
 
 These principles are grounded in comprehensive research and understanding of human rights and data protection law, as well as applied ethics of data and AI. {cite}`leslie2021`
-
-### Examples
 
 You can click through the following illustrative examples to get an idea of some of the social harms associated with data-driven technologies:
 
@@ -90,13 +88,13 @@ Do you know any other examples of social harms associated with data-driven techn
 Each of the SAFE-D principles is either motivated by and captures a specific set of harms that have been uncovered and exposed, responds to a set or well-documented risks that arise in the context of data science and AI, or is oriented towards the sustainable, ethical, and responsible use of data-driven technologies.
 Let's look at each principle in turn.
 
-### Safety
+### Sustainability
 
-Safety can mean a couple of things.
-From a technical perspective, safety requires the outputs of a project to be secure, robust, and reliable.
+Sustainability can mean a couple of things.
+From a technical perspective, sustainability requires the outputs of a project to be safe, secure, robust, and reliable.
 For example, if an organisation is developing an autonomous vehicle, it should operate safely in the intended context of use.
-However, in the context of responsible data science and AI, safety also has a social sustainability component.
-This aspect of safety requires a project's practices to be informed by ongoing consideration of the risk of exposing individuals to harms even after the system has been deployed and the project completed—a long-term (or sustainable) safety.
+However, in the context of responsible data science and AI, there is also a social sustainability component.
+This aspect of sustainability requires a project's practices to be informed by ongoing consideration of the risk of exposing individuals to harms even after the system has been deployed and the project completed—a long-term (or sustainable) safety.
 
 ### Accountability
 

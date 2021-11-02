@@ -1,11 +1,13 @@
-# About
+```{image} ../images/illustrations/algorithm2.png
+:alt: Illustration by [Johnny Lighthands](https://www.johnnylighthands.co.uk))
+:align: center
+```
 
-![](../images/illustrations/sociotechnical_2.png)
+# About this Guidebook
 
-## Summary
-
-Responsible research and innovation (RRI) plays a significant and often central role within academic, public, private, and third-sector organisations.
-For example, the UKRI’s Engineering and Physical Sciences Research Council (EPSRC) is increasingly making a commitment to RRI necessary for research funding, and also embedding RRI training into its Centres for Doctoral Training. 
+Responsible scientific research and technological innovation (RRI) is a vital component of a flourishing and fair society.
+As an area of study and mode of enquiry, RRI plays a central role within academic, public, private, and third-sector organisations.
+For example, the UKRI’s Engineering and Physical Sciences Research Council (EPSRC) is increasingly making a commitment to RRI necessary for research funding, and also embedding RRI training into its Centres for Doctoral Training.
 Furthermore, the UK Government has highlighted the importance of RRI in both of its national data and national AI strategies.
 
 Building on these commitments, this course will explore what it means to take (individual and collective) responsibility for (and over) the processes and outcomes of research and innovation in data science and AI.
@@ -42,3 +44,16 @@ This guidebook has the following learning objectives:
 6. [Conclusion](conclusion/index.md)
 7. [Further Resources](further_resources/index.md)
 8. [Bibliography](../bibliography.md)
+
+## List of Activities
+
+1. [Exploring Historical Case Studies](chapter2/activity2-1.md)
+2. [Ethical Reflection and Deliberation](chapter2/activity2-2.md)
+3. [Specifying Principles](chapter3/activity3-1.md)
+4. [Contributing to Collaborative Projects](chapter3/activity3-2.md)
+5. [Bias Cards](chapter3/activity3-3.md)
+6. [Privilege Walk](chapter4/project_design/activity4-1.md)
+7. [Developing Case Studies](chapter4/project_design/activity4-2.md)
+8. [Identifying Missing Data](chapter4/project_design/activity4-3.md)
+9. [Designing Model Reports](chapter4/model_development/activity4-4.md)
+10. [Building an Assurance Case](chapter5/activity5-1.md)

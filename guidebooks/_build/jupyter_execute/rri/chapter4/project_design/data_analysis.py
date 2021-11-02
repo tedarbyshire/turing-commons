@@ -5,12 +5,12 @@
 # This module will introduce and examine the stage of 'exploratory data analysis'. 
 # 
 # Rather than focusing on the statistical or technical techniques employed in modern data science though, we will approach this stage with a bias-aware perspective. 
-# However, we will make use of Jupyter notebooks—a popular tool in data science—to aid our exploratory data analysis[^jupyter] by visualising some data. 
+# However, we will make use of [Jupyter notebooks](https://jupyter.org)—a popular tool in data science—to aid our exploratory data analysis by visualising some data. 
 # You do not need to be familiar with either Python or Jupyter Notebooks if you just want to gain an understanding of how social, cognitive, and statistical biases interact and affect downstream stages in the research and innovation lifecycle. 
 # But the code is presented for those who wish to get more "hands-on".
 # 
-# You can also edit this code in an interactive Jupyter notebook: 
-# [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/chrisdburr/turing-commons/master?labpath=https%3A%2F%2Fgithub.com%2Fchrisdburr%2Fturing-commons%2Fblob%2Fmaster%2Fguidebooks%2Frri%2Fchapter4%2Fproject_design%2Fdata_analysis.ipynb)
+# <!-- You can also edit this code in an interactive Jupyter notebook: 
+# [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/chrisdburr/turing-commons/master?labpath=https%3A%2F%2Fgithub.com%2Fchrisdburr%2Fturing-commons%2Fblob%2Fmaster%2Fguidebooks%2Frri%2Fchapter4%2Fproject_design%2Fdata_analysis.ipynb) -->
 # 
 # ## What is Exploratory Data Analysis?
 # 
@@ -29,7 +29,7 @@
 # For the purpose of this section we have created a synthetic dataset that contains X records for fictional patients who were triaged (and possibly admitted) to a single hospital for treatment of COVID-19. 
 # 
 # The dataset has been designed with this pedagogical task in mind. 
-# Therefore, although we relied upon plausible assumptions when developing our generative model, the data are not intended to be fully representative of actual patients. Our methodology for generating this dataset can be [found here](Synthetic_data_generation.ipynb).
+# Therefore, although we relied upon plausible assumptions when developing our generative model, the data are not intended to be fully representative of actual patients. Our methodology for generating this dataset can be [found here](https://github.com/chrisdburr/turing-commons/blob/master/guidebooks/rri/chapter4/project_design/synthetic_data_generation.ipynb).
 # 
 # ### Importing Data
 # 
@@ -60,7 +60,7 @@ df = pd.read_csv('covid_patients_syn_data.csv')
 # The output (27308, 12) means that there are 27308 rows and 12 columns.
 # 
 
-# In[ ]:
+# In[2]:
 
 
 df.shape
@@ -68,7 +68,7 @@ df.shape
 
 # Second, we can use the `head` attribute to return the first 5 rows of our dataset, which can be useful if you want to see a small sample of values for each variable.
 
-# In[ ]:
+# In[3]:
 
 
 df.head() 
@@ -77,7 +77,7 @@ df.head()
 # Third, we can use the `columns` attribute to list all the names all of the columns in our dataset. 
 # This is helpful if you want to quickly see which variables you will have access to during your analysis.
 
-# In[ ]:
+# In[4]:
 
 
 df.columns
@@ -86,7 +86,7 @@ df.columns
 # Finally, if we want to see how many *unique* values there are for each of the variables, we can use the `nunique` attribute (i.e., number (n) of unique values).
 # For example, in the ethnicity column there are 5 different values, which align with the formal list used by Public Health England in a report on the [Disparities in the risk and outcomes of COVID-19](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/908434/Disparities_in_the_risk_and_outcomes_of_COVID_August_2020_update.pdf)—this report was used as the basis for generating our synthetic data.
 
-# In[ ]:
+# In[5]:
 
 
 df.nunique(axis=0)
@@ -96,7 +96,7 @@ df.nunique(axis=0)
 # For that we have the `describe` attribute, which returns the numeric values for `count`, `mean`, `standard deviation`, `min`, and `max`.
 # The code after the brackets (`apply(lambda s: s.apply(lambda x: format(x, 'f'))` helps improve readability.)
 
-# In[ ]:
+# In[6]:
 
 
 df.describe().apply(lambda s: s.apply(lambda x: format(x, 'f')))
@@ -111,7 +111,7 @@ df.describe().apply(lambda s: s.apply(lambda x: format(x, 'f')))
 # For instance, there may be redundant columns that are not needed, such as the `site_id` column for our dataset, which is the same for all values due to the data being collected from a single hospital site (`UHJ_43643`).
 # These can be easily removed with the `drop` function.
 
-# In[ ]:
+# In[7]:
 
 
 df_cleaned = df.drop(['site_id'], axis=1)
@@ -123,7 +123,7 @@ df_cleaned.head()
 # It is also possible that there may be some outliers that are probably the result of human mistakes in recording.  For example, someone may enter a height in feet and inches, such that we end up with a value of greater than 5 in that column.
 # It's probably a safe assumption to assume that this is a mistake!
 
-# In[ ]:
+# In[8]:
 
 
 df_cleaned.hist("height", log=True) 
@@ -131,7 +131,7 @@ df_cleaned.hist("height", log=True)
 
 # We can see there is one entry with a height of between 5.5 and 6m!  We can manually remove this row, and any others with a height greater than 2.5m:
 
-# In[ ]:
+# In[9]:
 
 
 df_cleaned = df_cleaned[df_cleaned.height< 2.5]
@@ -146,7 +146,7 @@ df_cleaned.hist("height")
 # <!-- This section needs to have something about how simply removing rows with null values or trying to impute the likelihood of a M or F based on the other variables may exacerbate representation bias. -->
 # 
 
-# In[ ]:
+# In[10]:
 
 
 len(df_cleaned[df_cleaned.sex.isnull()])
@@ -164,7 +164,7 @@ len(df_cleaned[df_cleaned.sex.isnull()])
 
 # For convenience, we may want to calculate some new variables based on those already in the dataset, that we think may be relevant.  For example, there have been reports that Body Mass Index (BMI) is a risk factor for Covid.  We can calculate this easily given the height and weight:
 
-# In[ ]:
+# In[11]:
 
 
 df_cleaned["BMI"] = df_cleaned["weight"]/pow(df_cleaned["height"],2)
@@ -173,7 +173,7 @@ df_cleaned.head(20)
 
 # A quick way to get an idea of what variables are correlated with one another is to plot a "heatmap".  Higher numbers in this plot represent stronger correlations (note the diagonal line of red squares all containing "1" - every variable is 100% correlated with itself!)
 
-# In[ ]:
+# In[12]:
 
 
 # The following lines return a correlation matrix, for the cleaned dataframe, using the seaborn package
@@ -194,7 +194,7 @@ ax.set_ylim(bottom + 0.5, top - 0.5)
 # 
 # This is a bit tricky to do in pandas, we need to define the bin boundaries, and then "group by" the other variable that we're interested in, summing the numbers of patients and deaths over each category.
 
-# In[ ]:
+# In[13]:
 
 
 df_plot = df_cleaned.copy(deep=True)
@@ -221,7 +221,7 @@ df_plot["age"] = df_plot["age"].astype(str)
 df_plot.head(10)
 
 
-# In[ ]:
+# In[14]:
 
 
 fig, ax = plt.subplots(figsize=(9,5))
@@ -235,7 +235,7 @@ sns.pointplot(data=df_plot, x="age", y="prob_died", hue="ethnicity")
 # It is generally very difficult to quantify correlations in situations like this where multiple factors might affect the probability of a death, especially when these factors might be correlated with one another.   
 # We can try though to see whether we can see a dependency on sex, and/or BMI.  Since we know that the strongest dependency is on age, we will just choose a limited age range to make this plot - in order to have a reasonable number of patients we'll look at the rows with age between 70 and 80.
 
-# In[ ]:
+# In[15]:
 
 
 df_newplot = df_cleaned.copy(deep=True)
@@ -255,7 +255,7 @@ df_newplot["BMI"] = df_newplot["BMI"].astype(str)
 df_newplot.head(8)
 
 
-# In[ ]:
+# In[16]:
 
 
 sns.pointplot(data=df_newplot, x="BMI", y="prob_died", hue="sex")
@@ -272,7 +272,7 @@ sns.pointplot(data=df_newplot, x="BMI", y="prob_died", hue="sex")
 # As well as isolated rows with missing or incorrectly entered data, it is possible that there are entire categories that are under-represented in our dataset, as an artifact of the data collection procedure.   For example, perhaps we are missing some of the older patients in our dataset, as they may have been too frail to even present at the hospital.
 # We are in the fortunate situation here of using synthetic data, so we can see the effect of this by adding back in some rows that were artificially removed in the dataset we have used up to now:
 
-# In[ ]:
+# In[17]:
 
 
 df_all = pd.read_csv("covid_patients_syn_data_unbiased.csv")
@@ -281,7 +281,7 @@ df_all.shape
 
 # To see how the data was affected, we can compare the histograms of ages of patients, and patients that died, between our dataset and the dataset with the missing rows restored.
 
-# In[ ]:
+# In[18]:
 
 
 fig, axes = plt.subplots(1,2, figsize=(15,6))

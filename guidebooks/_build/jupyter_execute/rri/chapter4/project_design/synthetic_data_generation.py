@@ -1,9 +1,10 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# ## Generating a synthetic healthcare dataset
+# # Generating a Synthetic Healthcare Dataset
 # 
 # This notebook will go through the steps of creating a very simplistic (and therefore unrealistic!) model to generate a synthetic dataset, where each row represents a simulated "person", for illustrative purposes.
+# The dataset is used in [Chapter 4](../index.md) when discussing the '[Data Analysis](data_analysis.ipynb)' stage of the project lifecycle.
 # 
 # While several sophisticated and powerful tools (e.g. numpyro, Stan) exist for creating models in Python, here we will try to do something simple and understandable using nothing more than `pandas`, and the built-in `random` library.
 # 
@@ -19,7 +20,7 @@ import matplotlib.pyplot as plt
 get_ipython().run_line_magic('matplotlib', 'inline')
 
 
-# ### NHS ID
+# ## NHS ID
 # 
 # This one is easy - we'll just make up a unique string using the "uuid" library.   The first 8 characters of the string will be more than enough to essentially guarantee uniqueness among tens of thousands of rows.
 
@@ -30,7 +31,7 @@ def get_nhs_id():
     return str(uuid.uuid4())[:8]
 
 
-# ### Generating age and gender
+# ## Generating Age and Gender
 # 
 # One of the main inputs we will use for our generative model is some data on the age profiles of Covid cases and deaths in the UK, taken from this [Public Health England report](https://www.gov.uk/government/publications/covid-19-review-of-disparities-in-risks-and-outcomes)
 # 
@@ -171,7 +172,7 @@ def get_ethnicity(df):
     return df.iloc[i]["Ethnicity"]    
 
 
-# ### Week of admission
+# ## Week of Admission
 # 
 # There is a table on hospital admission rates for different regions of the country on the PHE document.  We will read this table, but just sum over all regions, and yet again, calculate the cumulative fraction as we go.
 
@@ -198,7 +199,7 @@ def get_admission_date(df):
     return df.iloc[i]["Date"].to_pydatetime()
 
 
-# ### Probability of admission, and of invasive ventilation
+# ## Probability of admission, and of invasive ventilation
 # 
 # We will use yet another table from the PHE report to get the probability of being admitted to hospital, and of getting critical care (here simplified to saying "received invasive ventilation"), as a function of ethnicity.  We also make a correction to the latter probability, based on date of admission - at some point, as medical staff learned more, ventilation became less likely.
 
@@ -282,8 +283,6 @@ def get_hospital_data(df_admission, df_care, ethnicity, change_date="2020-04-15"
     
 
 
-# 
-# 
 # ## Generating other variables
 # 
 
