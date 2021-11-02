@@ -1,7 +1,7 @@
 # Activity 8: Identifying Missing Data
 
 This activity builds upon [Activity 7](activity4-2.md) by focusing on the specific issue of 'missing data bias'.
-You have already encountered this bias a couple of times, both in the '[Bias Cards]()' activity, and also in the data analysis section just covered.
+You have already encountered this bias a couple of times, both in the '[Bias Cards](../../chapter3/activity3-3.md)' activity, and also in the data analysis section just covered.
 Using these two resources as reference, in this activity you will try to identify possible sources of missing data in your case studies, and then discuss how the absence of this data could affect your own exploratory data analysis, if you were carrying out the actual steps.
 
 However, unlike [Activity 7](activity4-2.md) this activity only requires discussion (or, critical reflection if you are carrying it out on your own).
