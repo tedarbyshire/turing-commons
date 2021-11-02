@@ -1,4 +1,4 @@
-# Further Resources
+# Additional Resources
 
 [NB: This section is not finished]
 

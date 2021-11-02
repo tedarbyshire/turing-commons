@@ -1,5 +1,5 @@
 ```{image} ../../images/illustrations/chatbot.png
-:alt: Illustration of data scientists (by [Johnny Lighthands](https://www.johnnylighthands.co.uk))
+:alt: Illustration by [Johnny Lighthands](https://www.johnnylighthands.co.uk))
 :align: center
 ```
 

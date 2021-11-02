@@ -1,12 +1,13 @@
+```{image} ../images/illustrations/algorithm2.png
+:alt: Illustration by [Johnny Lighthands](https://www.johnnylighthands.co.uk))
+:align: center
+```
+
 # About this Guidebook
 
-![](../images/illustrations/sociotechnical_2.png)
-
-## Summary
-
-Responsible scientific research and technological innovation (RRI) is a vital component of a flourishing and fair society. 
+Responsible scientific research and technological innovation (RRI) is a vital component of a flourishing and fair society.
 As an area of study and mode of enquiry, RRI plays a central role within academic, public, private, and third-sector organisations.
-For example, the UKRI’s Engineering and Physical Sciences Research Council (EPSRC) is increasingly making a commitment to RRI necessary for research funding, and also embedding RRI training into its Centres for Doctoral Training. 
+For example, the UKRI’s Engineering and Physical Sciences Research Council (EPSRC) is increasingly making a commitment to RRI necessary for research funding, and also embedding RRI training into its Centres for Doctoral Training.
 Furthermore, the UK Government has highlighted the importance of RRI in both of its national data and national AI strategies.
 
 Building on these commitments, this course will explore what it means to take (individual and collective) responsibility for (and over) the processes and outcomes of research and innovation in data science and AI.

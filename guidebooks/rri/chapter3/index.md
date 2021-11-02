@@ -1,7 +1,7 @@
 # 3 Responsible Data Science and AI
 
 ```{image} /images/illustrations/ai.png
-:alt: Illustration of data science and AI applications (by [Johnny Lighthands](https://www.johnnylighthands.co.uk))
+:alt: Illustration by [Johnny Lighthands](https://www.johnnylighthands.co.uk)
 :align: center
 ```
 

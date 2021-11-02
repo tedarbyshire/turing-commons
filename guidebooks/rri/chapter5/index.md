@@ -1,6 +1,9 @@
 # 5 Responsible Communication
 
-![](../../images/illustrations/discussion.png)
+```{image} ../../images/illustrations/discussion.png
+:alt: Illustration by [Johnny Lighthands](https://www.johnnylighthands.co.uk)
+:align: center
+```
 
 ## Chapter Outline
 

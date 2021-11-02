@@ -1,35 +1,28 @@
 # 4 The Project Lifecycle
 
 ```{image} /images/illustrations/participatory-design.png
-:alt: Illustration of data science and AI applications (by [Johnny Lighthands](https://www.johnnylighthands.co.uk))
+:alt: Illustration by [Johnny Lighthands](https://www.johnnylighthands.co.uk)
 :align: center
 ```
 
 ## Chapter Outline
 
 - [Case Studies](case_studies.md)
-
-### (Project) Design
-
-- [Project Planning](project_design/planning.md)
-- [Problem Formulation](project_design/problem.md)
-- [Data Extraction or Procurement](project_design/data_extraction.md)
-- [Data Analysis](project_design/data_analysis.ipynb)
-
-### (Model) Development
-
-- [Preprocessing and Feature Engineering](model_development/preprocessing.md)
-- [Model Selection](model_development/model_selection.md)
-- [Model Training, Testing and Validation](model_development/model_testing.md)
-- [Model Reporting](model_development/model_reporting.md)
-
-### (System) Deployment
-
-- [Model Productionalisation](system_deployment/model_productionalisation.md)
-- [User Training](system_deployment/user_training.md)
-- [System Use and Monitoring](system_deployment/system_use.md)
-- [Model Updating or Deprovisioning](system_deployment/model_updating.md)
-
+- (Project) Design
+  - [Project Planning](project_design/planning.md)
+  - [Problem Formulation](project_design/problem.md)
+  - [Data Extraction or Procurement](project_design/data_extraction.md)
+  - [Data Analysis](project_design/data_analysis.ipynb)
+- (Model) Development
+  - [Preprocessing and Feature Engineering](model_development/preprocessing.md)
+  - [Model Selection](model_development/model_selection.md)
+  - [Model Training, Testing and Validation](model_development/model_testing.md)
+  - [Model Reporting](model_development/model_reporting.md)
+- (System) Deployment
+  - [Model Productionalisation](system_deployment/model_productionalisation.md)
+  - [User Training](system_deployment/user_training.md)
+  - [System Use and Monitoring](system_deployment/system_use.md)
+  - [Model Updating or Deprovisioning](system_deployment/model_updating.md)
 - [Next Steps](summary.md)
 
 ```{admonition} Summary
