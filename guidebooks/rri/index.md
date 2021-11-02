@@ -4,7 +4,8 @@
 
 ## Summary
 
-Responsible research and innovation (RRI) plays a significant and often central role within academic, public, private, and third-sector organisations.
+Responsible scientific research and technological innovation (RRI) is a vital component of a flourishing and fair society. 
+As an area of study and mode of enquiry, RRI plays a central role within academic, public, private, and third-sector organisations.
 For example, the UKRI’s Engineering and Physical Sciences Research Council (EPSRC) is increasingly making a commitment to RRI necessary for research funding, and also embedding RRI training into its Centres for Doctoral Training. 
 Furthermore, the UK Government has highlighted the importance of RRI in both of its national data and national AI strategies.
 

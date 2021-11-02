@@ -1,6 +1,9 @@
-# 1 Introduction
+```{image} ../../images/illustrations/chatbot.png
+:alt: Illustration of data scientists (by [Johnny Lighthands](https://www.johnnylighthands.co.uk))
+:align: center
+```
 
-![](../../images/illustrations/algorithm2.png)
+# 1 Introduction
 
 ```{admonition} Summary
 :class: tip
