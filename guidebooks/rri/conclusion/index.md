@@ -1,7 +1,7 @@
 # 6 Conclusion (Looking Forward)
 
-```{image} ../images/illustrations/sociotechnical_2.png
-:alt: Illustration by [Johnny Lighthands](https://www.johnnylighthands.co.uk))
+```{image} ../../images/illustrations/sociotechnical_2.png
+:alt: Illustration by [Johnny Lighthands](https://www.johnnylighthands.co.uk)
 :align: center
 ```
 
