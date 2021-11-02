@@ -4,7 +4,7 @@ In this activity you will consider what criteria or information ought to be incl
 
 When thinking about what to add, you can consult the following resources:
 
-```{admonition} TRIPOD Statement
+```{dropdown} TRIPOD Statement
 The TRIPOD statement was designed to systematise the reporting of models developed (or validated) in a *medical research context* {cite}`collins2015`. Therefore, many of the items will be very specific but could also be helpful for inspiration—[Link to Checklist](https://www.tripod-statement.org/wp-content/uploads/2020/01/Tripod-Checklist-Prediction-Model-Development-and-Validation-PDF.pdf).
 ```
 
@@ -13,7 +13,7 @@ The [Model Cards for Model Reporting](https://modelcards.withgoogle.com/about) p
 ![Model Cards](../../../images/graphics/model-cards.png)
 ```
 
-```{dropdown}} The Data Nutrition Project
+```{dropdown} The Data Nutrition Project
 Inspired by the food nutrition labels, this project—led by Assembly, a program run by the MIT Media Lab and the Berkman Klein Center— seeks to develop a simple summary of the features that are salient for datasets. 
 
 [Visit Site](https://datanutrition.org/)
