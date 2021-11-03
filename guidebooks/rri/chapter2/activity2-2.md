@@ -16,6 +16,13 @@ We will consider evaluation in a later section.
 
 If you are doing this activity as part of an instructor-led version of the course, a whiteboard has been setup on Mural to support the activity.
 
+<iframe src='https://app.mural.co/embed/c7a2e72d-fdb8-4451-a67b-2e4ccc5fc12b'
+        width='100%'
+        height='480px'
+        style='min-width: 640px; min-height: 480px; background-color: #f4f4f4; border: 1px solid #efefef'
+        sandbox='allow-same-origin allow-scripts allow-modals allow-popups allow-popups-to-escape-sandbox'>
+</iframe>
+
 <!---
 
 Activity 2: Ethical Reflection and Deliberation
