@@ -9,7 +9,7 @@ I'm sure we have all experienced the feeling of despair that arises when trying 
 :align: center
 ```
 
-## Enter GitHub :octocat:
+## Enter GitHub 
 
 GitHub has become an increasingly popular solution to address this challenge of document version control.
 While originally used by software developers wishing to share and contribute to code, the platform also has a range of features that make it ideal for managing scientific research projects.
@@ -19,21 +19,57 @@ Be sure to pay attention to the discussion of branches, issues, and pull request
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/w3jLJU7DT5E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## Saying "Hello" and Opening a Pull Request
+## Familiarising Yourself with GitHub
 
 ```{warning}
 Unfortunately, this activity can only be done when using this guide as part of an instructor-led training course.
 However, there are other ways to use GitHub to contribute to this project ([click here](https://github.com/chrisdburr/turing-commons/blob/master/CONTRIBUTING.md)).
 ```
 
-This activity is a relatively easy one, but it's also very important for some of the later activities. You will be guided through the following steps, which you will then perform yourself:
+This activity is a relatively easy one, but it's also very important for some of the later activities.
+You will be guided through the following steps, which you will then perform yourself:
 
 1. Create a GitHub account (if you don't have one already)
 2. Explore the Turing Commons Repository
-3. Fork the repository to your own account
-4. Switch to the branch for your specific online workshop
-5. Introduce yourself by adding to an issue
-6. Submit a pull request to be added as a contributor to the course's repository
+3. Make a contribution
+   - Fork the repository to your own account
+   - Make a change to the [Participants](../further_resources/participants.md) file
+   - Submit a "pull request"
+4. Add to an issue, and list yourself as a contributor
+
+### Create a GitHub account
+
+This is the easiest of the steps.
+Head on over to [GitHub](https://github.com/join) and sign-up for a free account.
+
+### Explore the Turing Commons Repository
+
+Perhaps you have already visited this using the link at the top of this page.
+If not, head on over to this [book's repository](https://github.com/chrisdburr/turing-commons).
+
+You will be greeted with a page that has a list of tabs along the top, a series of files and directories, and a section title README.md.
+This is the homepage for the Turing Commons repository (or, 'repo' for short).
+This is where all the files that are used to compile the website that you're currently reading this text from is stored. 
+Feel free to click through the directories and open up the files.
+The `guidebooks` directory is probably the most interesting place to browse.
+
+### Fork the Repository
+
+The next step is to "fork" the repo to your own account.
+In short, this is creating a personal copy of the repository to your own account, which you can then freely edit.
+
+Now, in your own copy of the repository, head on over to the following file:
+
+> `guidebooks/rri/further_resources/participants.md`
+
+Here, you can add your own GitHub username and leave a comment about your feelings for the course so far.
+Be careful to pay attention to the formatting.
+
+Once you've done this, you 
+
+### Saying "Hello" and Opening a Pull Request
+
+
 
 <!---
 Activity 3: Contributing to Collaborative Projects
