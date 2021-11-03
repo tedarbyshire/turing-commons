@@ -35,7 +35,7 @@ You will be guided through the following steps, which you will then perform your
    - Fork the repository to your own account
    - Make a change to the [Participants](../further_resources/participants.md) file
    - Submit a "pull request"
-4. Add to an issue, and list yourself as a contributor
+4. Add to an issue and list yourself as a contributor
 
 ### Create a GitHub account
 
@@ -63,13 +63,42 @@ Now, in your own copy of the repository, head on over to the following file:
 > `guidebooks/rri/further_resources/participants.md`
 
 Here, you can add your own GitHub username and leave a comment about your feelings for the course so far.
-Be careful to pay attention to the formatting.
 
-Once you've done this, you 
+Click on the edit button and then type your username and add a comment 👇
 
-### Saying "Hello" and Opening a Pull Request
+![Screenshot of GitHub](../../images/graphics/github.png)
 
+```{warning}
+Be careful to pay attention to the formatting!
+```
 
+Once you've done this, you will need to commit the changes directly to the `master` branch and add a message for your commit. This should be informative of the change you have made (e.g. "Added new line to table").
+
+Now, go back to the main page of your forked repo and click on the button that says 'Contribute', and then 'Open pull request'.
+
+This next screen will allow you to submit a *request* to the original owner of the repository to *pull* your changes into the main repository.
+They will have to approve the changes you've made, but if all is okay then you will have just made a contribution to a collaborative project!
+
+A lot of public respositories have codes of conducts or contributing guidelines, so it's good practice to read these before you try to submit a pull request.
+
+### Add to an Issue
+
+One reason for contributing to projects is when there are open issues and you can help resolve them.
+A repository will have a list of open and closed issues that you can access from the main page by clicking on the 'Issues' button.
+Individual issues are like threads or conversations.
+There can be a lot of information to read through, especially if the issues is complex.
+
+For this activity, we're going to use issues for something a little bit different—to automatically add you as a contributor.
+After all, your contributing to this project by taking part 🥳
+
+Go to the following issue and read the instructions: https://github.com/chrisdburr/turing-commons/issues/10 
+
+### Congratulations 🎉
+
+That's it, you've finished this activity!
+There is, obviously, a lot **lot** more to GitHub than we have covered.
+If you're interested in learning more, freecodecamp.org have a good [YouTube video](https://www.youtube.com/watch?v=RGOj5yH7evk) that manages to cram a lot into just over one hour.
+I hope you come back here and contribute more to the Turing Commons afterwards 😄
 
 <!---
 Activity 3: Contributing to Collaborative Projects
