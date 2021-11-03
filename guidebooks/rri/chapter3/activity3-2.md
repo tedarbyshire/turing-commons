@@ -2,12 +2,14 @@
 
 In a [later section](../chapter4/model_development/model_reporting.md), we will look at why active contribution to clear and accessible documentation is an important means for ensuring responsibility in collaborative projects.
 However, the need to support asynchronous collaboration poses challenges when working in large teams.
-I'm sure we have all experienced the feeling of despair that arises when trying to find the most recent version of a draft article in your inbox, and finding multiple instances of files named, 'document_v1.docx', 'document_v1.1.docx', 'document_final.docx', 'document_final_v2.doc'... and so on.
+I'm sure we have all experienced the feeling of despair that arises when trying to find the most recent version of a draft article in your inbox, and finding multiple instances of files named, `document_v1.docx`, `document_v1.1.docx`, `document_final.docx`, `document_final_v2.doc`... and so on!
 
 ```{image} /images/graphics/versions.jpeg
 :alt: A person drowning in a sea of paper
 :align: center
 ```
+
+## Enter GitHub :octocat:
 
 GitHub has become an increasingly popular solution to address this challenge of document version control.
 While originally used by software developers wishing to share and contribute to code, the platform also has a range of features that make it ideal for managing scientific research projects.
