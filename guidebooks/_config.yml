@@ -44,6 +44,6 @@ bibtex_bibfiles:
 
 #Launch services
 launch_buttons:
-  notebook_interface: "classic" # or "jupyterlab"  
-  binderhub_url: "https://mybinder.org/v2/gh/chrisdburr/turing-commons/master"  # The URL for your BinderHub (e.g., https://mybinder.org)
+  notebook_interface: "jupyterlab"  
+  binderhub_url: "https://mybinder.org/v2/gh/chrisdburr/turing-commons/HEAD"  # The URL for your BinderHub (e.g., https://mybinder.org)
 
