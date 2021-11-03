@@ -53,6 +53,7 @@ parts:
       sections:
       - file: rri/further_resources/further-reading
       - file: rri/chapter4/project_design/synthetic_data_generation
+      - file: rri/further_resources/participants
   - caption: Public Engagement and Communication of Science
     chapters:
     - file: pcs/index
