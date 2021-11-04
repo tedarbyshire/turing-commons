@@ -1,4 +1,4 @@
-# A Short History of RRI
+# Understanding RRI
 
 The term 'responsible research and innovation' is most strongly associated with the European Commission's Framework Programmes for Research and Technological Development—a set of funding programmes that support research in the European Union.
 Beginning with the seventh framework programme in 2010, and continuing on through Horizon 2020 (FP8), the term 'responsible research and innovation' became increasingly important for the European Commission's policy.
