@@ -8,7 +8,7 @@
 | Information | Links |
 | :--- | :--- |
 | **Project** | [![Read the book](https://img.shields.io/badge/read-the%20book-blue.svg)](https://turing-commons.netlify.app)|
-| **Chat** | Coming Soon |
+| **Chat** | [![Read the book](https://img.shields.io/badge/Join%20Slack-yellow.svg)](https://join.slack.com/t/turingcommons/shared_invite/zt-x4a2w041-Lxh1WDQni43M4PTelPFGUQ) |
 | **Build** | [![Netlify Status](https://api.netlify.com/api/v1/badges/01447c9a-9d12-4b68-b5fa-8f17a5663667/deploy-status)](https://app.netlify.com/sites/turing-commons/deploys)|
 |**Binder**|[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/chrisdburr/turing-commons/HEAD)|
 | **Cite** | Coming Soon |
