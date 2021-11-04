@@ -32,10 +32,9 @@ To do this, there are general considerations we have put together for helping yo
 First of all, look over the following considerations and try to identify some characteristics that you would like to use for your persona.
 
 ```{dropdown} Consider the stakeholder groups for your case study
-
 There should be **at least** one persona used within your breakout group for each of the stakeholder groups for your respective case study.
 
-#### Predicting Risk of Reoffending
+**Predicting Risk of Reoffending**
 
 The set of stakeholder groups for this case study include:
 
@@ -47,7 +46,7 @@ The set of stakeholder groups for this case study include:
 - Victims
 - Members of the Public
 
-#### Recommending Courses
+**Recommending Courses**
 
 The set of stakeholder groups for this case study include:
 
@@ -56,7 +55,7 @@ The set of stakeholder groups for this case study include:
 - Parents
 - Friends (Peers)
 
-#### Classifying Hate Speech
+**Classifying Hate Speech**
 
 The set of stakeholder groups for this case study include:
 
