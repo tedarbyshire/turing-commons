@@ -15,11 +15,11 @@ There are two caveats here:
 1. You may find that a bias is relevant for multiple stages. This should be expected. However, if so, place it at the highest point upstream that you believe it is best to consider. Don't be tempted to just place them all at the project planning stage though. While it is good to anticipate bias at the earliest possible opportunity, it is also important to ensure that reflection and action is properly contextualised.
 2. You have not yet looked at each of the activities for the project lifecycle in detail, so your understanding of the different activities will be limited. This is intentional. After covering the material in [Chapter 4](../chapter4/index.md), you will return to this activity and have the opportunity to see whether your initial answers should be changed.
 
-```{admonition} Summary
-If you are doing this as part of an instructor-led version of the course, you will be given a link to an interactive Mural board to support this activity.
+```{admonition} Mural
+If you are doing this as part of an instructor-led version of the course, you will be given a specific link to an interactive Mural board to support this activity. Otherwise, feel free to use the following template to create your own.
 ```
 
-<iframe src='https://app.mural.co/embed/1bd30be5-44f0-4636-8466-3a326d20f4bb'
+<iframe src='https://app.mural.co/embed/739222d7-9987-46fc-87ee-b6c5c1e07362'
         width='100%'
         height='480px'
         style='min-width: 640px; min-height: 480px; background-color: #f4f4f4; border: 1px solid #efefef'

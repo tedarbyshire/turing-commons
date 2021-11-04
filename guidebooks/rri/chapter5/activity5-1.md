@@ -5,9 +5,16 @@ In this final activity, you will build a hypothetical assurance case for this pr
 As with the previous activities, this will involve some speculation.
 It's important to remember that the aim here is to familiarise yourself with the reflective and deliberative procedure, rather than worrying too much about the specific details.
 
-```{admonition} Instructions
-For this activity we will be using Mural to construct an assurance case. Individual links will be provided to each of the groups.
+```{admonition} Mural
+If you are doing this as part of an instructor-led version of the course, you will be given a specific link to an interactive Mural board to support this activity. Otherwise, feel free to use the following template to create your own.
 ```
+
+<iframe src='https://app.mural.co/embed/258f61aa-0e34-4774-87fe-730f3ab56599'
+        width='100%'
+        height='480px'
+        style='min-width: 640px; min-height: 480px; background-color: #f4f4f4; border: 1px solid #efefef'
+        sandbox='allow-same-origin allow-scripts allow-modals allow-popups allow-popups-to-escape-sandbox'>
+</iframe>
 
 ## Steps for Building an Assurance Case
 
@@ -33,5 +40,5 @@ Now, ask yourself:
 
 ## Revising the Assurance Case
 
-If any of the questions in the previous section reveal gaps or improvements for your assurance case, then go back and adjust the case as necessary. 
+If any of the questions in the previous section reveal gaps or improvements for your assurance case, then go back and adjust the case as necessary.
 If you complete this exercise in good time, feel free to choose another goal and repeat the process.

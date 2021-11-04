@@ -14,9 +14,11 @@ We will consider evaluation in a later section.
 
 [^agent]: In moral philosophy, a _moral agent_ is someone who has the capacity to make moral judgments, based on a concept of rightness or wrongness, and then act upon these judgements. As such, moral agency is a requirement for moral accountability (i.e., the attribution of praise or blame in response to the consequences of practical decision-making). This concept is used to draw a distinction between rational agents and those who lack the capacity for rational deliberation, (e.g., non-human animals, children, people with severe mental disabilities). In contrast, _moral patients_ or subjects, are those to whom moral agents have responsibility when deciding upon a course of action. Other humans can be moral subjects, but the list can also include non-human animals, ecological systems, and even inanimate objects (e.g., national artefacts).
 
-If you are doing this activity as part of an instructor-led version of the course, a whiteboard has been setup on Mural to support the activity.
+```{admonition} Mural
+If you are doing this as part of an instructor-led version of the course, you will be given a specific link to an interactive Mural board to support this activity. Otherwise, feel free to use the following template to create your own.
+```
 
-<iframe src='https://app.mural.co/embed/c7a2e72d-fdb8-4451-a67b-2e4ccc5fc12b'
+<iframe src='https://app.mural.co/embed/48c53ae8-2378-4425-b009-4979bb1c25de'
         width='100%'
         height='480px'
         style='min-width: 640px; min-height: 480px; background-color: #f4f4f4; border: 1px solid #efefef'

@@ -30,6 +30,18 @@ Rather, it is intended as an aid for reflection.
 It's fine if you need to speculate a bit to fill in the gaps.
 Just make sure to discuss it with your team to ensure the details are plausible and largely agreed upon.
 
+```{admonition} Mural
+If you are doing this as part of an instructor-led version of the course, you will be given a specific link to an interactive Mural board to support this activity. Otherwise, feel free to use the following template to create your own.
+```
+
+<iframe src='https://app.mural.co/embed/b9c91961-fb0d-4950-9887-7381ba15ca30'
+        width='100%'
+        height='480px'
+        style='min-width: 640px; min-height: 480px; background-color: #f4f4f4; border: 1px solid #efefef'
+        sandbox='allow-same-origin allow-scripts allow-modals allow-popups allow-popups-to-escape-sandbox'>
+</iframe>
+
+
 <!-- 
 ### Activity 5: Privilege Walk 
 
