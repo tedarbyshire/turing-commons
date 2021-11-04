@@ -21,14 +21,92 @@ This is the first activity, therefore, where you will use one of the [case studi
 ## Instructions
 
 1. First of all, go and read over the three [case studies](../case_studies.md). You will only be using one, but it will be used for all of the remaining activities in this chapter—so, be sure to read them carefully.
-2. Once you have read the case studies, head on over to the Mural page you have been given by the course instructor (or, see template below). There you will see a table that represents the path that your personas will "walk along".
-3. Like with a board game, the personas move forwards and backwards along the path, but they do so based on the answers they would be likely to give to a series of questions. You will try to step into their shows and answer these questions in your groups, and the end result should be a comparative ranking of social privilege between the personas.
+2. Once you have read the case studies, you will need to generate a set of personas to use for this activity (see next section).
+3. Once you have created your persons you will then head over to a Mural board where you can carry out the actual privilege walk.
+4. Like with a board game, these personas will move forwards and backwards along a path, but they will do so based on the answers they would be likely to give to a series of questions. You will try to step into their shows and answer these questions in your groups, and the end result should be a comparative ranking of social privilege between the personas.
 
+### Creating Personas
+
+First of all, we need to create some personas.
+To do this, there are general considerations we have put together for helping you flesh out your persona.
+First of all, look over the following considerations and try to identify some characteristics that you would like to use for your persona.
+
+```{dropdown} Consider the stakeholder groups for your case study
+
+There should be **at least** one persona used within your breakout group for each of the stakeholder groups for your respective case study.
+
+#### Predicting Risk of Reoffending
+
+The set of stakeholder groups for this case study include:
+
+- Judges
+- Jury
+- Defendants
+- Barristers
+- Family Members
+- Victims
+- Members of the Public
+
+#### Recommending Courses
+
+The set of stakeholder groups for this case study include:
+
+- Students
+- Teachers/Staff
+- Parents
+- Friends (Peers)
+
+#### Classifying Hate Speech
+
+The set of stakeholder groups for this case study include:
+
+- Social Media Users 
+    - Individual who posts hate speech
+    - Individual, group, or similarly situated users who are targeted by hate speech
+    - Other social media users whos posts may be reviewed
+- Content Moderators
+- Social Media Researchers
+- Social Media Platform Staff
+```
+
+```{dropdown} Consider protected characteristics
+The Equality Act 2010 makes it illegal to discriminate against someone because of a protected characteristic. The set of protected characteristics are
+
+- age
+- disability
+- gender reassignment
+- marriage and civil partnership
+- pregnancy and maternity
+- race
+- religion or belief
+- sex
+- sexual orientation
+
+Consider what protected characteristics could increase stakeholders’ vulnerability to abuse or discrimination, or for reason of which they may require additional protection or assistance with respect to the impacts of this project. 
+
+Read more about 'protected characteristics over on the [Equality and Human Rights Commission's](https://www.equalityhumanrights.com/en/equality-act/protected-characteristics) website.
+```
+
+```{dropdown} Consider additional factors
+
+Consider additional factors about your persona's identity, such as background economic factors (e.g. employment) or social factors (e.g. supportive friendship group) that you think will have an impact on their comparative levels of privilege (e.g. attended well-funded, private school). 
+```
+
+Now, try to devise a  set of personas within your groups that represent a diverse set of the above characteristics.
 Because you are working with hypothetical personas and case studies, you may find that you don't have access to all the necessary facts.
 Don't worry; the results of this activity are not what matter.
 Rather, it is intended as an aid for reflection.
 It's fine if you need to speculate a bit to fill in the gaps.
 Just make sure to discuss it with your team to ensure the details are plausible and largely agreed upon.
+
+```{admonition} Learning Objectives
+:class: tip
+Here are three examples, one for each of the case studies:
+
+- Clara is a Black Carribean woman who has been summoned to court on jury service. English is her second language for which she is proficient. She is in her late 60s, and has low levels of science and technological literacy.
+- Samar is a volunteer councillor who offers support and careers advice to students. He chooses to do this because it offers him a source of meaning and connection to the community because his own education and employment were impacted by dyslexia.
+- Jesse is a transgender person who identifies as non-binary. They are a content moderator for the social media platform, but also an user of the platform where they actively contribute to many diverse communities and forums, some of which are related to their self-identity as a transgender person.
+```
 
 ```{admonition} Mural
 If you are doing this as part of an instructor-led version of the course, you will be given a specific link to an interactive Mural board to support this activity. Otherwise, feel free to use the following template to create your own.
