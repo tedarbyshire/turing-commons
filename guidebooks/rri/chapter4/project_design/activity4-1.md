@@ -102,7 +102,7 @@ Just make sure to discuss it with your team to ensure the details are plausible 
 :class: tip
 Here are three examples, one for each of the case studies:
 
-- Clara is a Black Carribean woman who has been summoned to court on jury service. English is her second language for which she is proficient. She is in her late 60s, and has low levels of science and technological literacy.
+- Clara is a Black Carribean woman who has been summoned to court on jury service. English is her second language, and she occasionally has minor difficulties with comprehension. She is in her late 60s, and has low levels of science and technological literacy.
 - Samar is a volunteer councillor who offers support and careers advice to students. He chooses to do this because it offers him a source of meaning and connection to the community because his own education and employment were impacted by dyslexia.
 - Jesse is a transgender person who identifies as non-binary. They are a content moderator for the social media platform, but also an user of the platform where they actively contribute to many diverse communities and forums, some of which are related to their self-identity as a transgender person.
 ```
