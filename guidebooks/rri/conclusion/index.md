@@ -44,3 +44,5 @@ Doing this, presupposes a vital ethical value that is overlooked by the AREA fra
 
 Taking responsibility, therefore, is a reflection of your values and a reflection of what you choose to care about.
 By taking responsibility for your research and innovation you are helping to care for society and the future we will share.
+
+Thanks for taking part 🙏
