@@ -20,8 +20,8 @@ This is the first activity, therefore, where you will use one of the [case studi
 
 ## Instructions
 
-1. First of all, go and read over the three [case studies](../case_studies.md). Make sure to read them carefully because you will then have to decide with your group which one to select. It will then be used for all of the remaining activities in this chapter.
-2. Once you have selected your case study, head on over to the corresponding page for the one you have selected. There you will see a table that represents the path that your personas will ''walk along''.
+1. First of all, go and read over the three [case studies](../case_studies.md). You will only be using one, but it will be used for all of the remaining activities in this chapter—so, be sure to read them carefully.
+2. Once you have read the case studies, head on over to the Mural page you have been given by the course instructor (or, see template below). There you will see a table that represents the path that your personas will "walk along".
 3. Like with a board game, the personas move forwards and backwards along the path, but they do so based on the answers they would be likely to give to a series of questions. You will try to step into their shows and answer these questions in your groups, and the end result should be a comparative ranking of social privilege between the personas.
 
 Because you are working with hypothetical personas and case studies, you may find that you don't have access to all the necessary facts.
@@ -40,13 +40,3 @@ If you are doing this as part of an instructor-led version of the course, you wi
         style='min-width: 640px; min-height: 480px; background-color: #f4f4f4; border: 1px solid #efefef'
         sandbox='allow-same-origin allow-scripts allow-modals allow-popups allow-popups-to-escape-sandbox'>
 </iframe>
-
-
-<!-- 
-### Activity 5: Privilege Walk 
-
-This is the first activity that will involve the case studies introduced at the start of the chapter. It is a known as a "privilege walk" and is designed to help you reflect on how disparate forms of social privilege interact and how different harms or benefits associated with your research or innovation project may have disparate impacts on affected stakeholders.
-
-Please visit https://bit.ly/3jqJjx8 to view the associated instructions.
-
--->
