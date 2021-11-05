@@ -14,7 +14,7 @@
 | **Cite** | Coming Soon |
 | **License** | [![CC BY 4.0][cc-by-shield]][cc-by] |
 
-Welcome to the GitHub repository for the Ethics Team's (Alan Turing Institute) online training resources, known as Turing Commons.
+Welcome to the GitHub repository for the Ethics Theme's (Alan Turing Institute) online training resources, known as Turing Commons.
 At present, the repository is used to host a collection of guidebooks on the following topics:
 
 - [Responsible Research and Innovation (RRI)](https://turing-commons.netlify.app/rri/index.html)
@@ -23,7 +23,8 @@ At present, the repository is used to host a collection of guidebooks on the fol
 
 ## Contributors ✨
 
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+A big shout-out to the [Turing Way Community](https://the-turing-way.netlify.app/welcome), who introduced us to Jupyter Books and whose work is a continual source of inspiration.
+In addition, thanks goes to these wonderful people for contributing to the course in a variety of ways ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
