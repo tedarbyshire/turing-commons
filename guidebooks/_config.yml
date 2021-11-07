@@ -4,7 +4,7 @@
 title: Turing Commons
 author: Dr Christopher Burr
 copyright: This work is licensed under a Creative Commons Attribution 4.0 International License.
-logo: /images/logo.png
+logo: "./images/logo.png"
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
