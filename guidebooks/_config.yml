@@ -27,6 +27,8 @@ html:
   use_issues_button: true
   use_repository_button: true
   extra_navbar: <a href="https://www.netlify.com"><img src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg" alt="Deploys by Netlify" /></a></br></br>Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+  comments:
+    hypothesis: true
 
 #settings
 sphinx:
