@@ -17,3 +17,4 @@ comment = *"comment text"*
 | --- | --- |
 | [@chrisdburr](https://github.com/chrisdburr) *Instructor* | *"It's been a real pleasure putting this course together, and I'm looking forward to speaking with everyone."* |
 | Insert username here | Insert comment here |
+| [@GeorgiaHCA](https://github.com/GeorgiaHCA) *Participant*| *"I'm enjoying the rich and nuanced discussions of ethics. Learning lots!"* |
