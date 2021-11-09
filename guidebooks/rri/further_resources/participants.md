@@ -16,4 +16,4 @@ comment = *"comment text"*
 | GitHub Username | Comment |
 | --- | --- |
 | [@chrisdburr](https://github.com/chrisdburr) *Instructor* | *"It's been a real pleasure putting this course together, and I'm looking forward to speaking with everyone."* |
-| Insert username here | Insert comment here |
+| [@emmavestesson](https://github.com/emmavestesson) | 'I'm really enjoying the discussions!' |
