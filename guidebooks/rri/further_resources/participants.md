@@ -17,3 +17,4 @@ comment = *"comment text"*
 | --- | --- |
 | [@chrisdburr](https://github.com/chrisdburr) *Instructor* | *"It's been a real pleasure putting this course together, and I'm looking forward to speaking with everyone."* |
 | [@GregorMilliganUoN](https://github.com/GregorMilliganUoN) | This course is really interesting so far! I am looking forward to learning more! |
+| [@ejmoss](https://github.com/ejmoss) | *"Amazing! I have thoroughly enjoyed this course, discussed with and learnt from everyone involved, and I am looking forward to what is to come - for the remainder of the course and beyond."* |
