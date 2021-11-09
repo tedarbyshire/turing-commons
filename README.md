@@ -2,7 +2,7 @@
 
 *Total Contributors:*
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 | Information | Links |
@@ -34,6 +34,9 @@ In addition, thanks goes to these wonderful people for contributing to the cours
     <td align="center"><a href="https://github.com/RoaPowell"><img src="https://avatars.githubusercontent.com/u/92020648?v=4?s=100" width="100px;" alt=""/><br /><sub><b>RoaPowell</b></sub></a><br /><a href="#userTesting-RoaPowell" title="User Testing">📓</a> <a href="https://github.com/chrisdburr/turing-commons/pulls?q=is%3Apr+reviewed-by%3ARoaPowell" title="Reviewed Pull Requests">👀</a></td>
     <td align="center"><a href="https://github.com/nbarlowATI"><img src="https://avatars.githubusercontent.com/u/33832774?v=4?s=100" width="100px;" alt=""/><br /><sub><b>nbarlowATI</b></sub></a><br /><a href="https://github.com/chrisdburr/turing-commons/commits?author=nbarlowATI" title="Code">💻</a> <a href="#content-nbarlowATI" title="Content">🖋</a> <a href="#data-nbarlowATI" title="Data">🔣</a></td>
     <td align="center"><a href="https://github.com/tedarbyshire"><img src="https://avatars.githubusercontent.com/u/23381580?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Tessa Darbyshire</b></sub></a><br /><a href="#tutorial-tedarbyshire" title="Tutorials">✅</a></td>
+    <td align="center"><a href="http://jending.com"><img src="https://avatars.githubusercontent.com/u/5104098?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Jennifer Ding</b></sub></a><br /><a href="#tutorial-dingaaling" title="Tutorials">✅</a></td>
+    <td align="center"><a href="https://emmavestesson.netlify.com/"><img src="https://avatars.githubusercontent.com/u/31949401?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Emma Vestesson</b></sub></a><br /><a href="#tutorial-emmavestesson" title="Tutorials">✅</a></td>
+    <td align="center"><a href="https://github.com/GeorgiaHCA"><img src="https://avatars.githubusercontent.com/u/46889966?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Georgia</b></sub></a><br /><a href="#tutorial-GeorgiaHCA" title="Tutorials">✅</a></td>
   </tr>
 </table>
 

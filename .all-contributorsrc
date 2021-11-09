@@ -48,6 +48,33 @@
       "contributions": [
         "tutorial"
       ]
+    },
+    {
+      "login": "dingaaling",
+      "name": "Jennifer Ding",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5104098?v=4",
+      "profile": "http://jending.com",
+      "contributions": [
+        "tutorial"
+      ]
+    },
+    {
+      "login": "emmavestesson",
+      "name": "Emma Vestesson",
+      "avatar_url": "https://avatars.githubusercontent.com/u/31949401?v=4",
+      "profile": "https://emmavestesson.netlify.com/",
+      "contributions": [
+        "tutorial"
+      ]
+    },
+    {
+      "login": "GeorgiaHCA",
+      "name": "Georgia",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46889966?v=4",
+      "profile": "https://github.com/GeorgiaHCA",
+      "contributions": [
+        "tutorial"
+      ]
     }
   ],
   "contributorsPerLine": 7,
